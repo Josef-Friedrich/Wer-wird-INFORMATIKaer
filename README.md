@@ -9,3 +9,7 @@ Spiel mit der Spielmechanik ähnlich wie “Wer wird Millionär”
 
 Wir haben ein Repository angelegt und mit dem Ticket-System von Gitlab 
 begonnen.
+
+# Mettings
+
+Freitag 26. Juni 9:30 (über Zoom oder Teams)
