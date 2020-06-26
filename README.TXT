@@ -57,7 +57,7 @@ Methoden
 + werteAus(): Punktestand wird erhöht
 + main()
 
-# Josef: Support
+# Josef: Support (Grafische Oberfläche)
 
 # Klasse Joker?
 
