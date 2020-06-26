@@ -70,3 +70,7 @@ Erweiterungsmöglichkeiten:
 - Joker (50:50 Joker)
 - Telefonjoker 
 - zwei Spielmodi (noch Punkte oder falsche Frage aus)
+* Anbindung an eine SQL-Datenbank
+* Fragen-Editor (Formluare, wo Fragen eingegeben werden können)
+* Stichwort-Suche (kann mit Themen aus AUD implementiert werden)
+* Auswahl nach Lehrplan-Unterthemen
