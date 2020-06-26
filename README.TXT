@@ -18,7 +18,7 @@ Fragen haben 5 Schwierigkeitsstufen (1 = leicht, 5 ist schwierig)
 Bei einer Erweiterung können mehrmal hintereinander die gleich Schwierigkeitsstufen
 dran kommen.
 
-Spiel für Schüle:r
+Spiel für Schüler
 Fragen aus dem Lehrplan der jeweiligen Jahrgangsstufen
 
 Klasse Frage
@@ -33,4 +33,6 @@ Attribute
 - schwierigkeit: int (1-5)
 - jahrgangsstufe: int (6 oder 7)
 
+Erweiterungsmöglichkeiten:
+- Joker (50:50 Joker)
 
