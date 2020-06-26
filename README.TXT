@@ -13,3 +13,52 @@ begonnen.
 # Mettings
 
 Freitag 26. Juni 9:30 (über Zoom oder Teams)
+
+Fragen haben 5 Schwierigkeitsstufen (1 = leicht, 5 ist schwierig)
+Bei einer Erweiterung können mehrmal hintereinander die gleich Schwierigkeitsstufen
+dran kommen.
+
+Spiel für Schüler
+Fragen aus dem Lehrplan der jeweiligen Jahrgangsstufen
+
+# Klasse Frage
+Attribute
+- frage: String
+- bild: (später)
+- richtigAntwort: String
+- falscheAntwort1: String
+- falscheAntwort2: String
+- falscheAntwort3: String
+- schwierigkeit: int (1-5)
+- jahrgangsstufe: int (6 oder 7)
+Methode
++ verteilteZufälligeAntworten()
+
+# Klasse Jahrgangsstufe
+Attribute
+- fragen: alle Fragen (20)
+- beantworteteFragen
+
+# Klasse Spiel
+Attribute
+- punktestand
+Methoden
++ gibNeueFrage(): zufällig
++ zeigeNeueFrage(): mit den Antworten 
++ erhalteAntwort():
++ zeigeRichtigeAntwortAn()
++ werteAus(): Punktestand wird erhöht
++ main()
+
+
+# Klasse Joker?
+
+# Klasse GrafischeOberfläche?
+Methoden
+main()
+
+
+Erweiterungsmöglichkeiten:
+- Joker (50:50 Joker)
+- Telefonjoker 
+- zwei Spielmodi (noch Punkte oder falsche Frage aus)
