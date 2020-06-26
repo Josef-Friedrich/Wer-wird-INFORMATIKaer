@@ -21,7 +21,9 @@ dran kommen.
 Spiel für Schüler
 Fragen aus dem Lehrplan der jeweiligen Jahrgangsstufen
 
-# Klasse Frage
+
+
+# Klasse Frage (Martin)
 Attribute
 - frage: String
 - bild: (später)
@@ -31,15 +33,20 @@ Attribute
 - falscheAntwort3: String
 - schwierigkeit: int (1-5)
 - jahrgangsstufe: int (6 oder 7)
+- nächsteFrage
 Methode
 + verteilteZufälligeAntworten()
 
-# Klasse Jahrgangsstufe
+# Klasse Jahrgangsstufe (Kompositum) (Michaela)
 Attribute
 - fragen: alle Fragen (20)
 - beantworteteFragen
+Methoden
+- fügeNeueFrageHinzu(): 
+- löscheFrage()
+- gibFrage()
 
-# Klasse Spiel
+# Klasse Spiel (Steffi)
 Attribute
 - punktestand
 Methoden
@@ -50,6 +57,7 @@ Methoden
 + werteAus(): Punktestand wird erhöht
 + main()
 
+# Josef: Support
 
 # Klasse Joker?
 
