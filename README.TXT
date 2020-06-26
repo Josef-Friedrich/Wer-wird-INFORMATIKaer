@@ -17,3 +17,20 @@ Freitag 26. Juni 9:30 (über Zoom oder Teams)
 Fragen haben 5 Schwierigkeitsstufen (1 = leicht, 5 ist schwierig)
 Bei einer Erweiterung können mehrmal hintereinander die gleich Schwierigkeitsstufen
 dran kommen.
+
+Spiel für Schüle:r
+Fragen aus dem Lehrplan der jeweiligen Jahrgangsstufen
+
+Klasse Frage
+
+Attribute
+- frage: String
+- bild: (später)
+- richtigAntwort: String
+- falscheAntwort1: String
+- falscheAntwort2: String
+- falscheAntwort3: String
+- schwierigkeit: int (1-5)
+- jahrgangsstufe: int (6 oder 7)
+
+
