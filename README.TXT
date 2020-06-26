@@ -35,4 +35,5 @@ Attribute
 
 Erweiterungsmöglichkeiten:
 - Joker (50:50 Joker)
+- Telefonjoker 
 
