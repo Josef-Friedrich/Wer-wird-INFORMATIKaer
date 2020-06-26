@@ -21,8 +21,6 @@ dran kommen.
 Spiel für Schüler
 Fragen aus dem Lehrplan der jeweiligen Jahrgangsstufen
 
-
-
 # Klasse Frage (Martin)
 Attribute
 - frage: String
@@ -65,12 +63,11 @@ Methoden
 Methoden
 main()
 
-
 Erweiterungsmöglichkeiten:
 - Joker (50:50 Joker)
 - Telefonjoker 
 - zwei Spielmodi (noch Punkte oder falsche Frage aus)
-* Anbindung an eine SQL-Datenbank
-* Fragen-Editor (Formluare, wo Fragen eingegeben werden können)
-* Stichwort-Suche (kann mit Themen aus AUD implementiert werden)
-* Auswahl nach Lehrplan-Unterthemen
+- Anbindung an eine SQL-Datenbank
+- Fragen-Editor (Formluare, wo Fragen eingegeben werden können)
+- Stichwort-Suche (kann mit Themen aus AUD implementiert werden)
+- Auswahl nach Lehrplan-Unterthemen
