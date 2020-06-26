@@ -8,26 +8,27 @@
 public class Frage
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
-    private int x;
+    private String frage;
+    // - frage: String
+    // - richtigAntwort: String
+    //- falscheAntwort1: String
+    //- falscheAntwort2: String
+    //- falscheAntwort3: String
+    //- schwierigkeit: int (1-5)
+    //- jahrgangsstufe: int (6 oder 7)
+    //- nächsteFrage
 
     /**
      * Konstruktor für Objekte der Klasse Frage
      */
-    public Frage()
+    public Frage(String frage)
     {
         // Instanzvariable initialisieren
-        x = 0;
+        this.frage = frage;
+    }
+    
+    public void verteileZufälligeAntworten() {
+      // eine Liste mit 4 Elementen in zufälliger Reihenfolge bilden
     }
 
-    /**
-     * Ein Beispiel einer Methode - ersetzen Sie diesen Kommentar mit Ihrem eigenen
-     * 
-     * @param  y    ein Beispielparameter für eine Methode
-     * @return        die Summe aus x und y
-     */
-    public int beispielMethode(int y)
-    {
-        // tragen Sie hier den Code ein
-        return x + y;
-    }
 }
