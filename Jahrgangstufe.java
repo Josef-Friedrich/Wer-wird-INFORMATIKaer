@@ -1,9 +1,9 @@
 
 /**
  * Beschreiben Sie hier die Klasse Jahrgangstufe.
- * 
- * @author (Philipp) 
- * @version (eine Versionsnummer oder ein Datum)
+ *
+ * @author (Philipp)
+ * @version (2020-07-01)
  */
 public class Jahrgangstufe
 {
@@ -21,7 +21,7 @@ public class Jahrgangstufe
 
     /**
      * Ein Beispiel einer Methode - ersetzen Sie diesen Kommentar mit Ihrem eigenen
-     * 
+     *
      * @param  y    ein Beispielparameter für eine Methode
      * @return        die Summe aus x und y
      */
