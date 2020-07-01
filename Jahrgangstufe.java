@@ -2,7 +2,7 @@
 /**
  * Beschreiben Sie hier die Klasse Jahrgangstufe.
  * 
- * @author (Ihr Name) 
+ * @author (Philipp) 
  * @version (eine Versionsnummer oder ein Datum)
  */
 public class Jahrgangstufe
