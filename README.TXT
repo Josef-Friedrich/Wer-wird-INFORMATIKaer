@@ -71,3 +71,38 @@ Erweiterungsmöglichkeiten:
 - Fragen-Editor (Formluare, wo Fragen eingegeben werden können)
 - Stichwort-Suche (kann mit Themen aus AUD implementiert werden)
 - Auswahl nach Lehrplan-Unterthemen
+
+
+Präsentation des Projekts "Wer wird Millionär"
+von Team Nbg.
+
+1. IDEE (Martin)
+- unterschiedliche Fächer unter einem Hut
+- anwendbares Projekt für Schüler und Lernende
+- bekanntes Spielprinzip 
+- variantenreicher Aufbau (Inhalt, Fächer, Schwierigkeitsstufen)
+
+2. EINTEILUNG (Steffi)
+- Entscheiden für GitLab 
+- Festlegen von Klassen, Attributnamen und Mehoden
+- nahezu (!) gleichmäßige Aufgabenteilung
+- Schreiben von drei verschiedenen Klassen
+- Zusammenfassen dieser
+- wöchentliche Treffen
+
+3. CODE (Josef)
+- Entscheiden für Liste mit Kompositum
+- Vorführung des 1. Prototyps
+- Zeigen von Code-Beispielen
+
+4. SCHWIERIGKEITEN UND AUSBLICK (Michi) 
+- coronabedingtes zeitliches Problem
+- Abschätzung für den jeweiligen zeitlichen Arbeitsaufwand
+- Zusammenführen verschiedener Vorstellungen 
+- Reduktion von Ideen (Was ist umsetzbar?) 
+- graphische Oberfläche
+- Punkte-/Belohnungssystem
+- evtl. Erweiterung für weitere Jahrgangsstufen
+
+
+- 
