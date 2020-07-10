@@ -105,4 +105,21 @@ von Team Nbg.
 - evtl. Erweiterung für weitere Jahrgangsstufen
 
 
-- 
+
+
+TREFFEN IN DEN FERIEN: 
+14.8.
+nach Bedarf
+
+INHALTLICHE PLANUNG
+1. PROTOTYP
+- Anzeigen von zehn Fragen mit Zufall
+- nicht spielbar
+
+2. PROTOTYP
+- spielbare Variante
+- Benutzung von graphischer Oberfläche (Buttons)
+
+3. PROTOTYP
+- Hintergrundgraphik
+- Musik
