@@ -105,7 +105,14 @@ von Team Nbg.
 - evtl. Erweiterung für weitere Jahrgangsstufen
 
 
-
+TREFFEN VOR DEN FERIEN: 
+24.7., 14.00 Uhr in Zoom 
+(Wer nicht kann, mailt an die anderen.)
+Themen: 
+- abstrakte Fabrik
+- evtl. Programmierstücke 
+- weiteres Vorgehen Richtung Prototyp 2
+- Uhrzeit für das Treffen am 14.8. (?) 
 
 TREFFEN IN DEN FERIEN: 
 14.8.
