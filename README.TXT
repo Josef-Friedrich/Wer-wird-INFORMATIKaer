@@ -115,8 +115,7 @@ Themen:
 - Uhrzeit für das Treffen am 14.8. (?) 
 
 TREFFEN IN DEN FERIEN: 
-14.8.
-nach Bedarf
+14.8. 9:30
 
 INHALTLICHE PLANUNG
 1. PROTOTYP
