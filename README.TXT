@@ -117,6 +117,13 @@ Themen:
 TREFFEN IN DEN FERIEN: 
 14.8. 9:30
 
+TREFFEN NACH den FERIEN: 
+11.9., 13.00 Uhr
+- ABSTRAKTE FABRIK! 
+- mehr Fragen zu 6 und 7
+- GUI Swing
+
+
 INHALTLICHE PLANUNG
 1. PROTOTYP
 - Anzeigen von zehn Fragen mit Zufall
