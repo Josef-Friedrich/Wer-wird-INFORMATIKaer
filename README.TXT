@@ -147,6 +147,7 @@ Inhalte:
 - evtl. Präsentation 
 - Review: was lief gut, was lief schlecht, was habe ich entdeckt, ...; 
 - Weiterentwicklungen
-- Verweis auf AUD-Inhalte (Array-Zufallsalgorithmus(zufällige Permutation: Fisher-Yates-Verfahren), zwei verkettete Listen mit Kompositum, Design-Pattern: Kompositum)
+- Verweis auf AUD-Inhalte (Array-Zufallsalgorithmus(zufällige Permutation: Fisher-Yates-Verfahren), 
+    zwei verkettete Listen mit Kompositum, Design-Pattern: Kompositum); 
 
 Kompositum, Fragenliste
