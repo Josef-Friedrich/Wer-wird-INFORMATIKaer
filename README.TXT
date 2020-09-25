@@ -136,3 +136,17 @@ INHALTLICHE PLANUNG
 3. PROTOTYP
 - Hintergrundgraphik
 - Musik
+
+Prototyp 3: 
+Abgabe am 23.10.2020
+Inhalte: 
+- Quellcode
+- Klassendiagramm 
+- jedes Package als Klassendiagramm + Bzhg. zum anderen Klassendiagramm 
+- Sequenzdiagramm
+- evtl. Präsentation 
+- Review: was lief gut, was lief schlecht, was habe ich entdeckt, ...; 
+- Weiterentwicklungen
+- Verweis auf AUD-Inhalte (Array-Zufallsalgorithmus(zufällige Permutation: Fisher-Yates-Verfahren), zwei verkettete Listen mit Kompositum, Design-Pattern: Kompositum)
+
+Kompositum, Fragenliste
