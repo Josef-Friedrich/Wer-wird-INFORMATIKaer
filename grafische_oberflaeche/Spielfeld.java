@@ -2,61 +2,55 @@ package grafische_oberflaeche;
 
 import ch.aplu.jgamegrid.*;
 import java.awt.event.KeyEvent;
+import java.util.HashMap;
+
 import spiel_logik.Spiel;
-import spiel_logik.Frage;
+
+import fragen_verwaltung.ThemenGebiet;
+import fragen_verwaltung.ThemenKatalog;
 
 @SuppressWarnings("serial")
 public class Spielfeld extends GameGrid implements GGKeyListener {
 
-  private MehrzeiligerText frageText;
-  private TextAkteur antwortAText;
-  private TextAkteur antwortBText;
-  private TextAkteur antwortCText;
-  private TextAkteur antwortDText;
-
   private Spiel spiel;
 
-  public Spielfeld(Spiel spiel) {
+  private HashMap<String,Ansicht> ansichten;
+
+  private String[] ansichtsNamen = new String[]{"spiel", "hilfe"};
+
+  public Spielfeld() {
     // 1024 × 768
     super(52, 38, 20);
     setBgColor(0, 0, 255);
-    this.spiel = spiel;
+
+    initialisiereSpiel();
+    initialisiereAnsichten();
+
     addKeyListener(this);
     show();
   }
 
-  public TextAkteur zeigeText(TextAkteur textBaustein, String text, int x, int y) {
-    if (textBaustein != null) {
-      textBaustein.hide();
-      removeActor(textBaustein);
-    }
+  private void initialisiereSpiel() {
+    spiel = new Spiel();
 
-    textBaustein = new TextAkteur(text);
-    addMouseListener(textBaustein, GGMouse.lPress);
-    addActor(textBaustein, new Location(x, y));
-
-    return textBaustein;
+    ThemenKatalog katalog = new ThemenKatalog();
+    ThemenGebiet gebiet = katalog.gibGebietDurchNummer(0);
+    gebiet.leseFragenInsSpiel(spiel);
   }
 
-  public void zeigeFrage(Frage frage) {
-    String frageTextnachricht = frage.gibFragenText();
-    String[] antworten = frage.gibAntworten();
+  private void initialisiereAnsichten() {
+    ansichten = new HashMap<String,Ansicht>();
+    ansichten.put("spiel", new AnsichtSpiel(this));
+    ansichten.put("hilfe", new AnsichtHilfe(this));
+  }
 
-    if (frageText != null) {
-      frageText.entferneVomSpielfeld();
-    }
+  private void zeigeAnsicht(String ansichtsName) {
+    allesLeeren();
+    ansichten.get(ansichtsName).zeige();
+  }
 
-    frageText = new MehrzeiligerText(frageTextnachricht);
-    frageText.setzeImSpielfeld(this, new Location(10, 10));
-
-    // 52 / 2 = 26
-    // 0 1 [2] | 26 27 [28]
-    antwortAText = zeigeText(antwortAText, "A: " + antworten[0], 2, 20);
-    antwortBText = zeigeText(antwortBText, "B: " + antworten[1], 28, 20);
-
-    antwortCText = zeigeText(antwortCText, "C: " + antworten[2], 2, 30);
-    antwortDText = zeigeText(antwortDText, "D: " + antworten[3], 28, 30);
-    refresh();
+  public Spiel gibSpiel() {
+    return spiel;
   }
 
   private void allesLeeren() {
@@ -75,12 +69,10 @@ public class Spielfeld extends GameGrid implements GGKeyListener {
    */
   public boolean keyPressed(KeyEvent evt) {
     int taste = evt.getKeyCode();
-    if (taste == KeyEvent.VK_SPACE) {
-      Frage frage = spiel.gibNächsteFrage();
-      frage.mischeAntworten();
-      zeigeFrage(frage);
-    } else if (taste == KeyEvent.VK_1) {
-      allesLeeren();
+    if (taste == KeyEvent.VK_1) {
+      zeigeAnsicht("spiel");
+    } else if (taste == KeyEvent.VK_2) {
+      zeigeAnsicht("hilfe");
     }
     return false;
   }

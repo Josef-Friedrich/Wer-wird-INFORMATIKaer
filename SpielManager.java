@@ -1,6 +1,4 @@
-import spiel_logik.Spiel;
-import fragen_verwaltung.ThemenGebiet;
-import fragen_verwaltung.ThemenKatalog;
+
 import grafische_oberflaeche.Spielfeld;
 
 import kommando_zeile.KommandoZeile;
@@ -16,12 +14,7 @@ public class SpielManager {
     if (args.length > 0 && args[0].equals("cli")) {
       new KommandoZeile();
     } else {
-      Spiel spiel = new Spiel();
-
-      ThemenKatalog katalog = new ThemenKatalog();
-      ThemenGebiet gebiet = katalog.gibGebietDurchNummer(0);
-      gebiet.leseFragenInsSpiel(spiel);
-      new Spielfeld(spiel);
+      new Spielfeld();
     }
   }
 }
