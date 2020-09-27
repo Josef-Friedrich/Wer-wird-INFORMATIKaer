@@ -2,7 +2,6 @@ package grafische_oberflaeche;
 
 import ch.aplu.jgamegrid.Location;
 
-@SuppressWarnings("serial")
 public class AnsichtHilfe extends Ansicht {
   public AnsichtHilfe(Spielfeld spielfeld) {
     super(spielfeld);

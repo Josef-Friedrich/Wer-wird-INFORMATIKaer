@@ -95,4 +95,10 @@ public class SpielTest {
     spiel.ladeThemenGebiet("/FRAGEN/test/drei_fragen.xml");
     assertEquals(3, spiel.gibAnzahlUnbeantworterFragen());
   }
+
+  @Test
+  public void methodeGibAnzahlFragen() {
+    assertEquals(10, spiel.gibAnzahlFragen());
+
+  }
 }

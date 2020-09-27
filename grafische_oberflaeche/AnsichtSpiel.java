@@ -3,31 +3,80 @@ package grafische_oberflaeche;
 import ch.aplu.jgamegrid.*;
 import spiel_logik.Spiel;
 import spiel_logik.Frage;
+
 import java.awt.event.KeyEvent;
 
 /**
- * Zeigt die Ansicht für die das eigentliche Spiel. Also blendet
- * den Fragentext und die vier Fragen ein.
+ * Zeigt die Ansicht für die das eigentliche Spiel. Also blendet den Fragentext
+ * und die vier Fragen ein.
  */
-@SuppressWarnings("serial")
 public class AnsichtSpiel extends Ansicht implements GGKeyListener {
 
+  private class AntwortText {
+
+    private GGTextField textFeld;
+
+    public AntwortText(int x, int y) {
+      textFeld = new GGTextField(spielfeld, new Location(x, y), true);
+      textFeld.setTextColor(Konfiguration.FARBE);
+      textFeld.setFont(Konfiguration.SCHRIFT);
+    }
+
+    public void zeigeRichtig() {
+      textFeld.setTextColor(Konfiguration.FARBE_RICHTIG);
+    }
+
+    public void zeigeFalsch() {
+      textFeld.setTextColor(Konfiguration.FARBE_FALSCH);
+    }
+
+    public void setzeText(String text) {
+      textFeld.setTextColor(Konfiguration.FARBE);
+      textFeld.setText(text);
+      textFeld.show();
+    }
+  }
+
+  private class GewinnSumme {
+    private GGTextField textFeld;
+
+    public GewinnSumme(int x, int y) {
+      textFeld = new GGTextField(spielfeld, new Location(x, y), true);
+      textFeld.setTextColor(Konfiguration.FARBE);
+      textFeld.setFont(Konfiguration.SCHRIFT);
+      textFeld.show();
+      aktualisiere(0);
+    }
+
+    public void aktualisiere(long summe) {
+      textFeld.setText(String.format("%,d €", summe));
+    }
+  }
+
   private MehrzeiligerText frageText;
-  private TextAkteur antwortAText;
-  private TextAkteur antwortBText;
-  private TextAkteur antwortCText;
-  private TextAkteur antwortDText;
-  private Spielfeld spielfeld;
+  private AntwortText antwortA;
+  private AntwortText antwortB;
+  private AntwortText antwortC;
+  private AntwortText antwortD;
+
+  private GewinnSumme gewinnSumme;
 
   private Spiel spiel;
 
   public AnsichtSpiel(Spielfeld spielfeld) {
     super(spielfeld);
-    this.spielfeld = spielfeld;
-    this.spiel = spielfeld.gibSpiel();
+    spiel = spielfeld.gibSpiel();
+    gewinnSumme = new GewinnSumme(30, 2);
+
+    // 52 / 2 = 26
+    // 0 1 [2] | 26 27 [28]
+    antwortA = new AntwortText(2, 20);
+    antwortB = new AntwortText(28, 20);
+    antwortC = new AntwortText(2, 30);
+    antwortD = new AntwortText(28, 30);
+
     spielfeld.addKeyListener(this);
   }
-
 
   public TextAkteur zeigeText(TextAkteur textBaustein, String text, int x, int y) {
     if (textBaustein != null) {
@@ -53,16 +102,14 @@ public class AnsichtSpiel extends Ansicht implements GGKeyListener {
     frageText = new MehrzeiligerText(frageTextnachricht);
     frageText.setzeImSpielfeld(spielfeld, new Location(10, 10));
 
-    // 52 / 2 = 26
-    // 0 1 [2] | 26 27 [28]
-    antwortAText = zeigeText(antwortAText, "A: " + antworten[0], 2, 20);
-    antwortBText = zeigeText(antwortBText, "B: " + antworten[1], 28, 20);
-
-    antwortCText = zeigeText(antwortCText, "C: " + antworten[2], 2, 30);
-    antwortDText = zeigeText(antwortDText, "D: " + antworten[3], 28, 30);
+    antwortA.setzeText(antworten[0]);
+    antwortB.setzeText(antworten[1]);
+    antwortC.setzeText(antworten[2]);
+    antwortD.setzeText(antworten[3]);
   }
 
   public void zeigeNächsteFrage() {
+    gewinnSumme.aktualisiere(spiel.gibGewinnSumme());
     Frage frage = spiel.gibNächsteFrage();
     frage.mischeAntworten();
     zeigeFrage(frage);
@@ -79,8 +126,28 @@ public class AnsichtSpiel extends Ansicht implements GGKeyListener {
    */
   public boolean keyPressed(KeyEvent evt) {
     int taste = evt.getKeyCode();
-    if (taste == KeyEvent.VK_SPACE) {
-      zeigeNächsteFrage();
+
+    switch (taste) {
+      case KeyEvent.VK_SPACE:
+      case KeyEvent.VK_ENTER:
+        zeigeNächsteFrage();
+      break;
+      case KeyEvent.VK_A:
+        break;
+
+      case KeyEvent.VK_B:
+
+        break;
+
+      case KeyEvent.VK_C:
+
+        break;
+
+      case KeyEvent.VK_D:
+
+        break;
+      default:
+        break;
     }
     return false;
   }

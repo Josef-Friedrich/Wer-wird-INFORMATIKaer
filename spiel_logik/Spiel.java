@@ -12,7 +12,7 @@ public class Spiel {
    * Im der deutschen Fernsehsendung wird nicht immer verdoppelt, sondern manchmal
    * ein Betrag gewählt, sodass am Ende 1 Million gewonnen werden.
    */
-  private int[] gewinnSumme = { 50, 100, 200, 300, 500, 1000, 2000, 4000, 8000, 16000, 32000, 64000, 125000, 50000,
+  private int[] gewinnSumme = { 50, 100, 200, 300, 500, 1000, 2000, 4000, 8000, 16000, 32000, 64000, 125000, 500000,
       1000000 };
 
   /**
@@ -48,9 +48,15 @@ public class Spiel {
    */
   private boolean verloren = false;
 
+  private int anzahlFragen = 0;
+
   public Spiel() {
     unbeantworteteFragen = new FragenListe();
     beantworteteFragen = new FragenListe();
+  }
+
+  public int gibAnzahlFragen() {
+    return anzahlFragen;
   }
 
   /**
@@ -58,17 +64,19 @@ public class Spiel {
    * Frage zufällig ein. Die Argumente können direkt aus dem CSVLeser eingelesen
    * werden.
    *
-   * @param fragenText Der Text der Frage (Der eigentliche Fragensatz).
+   * @param fragenText      Der Text der Frage (Der eigentliche Fragensatz).
    * @param richtigeAntwort Die richtige Antwort.
    * @param falscheAntwort1 Die falsche Antwort Nr. 1.
    * @param falscheAntwort2 Die falsche Antwort Nr. 2.
    * @param falscheAntwort3 Die falsche Antwort Nr. 3.
-   * @param schwierigkeit Die Schwierigkeit (1-5).
+   * @param schwierigkeit   Die Schwierigkeit (1-5).
    */
   public void erzeugeFrage(String fragenText, String richtigeAntwort, String falscheAntwort1, String falscheAntwort2,
       String falscheAntwort3, String schwierigkeit) {
     unbeantworteteFragen.erzeugeFrage(fragenText, richtigeAntwort, falscheAntwort1, falscheAntwort2, falscheAntwort3,
         schwierigkeit);
+
+    anzahlFragen++;
   }
 
   /**
@@ -81,6 +89,8 @@ public class Spiel {
    */
   public void fügeFragenAlsFeldEin(String[][] fragen) {
     unbeantworteteFragen.fügeFragenAlsFeldEin(fragen);
+
+    anzahlFragen = unbeantworteteFragen.gibAnzahlFragen() + beantworteteFragen.gibAnzahlFragen();
   }
 
   /**
