@@ -67,4 +67,44 @@ public class FrageTest {
     assertFalse(frage.beantworteFrage(2));
     assertFalse(frage.beantworteFrage(3));
   }
+
+  @Test
+  public void statischesAttributANTWORT_NUMMERN() {
+    assertEquals(0, Frage.ANTWORT_NUMMERN[0]);
+    assertEquals(1, Frage.ANTWORT_NUMMERN[1]);
+    assertEquals(2, Frage.ANTWORT_NUMMERN[2]);
+    assertEquals(3, Frage.ANTWORT_NUMMERN[3]);
+  }
+
+  @Test
+  public void statischesAttributANTWORT_BUCHSTABEN() {
+    assertEquals("A", Frage.ANTWORT_BUCHSTABEN[0]);
+    assertEquals("B", Frage.ANTWORT_BUCHSTABEN[1]);
+    assertEquals("C", Frage.ANTWORT_BUCHSTABEN[2]);
+    assertEquals("D", Frage.ANTWORT_BUCHSTABEN[3]);
+  }
+
+  @Test
+  public void statischeMethodeKonvertiereAntwortNummer() {
+    assertEquals("A", Frage.konvertiereAntwortNummer(0));
+    assertEquals("B", Frage.konvertiereAntwortNummer(1));
+    assertEquals("C", Frage.konvertiereAntwortNummer(2));
+    assertEquals("D", Frage.konvertiereAntwortNummer(3));
+  }
+
+  @Test
+  public void statischeMethodeKonvertiereAntwortBuchstabeKleinbuchstaben() {
+    assertEquals(0, Frage.konvertiereAntwortBuchstabe("a"));
+    assertEquals(1, Frage.konvertiereAntwortBuchstabe("b"));
+    assertEquals(2, Frage.konvertiereAntwortBuchstabe("c"));
+    assertEquals(3, Frage.konvertiereAntwortBuchstabe("d"));
+  }
+
+  @Test
+  public void statischeMethodeKonvertiereAntwortBuchstabeGrossbuchstaben() {
+    assertEquals(0, Frage.konvertiereAntwortBuchstabe("A"));
+    assertEquals(1, Frage.konvertiereAntwortBuchstabe("B"));
+    assertEquals(2, Frage.konvertiereAntwortBuchstabe("C"));
+    assertEquals(3, Frage.konvertiereAntwortBuchstabe("D"));
+  }
 }

@@ -124,6 +124,10 @@ public class Spiel {
     return beantworteteFragen;
   }
 
+  public Frage gibAktuelleFrage() {
+    return aktuelleFrage;
+  }
+
   /**
    * Beantworte die aktuelle Frage.
    *

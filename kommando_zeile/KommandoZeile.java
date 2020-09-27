@@ -29,7 +29,7 @@ public class KommandoZeile {
    *                  2 oder 3).
    */
   private void zeigeAntwort(Frage frage, String[] antworten, int antwortNr) {
-    System.out.println(String.format("  %s: %s", frage.gibBuchstabe(antwortNr), antworten[antwortNr]));
+    System.out.println(String.format("  %s: %s", frage.konvertiereAntwortNummer(antwortNr), antworten[antwortNr]));
   }
 
   /**
@@ -48,26 +48,6 @@ public class KommandoZeile {
   }
 
   /**
-   * @param eingabe a A: 0, b B: 1, c C: 2; d D: 3
-   *
-   * @return
-   */
-  private int konvertiereAntwort(String eingabe) {
-    eingabe = eingabe.toLowerCase();
-
-    if (eingabe.equals("a")) {
-      return 0;
-    } else if (eingabe.equals("b")) {
-      return 1;
-    } else if (eingabe.equals("c")) {
-      return 2;
-    } else if (eingabe.equals("d")) {
-      return 3;
-    }
-    return -1;
-  }
-
-  /**
    * @param scanner
    *
    * @return
@@ -75,7 +55,7 @@ public class KommandoZeile {
   private int frageNachAntwort(Scanner scanner) {
     System.out.print("\nDeine Antwort (a, b, c, d): ");
     String auswahl = scanner.next();
-    return konvertiereAntwort(auswahl);
+    return Frage.konvertiereAntwortBuchstabe(auswahl);
   }
 
   /**
@@ -110,8 +90,8 @@ public class KommandoZeile {
    * @return
    */
   private void zeigeFragenErgebnis(Spiel spiel, Frage frage) throws Exception {
-    String buchstabeRichtig = frage.gibBuchstabe(frage.gibRichtigeAntwort());
-    String buchstabeAntwort = frage.gibBuchstabe(frage.gibGegebeneAntwort());
+    String buchstabeRichtig = frage.konvertiereAntwortNummer(frage.gibRichtigeAntwort());
+    String buchstabeAntwort = frage.konvertiereAntwortNummer(frage.gibGegebeneAntwort());
     if (frage.istRichtigBeantwortet()) {
       System.out.println(Farbe.grün(String.format("Die Antwort %s war richtig!", buchstabeAntwort)));
       System.out.println(String.format("Deine momentane Gewinnsumme: %s", Farbe.blau(spiel.gibGewinnSumme() + " €")));

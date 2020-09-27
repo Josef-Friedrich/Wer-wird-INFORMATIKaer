@@ -34,7 +34,8 @@ public class Spielfeld extends GameGrid implements GGKeyListener {
     spiel = new Spiel();
 
     ThemenKatalog katalog = new ThemenKatalog();
-    ThemenGebiet gebiet = katalog.gibGebietDurchNummer(0);
+    // ThemenGebiet gebiet = katalog.gibGebietDurchNummer(0);
+    ThemenGebiet gebiet = new ThemenGebiet("/FRAGEN/test/15_fragen.xml");
     gebiet.leseFragenInsSpiel(spiel);
   }
 

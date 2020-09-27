@@ -36,26 +36,20 @@ public class ThemenGebiet extends XMLDatei {
    * Erzeugt anhand eines relativen Pfades zu einer XML-Datei eine neue Instanze
    * der Klasse.
    *
-   * @param relativerPfad Relativer Pfad zum Elternverzeichnis
-   *                      <code>./src/main/resources/fragen</code>. Beispielsweise
-   *                      wird <code>informatik/6_jahrgangsstufe.xml</code> zu
-   *                      <code>src/main/resources/fragen/informatik/6_jahrgangsstufe.xml</code>
-   *                      ergänzt.
+   * @param relativerPfad Relativer Pfad zum Projektverzeichnis, beispielsweise
+   *                      <code>"/FRAGEN/informatik/6_jahrgangsstufe.xml"</code>.
    */
   public ThemenGebiet(String pfad) {
     super(pfad);
   }
 
-
   public String gibFach() {
     return leseTextInhalt("fach");
   }
 
-
   public String gibThema() {
     return leseTextInhalt("thema");
   }
-
 
   public String gibAutor() {
     return leseTextInhalt("autor");

@@ -37,10 +37,6 @@ public class Frage {
    */
   private int schwierigkeit;
 
-  /**
-   * Ein Hilfsfeld, damit wir leicht die Fragen mit A B C D nummerieren können.
-   */
-  private String[] buchstaben = { "A", "B", "C", "D" };
 
   /**
    * @param fragenText      Der Text der Frage (Der eigentliche Fragensatz).
@@ -171,16 +167,52 @@ public class Frage {
   }
 
   /**
+   * Die Antwortnummern 0, 1, 2, 3.
+   */
+  public static final int[] ANTWORT_NUMMERN =  { 0, 1, 2, 3 };
+
+  /**
+   * Ein Hilfsfeld, damit wir leicht die Fragen mit A B C D nummerieren können.
+   */
+  public static final String[] ANTWORT_BUCHSTABEN = { "A", "B", "C", "D" };
+
+  /**
+   * Wandelt eine Antwortnummer (0, 1, 2, 3) in einen Antwortbuchstaben (A, B, C,
+   * D) um.
    *
-   * @param antwortNr 0 = A, 3 = D
+   * @param nummer Eine Antwortnummer (0, 1, 2, 3)
    *
    * @return Den Buchstaben (A-D) der Antwort.
    */
-  public String gibBuchstabe(int antwortNr) {
-    return buchstaben[antwortNr];
+  public static String konvertiereAntwortNummer(int nummer) {
+    return ANTWORT_BUCHSTABEN[nummer];
   }
 
   /**
+   * Wandelt einen Antwortbuchstaben (a, b, c, d) bzw. (A, B, C, D) in einen
+   * Anwortindexzahl (0, 1, 2, 3) um.
+   *
+   * @param buchstabe a A: 0, b B: 1, c C: 2; d D: 3
+   *
+   * @return
+   */
+  public static int konvertiereAntwortBuchstabe(String buchstabe) {
+    buchstabe = buchstabe.toLowerCase();
+
+    if (buchstabe.equals("a")) {
+      return 0;
+    } else if (buchstabe.equals("b")) {
+      return 1;
+    } else if (buchstabe.equals("c")) {
+      return 2;
+    } else if (buchstabe.equals("d")) {
+      return 3;
+    }
+    return -1;
+  }
+
+  /**
+   * Zeigt an, ob die Frage richtig beantwortet wurde.
    *
    * @return Wahr, wenn die Frage richtig beantwortete wurde.
    */
@@ -190,4 +222,5 @@ public class Frage {
     }
     return richtigeAntwort == gegebeneAntwort;
   }
+
 }

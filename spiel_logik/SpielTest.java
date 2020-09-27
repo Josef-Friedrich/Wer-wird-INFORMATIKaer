@@ -92,7 +92,7 @@ public class SpielTest {
   @Test
   public void methodeLadeThemenGebiet() {
     Spiel spiel = new Spiel();
-    spiel.ladeThemenGebiet("/FRAGEN/test/drei_fragen.xml");
+    spiel.ladeThemenGebiet("/FRAGEN/test/03_fragen.xml");
     assertEquals(3, spiel.gibAnzahlUnbeantworterFragen());
   }
 
