@@ -21,18 +21,22 @@ public class AnsichtSpiel extends Ansicht implements GGKeyListener {
     private String buchstabe;
 
     public AntwortText(int x, int y, int antwortNummer) {
-      kachel = new Actor("BILDER/blau.png", "BILDER/gruen.png", "BILDER/rot.png", "BILDER/orange.png");
-      spielfeld.addActor(kachel, new Location(x + 10, y));
       textFeld = new GGTextField(spielfeld, new Location(x, y), true);
       textFeld.setTextColor(Konfiguration.FARBE);
       textFeld.setFont(Konfiguration.SCHRIFT);
+      textFeld.show();
+
       buchstabe = Frage.konvertiereAntwortNummer(antwortNummer);
+
+      kachel = new Actor("BILDER/blau.png", "BILDER/gruen.png", "BILDER/rot.png", "BILDER/orange.png");
+      kachel.setLocationOffset(10, 0);
+      kachel.hide();
+      spielfeld.addActor(kachel, new Location(x + 10, y));
     }
 
     public void zeigeRichtig() {
       textFeld.setTextColor(Konfiguration.FARBE_RICHTIG);
       textFeld.show();
-      System.out.println("richtig");
       kachel.show(1);
     }
 
@@ -125,6 +129,7 @@ public class AnsichtSpiel extends Ansicht implements GGKeyListener {
       antworten[frage.gibGegebeneAntwort()].zeigeFalsch();
       antworten[frage.gibRichtigeAntwort()].zeigeRichtig();
     }
+    spielfeld.actAll();
   }
 
   public void zeigeNächsteFrage() {
@@ -132,6 +137,7 @@ public class AnsichtSpiel extends Ansicht implements GGKeyListener {
     Frage frage = spiel.gibNächsteFrage();
     frage.mischeAntworten();
     zeigeFrage(frage);
+    spielfeld.actAll();
   }
 
   /**
