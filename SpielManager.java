@@ -1,7 +1,9 @@
 
-import grafische_oberflaeche.Spielfeld;
+import grafische_oberflaeche.Fenster;
 
 import kommando_zeile.KommandoZeile;
+
+import java.awt.*;
 
 /**
  * Hauptklasse, die die main Methode enthält.
@@ -10,11 +12,16 @@ import kommando_zeile.KommandoZeile;
  */
 public class SpielManager {
 
-  public static void main(String [] args) throws Exception {
+  public static void main(String[] args) throws Exception {
     if (args.length > 0 && args[0].equals("cli")) {
       new KommandoZeile();
     } else {
-      new Spielfeld();
+      // Wie hier beschrieben: http://www.aplu.ch/home/apluhomex.jsp?site=46
+      EventQueue.invokeLater(new Runnable() {
+        public void run() {
+          new Fenster().setVisible(true);
+        }
+      });
     }
   }
 }

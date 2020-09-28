@@ -27,7 +27,7 @@ public class Spielfeld extends GameGrid implements GGKeyListener {
     initialisiereAnsichten();
 
     addKeyListener(this);
-    show();
+    //show();
   }
 
   private void initialisiereSpiel() {

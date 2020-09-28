@@ -74,6 +74,5 @@ public class ReaktiverText implements GGMouseListener {
     gg.show();
 
     text1.fügeZumSpielfeldHinzu(gg, new Location(2, 4));
-
   }
 }
