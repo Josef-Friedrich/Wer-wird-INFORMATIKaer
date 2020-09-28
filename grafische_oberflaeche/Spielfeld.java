@@ -19,7 +19,7 @@ public class Spielfeld extends GameGrid implements GGKeyListener {
   private String[] ansichtsNamen = new String[]{"spiel", "hilfe"};
 
   public Spielfeld() {
-    // 1024 × 768
+    // 1024 × 768 -> 1040 x 760
     super(52, 38, 20);
     setBgColor(0, 0, 255);
 

@@ -16,30 +16,37 @@ public class AnsichtSpiel extends Ansicht implements GGKeyListener {
 
     private GGTextField textFeld;
 
+    private Actor kachel;
+
     private String buchstabe;
 
     public AntwortText(int x, int y, int antwortNummer) {
+      kachel = new Actor("BILDER/blau.png", "BILDER/gruen.png", "BILDER/rot.png", "BILDER/orange.png");
+      spielfeld.addActor(kachel, new Location(x + 10, y));
       textFeld = new GGTextField(spielfeld, new Location(x, y), true);
       textFeld.setTextColor(Konfiguration.FARBE);
       textFeld.setFont(Konfiguration.SCHRIFT);
-
       buchstabe = Frage.konvertiereAntwortNummer(antwortNummer);
     }
 
     public void zeigeRichtig() {
       textFeld.setTextColor(Konfiguration.FARBE_RICHTIG);
       textFeld.show();
+      System.out.println("richtig");
+      kachel.show(1);
     }
 
     public void zeigeFalsch() {
       textFeld.setTextColor(Konfiguration.FARBE_FALSCH);
       textFeld.show();
+      kachel.show(2);
     }
 
     public void setzeText(String text) {
       textFeld.setTextColor(Konfiguration.FARBE);
       textFeld.setText(String.format("%s. %s", buchstabe, text));
       textFeld.show();
+      kachel.show(0);
     }
   }
 
@@ -76,6 +83,7 @@ public class AnsichtSpiel extends Ansicht implements GGKeyListener {
     // 0 1 [2] | 26 27 [28]
     antworten = new AntwortText[] { new AntwortText(2, 20, 0), new AntwortText(28, 20, 1), new AntwortText(2, 30, 2),
         new AntwortText(28, 30, 3) };
+
     spielfeld.addKeyListener(this);
   }
 
