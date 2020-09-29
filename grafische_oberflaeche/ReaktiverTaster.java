@@ -1,29 +1,33 @@
 package grafische_oberflaeche;
 
 import ch.aplu.jgamegrid.*;
-import java.awt.Color;
-import java.awt.Font;
 import java.awt.Point;
 
 import java.awt.event.KeyEvent;
+import java.util.HashMap;
 
+/**
+ * Eine Klasse um Taster (Buttons) anzuzeigen. Es gibt drei Zustande: 1. Das
+ * Hauptbild wird angezeigt, 2. Das Schwebebild wird angezeigt, 3. Das Klickbild
+ * wird angezeigt.
+ *
+ * Wir verwenden dazu drei separate Actors aus dem JGameGrid Framework. Wir
+ * arbeiten nicht mit einem Actor und drei verschiedenen Sprites, weil JGameGrid
+ * die Bilder nicht instantan verarbeitet, sondern erst im nächsten „run“-Zyklus
+ * abarbeitet. Der Bildwechsel funktioniert zwar. Ist aber auch sehr träge.
+ */
 public class ReaktiverTaster implements GGMouseListener, GGKeyListener {
-  private Actor hauptAkteur;
 
-  private Actor schwebeAkteur;
-  private Actor klickAkteur;
+  private HashMap<String, Actor> akteure;
+
+  /**
+   * In diesem Attribut wird gespeichert, welches Bild momentan angezeigt wird.
+   * Das funktioniert zuverlässiger, als bei jedem Actor die Methode „isRemoved()“
+   * aufzurufen.
+   */
+  private String angezeigtesBild;
 
   private int taste;
-
-  /**
-   *
-   */
-  private boolean istHauptBildSichtbar = true;
-
-  /**
-   *
-   */
-  private boolean istGeklickt = false;
 
   private int linksObenX;
   private int linksObenY;
@@ -34,39 +38,24 @@ public class ReaktiverTaster implements GGMouseListener, GGKeyListener {
 
   private GameGrid spielfeld;
 
-  private void fügeSicherHinzu (Actor akteur) {
-    if (akteur.isRemoved()) {
-      spielfeld.addActor(akteur, platz);
-    }
-  }
-
-  private void zeige (String bildName) {
-    if (bildName.equals("klick")) {
-      fügeSicherHinzu(klickAkteur);
-      spielfeld.removeActor(schwebeAkteur);
-      spielfeld.removeActor(hauptAkteur);
-    } else if (bildName.equals("schwebe")) {
-      fügeSicherHinzu(klickAkteur);
-      spielfeld.removeActor(schwebeAkteur);
-      spielfeld.removeActor(hauptAkteur);
-    } else {
-      fügeSicherHinzu(klickAkteur);
-      spielfeld.removeActor(schwebeAkteur);
-      spielfeld.removeActor(hauptAkteur);
-    }
-
-  }
-
   public ReaktiverTaster(String hauptBild, String schwebeBild, String klickBild, int taste) {
     this.taste = taste;
-    hauptAkteur = new Actor(hauptBild);
-    schwebeAkteur = new Actor(schwebeBild);
-    klickAkteur = new Actor(klickBild);
+    akteure = new HashMap<String,Actor>();
+    akteure.put("haupt", new Actor(hauptBild));
+    akteure.put("schwebe", new Actor(schwebeBild));
+    akteure.put("klick", new Actor(klickBild));
+  }
+
+  public Actor gibAkteur(String bildName) {
+    return akteure.get(bildName);
   }
 
   public void fügeZumSpielfeldHinzu(GameGrid spielfeld, Location platz) {
     this.spielfeld = spielfeld;
     this.platz = platz;
+    angezeigtesBild = "haupt";
+
+    Actor hauptAkteur = gibAkteur("haupt");
     spielfeld.addActor(hauptAkteur, platz);
 
     int höhe = hauptAkteur.getHeight(0);
@@ -79,9 +68,6 @@ public class ReaktiverTaster implements GGMouseListener, GGKeyListener {
     rechtsUntenX = linksObenX + breite;
     rechtsUntenY = (int) pixelPlatz.getY() + höhe / 2;
 
-    GGBackground bg = spielfeld.getBg();
-    bg.setPaintColor(new Color(255, 0, 0));
-    bg.fillRectangle(new Point(linksObenX, linksObenY), new Point(rechtsUntenX, rechtsUntenY));
     spielfeld.addMouseListener(this, GGMouse.move);
     spielfeld.addMouseListener(this, GGMouse.lRelease);
     spielfeld.addMouseListener(this, GGMouse.lClick);
@@ -89,18 +75,37 @@ public class ReaktiverTaster implements GGMouseListener, GGKeyListener {
     spielfeld.addKeyListener(this);
   }
 
-  private void klicke () {
-    istGeklickt = true;
-    spielfeld.addActor(klickAkteur, platz);
-    spielfeld.removeActor(schwebeAkteur);
+  private void fügeHinzu(String bildName) {
+    spielfeld.addActor(gibAkteur(bildName), platz);
+  }
+
+  private void entferne(String bildName) {
+    spielfeld.removeActor(gibAkteur(bildName));
+  }
+
+  private void zeige(String bildName) {
+    if (angezeigtesBild.equals(bildName))
+      return;
+    entferne(bildName);
+    if (bildName.equals("haupt")) {
+      fügeHinzu("haupt");
+    } else if (bildName.equals("schwebe")) {
+      fügeHinzu("schwebe");
+    } else if (bildName.equals("klick")) {
+      fügeHinzu("klick");
+    }
+    angezeigtesBild = bildName;
+  }
+
+  private void klicke() {
+    String altesBild = angezeigtesBild;
+    zeige("klick");
     try {
       Thread.sleep(100);
     } catch (InterruptedException e) {
       e.printStackTrace();
     }
-    spielfeld.addActor(schwebeAkteur, platz);
-    spielfeld.removeActor(klickAkteur);
-    istGeklickt = false;
+    zeige(altesBild);
   }
 
   public boolean mouseEvent(GGMouse mouse) {
@@ -110,21 +115,16 @@ public class ReaktiverTaster implements GGMouseListener, GGKeyListener {
     String eventType = mouse.getEventType();
 
     if (x >= linksObenX && x <= rechtsUntenX && y >= linksObenY && y <= rechtsUntenY) {
-      if (eventType.equals("lRelease") && !istGeklickt) {
+      if (eventType.equals("lRelease")) {
         klicke();
       }
 
-      if (eventType.equals("move") && istHauptBildSichtbar) {
-        spielfeld.addActor(schwebeAkteur, platz);
-        spielfeld.act();
-        spielfeld.removeActor(hauptAkteur);
-        istHauptBildSichtbar = false;
+      if (eventType.equals("move")) {
+        zeige("schwebe");
       }
     } else {
-      if (eventType.equals("move") && !istHauptBildSichtbar) {
-        spielfeld.addActor(hauptAkteur, platz);
-        spielfeld.removeActor(schwebeAkteur);
-        istHauptBildSichtbar = true;
+      if (eventType.equals("move")) {
+        zeige("haupt");
       }
     }
     return false;
@@ -140,7 +140,6 @@ public class ReaktiverTaster implements GGMouseListener, GGKeyListener {
    *      Dokumentation des Interfaces</a>
    */
   public boolean keyPressed(KeyEvent evt) {
-    System.out.println(evt.getKeyCode());
     if (evt.getKeyCode() == taste) {
       klicke();
     }
@@ -164,7 +163,7 @@ public class ReaktiverTaster implements GGMouseListener, GGKeyListener {
     ReaktiverTaster taster = new ReaktiverTaster("BILDER/pfeil-blau.png", "BILDER/pfeil-gelb.png",
         "BILDER/pfeil-rot.png", KeyEvent.VK_RIGHT);
 
-    GameGrid gg = new GameGrid(10, 10, 60, Color.red);
+    GameGrid gg = new GameGrid(10, 10, 60);
     gg.show();
     gg.doRun();
 
