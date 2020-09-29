@@ -13,12 +13,22 @@ public class Fenster extends JFrame {
 
     // Wie hier beschrieben http://www.aplu.ch/home/apluhomex.jsp?site=46
     setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-    Container kontainer = getContentPane();
     // Damit das JGameGrid-Fenster zentriert wird.
+
+    Container kontainer = getContentPane();
+
+    // Image image = new ImageIcon("BILDER/hintergrund.jpg").getImage();
+    // BackgroundPanel panel = new BackgroundPanel(image, BackgroundPanel.SCALED);
+    // kontainer.add(BorderLayout.CENTER, panel);
+
+    // HintergrundBild hintergrund = new HintergrundBild();
+    // kontainer.add(BorderLayout.CENTER, hintergrund);
+
     kontainer.setLayout(new GridBagLayout());
+
     kontainer.add(spielfeld);
-    kontainer.setBackground(new Color(0, 255, 0));
-    pack();  // Must be called before actors are added!
+    kontainer.setBackground(new Color(152, 152, 255));
+    pack(); // Must be called before actors are added!
   }
 
 }
