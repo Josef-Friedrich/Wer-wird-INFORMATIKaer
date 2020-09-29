@@ -29,6 +29,8 @@ public class ReaktiverTaster implements GGMouseListener, GGKeyListener {
 
   private int taste;
 
+  private boolean istSichtbar;
+
   private int linksObenX;
   private int linksObenY;
   private int rechtsUntenX;
@@ -40,7 +42,7 @@ public class ReaktiverTaster implements GGMouseListener, GGKeyListener {
 
   public ReaktiverTaster(String hauptBild, String schwebeBild, String klickBild, int taste) {
     this.taste = taste;
-    akteure = new HashMap<String,Actor>();
+    akteure = new HashMap<String, Actor>();
     akteure.put("haupt", new Actor(hauptBild));
     akteure.put("schwebe", new Actor(schwebeBild));
     akteure.put("klick", new Actor(klickBild));
@@ -53,6 +55,7 @@ public class ReaktiverTaster implements GGMouseListener, GGKeyListener {
   public void fügeZumSpielfeldHinzu(GameGrid spielfeld, Location platz) {
     this.spielfeld = spielfeld;
     this.platz = platz;
+    istSichtbar = true;
     angezeigtesBild = "haupt";
 
     Actor hauptAkteur = gibAkteur("haupt");
@@ -75,37 +78,45 @@ public class ReaktiverTaster implements GGMouseListener, GGKeyListener {
     spielfeld.addKeyListener(this);
   }
 
-  private void fügeHinzu(String bildName) {
+  private void fügeAkteurHinzu(String bildName) {
     spielfeld.addActor(gibAkteur(bildName), platz);
   }
 
-  private void entferne(String bildName) {
+  private void entferneAkteur(String bildName) {
     spielfeld.removeActor(gibAkteur(bildName));
   }
 
-  private void zeige(String bildName) {
+  private void zeigeBild(String bildName) {
     if (angezeigtesBild.equals(bildName))
       return;
-    entferne(bildName);
-    if (bildName.equals("haupt")) {
-      fügeHinzu("haupt");
-    } else if (bildName.equals("schwebe")) {
-      fügeHinzu("schwebe");
-    } else if (bildName.equals("klick")) {
-      fügeHinzu("klick");
-    }
+    entferneAkteur(angezeigtesBild);
+    fügeAkteurHinzu(bildName);
     angezeigtesBild = bildName;
+  }
+
+  public void zeige() {
+    if (istSichtbar == true)
+      return;
+    istSichtbar = true;
+    zeigeBild(angezeigtesBild);
+  }
+
+  public void verstecke() {
+    if (istSichtbar == false)
+      return;
+    istSichtbar = false;
+    entferneAkteur(angezeigtesBild);
   }
 
   private void klicke() {
     String altesBild = angezeigtesBild;
-    zeige("klick");
+    zeigeBild("klick");
     try {
       Thread.sleep(100);
     } catch (InterruptedException e) {
       e.printStackTrace();
     }
-    zeige(altesBild);
+    zeigeBild(altesBild);
   }
 
   public boolean mouseEvent(GGMouse mouse) {
@@ -120,11 +131,11 @@ public class ReaktiverTaster implements GGMouseListener, GGKeyListener {
       }
 
       if (eventType.equals("move")) {
-        zeige("schwebe");
+        zeigeBild("schwebe");
       }
     } else {
       if (eventType.equals("move")) {
-        zeige("haupt");
+        zeigeBild("haupt");
       }
     }
     return false;
