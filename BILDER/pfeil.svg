@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg4683"
+   version="1.1"
+   viewBox="0 0 31.830929 27.34059"
+   height="103.33451"
+   width="120.30587"
+   sodipodi:docname="pfeil.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="3840"
+     inkscape:window-height="2123"
+     id="namedview37"
+     showgrid="false"
+     inkscape:zoom="4.6156465"
+     inkscape:cx="242.97617"
+     inkscape:cy="44.950978"
+     inkscape:window-x="0"
+     inkscape:window-y="41"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1"
+     units="px"
+     inkscape:pagecheckerboard="false"
+     showguides="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <defs
+     id="defs4677">
+    <filter
+       height="1.0170422"
+       y="-0.0085211108"
+       width="1.004564"
+       x="-0.0022820632"
+       id="filter4632"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur4634"
+         stdDeviation="0.65060874" />
+    </filter>
+  </defs>
+  <metadata
+     id="metadata4680">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(233.91684,-161.8631)"
+     id="layer1">
+    <path
+       style="opacity:1;fill:#003399;fill-opacity:1;stroke:none;stroke-width:0.07025284;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:15.0047245;stroke-opacity:1"
+       d="m -233.91684,161.8631 v 27.34059 h 31.83093 V 161.8631 Z"
+       id="rect4636"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#030375;fill-opacity:1;stroke:#9898ff;stroke-width:0.44185418;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -228.18997,168.64269 v 13.78141 l 19.92225,-6.8907 z"
+       id="path827"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+  </g>
+</svg>
