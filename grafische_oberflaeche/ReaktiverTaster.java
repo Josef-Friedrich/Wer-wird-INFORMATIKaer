@@ -5,11 +5,15 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Point;
 
-public class ReaktiverTaster implements GGMouseListener {
-  private Actor akteur;
+import java.awt.event.KeyEvent;
+
+public class ReaktiverTaster implements GGMouseListener, GGKeyListener {
+  private Actor hauptAkteur;
 
   private Actor schwebeAkteur;
   private Actor klickAkteur;
+
+  private int taste;
 
   /**
    *
@@ -30,19 +34,45 @@ public class ReaktiverTaster implements GGMouseListener {
 
   private GameGrid spielfeld;
 
-  public ReaktiverTaster(String... bilder) {
-    akteur = new Actor(bilder);
+  private void fügeSicherHinzu (Actor akteur) {
+    if (akteur.isRemoved()) {
+      spielfeld.addActor(akteur, platz);
+    }
+  }
+
+  private void zeige (String bildName) {
+    if (bildName.equals("klick")) {
+      fügeSicherHinzu(klickAkteur);
+      spielfeld.removeActor(schwebeAkteur);
+      spielfeld.removeActor(hauptAkteur);
+    } else if (bildName.equals("schwebe")) {
+      fügeSicherHinzu(klickAkteur);
+      spielfeld.removeActor(schwebeAkteur);
+      spielfeld.removeActor(hauptAkteur);
+    } else {
+      fügeSicherHinzu(klickAkteur);
+      spielfeld.removeActor(schwebeAkteur);
+      spielfeld.removeActor(hauptAkteur);
+    }
+
+  }
+
+  public ReaktiverTaster(String hauptBild, String schwebeBild, String klickBild, int taste) {
+    this.taste = taste;
+    hauptAkteur = new Actor(hauptBild);
+    schwebeAkteur = new Actor(schwebeBild);
+    klickAkteur = new Actor(klickBild);
   }
 
   public void fügeZumSpielfeldHinzu(GameGrid spielfeld, Location platz) {
     this.spielfeld = spielfeld;
     this.platz = platz;
-    spielfeld.addActor(akteur, platz);
+    spielfeld.addActor(hauptAkteur, platz);
 
-    int höhe = akteur.getHeight(0);
-    int breite = akteur.getWidth(0);
+    int höhe = hauptAkteur.getHeight(0);
+    int breite = hauptAkteur.getWidth(0);
 
-    Point pixelPlatz = akteur.getPixelLocation();
+    Point pixelPlatz = hauptAkteur.getPixelLocation();
 
     linksObenX = (int) pixelPlatz.getX() - breite / 2;
     linksObenY = (int) pixelPlatz.getY() - höhe / 2;
@@ -55,6 +85,22 @@ public class ReaktiverTaster implements GGMouseListener {
     spielfeld.addMouseListener(this, GGMouse.move);
     spielfeld.addMouseListener(this, GGMouse.lRelease);
     spielfeld.addMouseListener(this, GGMouse.lClick);
+
+    spielfeld.addKeyListener(this);
+  }
+
+  private void klicke () {
+    istGeklickt = true;
+    spielfeld.addActor(klickAkteur, platz);
+    spielfeld.removeActor(schwebeAkteur);
+    try {
+      Thread.sleep(100);
+    } catch (InterruptedException e) {
+      e.printStackTrace();
+    }
+    spielfeld.addActor(schwebeAkteur, platz);
+    spielfeld.removeActor(klickAkteur);
+    istGeklickt = false;
   }
 
   public boolean mouseEvent(GGMouse mouse) {
@@ -65,32 +111,58 @@ public class ReaktiverTaster implements GGMouseListener {
 
     if (x >= linksObenX && x <= rechtsUntenX && y >= linksObenY && y <= rechtsUntenY) {
       if (eventType.equals("lRelease") && !istGeklickt) {
-        istGeklickt = true;
-        akteur.show(2);
-        try {
-          Thread.sleep(100);
-        } catch (InterruptedException e) {
-          e.printStackTrace();
-        }
-        akteur.show(1);
-        istGeklickt = false;
+        klicke();
       }
 
       if (eventType.equals("move") && istHauptBildSichtbar) {
-        akteur.show(1);
+        spielfeld.addActor(schwebeAkteur, platz);
+        spielfeld.act();
+        spielfeld.removeActor(hauptAkteur);
         istHauptBildSichtbar = false;
       }
     } else {
       if (eventType.equals("move") && !istHauptBildSichtbar) {
-        akteur.show(0);
+        spielfeld.addActor(hauptAkteur, platz);
+        spielfeld.removeActor(schwebeAkteur);
         istHauptBildSichtbar = true;
       }
     }
     return false;
   }
 
+  /**
+   * Diese Methode muss implementiert sein, da das Interface GGKeyListener es
+   * verlangt. Wir geben false zurück, damit weitere Klassen, die das Interface
+   * benutzen das Drücken von Tasten empfangen können.
+   *
+   * @see <a href=
+   *      "http://www.aplu.ch/classdoc/jgamegrid/ch/aplu/jgamegrid/GGKeyListener.html">
+   *      Dokumentation des Interfaces</a>
+   */
+  public boolean keyPressed(KeyEvent evt) {
+    System.out.println(evt.getKeyCode());
+    if (evt.getKeyCode() == taste) {
+      klicke();
+    }
+    return false;
+  }
+
+  /**
+   * Diese Methode muss implementiert sein, da das Interface GGKeyListener es
+   * verlangt. Wir geben false zurück, damit weitere Klassen, die das Interface
+   * benutzen das Drücken von Tasten empfangen können.
+   *
+   * @see <a href=
+   *      "http://www.aplu.ch/classdoc/jgamegrid/ch/aplu/jgamegrid/GGKeyListener.html">
+   *      Dokumentation des Interfaces</a>
+   */
+  public boolean keyReleased(KeyEvent evt) {
+    return false;
+  }
+
   public static void main(String[] args) {
-    ReaktiverTaster taster = new ReaktiverTaster("BILDER/pfeil-blau.png", "BILDER/pfeil-gelb.png", "BILDER/pfeil-rot.png");
+    ReaktiverTaster taster = new ReaktiverTaster("BILDER/pfeil-blau.png", "BILDER/pfeil-gelb.png",
+        "BILDER/pfeil-rot.png", KeyEvent.VK_RIGHT);
 
     GameGrid gg = new GameGrid(10, 10, 60, Color.red);
     gg.show();
