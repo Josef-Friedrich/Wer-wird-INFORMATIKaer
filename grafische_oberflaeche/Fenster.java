@@ -13,9 +13,11 @@ public class Fenster extends JFrame {
 
     // Wie hier beschrieben http://www.aplu.ch/home/apluhomex.jsp?site=46
     setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-    getContentPane().add(spielfeld, BorderLayout.NORTH);
-    JTextField f = new JTextField("Test Textfeld");
-    getContentPane().add(f, BorderLayout.SOUTH);
+    Container kontainer = getContentPane();
+    // Damit das JGameGrid-Fenster zentriert wird.
+    kontainer.setLayout(new GridBagLayout());
+    kontainer.add(spielfeld);
+    kontainer.setBackground(new Color(0, 255, 0));
     pack();  // Must be called before actors are added!
   }
 
