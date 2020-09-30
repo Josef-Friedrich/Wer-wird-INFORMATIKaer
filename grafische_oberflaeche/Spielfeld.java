@@ -42,7 +42,7 @@ public class Spielfeld extends GameGrid implements GGKeyListener {
   private void initialisiereAnsichten() {
     ansichten = new HashMap<String,Ansicht>();
     ansichten.put("spiel", new AnsichtSpiel(this));
-    ansichten.put("hilfe", new AnsichtHilfe(this));
+    ansichten.put("hilfe", new AnsichtThemen(this));
   }
 
   private void zeigeAnsicht(String ansichtsName) {

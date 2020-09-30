@@ -6,28 +6,13 @@ import org.w3c.dom.NodeList;
 
 /**
  * Gibt einen Überblick über alle verfügbaren Themengebiete. Die Themengebiete
- * werden in der Datei <code>./spiel/fragen/index.xml</code> konfiguriert.
+ * werden in der Datei <code>/FRAGEN/index.xml</code> konfiguriert.
  */
 public class ThemenKatalog extends XMLDatei {
 
   /**
-   * Eine kleine Klasse um eine paar Daten über ein Themengebiet zu speichern.
+   * Eine Liste mit Knoten der XML-Tags {@code <themenGebiet>}.
    */
-  public static class GebietDaten {
-
-    public String pfad;
-
-    public String titel;
-
-    public int nummer;
-
-    public GebietDaten(String pfad, String titel, int nummer) {
-      this.pfad = pfad;
-      this.titel = titel;
-      this.nummer = nummer;
-    }
-  }
-
   NodeList knotenListe;
 
   public ThemenKatalog() {
@@ -49,25 +34,40 @@ public class ThemenKatalog extends XMLDatei {
     return gibTextAttributVonKnoten(knoten, "titel");
   }
 
-  public void listeGebieteAuf() {
-    for (int i = 0; i < knotenListe.getLength(); i++) {
-      Node knoten = knotenListe.item(i);
-      System.out.println(gibTitelVonKnoten(knoten) + " " + gibPfadVonKnoten(knoten));
-    }
+  /**
+   * Gibt die Anzahl der Themengebiete zurück.
+   *
+   * @return Die Anzahl der Themengebiete.
+   */
+  public int gibAnzahlThemenGebiete() {
+    return knotenListe.getLength();
   }
 
-  public GebietDaten[] gibGebietDaten() {
-    GebietDaten[] gebiete = new GebietDaten[knotenListe.getLength()];
-    for (int i = 0; i < knotenListe.getLength(); i++) {
-      Node knoten = knotenListe.item(i);
-      gebiete[i] = new GebietDaten(gibPfadVonKnoten(knoten), gibTitelVonKnoten(knoten), i);
-    }
-    return gebiete;
-  }
-
-  public GebietDaten gibGebietDatenDurchNummer(int nummer) {
+  /**
+   * Gib den Titel des Themengebiets durch eine Indexnummer.
+   *
+   * @param nummer Die Indexnummer des Themengebiets in dem Themenkatalog
+   *               beginnend mit 0.
+   *
+   * @return Der Titel des Themengebiets.
+   */
+  public String gibGebietTitelDurchNummer(int nummer) {
     Node knoten = knotenListe.item(nummer);
-    return new GebietDaten(gibPfadVonKnoten(knoten), gibTitelVonKnoten(knoten), nummer);
+    return gibTitelVonKnoten(knoten);
+  }
+
+  /**
+   * Gib den relative Pfad zur XML-Datei des des Themengebiets durch eine
+   * Indexnummer.
+   *
+   * @param nummer Die Indexnummer des Themengebiets in dem Themenkatalog
+   *               beginnend mit 0.
+   *
+   * @return Der relative Pfad zur XML-Datei des Themengebiets.
+   */
+  public String gibGebietPfadDurchNummer(int nummer) {
+    Node knoten = knotenListe.item(nummer);
+    return gibPfadVonKnoten(knoten);
   }
 
   /**

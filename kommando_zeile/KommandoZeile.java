@@ -29,7 +29,7 @@ public class KommandoZeile {
    *                  2 oder 3).
    */
   private void zeigeAntwort(Frage frage, String[] antworten, int antwortNr) {
-    System.out.println(String.format("  %s: %s", frage.konvertiereAntwortNummer(antwortNr), antworten[antwortNr]));
+    System.out.println(String.format("  %s: %s", Frage.konvertiereAntwortNummer(antwortNr), antworten[antwortNr]));
   }
 
   /**
@@ -126,13 +126,35 @@ public class KommandoZeile {
     }
   }
 
+  /**
+   * Liste die Themengebiete auf.
+   *
+   * @param katalog Der Themenkatalog.
+   */
   private void zeigeThemenGebiete(ThemenKatalog katalog) {
     System.out.println("Wähle ein Themengebiet aus:\n");
-    ThemenKatalog.GebietDaten[] gebietDaten = katalog.gibGebietDaten();
-    for (ThemenKatalog.GebietDaten gebiet : gebietDaten) {
-      System.out.println(String.format("  %s. %s", gebiet.nummer + 1, gebiet.titel));
+
+    for (int i = 0; i < katalog.gibAnzahlThemenGebiete(); i++) {
+      System.out.println(String.format(" %3d. %s", i + 1, katalog.gibGebietTitelDurchNummer(i)));
     }
+
     System.out.print("\nGib die Nummer des Themen-Gebiets ein: ");
+  }
+
+  /**
+   * Wähle ein Themengebiet aus.
+   *
+   * @param scanner Eine Instanz der Scanner-Klasse.
+   * @param katalog Der Themenkatalog.
+   *
+   * @return Die Indexnummer des Themengebiets beginnend bei 0.
+   */
+  private int wähleThemenGebietAus(Scanner scanner, ThemenKatalog katalog) {
+    int gebietsNummer = scanner.nextInt() - 1;
+
+    System.out.println(String.format("Du hast das Themengebiet „%s“ ausgewählt. Das ist eine sehr gute Wahl!",
+        Farbe.grün(katalog.gibGebietTitelDurchNummer(gebietsNummer))));
+    return gebietsNummer;
   }
 
   private void zeigeBeantworteteFragen(FragenListe fragen) {
@@ -153,17 +175,12 @@ public class KommandoZeile {
     ThemenKatalog katalog = new ThemenKatalog();
     zeigeThemenGebiete(katalog);
     Scanner scanner = new Scanner(System.in);
-    int gebietsNummer = scanner.nextInt();
 
-    ThemenKatalog.GebietDaten gebietDaten = katalog.gibGebietDatenDurchNummer(gebietsNummer - 1);
-
-    System.out.println(String.format("Du hast das Themengebiet „%s“ ausgewählt. Das ist eine sehr gute Wahl!",
-        Farbe.grün(gebietDaten.titel)));
+    int gebietsNummer = wähleThemenGebietAus(scanner, katalog);
 
     Spiel spiel = new Spiel();
 
-    ThemenGebiet gebiet = katalog.gibGebietDurchNummer(gebietDaten.nummer);
-
+    ThemenGebiet gebiet = katalog.gibGebietDurchNummer(gebietsNummer);
     gebiet.leseFragenInsSpiel(spiel);
 
     boolean nochImSpiel = true;
