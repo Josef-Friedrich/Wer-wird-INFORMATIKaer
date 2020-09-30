@@ -7,6 +7,16 @@ import org.w3c.dom.NodeList;
 /**
  * Gibt einen Überblick über alle verfügbaren Themengebiete. Die Themengebiete
  * werden in der Datei <code>/FRAGEN/index.xml</code> konfiguriert.
+ *
+ * <pre>
+ * {@code
+ * <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+ * <themenKatalog>
+ *     <themenGebiet pfad="informatik/6_jahrgangsstufe.xml" titel="Informatik 6. Jahrgangsstufe"/>
+ *     <themenGebiet pfad="informatik/7_jahrgangsstufe.xml" titel="Informatik 7. Jahrgangsstufe"/>
+ * </themenKatalog>
+ * }
+ * </pre>
  */
 public class ThemenKatalog extends XMLDatei {
 
@@ -20,16 +30,38 @@ public class ThemenKatalog extends XMLDatei {
     knotenListe = dokument.getElementsByTagName("themenGebiet");
   }
 
+  /**
+   * Gib den Text der XML-Attribute des gegeben XML-Knoten.
+   *
+   * @param knoten Der XML-Knoten des Themengebiets {@code <themenGebiet pfad="" titel=""/>}.
+   * @param attributName Der Name des XML-Attributs.
+   *
+   * @return Der Text des XML-Attributs.
+   */
   private String gibTextAttributVonKnoten(Node knoten, String attributName) {
     NamedNodeMap attributes = knoten.getAttributes();
     Node pfad = attributes.getNamedItem(attributName);
     return pfad.getTextContent();
   }
 
+  /**
+   * Gib den Pfad des Themengebiets.
+   *
+   * @param knoten Der XML-Knoten des Themengebiets {@code <themenGebiet pfad="" titel=""/>}.
+   *
+   * @return Der Text des Pfades.
+   */
   private String gibPfadVonKnoten(Node knoten) {
     return gibTextAttributVonKnoten(knoten, "pfad");
   }
 
+  /**
+   * Gib den Titel des Themengebiets.
+   *
+   * @param knoten Der XML-Knoten des Themengebiets {@code <themenGebiet pfad="" titel=""/>}.
+   *
+   * @return Der Text des Titels.
+   */
   private String gibTitelVonKnoten(Node knoten) {
     return gibTextAttributVonKnoten(knoten, "titel");
   }
