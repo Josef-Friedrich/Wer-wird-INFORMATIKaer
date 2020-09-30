@@ -52,12 +52,25 @@ public class AnsichtSpiel extends Ansicht implements GGKeyListener {
       textFeld.show();
       kachel.show(0);
     }
+
+    public void entferne() {
+      spielfeld.removeActor(kachel);
+      spielfeld.removeActor(textFeld.getTextActor());
+    }
   }
 
   private class GewinnSumme {
     private GGTextField textFeld;
 
+    int x;
+    int y;
+
     public GewinnSumme(int x, int y) {
+      this.x = x;
+      this.y = y;
+    }
+
+    public void zeige() {
       textFeld = new GGTextField(spielfeld, new Location(x, y), true);
       textFeld.setTextColor(Konfiguration.FARBE);
       textFeld.setFont(Konfiguration.SCHRIFT);
@@ -67,6 +80,10 @@ public class AnsichtSpiel extends Ansicht implements GGKeyListener {
 
     public void aktualisiere(long summe) {
       textFeld.setText(String.format("%,d €", summe));
+    }
+
+    public void entferne() {
+      spielfeld.removeActor(textFeld.getTextActor());
     }
   }
 
@@ -109,7 +126,7 @@ public class AnsichtSpiel extends Ansicht implements GGKeyListener {
     String[] antwortenTexte = frage.gibAntworten();
 
     if (frageText != null) {
-      frageText.entferneVomSpielfeld();
+      frageText.entferne();
     }
 
     frageText = new MehrzeiligerText(frageTextnachricht);
@@ -194,6 +211,16 @@ public class AnsichtSpiel extends Ansicht implements GGKeyListener {
   }
 
   public void zeige() {
+    gewinnSumme.zeige();
     zeigeNächsteFrage();
+  }
+
+  public void entferne() {
+    gewinnSumme.entferne();
+    frageText.entferne();
+    for (int i = 0; i < antworten.length; i++) {
+      antworten[i].entferne();
+    }
+
   }
 }

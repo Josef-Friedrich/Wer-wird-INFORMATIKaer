@@ -25,10 +25,10 @@ public class Fenster extends JFrame {
     // kontainer.add(BorderLayout.CENTER, hintergrund);
 
     kontainer.setLayout(new GridBagLayout());
+    pack(); // Must be called before actors are added!
 
     kontainer.add(spielfeld);
     kontainer.setBackground(new Color(152, 152, 255));
-    pack(); // Must be called before actors are added!
   }
 
 }

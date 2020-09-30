@@ -7,16 +7,16 @@ import java.util.HashMap;
 import spiel_logik.Spiel;
 
 import fragen_verwaltung.ThemenGebiet;
-import fragen_verwaltung.ThemenKatalog;
+// import fragen_verwaltung.ThemenKatalog;
 
 @SuppressWarnings("serial")
 public class Spielfeld extends GameGrid implements GGKeyListener {
 
   private Spiel spiel;
 
-  private HashMap<String,Ansicht> ansichten;
+  private HashMap<String, Ansicht> ansichten;
 
-  private String[] ansichtsNamen = new String[]{"spiel", "hilfe"};
+  private String aktuelleAnsicht;
 
   public Spielfeld() {
     // 1024 × 768 -> 1040 x 760
@@ -27,27 +27,47 @@ public class Spielfeld extends GameGrid implements GGKeyListener {
     initialisiereAnsichten();
 
     addKeyListener(this);
-    //show();
+    doRun();
+
+    // show();
+    zeigeAnsicht("themen");
   }
 
   private void initialisiereSpiel() {
     spiel = new Spiel();
 
-    ThemenKatalog katalog = new ThemenKatalog();
+    // ThemenKatalog katalog = new ThemenKatalog();
     // ThemenGebiet gebiet = katalog.gibGebietDurchNummer(0);
     ThemenGebiet gebiet = new ThemenGebiet("/FRAGEN/test/15_fragen.xml");
     gebiet.leseFragenInsSpiel(spiel);
   }
 
   private void initialisiereAnsichten() {
-    ansichten = new HashMap<String,Ansicht>();
+    ansichten = new HashMap<String, Ansicht>();
+    ansichten.put("themen", new AnsichtThemen(this));
     ansichten.put("spiel", new AnsichtSpiel(this));
-    ansichten.put("hilfe", new AnsichtThemen(this));
+    ansichten.put("hilfe", new AnsichtHilfe(this));
+  }
+
+  private Ansicht gibAnsicht(String ansichtsName) {
+    return ansichten.get(ansichtsName);
+  }
+
+  private void entferneAnsicht(String ansichtsName) {
+    System.out.println(ansichtsName);
+    System.out.println(aktuelleAnsicht);
+
+    if (!ansichtsName.equals(aktuelleAnsicht)) {
+      gibAnsicht(ansichtsName).entferne();
+    }
   }
 
   private void zeigeAnsicht(String ansichtsName) {
-    allesLeeren();
-    ansichten.get(ansichtsName).zeige();
+    if (ansichtsName.equals(aktuelleAnsicht))
+      return;
+    entferneAnsicht(ansichtsName);
+    gibAnsicht(ansichtsName).zeige();
+    aktuelleAnsicht = ansichtsName;
   }
 
   public Spiel gibSpiel() {
@@ -71,7 +91,7 @@ public class Spielfeld extends GameGrid implements GGKeyListener {
   public boolean keyPressed(KeyEvent evt) {
     int taste = evt.getKeyCode();
     if (taste == KeyEvent.VK_1) {
-      zeigeAnsicht("spiel");
+      zeigeAnsicht("themen");
     } else if (taste == KeyEvent.VK_2) {
       zeigeAnsicht("hilfe");
     }

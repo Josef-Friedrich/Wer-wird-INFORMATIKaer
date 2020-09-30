@@ -63,7 +63,7 @@ public class MehrzeiligerText {
     }
   }
 
-  public void entferneVomSpielfeld() {
+  public void entferne() {
     for (TextActor eineZeile : zeilen) {
       eineZeile.removeSelf();
     }
