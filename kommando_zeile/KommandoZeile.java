@@ -90,8 +90,8 @@ public class KommandoZeile {
    * @return
    */
   private void zeigeFragenErgebnis(Spiel spiel, Frage frage) throws Exception {
-    String buchstabeRichtig = frage.konvertiereAntwortNummer(frage.gibRichtigeAntwort());
-    String buchstabeAntwort = frage.konvertiereAntwortNummer(frage.gibGegebeneAntwort());
+    String buchstabeRichtig = Frage.konvertiereAntwortNummer(frage.gibRichtigeAntwort());
+    String buchstabeAntwort = Frage.konvertiereAntwortNummer(frage.gibGegebeneAntwort());
     if (frage.istRichtigBeantwortet()) {
       System.out.println(Farbe.grün(String.format("Die Antwort %s war richtig!", buchstabeAntwort)));
       System.out.println(String.format("Deine momentane Gewinnsumme: %s", Farbe.blau(spiel.gibGewinnSumme() + " €")));

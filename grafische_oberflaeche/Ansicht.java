@@ -10,6 +10,4 @@ abstract class Ansicht {
 
   public abstract void zeige();
 
-  public abstract void entferne();
-
 }

@@ -53,19 +53,10 @@ public class Spielfeld extends GameGrid implements GGKeyListener {
     return ansichten.get(ansichtsName);
   }
 
-  private void entferneAnsicht(String ansichtsName) {
-    System.out.println(ansichtsName);
-    System.out.println(aktuelleAnsicht);
-
-    if (!ansichtsName.equals(aktuelleAnsicht)) {
-      gibAnsicht(ansichtsName).entferne();
-    }
-  }
-
   private void zeigeAnsicht(String ansichtsName) {
     if (ansichtsName.equals(aktuelleAnsicht))
       return;
-    entferneAnsicht(ansichtsName);
+    allesLeeren();
     gibAnsicht(ansichtsName).zeige();
     aktuelleAnsicht = ansichtsName;
   }

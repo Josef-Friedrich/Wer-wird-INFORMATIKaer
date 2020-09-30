@@ -40,9 +40,6 @@ public class ReaktiverText implements GGMouseListener {
     rechtsUntenX = linksObenX + textWeite;
     rechtsUntenY = (int) pixelPlatz.getY() + textHöhe / 2;
 
-    GGBackground bg = spielfeld.getBg();
-    bg.setPaintColor(new Color(255, 0, 0));
-    bg.fillRectangle(new Point(linksObenX, linksObenY), new Point(rechtsUntenX, rechtsUntenY));
     spielfeld.addMouseListener(this, GGMouse.move);
   }
 
@@ -52,6 +49,7 @@ public class ReaktiverText implements GGMouseListener {
 
     if (x >= linksObenX && x <= rechtsUntenX && y >= linksObenY && y <= rechtsUntenY) {
       if (istHauptTextSichtbar) {
+        System.out.println(spielfeld.getActors().size());
         spielfeld.removeActor(hauptText);
         spielfeld.addActor(schwebeText, platz);
         istHauptTextSichtbar = false;
