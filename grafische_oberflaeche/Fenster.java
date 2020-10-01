@@ -8,6 +8,8 @@ import java.awt.*;
  */
 public class Fenster extends JFrame {
 
+  private static final long serialVersionUID = 1L;
+
   public Fenster() {
     Spielfeld spielfeld = new Spielfeld();
 

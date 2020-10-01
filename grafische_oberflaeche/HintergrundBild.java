@@ -12,6 +12,8 @@ import javax.swing.JPanel;
  */
 public class HintergrundBild extends JPanel {
 
+  private static final long serialVersionUID = 1L;
+
   private Image image = new ImageIcon("BILDER/hintergrund.jpg").getImage();
 
   @Override

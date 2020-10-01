@@ -2,20 +2,19 @@ package swing_implementation;
 
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
-import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.event.KeyEvent;
 import java.awt.EventQueue;
-import java.awt.Font;
 
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 
 public class HauptFenster extends JFrame {
+
+  private static final long serialVersionUID = 1L;
 
   private final CardLayout ansichtenWechsler;
   private final JPanel hauptAnsicht;
