@@ -1,13 +1,18 @@
 package fragen_verwaltung;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.w3c.dom.Element;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 /**
- * Gibt einen Überblick über alle verfügbaren Themenbereiche und Themengebiete.
- * Diese Klasse liest die Datei <code>/FRAGEN/index.xml</code>
- * ein.
+ * Gib einen Überblick über alle verfügbaren Themenbereiche und Themengebiete.
+ * Diese Klasse liest die Datei <code>/FRAGEN/index.xml</code> ein.
  *
  * Zu den Begriffen: Das Spiel enthält nur einen Themenkatalog. Der
  * Themenkatalog enthält mehrere Themenbereiche (vergleichbar mit
@@ -87,12 +92,38 @@ public class ThemenKatalog extends XMLDatei {
   }
 
   /**
-   * Gibt die Anzahl der Themenbereiche zurück.
+   * Gib die Anzahl der Themenbereiche zurück.
    *
    * @return Die Anzahl der Themenbereiche.
    */
   public int gibAnzahlBereiche() {
     return bereiche.getLength();
+  }
+
+  /**
+   * Gib die Titel und die relativen Pfade der Themengebiete eines Themenbereichs
+   * also Liste zurück. Die Liste besteht aus Hashmaps mit den Schlüsseln „titel“
+   * und „pfad“
+   *
+   * @param nummer Die Nummer in der Liste der Themenbereichs-XML-Knoten beginnend
+   *               mit 0.
+   *
+   * @return Die Titel und die relativen Pfade der Themengebiete eines
+   *         Themenbereichs also Liste. Die Liste besteht aus Hashmaps mit den
+   *         Schlüsseln „titel“ und „pfad“
+   */
+  public List<Map<String, String>> gibBereichDurchNummer(int nummer) {
+    List<Map<String, String>> liste = new ArrayList<Map<String, String>>();
+    Element knoten = (Element) bereiche.item(nummer);
+    NodeList gebiete = knoten.getElementsByTagName("themenGebiet");
+    for (int i = 0; i < gebiete.getLength(); i++) {
+      Node gebietsKnoten = gebiete.item(i);
+      Map<String, String> kontainer = new HashMap<String, String>();
+      kontainer.put("titel", gibTitelVonKnoten(gebietsKnoten));
+      kontainer.put("pfad", gibPfadVonKnoten(gebietsKnoten));
+      liste.add(kontainer);
+    }
+    return liste;
   }
 
   /**
