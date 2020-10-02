@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <themenGebiet>
     <fach>Test</fach>
-    <thema>Nur eine Frage</thema>
+    <thema>3 Test-Fragen</thema>
     <autor>Team Nürnberg</autor>
-    <anzahlFragen>1</anzahlFragen>
+    <anzahlFragen>3</anzahlFragen>
     <fragen>
         <frage>
             <fragenText>Frage 1</fragenText>

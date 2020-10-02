@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <themenGebiet>
     <fach>Test</fach>
-    <thema>10 Fragen</thema>
+    <thema>10 Test-Fragen</thema>
     <autor>Team Nürnberg</autor>
     <anzahlFragen>10</anzahlFragen>
     <fragen>
