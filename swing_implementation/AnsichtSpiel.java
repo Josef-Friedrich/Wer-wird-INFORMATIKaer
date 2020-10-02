@@ -3,14 +3,14 @@ package swing_implementation;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 
-import fragen_verwaltung.ThemenGebiet;
-import spiel_logik.Frage;
-import spiel_logik.Spiel;
-
 import java.awt.GridBagLayout;
 import java.awt.Insets;
 import java.awt.Dimension;
 import java.awt.GridBagConstraints;
+
+import fragen_verwaltung.ThemenGebiet;
+import spiel_logik.Frage;
+import spiel_logik.Spiel;
 
 public class AnsichtSpiel extends Ansicht {
 

@@ -91,8 +91,8 @@ public class HauptFenster extends JFrame {
 
   public static void main(String[] args) {
     EventQueue.invokeLater(() -> {
-      var ex = new HauptFenster();
-      ex.setVisible(true);
+      HauptFenster fenster = new HauptFenster();
+      fenster.setVisible(true);
     });
   }
 }

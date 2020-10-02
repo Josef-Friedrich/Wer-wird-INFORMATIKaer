@@ -37,6 +37,15 @@ public class Frage {
    */
   private int schwierigkeit;
 
+  /**
+   * Die Antwortnummern 0, 1, 2, 3.
+   */
+  public static final int[] ANTWORT_NUMMERN =  { 0, 1, 2, 3 };
+
+  /**
+   * Ein Hilfsfeld, damit wir leicht die Fragen mit A B C D nummerieren können.
+   */
+  public static final String[] ANTWORT_BUCHSTABEN = { "A", "B", "C", "D" };
 
   /**
    * @param fragenText      Der Text der Frage (Der eigentliche Fragensatz).
@@ -165,16 +174,6 @@ public class Frage {
   public String gibRichtigeAntwortText() {
     return antworten[richtigeAntwort];
   }
-
-  /**
-   * Die Antwortnummern 0, 1, 2, 3.
-   */
-  public static final int[] ANTWORT_NUMMERN =  { 0, 1, 2, 3 };
-
-  /**
-   * Ein Hilfsfeld, damit wir leicht die Fragen mit A B C D nummerieren können.
-   */
-  public static final String[] ANTWORT_BUCHSTABEN = { "A", "B", "C", "D" };
 
   /**
    * Wandelt eine Antwortnummer (0, 1, 2, 3) in einen Antwortbuchstaben (A, B, C,
