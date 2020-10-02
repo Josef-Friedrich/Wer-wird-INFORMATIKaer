@@ -1,27 +1,34 @@
-
-import kommandozeilen_implementation.KommandoZeile;
-
-import java.awt.*;
-
-//import jgamegrid_implementation.Fenster;
+import kommandozeilen_implementation.KommandozeilenStarter;
+import swing_implementation.SwingStarter;
 
 /**
- * Hauptklasse, die die main Methode enthält.
- *
- * In dieser werden die zwei Pakete spiel und gui zusammengefügt.
+ * Hauptklasse, die die main Methode enthält. Über Argumente der Kommandozeile
+ * können die verschiedenen Implementationen des Spiels aufrufen werden.
  */
 public class SpielManager {
 
-  public static void main(String[] args) throws Exception {
-    if (args.length > 0 && args[0].equals("cli")) {
-      new KommandoZeile();
+  /**
+   * Der Einstiegspunkt des Spiels. Werden keine Kommandozeilenargumente übergeben
+   * öffnet sich automatisch die Swing-Implementation des Spiels.
+   *
+   * @param args Der Text {@code swing} öffnet die Swing-Implementation des
+   *             Spiels. Der Text {@code cli} (Command Line Interface) öffnet die
+   *             Kommanozeilen-Implementation des Spiels.
+   */
+  public static void main(String[] args) {
+    if (args.length == 0) {
+      new SwingStarter();
+      return;
+    }
+
+    String argument = args[0];
+
+    if (argument.equals("cli")) {
+      new KommandozeilenStarter();
+    } else if (argument.equals("cli")) {
+      new SwingStarter();
     } else {
-      // Wie hier beschrieben: http://www.aplu.ch/home/apluhomex.jsp?site=46
-      // EventQueue.invokeLater(new Runnable() {
-      //   public void run() {
-      //     new Fenster().setVisible(true);
-      //   }
-      // });
+      new SwingStarter();
     }
   }
 }
