@@ -16,6 +16,12 @@ public class ThemenKatalogTest {
   }
 
   @Test
+  public void methodeGibBereichsNameDurchNummer() {
+    ThemenKatalog katalog = new ThemenKatalog();
+    assertEquals("Allgemeine Wissensfragen", katalog.gibBereichsNameDurchNummer(0));
+  }
+
+  @Test
   public void methodeGibBereichDurchNummer() {
     ThemenKatalog katalog = new ThemenKatalog();
     List<Map<String, String>> liste = katalog.gibBereichDurchNummer(0);

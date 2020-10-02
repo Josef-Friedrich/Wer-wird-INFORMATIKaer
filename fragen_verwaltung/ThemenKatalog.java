@@ -101,6 +101,22 @@ public class ThemenKatalog extends XMLDatei {
   }
 
   /**
+   * Gib den Namen der Themenbereiche zurück. Der Name ist in
+   * {@code <name>}-XML-Tags eingeschlossen.
+   *
+   * @param nummer Die Nummer in der Liste der Themenbereichs-XML-Knoten beginnend
+   *               mit 0.
+   *
+   * @return Der Name der Themenbereiche.
+   */
+  public String gibBereichsNameDurchNummer(int nummer) {
+    Element element = (Element) bereiche.item(nummer);
+    NodeList namen = element.getElementsByTagName("name");
+    Node name = namen.item(0);
+    return name.getTextContent();
+  }
+
+  /**
    * Gib die Titel und die relativen Pfade der Themengebiete eines Themenbereichs
    * also Liste zurück. Die Liste besteht aus Hashmaps mit den Schlüsseln „titel“
    * und „pfad“
