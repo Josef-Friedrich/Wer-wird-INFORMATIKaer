@@ -27,9 +27,9 @@ public class HauptFenster extends JFrame {
     setLocationRelativeTo(null);
     setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-    hauptAnsicht = new JPanel();
+    hauptAnsicht = Konfiguration.hauptAnsicht;
     hauptAnsicht.setPreferredSize(new Dimension(250, 150));
-    ansichtenWechsler = new CardLayout();
+    ansichtenWechsler = Konfiguration.ansichtenWechsler;
     hauptAnsicht.setLayout(ansichtenWechsler);
     hauptAnsicht.setBackground(Konfiguration.FARBE_HINTERGRUND);
     initialisiereAnsichten();
@@ -38,7 +38,7 @@ public class HauptFenster extends JFrame {
     add(hauptAnsicht, BorderLayout.CENTER);
     pack();
     setVisible(true);
-    zeigeAnsicht("spiel");
+    zeigeAnsicht("start");
   }
 
   private void initialisiereAnsichten() {
