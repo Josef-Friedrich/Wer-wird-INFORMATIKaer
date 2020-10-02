@@ -11,4 +11,11 @@
     <themenGebiet pfad="allgemein/gs_02.xml" titel="Allgemeinwissen (leicht) II"/>
     <themenGebiet pfad="allgemein/gs_03.xml" titel="Allgemeinwissen (leicht) III"/>
     <themenGebiet pfad="allgemein/ernaehrung.xml" titel="Ernährung"/>
+    <themenBereich>
+        <name>Informatik</name>
+        <gebiete>
+            <themenGebiet pfad="informatik/6_jahrgangsstufe.xml" titel="6. Jahrgangsstufe"/>
+            <themenGebiet pfad="informatik/7_jahrgangsstufe.xml" titel="7. Jahrgangsstufe"/>
+        </gebiete>
+    </themenBereich>
 </themenKatalog>
