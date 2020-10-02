@@ -3,7 +3,7 @@ import kommandozeilen_implementation.KommandoZeile;
 
 import java.awt.*;
 
-import jgamegrid_implementation.Fenster;
+//import jgamegrid_implementation.Fenster;
 
 /**
  * Hauptklasse, die die main Methode enthält.
@@ -17,11 +17,11 @@ public class SpielManager {
       new KommandoZeile();
     } else {
       // Wie hier beschrieben: http://www.aplu.ch/home/apluhomex.jsp?site=46
-      EventQueue.invokeLater(new Runnable() {
-        public void run() {
-          new Fenster().setVisible(true);
-        }
-      });
+      // EventQueue.invokeLater(new Runnable() {
+      //   public void run() {
+      //     new Fenster().setVisible(true);
+      //   }
+      // });
     }
   }
 }
