@@ -5,8 +5,6 @@ import java.awt.Font;
 import javax.swing.JLabel;
 
 import java.awt.Color;
-import java.awt.CardLayout;
-import javax.swing.JPanel;
 
 public class Konfiguration {
 
@@ -30,13 +28,6 @@ public class Konfiguration {
     JLabel ueberschrift = new JLabel(text);
     ueberschrift.setFont(SCHRIFT);
     return ueberschrift;
-  }
-
-  public static final JPanel hauptAnsicht = new JPanel();
-  public static final CardLayout ansichtenWechsler = new CardLayout();
-
-  public static void zeigeAnsicht(String ansichtenName) {
-    ansichtenWechsler.show(hauptAnsicht, ansichtenName);
   }
 
 }

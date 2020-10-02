@@ -12,9 +12,6 @@ public class HauptFenster extends JFrame {
 
   private static final long serialVersionUID = 1L;
 
-  private final CardLayout ansichtenWechsler;
-  private final JPanel hauptAnsicht;
-
   public HauptFenster() {
     setJMenuBar(new MenuLeiste());
 
@@ -23,29 +20,18 @@ public class HauptFenster extends JFrame {
     setLocationRelativeTo(null);
     setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-    hauptAnsicht = Konfiguration.hauptAnsicht;
+    JPanel hauptAnsicht = AnsichtenVerwalter.hauptAnsicht;
     hauptAnsicht.setPreferredSize(new Dimension(250, 150));
-    ansichtenWechsler = Konfiguration.ansichtenWechsler;
+    CardLayout ansichtenWechsler = AnsichtenVerwalter.ansichtenWechsler;
     hauptAnsicht.setLayout(ansichtenWechsler);
     hauptAnsicht.setBackground(Konfiguration.FARBE_HINTERGRUND);
-    initialisiereAnsichten();
+    AnsichtenVerwalter.initialisiereAnsichten();
 
     setLayout(new BorderLayout());
     add(hauptAnsicht, BorderLayout.CENTER);
     pack();
     setVisible(true);
-    zeigeAnsicht("start");
-  }
-
-  private void initialisiereAnsichten() {
-    hauptAnsicht.add("start", new AnsichtStartSeite());
-    hauptAnsicht.add("themen", new AnsichtThemenGebiete());
-    hauptAnsicht.add("spiel", new AnsichtSpiel());
-    hauptAnsicht.add("über", new AnsichtÜberProjekt());
-  }
-
-  private void zeigeAnsicht(String ansichtenName) {
-    ansichtenWechsler.show(hauptAnsicht, ansichtenName);
+    AnsichtenVerwalter.zeigeAnsicht("start");
   }
 
   public static void main(String[] args) {

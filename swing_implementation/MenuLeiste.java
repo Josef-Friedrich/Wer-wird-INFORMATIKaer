@@ -58,7 +58,7 @@ public class MenuLeiste extends JMenuBar {
    */
   private JMenuItem erzeugeAnsichtenEintrag(String beschriftung, String anzeigenName) {
     JMenuItem eintrag = new JMenuItem(beschriftung);
-    eintrag.addActionListener((event) -> Konfiguration.zeigeAnsicht(anzeigenName));
+    eintrag.addActionListener((event) -> AnsichtenVerwalter.zeigeAnsicht(anzeigenName));
     return eintrag;
   }
 

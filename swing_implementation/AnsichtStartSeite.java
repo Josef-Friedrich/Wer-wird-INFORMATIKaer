@@ -41,7 +41,7 @@ public class AnsichtStartSeite extends Ansicht {
     taste.setForeground(Konfiguration.FARBE_VIOLETT);
     taste.setPreferredSize(new Dimension(600, 100));
     taste.setFont(Konfiguration.SCHRIFT);
-    taste.addActionListener((event) -> Konfiguration.zeigeAnsicht("spiel"));
+    taste.addActionListener((event) -> AnsichtenVerwalter.zeigeAnsicht("spiel"));
     layoutEinstellung.insets = new Insets(5, 5, 5, 5);
     layoutEinstellung.gridy = gridx;
     add(taste, layoutEinstellung);
