@@ -43,14 +43,29 @@ public class ThemenGebiet extends XMLDatei {
     super(pfad);
   }
 
+  /**
+   * Gibt den Text des XML-Tags {@code <fach>} zurück.
+   *
+   * @return Der Text des XML-Tags {@code <fach>}.
+   */
   public String gibFach() {
     return leseTextInhalt("fach");
   }
 
+  /**
+   * Gibt den Text des XML-Tags {@code <thema>} zurück.
+   *
+   * @return Der Text des XML-Tags {@code <thema>}.
+   */
   public String gibThema() {
     return leseTextInhalt("thema");
   }
 
+  /**
+   * Gibt den Text des XML-Tags {@code <autor>} zurück.
+   *
+   * @return Der Text des XML-Tags {@code <autor>}.
+   */
   public String gibAutor() {
     return leseTextInhalt("autor");
   }
@@ -64,16 +79,16 @@ public class ThemenGebiet extends XMLDatei {
    * @return Die Anzahl der Fragen.
    */
   public int gibAnzahlFragen() {
-    return dokument.getElementsByTagName("frage").getLength();
+    return gibDokument().getElementsByTagName("frage").getLength();
   }
 
   /**
    * Liest die Fragen einer Jahrgangsstufe in die Klasse Spiel ein.
    *
-   * @param spiel Eine Instanz der Klasse {@link Spiel}
+   * @param spiel Eine Instanz der Klasse {@link spiel_logik.Spiel}
    */
   public void leseFragenInsSpiel(Spiel spiel) {
-    NodeList knotenListe = dokument.getElementsByTagName("frage");
+    NodeList knotenListe = gibDokument().getElementsByTagName("frage");
     for (int i = 0; i < knotenListe.getLength(); i++) {
       Node frage = knotenListe.item(i);
 

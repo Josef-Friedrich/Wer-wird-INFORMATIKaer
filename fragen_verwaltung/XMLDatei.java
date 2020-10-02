@@ -17,13 +17,19 @@ import org.xml.sax.SAXException;
  */
 public class XMLDatei {
 
-  protected Element wurzel;
+  /**
+   * Eine Instanze der XML-Klasse {@link org.w3c.dom.Document}.
+   */
+  private Document dokument;
 
-  protected Document dokument;
+  /**
+   * Das Wurzelelement des XML-Dokuments (z. B. {@code <themenKatalog>}).
+   */
+  private Element wurzel;
 
   /**
    *
-   * @param pfad Eine relativer Pfad (relative zum Ordner src/main/resources)
+   * @param pfad Eine relativer Pfad (relative zum Ordner /FRAGEN)
    */
   public XMLDatei(String pfad) {
 
@@ -39,12 +45,22 @@ public class XMLDatei {
 
   }
 
-  public Element gibWurzel() {
-    return wurzel;
-  }
-
+  /**
+   * Gib eine Instanze der XML-Klasse {@link org.w3c.dom.Document} zurück.
+   *
+   * @return Eine Instanze der XML-Klasse {@link org.w3c.dom.Document}.
+   */
   public Document gibDokument() {
     return dokument;
+  }
+
+  /**
+   * Gib das Wurzelelement des XML-Dokuments (z. B. {@code<themenKatalog>}) zurück.
+   *
+   * @return Das Wurzelelement des XML-Dokuments (z. B. {@code<themenKatalog>}).
+   */
+  public Element gibWurzel() {
+    return wurzel;
   }
 
   /**
@@ -69,7 +85,7 @@ public class XMLDatei {
    * @return Der Textinhalt des Elements.
    */
   protected String leseTextInhalt(String elementName) {
-    NodeList nodeList = dokument.getElementsByTagName(elementName);
+    NodeList nodeList = gibDokument().getElementsByTagName(elementName);
     Node node = nodeList.item(0);
     if (node == null) {
       return "";

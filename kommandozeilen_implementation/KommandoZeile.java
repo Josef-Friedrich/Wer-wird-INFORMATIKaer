@@ -134,7 +134,7 @@ public class KommandoZeile {
   private void zeigeThemenGebiete(ThemenKatalog katalog) {
     System.out.println("Wähle ein Themengebiet aus:\n");
 
-    for (int i = 0; i < katalog.gibAnzahlThemenGebiete(); i++) {
+    for (int i = 0; i < katalog.gibAnzahlGebiete(); i++) {
       System.out.println(String.format(" %3d. %s", i + 1, katalog.gibGebietTitelDurchNummer(i)));
     }
 

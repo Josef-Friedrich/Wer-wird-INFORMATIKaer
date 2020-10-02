@@ -7,9 +7,9 @@ import org.junit.Test;
 public class ThemenKatalogTest {
 
   @Test
-  public void methodeGibAnzahlThemenGebiete() {
+  public void methodeGibAnzahlGebiete() {
     ThemenKatalog katalog = new ThemenKatalog();
-    assertEquals(149, katalog.gibAnzahlThemenGebiete());
+    assertEquals(149, katalog.gibAnzahlGebiete());
   }
 
   @Test

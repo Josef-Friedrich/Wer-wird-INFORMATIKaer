@@ -5,15 +5,26 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 /**
- * Gibt einen Überblick über alle verfügbaren Themengebiete. Die Themengebiete
- * werden in der Datei <code>/FRAGEN/index.xml</code> konfiguriert.
+ * Gibt einen Überblick über alle verfügbaren Themenbereiche und Themengebiete.
+ * Diese Klasse liest die Datei <code>/FRAGEN/index.xml</code>
+ * ein.
+ *
+ * Zu den Begriffen: Das Spiel enthält nur einen Themenkatalog. Der
+ * Themenkatalog enthält mehrere Themenbereiche (vergleichbar mit
+ * Unterrichtsfächern). Ein Themenbereich ist wiederrum in mehrere Themengebiete
+ * (vergleichbar mit einzelnen Themen aus dem Lehrplan oder Jahrgangsstufen)
+ * unterteilt.
  *
  * <pre>
  * {@code
  * <?xml version="1.0" encoding="UTF-8" standalone="no"?>
  * <themenKatalog>
- *     <themenGebiet pfad="informatik/6_jahrgangsstufe.xml" titel="Informatik 6. Jahrgangsstufe"/>
- *     <themenGebiet pfad="informatik/7_jahrgangsstufe.xml" titel="Informatik 7. Jahrgangsstufe"/>
+ *     <themenBereich>
+ *         <name>Allgemeine Wissensfragen</name>
+ *         <gebiete>
+ *             <themenGebiet pfad="allgemein/allg02.xml" titel=""/>
+ *         </gebiete>
+ *     </themenBereich>
  * </themenKatalog>
  * }
  * </pre>
@@ -21,19 +32,26 @@ import org.w3c.dom.NodeList;
 public class ThemenKatalog extends XMLDatei {
 
   /**
+   * Eine Liste mit Knoten der XML-Tags {@code <themenBereich>}.
+   */
+  private NodeList bereiche;
+
+  /**
    * Eine Liste mit Knoten der XML-Tags {@code <themenGebiet>}.
    */
-  NodeList knotenListe;
+  private NodeList gebiete;
 
   public ThemenKatalog() {
     super("/FRAGEN/index.xml");
-    knotenListe = dokument.getElementsByTagName("themenGebiet");
+    bereiche = gibDokument().getElementsByTagName("themenBereich");
+    gebiete = gibDokument().getElementsByTagName("themenGebiet");
   }
 
   /**
    * Gib den Text der XML-Attribute des gegeben XML-Knoten.
    *
-   * @param knoten Der XML-Knoten des Themengebiets {@code <themenGebiet pfad="" titel=""/>}.
+   * @param knoten       Der XML-Knoten des Themengebiets
+   *                     {@code <themenGebiet pfad="" titel=""/>}.
    * @param attributName Der Name des XML-Attributs.
    *
    * @return Der Text des XML-Attributs.
@@ -47,7 +65,8 @@ public class ThemenKatalog extends XMLDatei {
   /**
    * Gib den Pfad des Themengebiets.
    *
-   * @param knoten Der XML-Knoten des Themengebiets {@code <themenGebiet pfad="" titel=""/>}.
+   * @param knoten Der XML-Knoten des Themengebiets
+   *               {@code <themenGebiet pfad="" titel=""/>}.
    *
    * @return Der Text des Pfades.
    */
@@ -58,7 +77,8 @@ public class ThemenKatalog extends XMLDatei {
   /**
    * Gib den Titel des Themengebiets.
    *
-   * @param knoten Der XML-Knoten des Themengebiets {@code <themenGebiet pfad="" titel=""/>}.
+   * @param knoten Der XML-Knoten des Themengebiets
+   *               {@code <themenGebiet pfad="" titel=""/>}.
    *
    * @return Der Text des Titels.
    */
@@ -67,12 +87,21 @@ public class ThemenKatalog extends XMLDatei {
   }
 
   /**
+   * Gibt die Anzahl der Themenbereiche zurück.
+   *
+   * @return Die Anzahl der Themenbereiche.
+   */
+  public int gibAnzahlBereiche() {
+    return bereiche.getLength();
+  }
+
+  /**
    * Gibt die Anzahl der Themengebiete zurück.
    *
    * @return Die Anzahl der Themengebiete.
    */
-  public int gibAnzahlThemenGebiete() {
-    return knotenListe.getLength();
+  public int gibAnzahlGebiete() {
+    return gebiete.getLength();
   }
 
   /**
@@ -84,7 +113,7 @@ public class ThemenKatalog extends XMLDatei {
    * @return Der Titel des Themengebiets.
    */
   public String gibGebietTitelDurchNummer(int nummer) {
-    Node knoten = knotenListe.item(nummer);
+    Node knoten = gebiete.item(nummer);
     return gibTitelVonKnoten(knoten);
   }
 
@@ -98,7 +127,7 @@ public class ThemenKatalog extends XMLDatei {
    * @return Der relative Pfad zur XML-Datei des Themengebiets.
    */
   public String gibGebietPfadDurchNummer(int nummer) {
-    Node knoten = knotenListe.item(nummer);
+    Node knoten = gebiete.item(nummer);
     return gibPfadVonKnoten(knoten);
   }
 
@@ -108,7 +137,7 @@ public class ThemenKatalog extends XMLDatei {
    * @return Das ausgewählte Themengebiet.
    */
   public ThemenGebiet gibGebietDurchNummer(int nummer) {
-    Node knoten = knotenListe.item(nummer);
+    Node knoten = gebiete.item(nummer);
     ThemenGebiet gebiet = new ThemenGebiet("/FRAGEN/" + gibPfadVonKnoten(knoten));
     return gebiet;
   }
