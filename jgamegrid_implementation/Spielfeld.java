@@ -1,4 +1,4 @@
-package grafische_oberflaeche;
+package jgamegrid_implementation;
 
 import ch.aplu.jgamegrid.*;
 import java.awt.event.KeyEvent;

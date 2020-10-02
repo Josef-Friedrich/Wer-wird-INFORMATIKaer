@@ -1,4 +1,4 @@
-package kommando_zeile;
+package kommandozeilen_implementation;
 
 /**
  * Stellt statische Methoden zur Verfügung, mit denen Text in der Kommandozeile

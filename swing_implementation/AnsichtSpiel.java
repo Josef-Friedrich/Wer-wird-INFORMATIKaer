@@ -16,6 +16,8 @@ public class AnsichtSpiel extends Ansicht {
 
   public class AntwortTaste extends JButton {
 
+    private static final long serialVersionUID = 1L;
+
     public AntwortTaste() {
       setPreferredSize(new Dimension(600, 100));
     }

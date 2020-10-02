@@ -1,9 +1,9 @@
 
-import grafische_oberflaeche.Fenster;
-
-import kommando_zeile.KommandoZeile;
+import kommandozeilen_implementation.KommandoZeile;
 
 import java.awt.*;
+
+import jgamegrid_implementation.Fenster;
 
 /**
  * Hauptklasse, die die main Methode enthält.

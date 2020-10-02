@@ -1,4 +1,4 @@
-package kommando_zeile;
+package kommandozeilen_implementation;
 
 import spiel_logik.Spiel;
 import spiel_logik.Frage;

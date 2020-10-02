@@ -1,4 +1,4 @@
-package grafische_oberflaeche;
+package jgamegrid_implementation;
 
 import java.awt.Color;
 import java.awt.Font;

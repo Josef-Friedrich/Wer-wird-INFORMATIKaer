@@ -4,4 +4,4 @@
  *
  * Diese Paket ist nur für Test-Zwecke gedacht.
  */
-package kommando_zeile;
+package kommandozeilen_implementation;
