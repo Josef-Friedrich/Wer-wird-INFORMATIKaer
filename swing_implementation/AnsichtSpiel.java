@@ -8,7 +8,6 @@ import java.awt.Insets;
 import java.awt.Dimension;
 import java.awt.GridBagConstraints;
 
-import fragen_verwaltung.ThemenGebiet;
 import spiel_logik.Frage;
 import spiel_logik.Spiel;
 
@@ -75,10 +74,7 @@ public class AnsichtSpiel extends Ansicht {
   }
 
   private void initialisiereSpiel() {
-    spiel = new Spiel();
-
-    ThemenGebiet gebiet = new ThemenGebiet("/FRAGEN/test/15_fragen.xml");
-    gebiet.leseFragenInsSpiel(spiel);
+    spiel = SpielSteuerung.lade("/FRAGEN/test/15_fragen.xml");
   }
 
   private JLabel erzeugeFragenText(int gridx) {

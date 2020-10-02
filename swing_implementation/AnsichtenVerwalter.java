@@ -11,8 +11,8 @@ import javax.swing.JPanel;
  * erlaubt.
  *
  * Ansichten sind Spezialisierungen der Swing Klasse {@link javax.swing.JPanel}.
- * Mit Hilfe eines eines CardLayouts könnenn zwischen den einzelnen Ansichten
- * umgeschaltete werden.
+ * Mit Hilfe eines CardLayouts können zwischen den einzelnen Ansichten
+ * umgeschaltet werden.
  */
 public class AnsichtenVerwalter {
 

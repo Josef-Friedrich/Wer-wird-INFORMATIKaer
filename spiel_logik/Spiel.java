@@ -27,7 +27,7 @@ public class Spiel {
 
   /**
    * Die aktuelle Schwierigkeit der ausgewählten Fragen. Die Schwierigkeit der
-   * Fragen sollte steigen. 1 ist die leichte. 5 ist schwer.
+   * Fragen steigt. 1 ist die leichteste Schwierigkeitsstufe. 5 ist schwer.
    */
   private int schwierigkeit = 1;
 
@@ -48,13 +48,38 @@ public class Spiel {
    */
   private boolean verloren = false;
 
+  /**
+   * Die Anzahl der ins Spiel geladenen Fragen. Die Summe der beantworteten Fragen
+   * und der unbeantworteten Fragen sollten diese Zahl ergeben.
+   */
   private int anzahlFragen = 0;
 
+  /**
+   * Dieser Konstruktor startet ein neues Spiel ohne Fragen. Es müssen erst Fragen
+   * ins Spiel geladen werden.
+   */
   public Spiel() {
     unbeantworteteFragen = new FragenListe();
     beantworteteFragen = new FragenListe();
   }
 
+  /**
+   * Dieser Konstruktor lädt gleich zum Start des neuen Spiels Fragen.
+   *
+   * @param dateiPfad Eine Pfad zu einer Themengebiets-XML-Datei. Relativer Pfad
+   *                  zum Projektverzeichnis, beispielsweise
+   *                  <code>"/FRAGEN/informatik/6_jahrgangsstufe.xml"</code>.
+   */
+  public Spiel(String dateiPfad) {
+    this();
+    ladeThemenGebiet(dateiPfad);
+  }
+
+  /**
+   * Gib die Anzahl der ins Spiel geladenen Fragen.
+   *
+   * @return Gib die Anzahl der ins Spiel geladenen Fragen.
+   */
   public int gibAnzahlFragen() {
     return anzahlFragen;
   }
@@ -203,7 +228,9 @@ public class Spiel {
   /**
    * Lade ein Themengebiet ins Spiel.
    *
-   * @param dateiPfad
+   * @param dateiPfad Eine Pfad zu einer Themengebiets-XML-Datei. Relativer Pfad
+   *                  zum Projektverzeichnis, beispielsweise
+   *                  <code>"/FRAGEN/informatik/6_jahrgangsstufe.xml"</code>.
    */
   public void ladeThemenGebiet(String dateiPfad) {
     ThemenGebiet gebiet = new ThemenGebiet(dateiPfad);
