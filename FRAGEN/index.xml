@@ -1,21 +1,232 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <themenKatalog>
-    <themenGebiet pfad="informatik/6_jahrgangsstufe.xml" titel="Informatik 6. Jahrgangsstufe"/>
-    <themenGebiet pfad="informatik/7_jahrgangsstufe.xml" titel="Informatik 7. Jahrgangsstufe"/>
-    <themenGebiet pfad="test/10_fragen.xml" titel="Test: 10 Fragen"/>
-    <themenGebiet pfad="test/01_frage.xml" titel="Test: nur eine Frage"/>
-    <themenGebiet pfad="test/03_fragen.xml" titel="Test: 3 Fragen"/>
-    <themenGebiet pfad="allgemein/allg02.xml" titel="Allgemeinwissen I"/>
-    <themenGebiet pfad="allgemein/bigquiz.xml" titel="Allgemeinwissen II"/>
-    <themenGebiet pfad="allgemein/gs_01.xml" titel="Allgemeinwissen (leicht) I"/>
-    <themenGebiet pfad="allgemein/gs_02.xml" titel="Allgemeinwissen (leicht) II"/>
-    <themenGebiet pfad="allgemein/gs_03.xml" titel="Allgemeinwissen (leicht) III"/>
-    <themenGebiet pfad="allgemein/ernaehrung.xml" titel="Ernährung"/>
+    <themenBereich>
+        <name>Allgemeine Wissensfragen</name>
+        <gebiete>
+            <themenGebiet pfad="allgemein/allg02.xml" titel="Allgemeinwissen"/>
+            <themenGebiet pfad="allgemein/bigquiz.xml" titel="Big Quiz"/>
+            <themenGebiet pfad="allgemein/das_jahr.xml" titel="RUND UM DAS JAHR"/>
+            <themenGebiet pfad="allgemein/eisenbahn.xml" titel="Rund um die Eisenbahn"/>
+            <themenGebiet pfad="allgemein/ernaehrung.xml" titel="Ernährung"/>
+            <themenGebiet pfad="allgemein/fliegerei.xml" titel="Rund um die Flugzeuge"/>
+            <themenGebiet pfad="allgemein/formel1rb.xml" titel="Rund um die Formel 1 (2007)"/>
+            <themenGebiet pfad="allgemein/formel1r.xml" titel="Rund um die Formel 1"/>
+            <themenGebiet pfad="allgemein/formel1w.xml" titel="Formel 1 Weltmeister"/>
+            <themenGebiet pfad="allgemein/gs_01.xml" titel="Grundschule 1"/>
+            <themenGebiet pfad="allgemein/gs_02.xml" titel="Grundschule 2"/>
+            <themenGebiet pfad="allgemein/gs_03.xml" titel="Grundschule 3"/>
+            <themenGebiet pfad="allgemein/gs_04.xml" titel="Grundschule 4"/>
+            <themenGebiet pfad="allgemein/gs_05.xml" titel="Grundschule 5"/>
+            <themenGebiet pfad="allgemein/gs_06.xml" titel="Grundschule 6"/>
+            <themenGebiet pfad="allgemein/gs_07.xml" titel="Grundschule 7"/>
+            <themenGebiet pfad="allgemein/gs_08.xml" titel="Grundschule 8"/>
+            <themenGebiet pfad="allgemein/gs_l_01.xml" titel="Grundschule leicht"/>
+            <themenGebiet pfad="allgemein/gs_l_02.xml" titel="Grundschule B"/>
+            <themenGebiet pfad="allgemein/gs_s_01.xml" titel="Grundschule C"/>
+            <themenGebiet pfad="allgemein/gs_s_02.xml" titel="Grundschule D"/>
+            <themenGebiet pfad="allgemein/gs_s_03.xml" titel="Grundschule E"/>
+            <themenGebiet pfad="allgemein/gs_s_04.xml" titel="Grundschule schwer 4"/>
+            <themenGebiet pfad="allgemein/kfz_01.xml" titel="KFZ Zeichen"/>
+            <themenGebiet pfad="allgemein/kfz_02.xml" titel="Internationale KFZ Zeichen"/>
+            <themenGebiet pfad="allgemein/ostern.xml" titel="Rund um Ostern"/>
+            <themenGebiet pfad="allgemein/pferde.xml" titel="Rund um die Pferde"/>
+            <themenGebiet pfad="allgemein/radfahrausbildung.xml" titel="Radfahrausbildung"/>
+            <themenGebiet pfad="allgemein/rund_um_die_indianer.xml" titel="Rund um die Indianer"/>
+            <themenGebiet pfad="allgemein/rund_um_die_ritter.xml" titel="Rund um die Ritter"/>
+            <themenGebiet pfad="allgemein/smileys.xml" titel="Rund um die Smiley´s"/>
+            <themenGebiet pfad="allgemein/titanic.xml" titel="Rund um die Titanic"/>
+            <themenGebiet pfad="allgemein/weihncht.xml" titel="Rund um die Weihnachtszeit"/>
+            <themenGebiet pfad="allgemein/wolken.xml" titel="Rund um die Wolken"/>
+        </gebiete>
+    </themenBereich>
+    <themenBereich>
+        <name>Biologie</name>
+        <gebiete>
+            <themenGebiet pfad="biologie/baeren.xml" titel="Rund um die Bären"/>
+            <themenGebiet pfad="biologie/dinos.xml" titel="Dinosaurier"/>
+            <themenGebiet pfad="biologie/frosch.xml" titel="Amphibien"/>
+            <themenGebiet pfad="biologie/fuchs.xml" titel="Der Fuchs und anderes vom Wald"/>
+            <themenGebiet pfad="biologie/genetik.xml" titel="Klassische Genetik"/>
+            <themenGebiet pfad="biologie/getreide.xml" titel="Getreide"/>
+            <themenGebiet pfad="biologie/haustiere.xml" titel="Rund um Haus- und Bauernhoftiere"/>
+            <themenGebiet pfad="biologie/krabbeltiere.xml" titel="Krabbeltiere"/>
+            <themenGebiet pfad="biologie/lebewesn.xml" titel="Lebewesen"/>
+            <themenGebiet pfad="biologie/rund_um_den_menschlichen_koerper_leicht.xml" titel="Rund um den menschlichen Körper"/>
+            <themenGebiet pfad="biologie/rund_um_den_menschlichen_koerper.xml" titel="Rund um den menschlichen Körper"/>
+            <themenGebiet pfad="biologie/rund_um_den_wolf.xml" titel="Rund um den Wolf"/>
+            <themenGebiet pfad="biologie/sexkundequiz1.xml" titel="Gut zu wissen I"/>
+            <themenGebiet pfad="biologie/sexkundequiz2.xml" titel="Gut zu wissen II"/>
+            <themenGebiet pfad="biologie/tiere_01.xml" titel="Tierquiz 1"/>
+            <themenGebiet pfad="biologie/tiere_02.xml" titel="Tierquiz 2"/>
+            <themenGebiet pfad="biologie/tiere_03.xml" titel="Tierquiz 3"/>
+            <themenGebiet pfad="biologie/tiere_04.xml" titel="Tierquiz 4"/>
+            <themenGebiet pfad="biologie/tiere_05.xml" titel="Tierquiz 5"/>
+            <themenGebiet pfad="biologie/voegel01.xml" titel="Alles was Flügel hat fliegt"/>
+            <themenGebiet pfad="biologie/voegel02.xml" titel="Rund um die Vögel"/>
+            <themenGebiet pfad="biologie/wald.xml" titel="Rund um den Wald"/>
+            <themenGebiet pfad="biologie/wale.xml" titel="Wale"/>
+            <themenGebiet pfad="biologie/wasserleben.xml" titel="Rund um das Leben am und im Wasser"/>
+        </gebiete>
+    </themenBereich>
+    <themenBereich>
+        <name>Chemie</name>
+        <gebiete>
+            <themenGebiet pfad="chemie/chemie.xml" titel="Chemie"/>
+        </gebiete>
+    </themenBereich>
+    <themenBereich>
+        <name>Deutsch</name>
+        <gebiete>
+            <themenGebiet pfad="deutsch/abc.xml" titel="A B C"/>
+            <themenGebiet pfad="deutsch/adjekt01.xml" titel="Finde das Eigenschaftswort (Adjektiv) !"/>
+            <themenGebiet pfad="deutsch/buecherquiz.xml" titel="Bücherquiz"/>
+            <themenGebiet pfad="deutsch/gramm_01.xml" titel="Grammatik"/>
+            <themenGebiet pfad="deutsch/gramm_02.xml" titel="Grammatik, Stand 11.04.01"/>
+            <themenGebiet pfad="deutsch/harry_potter_01.xml" titel="Harry Potter"/>
+            <themenGebiet pfad="deutsch/komma.xml" titel="Welches Wort steht v o r dem Komma?"/>
+            <themenGebiet pfad="deutsch/lesen_01.xml" titel="Lesen 1"/>
+            <themenGebiet pfad="deutsch/lesen_2.xml" titel="Lesen 2"/>
+            <themenGebiet pfad="deutsch/lesetest.xml" titel="Finde das Wort, das n i c h t zum Satz passt !"/>
+            <themenGebiet pfad="deutsch/maerchen.xml" titel="Märchen"/>
+            <themenGebiet pfad="deutsch/silben.xml" titel="Silben"/>
+            <themenGebiet pfad="deutsch/sprich01.xml" titel="Sprichwörter und Redensarten"/>
+            <themenGebiet pfad="deutsch/sprich02.xml" titel="Sprichwörter"/>
+            <themenGebiet pfad="deutsch/verben01.xml" titel="Finde das Tunwort (Verb) !"/>
+            <themenGebiet pfad="deutsch/vorstadtkrokodile.xml" titel="Max von der Grün: Vorstadtkrokodile"/>
+            <themenGebiet pfad="deutsch/wortart2.xml" titel="Wortarten"/>
+            <themenGebiet pfad="deutsch/wortartn.xml" titel="W O R T A R T E N"/>
+            <themenGebiet pfad="deutsch/wortfeld_gehen.xml" titel="Wortfeld „gehen“"/>
+            <themenGebiet pfad="deutsch/wpabz_01.xml" titel="Was passt am besten zu ..."/>
+            <themenGebiet pfad="deutsch/wpn_01.xml" titel="Welches Wort passt n i c h t dazu?"/>
+            <themenGebiet pfad="deutsch/zeiten01.xml" titel="Finde die richtige Zeit!"/>
+            <themenGebiet pfad="deutsch/zusammengesetzte_namenwoerter.xml" titel="Zusammengesetzte Namenwörter"/>
+        </gebiete>
+    </themenBereich>
+    <themenBereich>
+        <name>Englisch</name>
+        <gebiete>
+            <themenGebiet pfad="englisch/adjekt01.xml" titel="Steigerung der Adjektive"/>
+            <themenGebiet pfad="englisch/engl_01.xml" titel="Anfangswortschatz Englisch"/>
+            <themenGebiet pfad="englisch/irreg_01.xml" titel="Unregelmäßige Verben"/>
+        </gebiete>
+    </themenBereich>
+    <themenBereich>
+        <name>Erdkunde</name>
+        <gebiete>
+            <themenGebiet pfad="erdkunde/aetna.xml" titel="Der Ätna"/>
+            <themenGebiet pfad="erdkunde/astronomie.xml" titel="Astronomie"/>
+            <themenGebiet pfad="erdkunde/bayern.xml" titel="Bayern"/>
+            <themenGebiet pfad="erdkunde/bundeslaender.xml" titel="Bundesländer, Stand 27.05.01"/>
+            <themenGebiet pfad="erdkunde/capitals.xml" titel="Länder und ihre Hauptstädte (Stand 1994)"/>
+            <themenGebiet pfad="erdkunde/deutschland2.xml" titel="Deutschland"/>
+            <themenGebiet pfad="erdkunde/deutschland3.xml" titel="Deutschland"/>
+            <themenGebiet pfad="erdkunde/dortmund.xml" titel="Dortmunder Stadtteile"/>
+            <themenGebiet pfad="erdkunde/eurcap.xml" titel="Europäische Länder und ihre Hauptstädte"/>
+            <themenGebiet pfad="erdkunde/europa.xml" titel="„Europa“"/>
+            <themenGebiet pfad="erdkunde/kennst_du_die_erde.xml" titel="Kennst du die Erde?"/>
+            <themenGebiet pfad="erdkunde/mineralien.xml" titel="Mineralien und Gesteine"/>
+            <themenGebiet pfad="erdkunde/nordsee.xml" titel="Nordsee"/>
+            <themenGebiet pfad="erdkunde/nrw.xml" titel="Nordrhein - Westfalen"/>
+            <themenGebiet pfad="erdkunde/raumfahrt.xml" titel="Raumfahrt und Weltraum"/>
+            <themenGebiet pfad="erdkunde/weltraum.xml" titel="Raumfahrt und Weltraum"/>
+            <themenGebiet pfad="erdkunde/weltreise.xml" titel="„Weltreise“"/>
+        </gebiete>
+    </themenBereich>
+    <themenBereich>
+        <name>Geschichte</name>
+        <gebiete>
+            <themenGebiet pfad="geschichte/1871.xml" titel="Geschichte: 1871 - 1914"/>
+            <themenGebiet pfad="geschichte/karl_der_grosse.xml" titel="Karl der Große"/>
+            <themenGebiet pfad="geschichte/mittelalter_01.xml" titel="Könige und Kaiser im Mittelalter"/>
+        </gebiete>
+    </themenBereich>
     <themenBereich>
         <name>Informatik</name>
         <gebiete>
             <themenGebiet pfad="informatik/6_jahrgangsstufe.xml" titel="6. Jahrgangsstufe"/>
             <themenGebiet pfad="informatik/7_jahrgangsstufe.xml" titel="7. Jahrgangsstufe"/>
+        </gebiete>
+    </themenBereich>
+    <themenBereich>
+        <name>Mathematik</name>
+        <gebiete>
+            <themenGebiet pfad="mathe/10er_einmaleins_geteiltaufgaben.xml" titel="10-er Einmaleins Geteiltaufgaben"/>
+            <themenGebiet pfad="mathe/10er_einmaleins_malaufgaben.xml" titel="10-er Einmaleins"/>
+            <themenGebiet pfad="mathe/10ereinmaleins.xml" titel="10-er Einmaleins"/>
+            <themenGebiet pfad="mathe/10gem.xml" titel="+ und - bis 10"/>
+            <themenGebiet pfad="mathe/10minus.xml" titel="- bis 10"/>
+            <themenGebiet pfad="mathe/10plus.xml" titel="+ bis 10"/>
+            <themenGebiet pfad="mathe/arithmetik.xml" titel="Arithmetik bis Kl. 6"/>
+            <themenGebiet pfad="mathe/einmaleins_2.xml" titel="Einmaleins"/>
+            <themenGebiet pfad="mathe/einmaleins.xml" titel="Einmaleins"/>
+            <themenGebiet pfad="mathe/einsdurcheins.xml" titel="Einmaleins Geteiltaufgaben"/>
+            <themenGebiet pfad="mathe/erweitern1.xml" titel="Erweitern von Brüchen"/>
+            <themenGebiet pfad="mathe/flaechenumrechnungen.xml" titel="Umrechnung von Flächenmaßen"/>
+            <themenGebiet pfad="mathe/geomtr01.xml" titel="Mathematik, Geometrie"/>
+            <themenGebiet pfad="mathe/minusaufgaben_bis_100.xml" titel="Minusaufgaben bis 100"/>
+            <themenGebiet pfad="mathe/plusaufgaben_bis_100.xml" titel="Plusaufgaben bis 100"/>
+            <themenGebiet pfad="mathe/plus_minus_mal_und_geteilt.xml" titel="Plus Minus Mal und Geteilt"/>
+            <themenGebiet pfad="mathe/plus_und_minus_bis_100.xml" titel="Plus- und Minusaufgaben bis 100"/>
+            <themenGebiet pfad="mathe/roemzahl.xml" titel="Römische Zahlen"/>
+            <themenGebiet pfad="mathe/sachaufgaben2.xml" titel="Sachaufgaben Rechnung"/>
+            <themenGebiet pfad="mathe/sachaufgaben.xml" titel="Sachaufgaben Fragen"/>
+            <themenGebiet pfad="mathe/umwandl1.xml" titel="Umwandlung von Längenmaßen, Stand 02.05.01"/>
+            <themenGebiet pfad="mathe/volumina.xml" titel="Umrechnung von Raummaßen"/>
+        </gebiete>
+    </themenBereich>
+    <themenBereich>
+        <name>Musik</name>
+        <gebiete>
+            <themenGebiet pfad="musik/musik01.xml" titel="Musik"/>
+            <themenGebiet pfad="musik/musik02.xml" titel="Musikfragen von der 2a der HS Pottenbrunn"/>
+        </gebiete>
+    </themenBereich>
+    <themenBereich>
+        <name>Physik</name>
+        <gebiete>
+            <themenGebiet pfad="physik/telefon.xml" titel="Entwicklungen in der Nachrichtentechnik, Stand 14.3,01"/>
+        </gebiete>
+    </themenBereich>
+    <themenBereich>
+        <name>Spanisch</name>
+        <gebiete>
+            <themenGebiet pfad="spanisch/sp_01.xml" titel="vocabulario"/>
+        </gebiete>
+    </themenBereich>
+    <themenBereich>
+        <name>Sport</name>
+        <gebiete>
+            <themenGebiet pfad="sport/fussball.xml" titel="Fußball"/>
+            <themenGebiet pfad="sport/sport_lt.xml" titel="Sport leicht"/>
+        </gebiete>
+    </themenBereich>
+    <themenBereich>
+        <name>Technik</name>
+        <gebiete>
+            <themenGebiet pfad="technik/autos_01.xml" titel="Rund um das Auto"/>
+            <themenGebiet pfad="technik/bremse01.xml" titel="„Bremsen 1“"/>
+            <themenGebiet pfad="technik/digitaltechnik.xml" titel="„Digitaltechnik“"/>
+            <themenGebiet pfad="technik/internet.xml" titel="Internetwissen"/>
+            <themenGebiet pfad="technik/metall01.xml" titel="Metall"/>
+            <themenGebiet pfad="technik/schuetztechnik.xml" titel="„Schütztechnik“"/>
+            <themenGebiet pfad="technik/speichersteuerungen.xml" titel="„SPS - Speichersteuerungen“"/>
+            <themenGebiet pfad="technik/technik1.xml" titel="„Lichtbogenhandschweissen“"/>
+        </gebiete>
+    </themenBereich>
+    <themenBereich>
+        <name>Wirtschaft und Recht</name>
+        <gebiete>
+            <themenGebiet pfad="wirtschaft/euro.xml" titel="Rund um den Euro"/>
+            <themenGebiet pfad="wirtschaft/wirt_01.xml" titel="„Soziale Marktwirtschaft“"/>
+        </gebiete>
+    </themenBereich>
+    <themenBereich>
+        <name>Test (Zum Testen der Spielmechanik)</name>
+        <gebiete>
+            <themenGebiet pfad="test/01_frage.xml" titel="1 Test-Frage"/>
+            <themenGebiet pfad="test/03_fragen.xml" titel="3 Test-Fragen"/>
+            <themenGebiet pfad="test/10_fragen.xml" titel="10 Test-Fragen"/>
+            <themenGebiet pfad="test/15_fragen.xml" titel="15 Test-Fragen"/>
         </gebiete>
     </themenBereich>
 </themenKatalog>
