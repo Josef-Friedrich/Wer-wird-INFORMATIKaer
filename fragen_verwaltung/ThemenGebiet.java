@@ -36,7 +36,7 @@ public class ThemenGebiet extends XMLDatei {
    * Erzeugt anhand eines relativen Pfades zu einer XML-Datei eine neue Instanze
    * der Klasse.
    *
-   * @param dateiPfad Eine Pfad zu einer Themengebiets-XML-Datei. Relativer Pfad
+   * @param dateiPfad Ein Pfad zu einer Themengebiets-XML-Datei. Relativer Pfad
    *                  zum Projektverzeichnis, beispielsweise
    *                  <code>"/FRAGEN/informatik/6_jahrgangsstufe.xml"</code>.
    */

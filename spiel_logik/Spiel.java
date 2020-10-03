@@ -3,16 +3,28 @@ package spiel_logik;
 import fragen_verwaltung.ThemenGebiet;
 
 /**
- * Ein Spiel
+ * Die Klasse {@link Spiel} repräsentiert ein aktuell laufendes Spiel.
+ *
+ * Die Klasse {@link Spiel} ist die Hauptklasse im paket {@link spiel_logik}.
+ * Sie kann in den grafischen Implementierung verwendet werden um die Spiellogik
+ * abzubilden.
+ *
+ * In ein Spiel werden zu Beginn Fragen in die einfach verkettete Liste
+ * {@link unbeantworteteFragen} geladen. Mit der Methode {@link gibNächsteFrage}
+ * wird eine Frage entnommen, die dann mit der Methode {@link beantworteFrage}
+ * beantwortet werden kann. Ist die Frage beantwortet wird sie aus der Liste
+ * {@link unbeantworteteFragen} entfernt und in die Liste
+ * {@link beantworteteFragen} gesetzt.
  */
 public class Spiel {
 
   /**
-   * Die Gewinnsumme. Nach jeder beantworteten Frage wird diese Summe verdoppelt.
-   * Im der deutschen Fernsehsendung wird nicht immer verdoppelt, sondern manchmal
-   * ein Betrag gewählt, sodass am Ende 1 Million gewonnen werden.
+   * Die Gewinnsummen. Dieses Spiel zeigt für die ersten 15 Fragenn die
+   * Gewinnsummen wie in der deutschen Fernsehsendung an. Die Gewinnsumme wird
+   * nicht immer verdoppelt, sondern manchmal ein Betrag gewählt, sodass am Ende 1
+   * Million gewonnen werden. Deshalb sind die Summen hier als Feld aufgelistet.
    */
-  private int[] gewinnSumme = { 50, 100, 200, 300, 500, 1000, 2000, 4000, 8000, 16000, 32000, 64000, 125000, 500000,
+  private int[] gewinnSummen = { 50, 100, 200, 300, 500, 1000, 2000, 4000, 8000, 16000, 32000, 64000, 125000, 500000,
       1000000 };
 
   /**
@@ -55,6 +67,16 @@ public class Spiel {
   private int anzahlFragen = 0;
 
   /**
+   * Der Themenbereich des aktuellen Spiels.
+   */
+  private String themenBereich;
+
+  /**
+   * Das Themengebiet des aktuellen Spiels.
+   */
+  private String themenGebiet;
+
+  /**
    * Dieser Konstruktor startet ein neues Spiel ohne Fragen. Es müssen erst Fragen
    * ins Spiel geladen werden.
    */
@@ -66,7 +88,7 @@ public class Spiel {
   /**
    * Dieser Konstruktor lädt gleich zum Start des neuen Spiels Fragen.
    *
-   * @param dateiPfad Eine Pfad zu einer Themengebiets-XML-Datei. Relativer Pfad
+   * @param dateiPfad Ein Pfad zu einer Themengebiets-XML-Datei. Relativer Pfad
    *                  zum Projektverzeichnis, beispielsweise
    *                  <code>"/FRAGEN/informatik/6_jahrgangsstufe.xml"</code>.
    */
@@ -145,10 +167,22 @@ public class Spiel {
     return false;
   }
 
+  /**
+   * Gib eine Liste der bereits beantworteten Fragen. Diese getter-Methode kann
+   * beispielsweise dazu verwendet werden, um am Ende des Spiels eine Übersicht
+   * über die bisherigen Fragen anzuzeigen.
+   *
+   * @return Eine Liste der bereits beantworteten Fragen.
+   */
   public FragenListe gibBeantworteteFragen() {
     return beantworteteFragen;
   }
 
+  /**
+   * Gib die aktuelle Frage.
+   *
+   * @return Die aktuelle Frage.
+   */
   public Frage gibAktuelleFrage() {
     return aktuelleFrage;
   }
@@ -205,7 +239,7 @@ public class Spiel {
     if (frageNummer == 0) {
       return 0;
     } else if (frageNummer <= 15) {
-      return gewinnSumme[frageNummer - 1];
+      return gewinnSummen[frageNummer - 1];
     } else {
       // Ist eine Million erreicht (bei der 15 Frage) verdoppeln wir
       // bei jeder neuen Frage:
@@ -228,12 +262,53 @@ public class Spiel {
   /**
    * Lade ein Themengebiet ins Spiel.
    *
-   * @param dateiPfad Eine Pfad zu einer Themengebiets-XML-Datei. Relativer Pfad
+   * @param dateiPfad Ein Pfad zu einer Themengebiets-XML-Datei. Relativer Pfad
    *                  zum Projektverzeichnis, beispielsweise
    *                  <code>"/FRAGEN/informatik/6_jahrgangsstufe.xml"</code>.
    */
   public void ladeThemenGebiet(String dateiPfad) {
     ThemenGebiet gebiet = new ThemenGebiet(dateiPfad);
+    setzeThemenBereich(gebiet.gibFach());
+    setzeThemenGebiet(gebiet.gibThema());
     gebiet.leseFragenInsSpiel(this);
   }
+
+  /**
+   * Setze den Namen des aktuellen Themenbereichs (z. B. Unterrichtsfach
+   * „Informatik“)
+   *
+   * @param name Der Namen des aktuellen Themenbereichs.
+   */
+  public void setzeThemenBereich(String name) {
+    themenBereich = name;
+  }
+
+  /**
+   * Gib den Namen des aktuellen Themenbereichs (z. B. Unterrichtsfach
+   * „Informatik“)
+   */
+  public String gibThemenBereich() {
+    return themenBereich;
+  }
+
+  /**
+   * Setze das Thema des aktuellen Themengebiets (z. B. Jahrgangsstufe („6.
+   * Jahrgangsstufe“)).
+   *
+   * @param thema
+   */
+  public void setzeThemenGebiet(String thema) {
+    themenGebiet = thema;
+  }
+
+  /**
+   * Gib das Thema des aktuellen Themengebiets (z. B. Jahrgangsstufe („6.
+   * Jahrgangsstufe“)).
+   *
+   * @param thema
+   */
+  public String gibThemenGebiet() {
+    return themenGebiet;
+  }
+
 }

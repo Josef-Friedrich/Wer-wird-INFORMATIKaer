@@ -40,7 +40,7 @@ public class AnsichtStartSeite extends Ansicht {
    *
    * @param text Der Text der Taste erscheinen soll.
    * @param gridx
-   * @param dateiPfad Eine Pfad zu einer Themengebiets-XML-Datei. Relativer Pfad
+   * @param dateiPfad Ein Pfad zu einer Themengebiets-XML-Datei. Relativer Pfad
    *                  zum Projektverzeichnis, beispielsweise
    *                  <code>"/FRAGEN/informatik/6_jahrgangsstufe.xml"</code>.
    *

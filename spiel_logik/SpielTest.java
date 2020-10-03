@@ -94,11 +94,26 @@ public class SpielTest {
     Spiel spiel = new Spiel();
     spiel.ladeThemenGebiet("/FRAGEN/test/03_fragen.xml");
     assertEquals(3, spiel.gibAnzahlUnbeantworterFragen());
+    assertEquals("Test", spiel.gibThemenBereich());
+    assertEquals("3 Test-Fragen", spiel.gibThemenGebiet());
   }
 
   @Test
   public void methodeGibAnzahlFragen() {
     assertEquals(10, spiel.gibAnzahlFragen());
+  }
 
+  @Test
+  public void getterSetterThemenBereich() {
+    Spiel spiel = new Spiel();
+    spiel.setzeThemenBereich("test");
+    assertEquals("test", spiel.gibThemenBereich());
+  }
+
+  @Test
+  public void getterSetterThemenGebiet() {
+    Spiel spiel = new Spiel();
+    spiel.setzeThemenGebiet("test");
+    assertEquals("test", spiel.gibThemenGebiet());
   }
 }
