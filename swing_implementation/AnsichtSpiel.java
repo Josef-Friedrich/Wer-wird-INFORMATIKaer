@@ -69,12 +69,17 @@ public class AnsichtSpiel extends Ansicht {
     add(nächsteFrage, layoutEinstellung);
 
     nächsteFrage.addActionListener((event) -> zeigeNächsteFrage());
-
-    initialisiereSpiel();
   }
 
-  private void initialisiereSpiel() {
-    spiel = SpielSteuerung.lade("/FRAGEN/test/15_fragen.xml");
+  /**
+   * @param dateiPfad Eine Pfad zu einer Themengebiets-XML-Datei. Relativer Pfad
+   *                  zum Projektverzeichnis, beispielsweise
+   *                  <code>"/FRAGEN/informatik/6_jahrgangsstufe.xml"</code>.
+   */
+  public void starteNeuesSpiel(String dateiPfad) {
+    SpielSteuerung.lade(dateiPfad);
+    spiel = SpielSteuerung.gib();
+    zeigeNächsteFrage();
   }
 
   private JLabel erzeugeFragenText(int gridx) {
@@ -93,7 +98,7 @@ public class AnsichtSpiel extends Ansicht {
     return taste;
   }
 
-  public void zeigeFrage(Frage frage) {
+  private void zeigeFrage(Frage frage) {
     fragenText.setText(frage.gibFragenText());
     String[] antwortenTexte = frage.gibAntworten();
 
@@ -103,7 +108,7 @@ public class AnsichtSpiel extends Ansicht {
     }
   }
 
-  public void beantworteFrage(int antwort) {
+  private void beantworteFrage(int antwort) {
     spiel.beantworteFrage(antwort);
     Frage frage = spiel.gibAktuelleFrage();
     if (frage.istRichtigBeantwortet()) {
@@ -114,7 +119,7 @@ public class AnsichtSpiel extends Ansicht {
     }
   }
 
-  public void zeigeNächsteFrage() {
+  private void zeigeNächsteFrage() {
     Frage frage = spiel.gibNächsteFrage();
     frage.mischeAntworten();
     zeigeFrage(frage);

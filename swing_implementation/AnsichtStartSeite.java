@@ -32,16 +32,28 @@ public class AnsichtStartSeite extends Ansicht {
       e.printStackTrace();
     }
 
-    erzeugeTaste("6. Jahrgangsstufe", 1);
-    erzeugeTaste("7. Jahrgangsstufe", 2);
+    erzeugeTaste("6. Jahrgangsstufe", "/FRAGEN/informatik/6_jahrgangsstufe.xml", 1);
+    erzeugeTaste("7. Jahrgangsstufe", "/FRAGEN/informatik/7_jahrgangsstufe.xml", 2);
   }
 
-  private JButton erzeugeTaste(String text, int gridx) {
+  /**
+   *
+   * @param text Der Text der Taste erscheinen soll.
+   * @param gridx
+   * @param dateiPfad Eine Pfad zu einer Themengebiets-XML-Datei. Relativer Pfad
+   *                  zum Projektverzeichnis, beispielsweise
+   *                  <code>"/FRAGEN/informatik/6_jahrgangsstufe.xml"</code>.
+   *
+   * @return
+   */
+  private JButton erzeugeTaste(String text, String dateiPfad, int gridx) {
     JButton taste = new JButton(text);
     taste.setForeground(Konfiguration.FARBE_VIOLETT);
     taste.setPreferredSize(new Dimension(600, 100));
     taste.setFont(Konfiguration.SCHRIFT);
-    taste.addActionListener((event) -> AnsichtenVerwalter.zeigeAnsicht("spiel"));
+    taste.addActionListener((event) -> {
+      AnsichtenVerwalter.ladeNeuesSpiel(dateiPfad);
+    });
     layoutEinstellung.insets = new Insets(5, 5, 5, 5);
     layoutEinstellung.gridy = gridx;
     add(taste, layoutEinstellung);

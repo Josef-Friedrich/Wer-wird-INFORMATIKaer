@@ -43,8 +43,23 @@ public class AnsichtenVerwalter {
     initialisiereAnsicht("über", new AnsichtÜberProjekt());
   }
 
-  public static void zeigeAnsicht(String ansichtenName) {
+  public static void zeige(String ansichtenName) {
     ansichtenWechsler.show(hauptAnsicht, ansichtenName);
+  }
+
+  public static Ansicht gib(String ansichtenName) {
+    return ansichten.get(ansichtenName);
+  }
+
+  /**
+   * @param dateiPfad Eine Pfad zu einer Themengebiets-XML-Datei. Relativer Pfad
+   *                  zum Projektverzeichnis, beispielsweise
+   *                  <code>"/FRAGEN/informatik/6_jahrgangsstufe.xml"</code>.
+   */
+  public static void ladeNeuesSpiel(String dateiPfad) {
+    AnsichtSpiel ansichtSpiel = (AnsichtSpiel) gib("spiel");
+    ansichtSpiel.starteNeuesSpiel(dateiPfad);
+    zeige("spiel");
   }
 
 }

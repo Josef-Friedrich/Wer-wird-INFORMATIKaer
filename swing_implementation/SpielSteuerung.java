@@ -21,7 +21,7 @@ public class SpielSteuerung {
       return spiel;
 
     pfadXmlDatei = dateiPfad;
-    spiel = new Spiel("/FRAGEN/test/15_fragen.xml");
+    spiel = new Spiel(dateiPfad);
     return spiel;
   }
 

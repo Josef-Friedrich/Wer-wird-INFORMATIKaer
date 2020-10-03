@@ -58,7 +58,7 @@ public class MenuLeiste extends JMenuBar {
    */
   private JMenuItem erzeugeAnsichtenEintrag(String beschriftung, String anzeigenName) {
     JMenuItem eintrag = new JMenuItem(beschriftung);
-    eintrag.addActionListener((event) -> AnsichtenVerwalter.zeigeAnsicht(anzeigenName));
+    eintrag.addActionListener((event) -> AnsichtenVerwalter.zeige(anzeigenName));
     return eintrag;
   }
 
@@ -74,6 +74,7 @@ public class MenuLeiste extends JMenuBar {
       List<Map<String, String>> bereich = katalog.gibBereichDurchNummer(i);
       for (Map<String, String> gebiet : bereich) {
         JMenuItem gebietEintrag = new JMenuItem(gebiet.get("titel"));
+        gebietEintrag.addActionListener((event) -> AnsichtenVerwalter.ladeNeuesSpiel("/FRAGEN/" + gebiet.get("pfad")));
         bereichMenu.add(gebietEintrag);
       }
       bereiche.add(bereichMenu);
