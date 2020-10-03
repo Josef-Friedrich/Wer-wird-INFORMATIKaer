@@ -5,7 +5,6 @@ import spiel_logik.Frage;
 import spiel_logik.FragenListe;
 import spiel_logik.ListenElement;
 
-import fragen_verwaltung.ThemenGebiet;
 import fragen_verwaltung.ThemenKatalog;
 
 import java.util.Scanner;
@@ -14,9 +13,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 /**
- * Enthält die main-Methode für das Kommandozeilen-Interface (cli = command line
- * interface) sowie einige statische Methoden um den Code etwas zu
- * strukturieren.
+ * Diese Klasse stellt ein Kommandozeilen-Interface für das Spiel bereit.
  */
 public class KommandoZeile {
 
@@ -33,6 +30,10 @@ public class KommandoZeile {
   }
 
   /**
+   * Stelle eine Frage in der Kommandozeile.
+   *
+   * Diese Methode zeige den Fragentext sowie die vier möglichen Antworten in der
+   * Konsole.
    *
    * @param spiel Eine Instanz des aktuellen Spiels.
    * @param frage Eine Instanz der aktuellen Frage.
@@ -48,9 +49,11 @@ public class KommandoZeile {
   }
 
   /**
-   * @param scanner
+   * Hole die Antwort mit Hilfe der Scanner-Klasse aus der Konsole.
    *
-   * @return
+   * @param scanner Eine Instanz der Scanner-Klasse.
+   *
+   * @return Die Antwortnummer (0-3).
    */
   private int frageNachAntwort(Scanner scanner) {
     System.out.print("\nDeine Antwort (a, b, c, d): ");
@@ -61,9 +64,10 @@ public class KommandoZeile {
   /**
    * Frage in der Kommandozeile, ob weitergespielt werden soll oder nicht. Es
    * können sowohl Klein- als auch Großbuchstaben eingegeben werden. Wird nichts
-   * eingegeben, dann bedeutet das ja.
+   * eingegeben, dann bedeutet das ja. Werden andere Zeichen als „j“, „J“ oder
+   * nichts eingegeben, dann wird das Spiel beendet.
    *
-   * @param scanner
+   * @param scanner Eine Instanz der Scanner-Klasse.
    *
    * @return
    */
@@ -85,9 +89,10 @@ public class KommandoZeile {
   }
 
   /**
-   * @param frage
+   * Zeige nach Spielende die Ergebnisse der beantworteten Fragen.
    *
-   * @return
+   * @param spiel Eine Instanz des aktuellen Spiels.
+   * @param frage Eine Instanz der aktuellen Frage.
    */
   private void zeigeFragenErgebnis(Spiel spiel, Frage frage) throws Exception {
     String buchstabeRichtig = Frage.konvertiereAntwortNummer(frage.gibRichtigeAntwort());
@@ -178,10 +183,7 @@ public class KommandoZeile {
 
     int gebietsNummer = wähleThemenGebietAus(scanner, katalog);
 
-    Spiel spiel = new Spiel();
-
-    ThemenGebiet gebiet = katalog.gibGebietDurchNummer(gebietsNummer);
-    gebiet.leseFragenInsSpiel(spiel);
+    Spiel spiel = new Spiel("/FRAGEN/" + katalog.gibGebietPfadDurchNummer(gebietsNummer));
 
     boolean nochImSpiel = true;
 

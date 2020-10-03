@@ -32,7 +32,6 @@ public class XMLDatei {
    * @param pfad Eine relativer Pfad (relative zum Ordner /FRAGEN)
    */
   public XMLDatei(String pfad) {
-
     try {
       DocumentBuilder documentBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
         dokument = documentBuilder.parse(getClass().getResourceAsStream(pfad));
@@ -42,7 +41,6 @@ public class XMLDatei {
     } catch (ParserConfigurationException | SAXException | IOException e) {
       e.printStackTrace();
     }
-
   }
 
   /**
