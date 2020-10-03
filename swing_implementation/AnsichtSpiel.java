@@ -15,25 +15,40 @@ public class AnsichtSpiel extends Ansicht {
 
   public class AntwortTaste extends JButton {
 
+    /**
+     * Eine {@link serialVersionUID} wird als Versionsnummer bei der Serialisation
+     * automatisch jeder Klasse hinzugefügt, die das Interface {@link Serializable}
+     * implementiert. Fehlt diese statisches Attribut zeigt Visual Studio Code
+     * beispielsweise diese Warnmeldung an: „The serializable class ... does
+     * not declare a static final serialVersionUID field of type longJava(536871008)“
+     */
     private static final long serialVersionUID = 1L;
 
     public AntwortTaste() {
-      setPreferredSize(new Dimension(600, 100));
+      setPreferredSize(new Dimension(Aussehen.ANTWORT_TASTE_BREITE, Aussehen.ANTWORT_TASTE_HÖHE));
     }
 
     public void zeigeRichtig() {
-      setBackground(Konfiguration.FARBE_RICHTIG);
+      setBackground(Aussehen.FARBE_RICHTIG);
     }
 
     public void zeigeFalsch() {
-      setBackground(Konfiguration.FARBE_FALSCH);
+      setBackground(Aussehen.FARBE_FALSCH);
     }
 
     public void zeigeNormal() {
-      setBackground(Konfiguration.FARBE);
+      setBackground(Aussehen.FARBE);
     }
 
   }
+
+  /**
+   * Eine {@link serialVersionUID} wird als Versionsnummer bei der Serialisation
+   * automatisch jeder Klasse hinzugefügt, die das Interface {@link Serializable}
+   * implementiert. Fehlt diese statisches Attribut zeigt Visual Studio Code
+   * beispielsweise diese Warnmeldung an: „The serializable class ... does
+   * not declare a static final serialVersionUID field of type longJava(536871008)“
+   */
   private static final long serialVersionUID = 1L;
 
   Spiel spiel;
@@ -52,12 +67,8 @@ public class AnsichtSpiel extends Ansicht {
 
     fragenText = erzeugeFragenText(0);
 
-    antwortTasten = new AntwortTaste[] {
-      erzeugeAntwortTaste(1, 0),
-      erzeugeAntwortTaste(1, 1),
-      erzeugeAntwortTaste(2, 0),
-      erzeugeAntwortTaste(2, 1),
-    };
+    antwortTasten = new AntwortTaste[] { erzeugeAntwortTaste(1, 0), erzeugeAntwortTaste(1, 1),
+        erzeugeAntwortTaste(2, 0), erzeugeAntwortTaste(2, 1), };
 
     for (int antwortNummer : Frage.ANTWORT_NUMMERN) {
       antwortTasten[antwortNummer].addActionListener((event) -> beantworteFrage(antwortNummer));

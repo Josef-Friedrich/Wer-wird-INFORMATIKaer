@@ -17,6 +17,13 @@ public class AnsichtStartSeite extends Ansicht {
 
   GridBagConstraints layoutEinstellung;
 
+  /**
+   * Eine {@link serialVersionUID} wird als Versionsnummer bei der Serialisation
+   * automatisch jeder Klasse hinzugefügt, die das Interface {@link Serializable}
+   * implementiert. Fehlt diese statisches Attribut zeigt Visual Studio Code
+   * beispielsweise diese Warnmeldung an: „The serializable class ... does
+   * not declare a static final serialVersionUID field of type longJava(536871008)“
+   */
   private static final long serialVersionUID = 1L;
 
   public AnsichtStartSeite() {
@@ -48,9 +55,9 @@ public class AnsichtStartSeite extends Ansicht {
    */
   private JButton erzeugeTaste(String text, String dateiPfad, int gridx) {
     JButton taste = new JButton(text);
-    taste.setForeground(Konfiguration.FARBE_VIOLETT);
+    taste.setForeground(Aussehen.FARBE_VIOLETT);
     taste.setPreferredSize(new Dimension(600, 100));
-    taste.setFont(Konfiguration.SCHRIFT);
+    taste.setFont(Aussehen.SCHRIFT);
     taste.addActionListener((event) -> {
       AnsichtenVerwalter.ladeNeuesSpiel(dateiPfad);
     });

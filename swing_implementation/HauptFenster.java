@@ -10,21 +10,28 @@ import javax.swing.JPanel;
 
 public class HauptFenster extends JFrame {
 
+  /**
+   * Eine {@link serialVersionUID} wird als Versionsnummer bei der Serialisation
+   * automatisch jeder Klasse hinzugefügt, die das Interface {@link Serializable}
+   * implementiert. Fehlt diese statisches Attribut zeigt Visual Studio Code
+   * beispielsweise diese Warnmeldung an: „The serializable class ... does
+   * not declare a static final serialVersionUID field of type longJava(536871008)“
+   */
   private static final long serialVersionUID = 1L;
 
   public HauptFenster() {
     setJMenuBar(new MenuLeiste());
 
     setTitle("Wer wird INFORMATIKär!");
-    setSize(350, 250);
+    setSize(Aussehen.FENSTER_BREITE, Aussehen.FENSTER_HÖHE);
     setLocationRelativeTo(null);
     setDefaultCloseOperation(EXIT_ON_CLOSE);
 
     JPanel hauptAnsicht = AnsichtenVerwalter.hauptAnsicht;
-    hauptAnsicht.setPreferredSize(new Dimension(250, 150));
+    hauptAnsicht.setPreferredSize(new Dimension(Aussehen.FENSTER_BREITE, Aussehen.FENSTER_HÖHE));
     CardLayout ansichtenWechsler = AnsichtenVerwalter.ansichtenWechsler;
     hauptAnsicht.setLayout(ansichtenWechsler);
-    hauptAnsicht.setBackground(Konfiguration.FARBE_HINTERGRUND);
+    hauptAnsicht.setBackground(Aussehen.FARBE_HINTERGRUND);
     AnsichtenVerwalter.initialisiereAnsichten();
 
     setLayout(new BorderLayout());
