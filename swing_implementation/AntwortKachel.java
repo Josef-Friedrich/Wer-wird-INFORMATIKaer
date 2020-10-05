@@ -5,9 +5,9 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
+import java.awt.event.*;
 
-public class AntwortKachel extends JPanel {
+public class AntwortKachel extends JLabel {
 
   /**
    * Eine {@link serialVersionUID} wird als Versionsnummer bei der Serialisation
@@ -18,32 +18,49 @@ public class AntwortKachel extends JPanel {
    */
   private static final long serialVersionUID = 1L;
 
-  private JLabel hauptBild;
-  private JLabel schwebeBild;
-  private JLabel klickBild;
+  private ImageIcon hauptBild;
+  private ImageIcon schwebeBild;
+  private ImageIcon klickBild;
+
+  boolean schwebt = false;
 
   private JLabel text;
 
   public AntwortKachel(String hauptBildPfad, String schwebeBildPfad, String klickBildPfad) {
-    setSize(400, 400);
-    // setBackground(Aussehen.FARBE_FALSCH);
-
     hauptBild = macheBild(hauptBildPfad);
     schwebeBild = macheBild(schwebeBildPfad);
     klickBild = macheBild(klickBildPfad);
-    hauptBild.setBounds(0, 0, 100, 100);
+    setIcon(hauptBild);
+    setSize(500, 125);
 
     text = new JLabel("lol");
-    add(this.hauptBild);
-
+    text.setForeground(Aussehen.FARBE_FALSCH);
+    text.setBounds(0, 0, 100, 50);
     add(text);
 
+    addMouseListener(new MouseAdapter() {
+      public void mouseClicked(MouseEvent e) {
+        setIcon(klickBild);
+        System.out.println("Clicked!");
+      }
+
+      public void mouseEntered(MouseEvent evt) {
+        setIcon(schwebeBild);
+        System.out.println("entered!");
+
+      }
+
+      public void mouseExited(MouseEvent evt) {
+        setIcon(hauptBild);
+        System.out.println("exited!");
+      }
+    });
   }
 
-  private JLabel macheBild(String pfad) {
-    JLabel bild = null;
+  private ImageIcon macheBild(String pfad) {
+    ImageIcon bild = null;
     try {
-      bild = new JLabel(new ImageIcon(ImageIO.read(getClass().getResource("/BILDER/" + pfad))));
+      bild = new ImageIcon(ImageIO.read(getClass().getResource("/BILDER/" + pfad)));
     } catch (IOException e) {
       e.printStackTrace();
     }

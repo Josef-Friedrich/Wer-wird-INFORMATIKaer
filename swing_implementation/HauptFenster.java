@@ -38,7 +38,7 @@ public class HauptFenster extends JFrame {
     add(hauptAnsicht, BorderLayout.CENTER);
     pack();
     setVisible(true);
-    AnsichtenVerwalter.zeige("start");
+    AnsichtenVerwalter.zeige("über");
   }
 
   public static void main(String[] args) {
