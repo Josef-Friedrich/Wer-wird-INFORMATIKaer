@@ -14,8 +14,15 @@ public class AnsichtÜberProjekt extends Ansicht {
   private static final long serialVersionUID = 1L;
 
   public AnsichtÜberProjekt() {
+    setLayout(null);
     JLabel überschrift = Aussehen.erzeugeÜberschrift("Über das Projekt");
+
     add(überschrift);
+
+    AntwortKachel antwort = new AntwortKachel("blau.png", "orange.png", "rot.png");
+    antwort.setBounds(0, 0, 300, 300);
+
+    add(antwort);
   }
 
 }
