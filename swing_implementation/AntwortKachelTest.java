@@ -1,7 +1,5 @@
 package swing_implementation;
 
-import java.awt.event.KeyEvent;
-
 import javax.swing.JFrame;
 
 public class AntwortKachelTest {
@@ -29,12 +27,10 @@ public class AntwortKachelTest {
     antwortD.setLocation(520, 250);
     testRahmen.add(antwortD);
 
-
     AntwortKachel antwortRichtig = new AntwortKachel();
     antwortRichtig.setLocation(10, 400);
     antwortRichtig.setzeRichtig();
     testRahmen.add(antwortRichtig);
-
 
     AntwortKachel antwortFalsch = new AntwortKachel();
     antwortFalsch.setLocation(520, 400);
