@@ -15,18 +15,8 @@ public class AnsichtÜberProjekt extends Ansicht {
 
   public AnsichtÜberProjekt() {
     setLayout(null);
-    // JLabel überschrift = Aussehen.erzeugeÜberschrift("Über das Projekt");
-
-    // add(überschrift);
-
-    AntwortKachel antwort = new AntwortKachel("blau.png", "orange.png", "rot.png");
-    antwort.setLocation(300, 300);
-    add(antwort);
-
-    AntwortKachel antwort2 = new AntwortKachel("blau.png", "orange.png", "rot.png");
-    antwort2.setLocation(300, 600);
-    add(antwort2);
-
+    JLabel überschrift = Aussehen.erzeugeÜberschrift("Über das Projekt");
+    add(überschrift);
   }
 
 }
