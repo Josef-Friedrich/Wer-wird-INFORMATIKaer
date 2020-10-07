@@ -23,6 +23,8 @@ public class MenuLeiste extends JMenuBar {
    */
   JMenu bereiche;
 
+  JMenu navigation;
+
   /**
    * Eine {@link serialVersionUID} wird als Versionsnummer bei der Serialisation
    * automatisch jeder Klasse hinzugefügt, die das Interface {@link Serializable}
@@ -34,25 +36,30 @@ public class MenuLeiste extends JMenuBar {
 
   public MenuLeiste() {
     // Navigation
-    var navigation = new JMenu("Navigation");
-    navigation.add(erzeugeAnsichtenEintrag("Startseite", "start"));
-    navigation.add(erzeugeAnsichtenEintrag("Themengebiete", "themen"));
-    navigation.add(erzeugeAnsichtenEintrag("Aktuelles Spiel", "spiel"));
-    navigation.add(erzeugeAnsichtenEintrag("Über das Spiel", "über"));
+    navigation = new JMenu("Navigation");
     add(navigation);
+    erzeugeNavigationsEintrag("Startseite", "start");
+    erzeugeNavigationsEintrag("Themengebiete", "themen");
+    erzeugeNavigationsEintrag("Aktuelles Spiel", "spiel");
+    erzeugeNavigationsEintrag("Hilfe", "hilfe");
+    erzeugeNavigationsEintrag("Über das Spiel", "über");
 
     bereiche = new JMenu("Themenbereiche");
     erzeugeBereichsEinträge();
     add(bereiche);
 
     // Aktionen
-    var aktionen = new JMenu("Aktionen");
-    var schließen = new JMenuItem("schließen");
+    JMenu aktionen = new JMenu("Aktionen");
+    JMenuItem schließen = new JMenuItem("schließen");
     schließen.setToolTipText("Verlasse das Spiel");
     schließen.addActionListener((event) -> System.exit(0));
     aktionen.add(schließen);
 
     add(aktionen);
+  }
+
+  private void erzeugeNavigationsEintrag(String beschriftung, String ansichtenName) {
+    navigation.add(erzeugeAnsichtenEintrag(beschriftung, ansichtenName));
   }
 
   /**

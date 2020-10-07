@@ -46,6 +46,11 @@ public class Aussehen {
   public static final Color FARBE = new Color(255, 255, 255);
 
   /**
+   * Ein zur Farbpalette des Spiels passendes Weiß.
+   */
+  public static final Color FARBE_WEISS = new Color(255, 255, 255);
+
+  /**
    * Ein zur Farbpalette des Spiels passendes Rot.
    */
   public static final Color FARBE_ROT = new Color(204, 0, 0);
@@ -95,6 +100,7 @@ public class Aussehen {
   public static JLabel erzeugeÜberschrift(String text) {
     JLabel ueberschrift = new JLabel(text);
     ueberschrift.setFont(SCHRIFT);
+    ueberschrift.setForeground(FARBE_WEISS);
     return ueberschrift;
   }
 

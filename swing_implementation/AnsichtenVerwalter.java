@@ -41,6 +41,7 @@ public class AnsichtenVerwalter {
     initialisiereAnsicht("themen", new AnsichtThemenGebiete());
     initialisiereAnsicht("spiel", new AnsichtSpiel());
     initialisiereAnsicht("über", new AnsichtÜberProjekt());
+    initialisiereAnsicht("hilfe", new AnsichtHilfe());
   }
 
   public static void zeige(String ansichtenName) {
