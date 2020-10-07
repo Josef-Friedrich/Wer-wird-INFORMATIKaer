@@ -7,7 +7,7 @@ public class AnsichtÜberProjekt extends Ansicht {
   /**
    * Eine {@link serialVersionUID} wird als Versionsnummer bei der Serialisation
    * automatisch jeder Klasse hinzugefügt, die das Interface {@link Serializable}
-   * implementiert. Fehlt diese statisches Attribut zeigt Visual Studio Code
+   * implementiert. Fehlt dieses statische Attribut zeigt Visual Studio Code
    * beispielsweise diese Warnmeldung an: „The serializable class ... does
    * not declare a static final serialVersionUID field of type longJava(536871008)“
    */

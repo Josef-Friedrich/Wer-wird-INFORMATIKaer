@@ -1,15 +1,9 @@
 package swing_implementation;
 
-import javax.swing.JFrame;
-
 public class AntwortKachelTest {
 
   public static void main(String[] args) {
-    JFrame testRahmen = new JFrame("Teste die Antwort-Kacheln");
-    testRahmen.setLayout(null);
-    testRahmen.setResizable(false);
-
-    testRahmen.setSize(1024, 768);
+    SpielRahmen testRahmen = new SpielRahmen("Teste die Klasse „AntwortKachel“", true);
 
     AntwortKachel antwortA = new AntwortKachel();
     antwortA.setLocation(10, 100);
@@ -46,6 +40,8 @@ public class AntwortKachelTest {
     testRahmen.add(antwortAktionLauscher);
 
     testRahmen.setVisible(true);
+    testRahmen.setBackground(Aussehen.FARBE_HINTERGRUND);
+
   }
 
 }
