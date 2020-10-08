@@ -61,7 +61,7 @@ public class AnsichtHilfe extends Ansicht {
 
   public AnsichtHilfe() {
     setLayout(null);
-    JLabel überschrift = Aussehen.erzeugeÜberschrift("Hilfe");
+    JLabel überschrift = Aussehen.macheÜberschrift("Hilfe");
     add(überschrift);
 
     Tabelle tabelle = new Tabelle(this, 100, 100, 50, 100, 800);

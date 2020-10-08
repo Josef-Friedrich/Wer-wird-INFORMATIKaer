@@ -1,7 +1,10 @@
 package swing_implementation;
 
 import java.awt.Font;
+import java.io.IOException;
 
+import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
 import java.awt.Color;
@@ -111,19 +114,7 @@ public class Aussehen {
    */
   public static final Color FARBE_FALSCH = FARBE_ROT;
 
-  /**
-   * Erzeuge eine Überschrift.
-   *
-   * @param text Ein Text, der in eine JLabel eingebettet werden soll.
-   *
-   * @return Ein neues JLabel-Objekt.
-   */
-  public static JLabel erzeugeÜberschrift(String text) {
-    JLabel ueberschrift = new JLabel(text);
-    ueberschrift.setFont(SCHRIFT_FETT);
-    ueberschrift.setForeground(FARBE_WEISS);
-    return ueberschrift;
-  }
+
 
   /**
    * Erzeuge einen normalen Text.
@@ -132,7 +123,7 @@ public class Aussehen {
    *
    * @return Ein neues JLabel-Objekt.
    */
-  public static JLabel erzeugeText(String text) {
+  public static JLabel macheText(String text) {
     JLabel textElement = new JLabel(text);
     textElement.setFont(SCHRIFT_NORMAL);
     textElement.setForeground(FARBE_WEISS);
@@ -144,8 +135,42 @@ public class Aussehen {
    *
    * @return Ein neues JLabel-Objekt.
    */
-  public static JLabel erzeugeText() {
-    return erzeugeText("");
+  public static JLabel macheText() {
+    return macheText("");
+  }
+
+  /**
+   * Erzeuge eine Überschrift.
+   *
+   * @param text Ein Text, der in eine JLabel eingebettet werden soll.
+   *
+   * @return Ein neues JLabel-Objekt.
+   */
+  public static JLabel macheÜberschrift(String text) {
+    JLabel ueberschrift = new JLabel(text);
+    ueberschrift.setFont(SCHRIFT_FETT);
+    ueberschrift.setForeground(FARBE_WEISS);
+    return ueberschrift;
+  }
+
+  /**
+   * Mache ein Bild der Klasse {@link javax.swing.ImageIcon}.
+   *
+   * Die kleine Hilfsfunktion übernimmt die Fehlerbehandlung sowie das Laden der
+   * Bild-Datei.
+   *
+   * @param pfad Der Pfad relative zum „BILDER“ Ordner.
+   *
+   * @return Ein Bild der Klasse {@link javax.swing.ImageIcon}
+   */
+  public static ImageIcon macheBild(String pfad) {
+    ImageIcon bild = null;
+    try {
+      bild = new ImageIcon(ImageIO.read(Aussehen.class.getResource("/BILDER/" + pfad)));
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+    return bild;
   }
 
 }

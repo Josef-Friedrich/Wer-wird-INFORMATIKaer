@@ -15,7 +15,7 @@ public class AnsichtÜberProjekt extends Ansicht {
 
   public AnsichtÜberProjekt() {
     setLayout(null);
-    JLabel überschrift = Aussehen.erzeugeÜberschrift("Über das Projekt");
+    JLabel überschrift = Aussehen.macheÜberschrift("Über das Projekt");
     add(überschrift);
   }
 

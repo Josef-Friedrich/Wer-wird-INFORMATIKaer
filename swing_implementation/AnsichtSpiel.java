@@ -42,6 +42,10 @@ public class AnsichtSpiel extends Ansicht {
       antwortKacheln[antwortNummer].setzeBuchstabe(antwortNummer);
     }
 
+    JLabel bildGrosseKachel = new JLabel(Aussehen.macheBild("kachel-gross.png"));
+    bildGrosseKachel.setBounds(5, 280, 1010, 183);
+    add(bildGrosseKachel);
+
     tasteNächsteFrage = erzeugeTasteNächsteFrage();
   }
 
@@ -57,8 +61,8 @@ public class AnsichtSpiel extends Ansicht {
   }
 
   private JLabel erzeugeFragenText() {
-    JLabel fragenText = Aussehen.erzeugeText();
-    fragenText.setBounds(50, 400, Aussehen.FENSTER_BREITE - 100, 50);
+    JLabel fragenText = Aussehen.macheText();
+    fragenText.setBounds(80, 350, Aussehen.FENSTER_BREITE - 100, 50);
     add(fragenText);
     return fragenText;
   }

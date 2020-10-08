@@ -25,8 +25,8 @@ public class AntwortKachel extends Taste {
   public AntwortKachel() {
     super(gibBild("blau"), gibBild("orange"), gibBild("rot"));
     falschesBild = klickBild;
-    richtigesBild = macheBild(gibBild("gruen"));
-    text = Aussehen.erzeugeText();
+    richtigesBild = Aussehen.macheBild(gibBild("gruen"));
+    text = Aussehen.macheText();
     text.setBounds(100, 40, 500, 50);
     add(text);
   }
@@ -51,7 +51,7 @@ public class AntwortKachel extends Taste {
 
   public void setzeBuchstabe(int antwortNummer) {
     String b = Frage.konvertiereAntwortNummer(antwortNummer);
-    buchstabe = Aussehen.erzeugeText(b);
+    buchstabe = Aussehen.macheText(b);
     buchstabe.setBounds(60, 40, 50, 50);
     String hilfeText = String.format(
         "Drücke diese Taste, wennn du glaubst die Antwort %s ist richtig. Tastenkürzel: %s", b, b.toLowerCase());

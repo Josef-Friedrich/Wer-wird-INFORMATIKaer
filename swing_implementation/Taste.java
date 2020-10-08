@@ -40,9 +40,9 @@ public class Taste extends JLabel {
   private Aktion aktion;
 
   public Taste(String hauptBildName, String schwebeBildName, String klickBildName) {
-    hauptBild = macheBild(hauptBildName);
-    schwebeBild = macheBild(schwebeBildName);
-    klickBild = macheBild(klickBildName);
+    hauptBild = Aussehen.macheBild(hauptBildName);
+    schwebeBild = Aussehen.macheBild(schwebeBildName);
+    klickBild = Aussehen.macheBild(klickBildName);
 
     setIcon(hauptBild);
     setSize(hauptBild.getIconWidth(), hauptBild.getIconHeight());
@@ -89,16 +89,6 @@ public class Taste extends JLabel {
 
   public void fügeLauscherHinzu(Aktion aktion) {
     this.aktion = aktion;
-  }
-
-  protected ImageIcon macheBild(String pfad) {
-    ImageIcon bild = null;
-    try {
-      bild = new ImageIcon(ImageIO.read(getClass().getResource("/BILDER/" + pfad)));
-    } catch (IOException e) {
-      e.printStackTrace();
-    }
-    return bild;
   }
 
 }
