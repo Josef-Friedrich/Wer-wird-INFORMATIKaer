@@ -2,6 +2,7 @@ package swing_implementation;
 
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
+import spiel_logik.Frage;
 
 public class AntwortKachel extends Taste {
 
@@ -14,18 +15,20 @@ public class AntwortKachel extends Taste {
    */
   private static final long serialVersionUID = 1L;
 
-  private ImageIcon falschBild;
-  private ImageIcon richtigBild;
+  private ImageIcon falschesBild;
+  private ImageIcon richtigesBild;
 
   private JLabel text;
+
+  private JLabel buchstabe;
 
   public AntwortKachel() {
     super("blau.png", "orange.png", "rot.png");
 
-    falschBild = klickBild;
-    richtigBild = macheBild("gruen.png");
+    falschesBild = klickBild;
+    richtigesBild = macheBild("gruen.png");
     text = Aussehen.erzeugeText();
-    text.setBounds(60, 40, 500, 50);
+    text.setBounds(100, 40, 500, 50);
     add(text);
   }
 
@@ -34,14 +37,20 @@ public class AntwortKachel extends Taste {
     text.setText(antwortText);
   }
 
+  public void setzeBuchstabe(int antwortNummer) {
+    buchstabe = Aussehen.erzeugeText(Frage.konvertiereAntwortNummer(antwortNummer));
+    buchstabe.setBounds(60, 40, 50, 50);
+    add(buchstabe);
+  }
+
   public void setzeRichtig() {
     friereEin();
-    setIcon(richtigBild);
+    setIcon(richtigesBild);
   }
 
   public void setzeFalsch() {
     friereEin();
-    setIcon(falschBild);
+    setIcon(falschesBild);
   }
 
 }

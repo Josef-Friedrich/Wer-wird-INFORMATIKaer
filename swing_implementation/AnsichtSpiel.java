@@ -11,8 +11,8 @@ public class AnsichtSpiel extends Ansicht {
    * Eine {@link serialVersionUID} wird als Versionsnummer bei der Serialisation
    * automatisch jeder Klasse hinzugefügt, die das Interface {@link Serializable}
    * implementiert. Fehlt dieses statische Attribut zeigt Visual Studio Code
-   * beispielsweise diese Warnmeldung an: „The serializable class ... does
-   * not declare a static final serialVersionUID field of type longJava(536871008)“
+   * beispielsweise diese Warnmeldung an: „The serializable class ... does not
+   * declare a static final serialVersionUID field of type longJava(536871008)“
    */
   private static final long serialVersionUID = 1L;
 
@@ -32,11 +32,12 @@ public class AnsichtSpiel extends Ansicht {
     int y1 = 450;
     int y2 = 550;
 
-    antwortKacheln = new AntwortKachel[] { erzeugeAntwortKachel(x1, y1), erzeugeAntwortKachel(x1, y2),
-        erzeugeAntwortKachel(x2, y1), erzeugeAntwortKachel(x2, y2) };
+    antwortKacheln = new AntwortKachel[] { erzeugeAntwortKachel(x1, y1), erzeugeAntwortKachel(x2, y1),
+        erzeugeAntwortKachel(x1, y2), erzeugeAntwortKachel(x2, y2) };
 
     for (int antwortNummer : Frage.ANTWORT_NUMMERN) {
       antwortKacheln[antwortNummer].fügeLauscherHinzu(() -> beantworteFrage(antwortNummer));
+      antwortKacheln[antwortNummer].setzeBuchstabe(antwortNummer);
     }
 
     Taste nächsteFrage = new Taste("pfeil-blau.png", "pfeil-gelb.png", "pfeil-rot.png");
@@ -59,7 +60,7 @@ public class AnsichtSpiel extends Ansicht {
 
   private JLabel erzeugeFragenText() {
     JLabel fragenText = Aussehen.erzeugeText();
-    fragenText.setBounds(100, 100, 500, 500);
+    fragenText.setBounds(50, 400, Aussehen.FENSTER_BREITE - 100, 50);
     add(fragenText);
     return fragenText;
   }
