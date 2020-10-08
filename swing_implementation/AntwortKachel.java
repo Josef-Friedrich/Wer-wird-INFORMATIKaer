@@ -38,8 +38,13 @@ public class AntwortKachel extends Taste {
   }
 
   public void setzeBuchstabe(int antwortNummer) {
-    buchstabe = Aussehen.erzeugeText(Frage.konvertiereAntwortNummer(antwortNummer));
+    String b = Frage.konvertiereAntwortNummer(antwortNummer);
+    buchstabe = Aussehen.erzeugeText(b);
     buchstabe.setBounds(60, 40, 50, 50);
+    String hilfeText = String.format("Drücke diese Taste, wennn du glaubst die Antwort %s ist richtig. Tastenkürzel: %s",
+        b, b.toLowerCase());
+    String hilfe = String.format("<html><p width=\"300\">%s</p></html>", hilfeText);
+    setToolTipText(hilfe);
     add(buchstabe);
   }
 
