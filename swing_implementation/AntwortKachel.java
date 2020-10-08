@@ -4,7 +4,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import spiel_logik.Frage;
 
-public class AntwortKachel extends Taste {
+public class AntwortKachel extends KleineKachel {
 
   /**
    * Eine {@link serialVersionUID} wird als Versionsnummer bei der Serialisation
@@ -18,30 +18,12 @@ public class AntwortKachel extends Taste {
   private ImageIcon falschesBild;
   private ImageIcon richtigesBild;
 
-  private JLabel text;
-
   private JLabel buchstabe;
 
   public AntwortKachel() {
-    super(gibBild("blau"), gibBild("orange"), gibBild("rot"));
+    super();
     falschesBild = klickBild;
     richtigesBild = Aussehen.macheBild(gibBild("gruen"));
-    text = Aussehen.macheText();
-    text.setBounds(100, 40, 500, 50);
-    add(text);
-  }
-
-  /**
-   * Kleine Hilfsfunktion um die Namen der Bild-Dateien zusammenzubauen. Die
-   * Methode muss statisch sein, da sie im Konstrutor in der super-Methode
-   * verwendet wird.
-   *
-   * @param farbe Die Farbe der Bild-Kachel.
-   *
-   * @returns Der Name der Bilddatei.
-   */
-  private static String gibBild(String farbe) {
-    return String.format("kachel-klein_%s.png", farbe);
   }
 
   public void setzeAntwort(String antwortText) {

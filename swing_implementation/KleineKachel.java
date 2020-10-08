@@ -16,7 +16,7 @@ public class KleineKachel extends Taste {
    */
   private static final long serialVersionUID = 1L;
 
-  private JLabel text;
+  protected JLabel text;
 
   public KleineKachel() {
     super(gibBild("blau"), gibBild("orange"), gibBild("rot"));
@@ -39,7 +39,7 @@ public class KleineKachel extends Taste {
    *
    * @returns Der Name der Bilddatei.
    */
-  private static String gibBild(String farbe) {
+  protected static String gibBild(String farbe) {
     return String.format("kachel-klein_%s.png", farbe);
   }
 
