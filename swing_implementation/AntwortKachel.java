@@ -23,13 +23,25 @@ public class AntwortKachel extends Taste {
   private JLabel buchstabe;
 
   public AntwortKachel() {
-    super("blau.png", "orange.png", "rot.png");
-
+    super(gibBild("blau"), gibBild("orange"), gibBild("rot"));
     falschesBild = klickBild;
-    richtigesBild = macheBild("gruen.png");
+    richtigesBild = macheBild(gibBild("gruen"));
     text = Aussehen.erzeugeText();
     text.setBounds(100, 40, 500, 50);
     add(text);
+  }
+
+  /**
+   * Kleine Hilfsfunktion um die Namen der Bild-Dateien zusammenzubauen. Die
+   * Methode muss statisch sein, da sie im Konstrutor in der super-Methode
+   * verwendet wird.
+   *
+   * @param farbe Die Farbe der Bild-Kachel.
+   *
+   * @returns Der Name der Bilddatei.
+   */
+  private static String gibBild(String farbe) {
+    return String.format("kachel-klein_%s.png", farbe);
   }
 
   public void setzeAntwort(String antwortText) {
@@ -41,8 +53,8 @@ public class AntwortKachel extends Taste {
     String b = Frage.konvertiereAntwortNummer(antwortNummer);
     buchstabe = Aussehen.erzeugeText(b);
     buchstabe.setBounds(60, 40, 50, 50);
-    String hilfeText = String.format("Drücke diese Taste, wennn du glaubst die Antwort %s ist richtig. Tastenkürzel: %s",
-        b, b.toLowerCase());
+    String hilfeText = String.format(
+        "Drücke diese Taste, wennn du glaubst die Antwort %s ist richtig. Tastenkürzel: %s", b, b.toLowerCase());
     String hilfe = String.format("<html><p width=\"300\">%s</p></html>", hilfeText);
     setToolTipText(hilfe);
     add(buchstabe);
