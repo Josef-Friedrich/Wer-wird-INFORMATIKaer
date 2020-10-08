@@ -33,7 +33,7 @@ public class AntwortKachelTest {
 
     AntwortKachel antwortAktionLauscher = new AntwortKachel();
     antwortAktionLauscher.setLocation(260, 550);
-    antwortAktionLauscher.fügeAntwortLauscherHinzu(() -> {
+    antwortAktionLauscher.fügeLauscherHinzu(() -> {
       antwortAktionLauscher.setzeRichtig();
       System.out.println("beantwortet");
     });

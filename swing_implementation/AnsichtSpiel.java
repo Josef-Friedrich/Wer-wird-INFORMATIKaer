@@ -29,18 +29,18 @@ public class AnsichtSpiel extends Ansicht {
 
     int x1 = 10;
     int x2 = 520;
-    int y1 = 500;
-    int y2 = 600;
+    int y1 = 450;
+    int y2 = 550;
 
     antwortKacheln = new AntwortKachel[] { erzeugeAntwortKachel(x1, y1), erzeugeAntwortKachel(x1, y2),
         erzeugeAntwortKachel(x2, y1), erzeugeAntwortKachel(x2, y2) };
 
     for (int antwortNummer : Frage.ANTWORT_NUMMERN) {
-      //antwortKacheln[antwortNummer].fügeAntwortLauscherHinzu((event) -> beantworteFrage(antwortNummer));
+      antwortKacheln[antwortNummer].fügeLauscherHinzu(() -> beantworteFrage(antwortNummer));
     }
 
     Taste nächsteFrage = new Taste("pfeil-blau.png", "pfeil-gelb.png", "pfeil-rot.png");
-    nächsteFrage.setLocation(500, 700);
+    nächsteFrage.setLocation(800, 700);
     add(nächsteFrage);
 
     nächsteFrage.fügeLauscherHinzu(() -> zeigeNächsteFrage());
@@ -59,7 +59,7 @@ public class AnsichtSpiel extends Ansicht {
 
   private JLabel erzeugeFragenText() {
     JLabel fragenText = Aussehen.erzeugeText();
-    fragenText.setLocation(100, 100);
+    fragenText.setBounds(100, 100, 500, 500);
     add(fragenText);
     return fragenText;
   }

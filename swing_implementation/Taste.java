@@ -26,9 +26,16 @@ public class Taste extends JLabel {
    */
   private static final long serialVersionUID = 1L;
 
-  private ImageIcon hauptBild;
-  private ImageIcon schwebeBild;
-  private ImageIcon klickBild;
+  protected ImageIcon hauptBild;
+  protected ImageIcon schwebeBild;
+  protected ImageIcon klickBild;
+
+  /**
+   * Im eingefroren Zustand wechseln die Hintergrundbilder nicht mehr und die
+   * Aktion kann nicht mehr ausgeführt werden. Die Funktion wird von den
+   * Antwortkacheln benötigt.
+   */
+  private boolean eingefroren = false;
 
   private Aktion aktion;
 
@@ -42,21 +49,40 @@ public class Taste extends JLabel {
 
     addMouseListener(new MouseAdapter() {
       public void mouseClicked(MouseEvent e) {
-        setIcon(klickBild);
-        führeAktionAus();
+        if (!eingefroren) {
+          setIcon(klickBild);
+          führeAktionAus();
+        }
       }
 
       public void mouseEntered(MouseEvent evt) {
-        setIcon(schwebeBild);
+        if (!eingefroren)
+          setIcon(schwebeBild);
       }
 
       public void mouseExited(MouseEvent evt) {
-        setIcon(hauptBild);
+        if (!eingefroren)
+          setIcon(hauptBild);
       }
     });
   }
 
-  private void führeAktionAus() {
+  /**
+   * Setze die Taste in den eingefrorenen Zustand.
+   */
+  public void friereEin() {
+    eingefroren = true;
+  }
+
+  /**
+   * Taue die Taste auf, d. h. die Hintergrundbilder wechseln wieder und die Aktion kann ausgeführt werden.
+   */
+  public void taueAuf() {
+    eingefroren = false;
+    setIcon(hauptBild);
+  }
+
+  public void führeAktionAus() {
     if (aktion != null)
       aktion.führeAus();
   }
@@ -65,7 +91,7 @@ public class Taste extends JLabel {
     this.aktion = aktion;
   }
 
-  private ImageIcon macheBild(String pfad) {
+  protected ImageIcon macheBild(String pfad) {
     ImageIcon bild = null;
     try {
       bild = new ImageIcon(ImageIO.read(getClass().getResource("/BILDER/" + pfad)));
