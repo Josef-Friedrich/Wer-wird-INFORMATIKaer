@@ -1,21 +1,9 @@
 package swing_implementation;
 
-import java.awt.image.BufferedImage;
-import java.io.IOException;
-
-import javax.imageio.ImageIO;
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
 import javax.swing.JLabel;
-
-import java.awt.GridBagConstraints;
-import java.awt.Dimension;
-import java.awt.GridBagLayout;
-import java.awt.Insets;
 
 public class AnsichtStartSeite extends Ansicht {
 
-  GridBagConstraints layoutEinstellung;
 
   /**
    * Eine {@link serialVersionUID} wird als Versionsnummer bei der Serialisation
@@ -27,20 +15,18 @@ public class AnsichtStartSeite extends Ansicht {
   private static final long serialVersionUID = 1L;
 
   public AnsichtStartSeite() {
-    layoutEinstellung = new GridBagConstraints();
 
-    setLayout(new GridBagLayout());
-    try {
-      BufferedImage bild = ImageIO.read(getClass().getResource("/BILDER/logo_klein.png"));
-      JLabel picLabel = new JLabel(new ImageIcon(bild));
-      layoutEinstellung.gridx = 0;
-      add(picLabel, layoutEinstellung);
-    } catch (IOException e) {
-      e.printStackTrace();
-    }
+    setLayout(null);
 
-    erzeugeTaste("6. Jahrgangsstufe", "/FRAGEN/informatik/6_jahrgangsstufe.xml", 1);
-    erzeugeTaste("7. Jahrgangsstufe", "/FRAGEN/informatik/7_jahrgangsstufe.xml", 2);
+    JLabel bildLogo = new JLabel(Aussehen.macheBild("logo_klein.png"));
+    int logoBreite = 400;
+    bildLogo.setBounds(Aussehen.zentriereX(logoBreite), 50, logoBreite, logoBreite);
+    add(bildLogo);
+
+    int kachelBreite = 500;
+    int xKachel = Aussehen.zentriereX(kachelBreite);
+    erzeugeKleineKachel("6. Jahrgangsstufe", "/FRAGEN/informatik/6_jahrgangsstufe.xml", xKachel, 500);
+    erzeugeKleineKachel("7. Jahrgangsstufe", "/FRAGEN/informatik/7_jahrgangsstufe.xml", xKachel, 600);
   }
 
   /**
@@ -53,18 +39,14 @@ public class AnsichtStartSeite extends Ansicht {
    *
    * @return
    */
-  private JButton erzeugeTaste(String text, String dateiPfad, int gridx) {
-    JButton taste = new JButton(text);
-    taste.setForeground(Aussehen.FARBE_VIOLETT);
-    taste.setPreferredSize(new Dimension(600, 100));
-    taste.setFont(Aussehen.SCHRIFT_NORMAL);
-    taste.addActionListener((event) -> {
+  private void erzeugeKleineKachel(String text, String dateiPfad, int x, int y) {
+    KleineKachel kachel = new KleineKachel(text);
+
+    kachel.fügeLauscherHinzu(() -> {
       AnsichtenVerwalter.ladeNeuesSpiel(dateiPfad);
     });
-    layoutEinstellung.insets = new Insets(5, 5, 5, 5);
-    layoutEinstellung.gridy = gridx;
-    add(taste, layoutEinstellung);
-    return taste;
+    kachel.setLocation(x, y);
+    add(kachel);
   }
 
 }

@@ -114,7 +114,17 @@ public class Aussehen {
    */
   public static final Color FARBE_FALSCH = FARBE_ROT;
 
-
+  /**
+   * Berechnet die „x“ Koordinate für ein Objekt, das zentiert werden soll.
+   *
+   * @param breite Die Breite des Objekts in Pixel.
+   *
+   * @return Die „x“ Koordinate, die verwendet werden kann, damit das Objekt auf
+   *         der horizontalen Achse zentriert erscheint.
+   */
+  public static int zentriereX(int breite) {
+    return (FENSTER_BREITE - breite) / 2;
+  }
 
   /**
    * Erzeuge einen normalen Text.
