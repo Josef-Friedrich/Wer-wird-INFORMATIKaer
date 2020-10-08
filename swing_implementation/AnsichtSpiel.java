@@ -1,46 +1,11 @@
 package swing_implementation;
 
-import javax.swing.JButton;
 import javax.swing.JLabel;
-
-import java.awt.GridBagLayout;
-import java.awt.Insets;
-import java.awt.Dimension;
-import java.awt.GridBagConstraints;
 
 import spiel_logik.Frage;
 import spiel_logik.Spiel;
 
 public class AnsichtSpiel extends Ansicht {
-
-  public class AntwortTaste extends JButton {
-
-    /**
-     * Eine {@link serialVersionUID} wird als Versionsnummer bei der Serialisation
-     * automatisch jeder Klasse hinzugefügt, die das Interface {@link Serializable}
-     * implementiert. Fehlt dieses statische Attribut zeigt Visual Studio Code
-     * beispielsweise diese Warnmeldung an: „The serializable class ... does
-     * not declare a static final serialVersionUID field of type longJava(536871008)“
-     */
-    private static final long serialVersionUID = 1L;
-
-    public AntwortTaste() {
-      setPreferredSize(new Dimension(Aussehen.ANTWORT_TASTE_BREITE, Aussehen.ANTWORT_TASTE_HÖHE));
-    }
-
-    public void zeigeRichtig() {
-      setBackground(Aussehen.FARBE_RICHTIG);
-    }
-
-    public void zeigeFalsch() {
-      setBackground(Aussehen.FARBE_FALSCH);
-    }
-
-    public void zeigeNormal() {
-      setBackground(Aussehen.FARBE);
-    }
-
-  }
 
   /**
    * Eine {@link serialVersionUID} wird als Versionsnummer bei der Serialisation
@@ -55,31 +20,30 @@ public class AnsichtSpiel extends Ansicht {
 
   JLabel fragenText;
 
-  AntwortTaste[] antwortTasten;
-
-  GridBagConstraints layoutEinstellung;
+  AntwortKachel[] antwortKacheln;
 
   public AnsichtSpiel() {
+    setLayout(null);
 
-    setLayout(new GridBagLayout());
+    fragenText = erzeugeFragenText();
 
-    layoutEinstellung = new GridBagConstraints();
+    int x1 = 10;
+    int x2 = 520;
+    int y1 = 500;
+    int y2 = 600;
 
-    fragenText = erzeugeFragenText(0);
-
-    antwortTasten = new AntwortTaste[] { erzeugeAntwortTaste(1, 0), erzeugeAntwortTaste(1, 1),
-        erzeugeAntwortTaste(2, 0), erzeugeAntwortTaste(2, 1), };
+    antwortKacheln = new AntwortKachel[] { erzeugeAntwortKachel(x1, y1), erzeugeAntwortKachel(x1, y2),
+        erzeugeAntwortKachel(x2, y1), erzeugeAntwortKachel(x2, y2) };
 
     for (int antwortNummer : Frage.ANTWORT_NUMMERN) {
-      antwortTasten[antwortNummer].addActionListener((event) -> beantworteFrage(antwortNummer));
+      //antwortKacheln[antwortNummer].fügeAntwortLauscherHinzu((event) -> beantworteFrage(antwortNummer));
     }
 
-    JButton nächsteFrage = new JButton("nächste Frage");
-    layoutEinstellung.gridx = 1;
-    layoutEinstellung.gridy = 3;
-    add(nächsteFrage, layoutEinstellung);
+    Taste nächsteFrage = new Taste("pfeil-blau.png", "pfeil-gelb.png", "pfeil-rot.png");
+    nächsteFrage.setLocation(500, 700);
+    add(nächsteFrage);
 
-    nächsteFrage.addActionListener((event) -> zeigeNächsteFrage());
+    nächsteFrage.fügeLauscherHinzu(() -> zeigeNächsteFrage());
   }
 
   /**
@@ -93,20 +57,18 @@ public class AnsichtSpiel extends Ansicht {
     zeigeNächsteFrage();
   }
 
-  private JLabel erzeugeFragenText(int gridx) {
-    JLabel fragenText = new JLabel();
-    layoutEinstellung.gridx = gridx;
-    add(fragenText, layoutEinstellung);
+  private JLabel erzeugeFragenText() {
+    JLabel fragenText = Aussehen.erzeugeText();
+    fragenText.setLocation(100, 100);
+    add(fragenText);
     return fragenText;
   }
 
-  private AntwortTaste erzeugeAntwortTaste(int gridx, int gridy) {
-    AntwortTaste taste = new AntwortTaste();
-    layoutEinstellung.insets = new Insets(5, 5, 5, 5);
-    layoutEinstellung.gridy = gridx;
-    layoutEinstellung.gridx = gridy;
-    add(taste, layoutEinstellung);
-    return taste;
+  private AntwortKachel erzeugeAntwortKachel(int x, int y) {
+    AntwortKachel kachel = new AntwortKachel();
+    kachel.setLocation(x, y);
+    add(kachel);
+    return kachel;
   }
 
   private void zeigeFrage(Frage frage) {
@@ -114,8 +76,7 @@ public class AnsichtSpiel extends Ansicht {
     String[] antwortenTexte = frage.gibAntworten();
 
     for (int antwortNummer : Frage.ANTWORT_NUMMERN) {
-      antwortTasten[antwortNummer].setText(antwortenTexte[antwortNummer]);
-      antwortTasten[antwortNummer].zeigeNormal();
+      antwortKacheln[antwortNummer].setzeAntwort(antwortenTexte[antwortNummer]);
     }
   }
 
@@ -123,10 +84,10 @@ public class AnsichtSpiel extends Ansicht {
     spiel.beantworteFrage(antwort);
     Frage frage = spiel.gibAktuelleFrage();
     if (frage.istRichtigBeantwortet()) {
-      antwortTasten[frage.gibRichtigeAntwort()].zeigeRichtig();
+      antwortKacheln[frage.gibRichtigeAntwort()].setzeRichtig();
     } else {
-      antwortTasten[frage.gibGegebeneAntwort()].zeigeFalsch();
-      antwortTasten[frage.gibRichtigeAntwort()].zeigeRichtig();
+      antwortKacheln[frage.gibGegebeneAntwort()].setzeFalsch();
+      antwortKacheln[frage.gibRichtigeAntwort()].setzeRichtig();
     }
   }
 

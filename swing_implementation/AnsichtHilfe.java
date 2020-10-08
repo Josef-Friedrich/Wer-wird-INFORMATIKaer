@@ -30,7 +30,7 @@ class Tabelle {
 
   private JLabel erzeugeText(String text) {
     JLabel t = new JLabel(text);
-    t.setFont(Aussehen.SCHRIFT);
+    t.setFont(Aussehen.SCHRIFT_NORMAL);
     t.setForeground(Aussehen.FARBE_WEISS);
     return t;
   }

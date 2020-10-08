@@ -57,7 +57,7 @@ public class AnsichtStartSeite extends Ansicht {
     JButton taste = new JButton(text);
     taste.setForeground(Aussehen.FARBE_VIOLETT);
     taste.setPreferredSize(new Dimension(600, 100));
-    taste.setFont(Aussehen.SCHRIFT);
+    taste.setFont(Aussehen.SCHRIFT_NORMAL);
     taste.addActionListener((event) -> {
       AnsichtenVerwalter.ladeNeuesSpiel(dateiPfad);
     });

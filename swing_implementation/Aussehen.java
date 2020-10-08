@@ -38,10 +38,25 @@ public class Aussehen {
    */
   public static final int ANTWORT_TASTE_HÖHE = 75;
 
+  /**
+   * Die im Spiel verwendete Schriftgröße.
+   */
   public static final int SCHRIFT_GRÖSSE = 20;
+
+  /**
+   * Die im Spiel verwendete Schriftart.
+   */
   public static final String SCHRIFT_ART = "Sans";
 
-  public static final Font SCHRIFT = new Font(SCHRIFT_ART, Font.PLAIN, SCHRIFT_GRÖSSE);
+  /**
+   * Schrift in normaler Textauszeichnung.
+   */
+  public static final Font SCHRIFT_NORMAL = new Font(SCHRIFT_ART, Font.PLAIN, SCHRIFT_GRÖSSE);
+
+  /**
+   * Schrift in fetter Textauszeichnung.
+   */
+  public static final Font SCHRIFT_FETT = new Font(SCHRIFT_ART, Font.BOLD, SCHRIFT_GRÖSSE);
 
   public static final Color FARBE = new Color(255, 255, 255);
 
@@ -96,12 +111,41 @@ public class Aussehen {
    */
   public static final Color FARBE_FALSCH = FARBE_ROT;
 
-
+  /**
+   * Erzeuge eine Überschrift.
+   *
+   * @param text Ein Text, der in eine JLabel eingebettet werden soll.
+   *
+   * @return Ein neues JLabel-Objekt.
+   */
   public static JLabel erzeugeÜberschrift(String text) {
     JLabel ueberschrift = new JLabel(text);
-    ueberschrift.setFont(SCHRIFT);
+    ueberschrift.setFont(SCHRIFT_FETT);
     ueberschrift.setForeground(FARBE_WEISS);
     return ueberschrift;
+  }
+
+  /**
+   * Erzeuge einen normalen Text.
+   *
+   * @param text Ein Text, der in eine JLabel eingebettet werden soll.
+   *
+   * @return Ein neues JLabel-Objekt.
+   */
+  public static JLabel erzeugeText(String text) {
+    JLabel textElement = new JLabel(text);
+    textElement.setFont(SCHRIFT_NORMAL);
+    textElement.setForeground(FARBE_WEISS);
+    return textElement;
+  }
+
+  /**
+   * Erzeuge einen leeren normalen Text.
+   *
+   * @return Ein neues JLabel-Objekt.
+   */
+  public static JLabel erzeugeText() {
+    return erzeugeText("");
   }
 
 }

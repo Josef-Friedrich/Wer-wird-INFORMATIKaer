@@ -19,7 +19,7 @@ public class AktiverText extends JLabel {
 
   public AktiverText(String text) {
     setText(text);
-    setFont(Aussehen.SCHRIFT);
+    setFont(Aussehen.SCHRIFT_NORMAL);
     setForeground(Aussehen.FARBE_VIOLETT);
 
     addMouseListener(new MouseAdapter() {
