@@ -38,9 +38,9 @@ public class Frage {
   private int schwierigkeit;
 
   /**
-   * Die Antwortnummern 0, 1, 2, 3.
+   * Die Antwortnummern (0 = A, 1 = B, 2 = C, 3 = D).
    */
-  public static final int[] ANTWORT_NUMMERN =  { 0, 1, 2, 3 };
+  public static final int[] ANTWORT_NUMMERN = { 0, 1, 2, 3 };
 
   /**
    * Ein Hilfsfeld, damit wir leicht die Fragen mit A B C D nummerieren können.
@@ -109,13 +109,13 @@ public class Frage {
    * Beantworte eine Frage. Die Antwort wird als Integer abgespeichert. So kann
    * man nach dem Spiel eine Auswertung der Fragen anzeigen.
    *
-   * @param antwort Eine Zahl von 0 - 3.
+   * @param antwortNummer Eine Antwortnummer (0 = A, 1 = B, 2 = C, 3 = D).
    *
    * @return Wahr, wenn die Frage richitg beantwortet wurde.
    */
-  public boolean beantworteFrage(int antwort) {
-    this.gegebeneAntwort = antwort;
-    if (antwort == richtigeAntwort) {
+  public boolean beantworteFrage(int antwortNummer) {
+    gegebeneAntwort = antwortNummer;
+    if (antwortNummer == richtigeAntwort) {
       return true;
     }
     return false;
@@ -179,12 +179,12 @@ public class Frage {
    * Wandelt eine Antwortnummer (0, 1, 2, 3) in einen Antwortbuchstaben (A, B, C,
    * D) um.
    *
-   * @param nummer Eine Antwortnummer (0, 1, 2, 3)
+   * @param antwortNummer Eine Antwortnummer (0 = A, 1 = B, 2 = C, 3 = D).
    *
    * @return Den Buchstaben (A-D) der Antwort.
    */
-  public static String konvertiereAntwortNummer(int nummer) {
-    return ANTWORT_BUCHSTABEN[nummer];
+  public static String konvertiereAntwortNummer(int antwortNummer) {
+    return ANTWORT_BUCHSTABEN[antwortNummer];
   }
 
   /**
@@ -211,7 +211,7 @@ public class Frage {
   }
 
   /**
-   * Zeigt an, ob die Frage richtig beantwortet wurde.
+   * Zeige an, ob die Frage richtig beantwortet wurde.
    *
    * @return Wahr, wenn die Frage richtig beantwortete wurde.
    */
@@ -220,6 +220,18 @@ public class Frage {
       return false;
     }
     return richtigeAntwort == gegebeneAntwort;
+  }
+
+  /**
+   * Zeige an, ob die Frage beantwortet (egal ob falsch oder richtig) wurde.
+   *
+   * Diese Methode wird gebraucht, um zu überprüfen, ob eine neue Frage angezeigt
+   * werden kann.
+   *
+   * @return Wahr, wenn die Frage beantwortete wurde.
+   */
+  public boolean istBeantwortet() {
+    return gegebeneAntwort > -1;
   }
 
 }

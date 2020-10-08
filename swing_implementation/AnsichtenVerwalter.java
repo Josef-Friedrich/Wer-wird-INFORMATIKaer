@@ -7,7 +7,7 @@ import java.util.HashMap;
 import javax.swing.JPanel;
 
 /**
- * Verwaltet alle Ansichten, in dem die Klasse statischen Zugriff auf sie
+ * Verwaltet alle Ansichten, indem die Klasse statischen Zugriff auf diese
  * erlaubt.
  *
  * Ansichten sind Spezialisierungen der Swing Klasse {@link javax.swing.JPanel}.
@@ -56,13 +56,27 @@ public class AnsichtenVerwalter {
   }
 
   /**
+   * Gib die Ansicht des aktuellen Spiels.
+   *
+   * Da die Ansicht des aktuellen Spiels sehr häufig verwendet wird, stellte diese
+   * Methode eine kleine Hilfe dar, um weniger tippen zu müssen.
+   *
+   * @return Die Instanz der Klasse {@link AnsichtSpiel}.
+   */
+  public static AnsichtSpiel gibSpiel() {
+    return (AnsichtSpiel) gib("spiel");
+  }
+
+  /**
+   * Lade ein neues Spiel, indem der relative Pfad zu einem Themengebiet angegeben
+   * wird und zeige die Ansicht des aktuellen Spiels.
+   *
    * @param dateiPfad Ein Pfad zu einer Themengebiets-XML-Datei. Relativer Pfad
    *                  zum Projektverzeichnis, beispielsweise
    *                  <code>"/FRAGEN/informatik/6_jahrgangsstufe.xml"</code>.
    */
   public static void ladeNeuesSpiel(String dateiPfad) {
-    AnsichtSpiel ansichtSpiel = (AnsichtSpiel) gib("spiel");
-    ansichtSpiel.starteNeuesSpiel(dateiPfad);
+    gibSpiel().starteNeuesSpiel(dateiPfad);
     zeige("spiel");
   }
 

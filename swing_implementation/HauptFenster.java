@@ -35,8 +35,12 @@ public class HauptFenster extends SpielRahmen {
     add(hauptAnsicht, BorderLayout.CENTER);
     AnsichtenVerwalter.zeige("start");
     pack();
-
+    // Wir brauchen diese Ansicht um Tastenkürzel zu setzten.
+    AnsichtSpiel ansichtSpiel = AnsichtenVerwalter.gibSpiel();
+    // Muss fokusierbar sein, da sonst die Tastenkürzel nicht gehen.
     setFocusable(true);
+    // Wir lauschen in dem Haupt-Fenster auf Tasten-Ereignisse, damit diese immer
+    // empfangen werden können, egal welche Ansicht gerade angezeigt wird.
     addKeyListener(new KeyAdapter() {
       @Override
       public void keyPressed(KeyEvent e) {
@@ -63,6 +67,27 @@ public class HauptFenster extends SpielRahmen {
 
           case KeyEvent.VK_E:
             AnsichtenVerwalter.zeige("ergebnis");
+            break;
+
+          case KeyEvent.VK_A:
+            ansichtSpiel.beantworteFrage(0);
+            break;
+
+          case KeyEvent.VK_B:
+            ansichtSpiel.beantworteFrage(1);
+            break;
+
+          case KeyEvent.VK_C:
+            ansichtSpiel.beantworteFrage(2);
+            break;
+
+          case KeyEvent.VK_D:
+            ansichtSpiel.beantworteFrage(3);
+            break;
+
+          case KeyEvent.VK_SPACE:
+          case KeyEvent.VK_ENTER:
+            ansichtSpiel.zeigeNächsteFrage();
             break;
 
           default:

@@ -107,4 +107,11 @@ public class FrageTest {
     assertEquals(2, Frage.konvertiereAntwortBuchstabe("C"));
     assertEquals(3, Frage.konvertiereAntwortBuchstabe("D"));
   }
+
+  @Test
+  public void methodeIstBeantwortet() {
+    assertEquals(false, frage.istBeantwortet());
+    frage.beantworteFrage(0);
+    assertEquals(true, frage.istBeantwortet());
+  }
 }

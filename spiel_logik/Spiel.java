@@ -160,12 +160,12 @@ public class Spiel {
   /**
    * Überprüfe, ob die Antwort zur aktuellen Frage richtig oder flasch ist.
    *
-   * @param antwort 0 = Frage A, 3 = Frage D
+   * @param antwortNummer Eine Antwortnummer (0 = A, 1 = B, 2 = C, 3 = D).
    *
    * @return Wahr, wenn die Frage richtig beantwortete wurde.
    */
-  public boolean istAntwortRichtig(int antwort) {
-    if (aktuelleFrage.gibRichtigeAntwort() == antwort) {
+  public boolean istAntwortRichtig(int antwortNummer) {
+    if (aktuelleFrage.gibRichtigeAntwort() == antwortNummer) {
       return true;
     }
     return false;
@@ -194,13 +194,13 @@ public class Spiel {
   /**
    * Beantworte die aktuelle Frage.
    *
-   * @param antwort 0 = Frage A, 3 = Frage D
+   * @param antwortNummer Eine Antwortnummer (0 = A, 1 = B, 2 = C, 3 = D).
    *
    * @return Wahr, wenn die Frage richtig beantwortet wurde.
    */
-  public boolean beantworteFrage(int antwort) {
+  public boolean beantworteFrage(int antwortNummer) {
     beantworteteFragen.fügeHintenEin(aktuelleFrage);
-    boolean richtig = aktuelleFrage.beantworteFrage(antwort);
+    boolean richtig = aktuelleFrage.beantworteFrage(antwortNummer);
     verloren = !richtig;
     if (verloren)
       beendet = true;
@@ -283,6 +283,21 @@ public class Spiel {
    */
   public boolean istBeendet() {
     return beendet;
+  }
+
+  /**
+   * Zeige an, ob die aktuelle Frage beantwortet (egal ob falsch oder richtig)
+   * wurde.
+   *
+   * Diese Methode wird gebraucht, um zu überprüfen, ob eine neue Frage angezeigt
+   * werden kann.
+   *
+   * @return Wahr, wenn die Frage beantwortete wurde.
+   */
+  public boolean istAktuelleFrageBeantwortet() {
+    if (aktuelleFrage != null && aktuelleFrage.istBeantwortet())
+      return true;
+    return false;
   }
 
   /**

@@ -116,4 +116,27 @@ public class SpielTest {
     spiel.setzeThemenGebiet("test");
     assertEquals("test", spiel.gibThemenGebiet());
   }
+
+  @Test
+  public void methodeIstVerloren() {
+    Spiel spiel = new Spiel();
+    assertEquals(false, spiel.istVerloren());
+  }
+
+  @Test
+  public void methodeIstBeendet() {
+    Spiel spiel = new Spiel();
+    assertEquals(false, spiel.istBeendet());
+    spiel.beende();
+    assertEquals(true, spiel.istBeendet());
+  }
+
+  @Test
+  public void methodeIstAktuelleFrageBeantwortet() {
+    spiel.gibNächsteFrage();
+    assertEquals(false, spiel.istAktuelleFrageBeantwortet());
+    spiel.beantworteFrage(0);
+    assertEquals(true, spiel.istAktuelleFrageBeantwortet());
+  }
+
 }

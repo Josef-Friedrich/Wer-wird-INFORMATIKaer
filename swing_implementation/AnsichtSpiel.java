@@ -42,7 +42,6 @@ public class AnsichtSpiel extends Ansicht {
     textFrageNummer = Aussehen.macheText(20, Aussehen.FENSTER_HÖHE - 40, 500, 30);
     add(textFrageNummer);
 
-
     int x1 = 10;
     int x2 = 520;
     int y1 = 450;
@@ -134,8 +133,19 @@ public class AnsichtSpiel extends Ansicht {
     tasteNächsteFrage.setVisible(false);
   }
 
-  private void beantworteFrage(int antwort) {
-    spiel.beantworteFrage(antwort);
+  /**
+   * Beantworte eine Frage.
+   *
+   * Diese Methode ist öffentlich, da sie verwendet wird, um mittels
+   * Tastaturkürzel eine Frage zu beantworten. Es kann deshalb sein, dass die
+   * Aktion ausgelöst wird, obwohl noch gar kein Spiel geladen ist.
+   *
+   * @param antwortNummer Eine Antwortnummer (0 = A, 1 = B, 2 = C, 3 = D).
+   */
+  public void beantworteFrage(int antwortNummer) {
+    if (spiel == null)
+      return;
+    spiel.beantworteFrage(antwortNummer);
     Frage frage = spiel.gibAktuelleFrage();
     if (frage.istRichtigBeantwortet()) {
       antwortKacheln[frage.gibRichtigeAntwort()].setzeRichtig();
@@ -148,10 +158,17 @@ public class AnsichtSpiel extends Ansicht {
     tasteNächsteFrage.setVisible(true);
   }
 
-  private void zeigeNächsteFrage() {
+  /**
+   * Zeige die nächste Frage. Ist das Spiel verlorer, zeige die Ergebnis-Ansicht.
+   *
+   * Die Methode ist öffentlich, da eine Tastenkürzel darauf gesetzt ist.
+   */
+  public void zeigeNächsteFrage() {
+    if (spiel == null)
+      return;
     if (spiel.istVerloren()) {
       AnsichtenVerwalter.zeige("ergebnis");
-    } else {
+    } else if (spiel.gibFragenNummer() == 0 || spiel.istAktuelleFrageBeantwortet()) {
       Frage frage = spiel.gibNächsteFrage();
       frage.mischeAntworten();
       zeigeFrage(frage);
