@@ -22,6 +22,8 @@ public class AnsichtSpiel extends Ansicht {
 
   AntwortKachel[] antwortKacheln;
 
+  Taste tasteNächsteFrage;
+
   public AnsichtSpiel() {
     setLayout(null);
 
@@ -40,11 +42,7 @@ public class AnsichtSpiel extends Ansicht {
       antwortKacheln[antwortNummer].setzeBuchstabe(antwortNummer);
     }
 
-    Taste nächsteFrage = new Taste("pfeil-blau.png", "pfeil-gelb.png", "pfeil-rot.png");
-    nächsteFrage.setLocation(800, 700);
-    add(nächsteFrage);
-
-    nächsteFrage.fügeLauscherHinzu(() -> zeigeNächsteFrage());
+    tasteNächsteFrage = erzeugeTasteNächsteFrage();
   }
 
   /**
@@ -65,6 +63,16 @@ public class AnsichtSpiel extends Ansicht {
     return fragenText;
   }
 
+  private Taste erzeugeTasteNächsteFrage() {
+    Taste taste = new Taste("pfeil-blau.png", "pfeil-gelb.png", "pfeil-rot.png");
+    taste.setLocation(800, 700);
+    add(taste);
+    taste.setVisible(false);
+    taste.setToolTipText("Zeige die nächste Fragen an.");
+    taste.fügeLauscherHinzu(() -> zeigeNächsteFrage());
+    return taste;
+  }
+
   private AntwortKachel erzeugeAntwortKachel(int x, int y) {
     AntwortKachel kachel = new AntwortKachel();
     kachel.setLocation(x, y);
@@ -79,6 +87,7 @@ public class AnsichtSpiel extends Ansicht {
     for (int antwortNummer : Frage.ANTWORT_NUMMERN) {
       antwortKacheln[antwortNummer].setzeAntwort(antwortenTexte[antwortNummer]);
     }
+    tasteNächsteFrage.setVisible(false);
   }
 
   private void beantworteFrage(int antwort) {
@@ -90,6 +99,7 @@ public class AnsichtSpiel extends Ansicht {
       antwortKacheln[frage.gibGegebeneAntwort()].setzeFalsch();
       antwortKacheln[frage.gibRichtigeAntwort()].setzeRichtig();
     }
+    tasteNächsteFrage.setVisible(true);
   }
 
   private void zeigeNächsteFrage() {
