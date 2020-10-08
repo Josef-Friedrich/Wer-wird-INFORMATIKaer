@@ -150,6 +150,17 @@ public class Aussehen {
   }
 
   /**
+   * Erzeuge einen leeren Text, der im Spielfeld an den angegeben Bereich plaziert werden kann.
+   *
+   * @return Ein neues JLabel-Objekt.
+   */
+  public static JLabel macheText(int x, int y, int breite, int höhe) {
+    JLabel text = macheText("");
+    text.setBounds(x, y, breite, höhe);
+    return text;
+  }
+
+  /**
    * Erzeuge eine Überschrift.
    *
    * @param text Ein Text, der in eine JLabel eingebettet werden soll.

@@ -136,7 +136,6 @@ public class Spiel {
    */
   public void fügeFragenAlsFeldEin(String[][] fragen) {
     unbeantworteteFragen.fügeFragenAlsFeldEin(fragen);
-
     anzahlFragen = unbeantworteteFragen.gibAnzahlFragen() + beantworteteFragen.gibAnzahlFragen();
   }
 
@@ -248,6 +247,15 @@ public class Spiel {
       int potenz = frageNummer - 15;
       return Math.round(1000000 * Math.pow(2, potenz));
     }
+  }
+
+  /**
+   * Gib die formatiere Gewinnsumme mit Euro-Zeichen und Tausenderpunkt.
+   *
+   * @return Die formatierte Gewinnsumme.
+   */
+  public String gibFormatierteGewinnSumme() {
+    return String.format("%,d €", gibGewinnSumme());
   }
 
   /**

@@ -25,7 +25,7 @@ public class SpielManager {
 
     if (argument.equals("cli")) {
       new KommandozeilenStarter();
-    } else if (argument.equals("cli")) {
+    } else if (argument.equals("swing")) {
       new SwingStarter();
     } else {
       new SwingStarter();

@@ -99,7 +99,7 @@ public class KommandoZeile {
     String buchstabeAntwort = Frage.konvertiereAntwortNummer(frage.gibGegebeneAntwort());
     if (frage.istRichtigBeantwortet()) {
       System.out.println(Farbe.grün(String.format("Die Antwort %s war richtig!", buchstabeAntwort)));
-      System.out.println(String.format("Deine momentane Gewinnsumme: %s", Farbe.blau(spiel.gibGewinnSumme() + " €")));
+      System.out.println(String.format("Deine momentane Gewinnsumme: %s", Farbe.blau(spiel.gibFormatierteGewinnSumme())));
     } else {
       System.out.print(Farbe.rot(String.format("Die Antwort %s war falsch! ", buchstabeAntwort)));
       System.out.println(String.format("Richtig wäre Antwort %s gewesen: %s", Farbe.grün(buchstabeRichtig),
@@ -127,7 +127,7 @@ public class KommandoZeile {
     if (spiel.istVerloren()) {
       System.out.println("Du hast leider verloren!");
     } else {
-      System.out.println(String.format("Gratulation! Du hast %s gewonnen!", Farbe.blau(spiel.gibGewinnSumme() + " €")));
+      System.out.println(String.format("Gratulation! Du hast %s gewonnen!", Farbe.blau(spiel.gibFormatierteGewinnSumme())));
     }
   }
 

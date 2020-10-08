@@ -18,7 +18,11 @@ public class AnsichtSpiel extends Ansicht {
 
   Spiel spiel;
 
-  JLabel fragenText;
+  JLabel textFrage;
+
+  JLabel textThemenGebiet;
+  JLabel textGewinnSumme;
+  JLabel textFrageNummer;
 
   AntwortKachel[] antwortKacheln;
 
@@ -27,7 +31,17 @@ public class AnsichtSpiel extends Ansicht {
   public AnsichtSpiel() {
     setLayout(null);
 
-    fragenText = erzeugeFragenText();
+    textFrage = erzeugeFragenText();
+
+    textThemenGebiet = Aussehen.macheText(20, 20, 500, 50);
+    add(textThemenGebiet);
+
+    textGewinnSumme = Aussehen.macheText(600, 20, 400, 50);
+    add(textGewinnSumme);
+
+    textFrageNummer = Aussehen.macheText(20, Aussehen.FENSTER_HÖHE - 40, 500, 30);
+    add(textFrageNummer);
+
 
     int x1 = 10;
     int x2 = 520;
@@ -57,7 +71,25 @@ public class AnsichtSpiel extends Ansicht {
   public void starteNeuesSpiel(String dateiPfad) {
     SpielSteuerung.lade(dateiPfad);
     spiel = SpielSteuerung.gib();
+    textThemenGebiet.setText(String.format("%s / %s", spiel.gibThemenBereich(), spiel.gibThemenGebiet()));
+    aktualisiereFragenNummer();
+    aktualisiereGewinnSumme();
     zeigeNächsteFrage();
+  }
+
+  /**
+   * Aktualisiere den Text der die aktuelle Fragennummer sowie die Gesamtzahl der
+   * Fragen anzeigt.
+   */
+  private void aktualisiereFragenNummer() {
+    textFrageNummer.setText(String.format("%d / %d", spiel.gibFragenNummer(), spiel.gibAnzahlFragen()));
+  }
+
+  /**
+   * Aktualisiere die Gewinnsumme.
+   */
+  private void aktualisiereGewinnSumme() {
+    textGewinnSumme.setText(spiel.gibFormatierteGewinnSumme());
   }
 
   private JLabel erzeugeFragenText() {
@@ -84,8 +116,16 @@ public class AnsichtSpiel extends Ansicht {
     return kachel;
   }
 
+  /**
+   * Zeige eine Frage.
+   *
+   * Es werden alle Textfelder mit den Texten der aktuellen Frage befüllt.
+   *
+   * @param frage Eine Instanz der aktuellen Frage.
+   */
   private void zeigeFrage(Frage frage) {
-    fragenText.setText(frage.gibFragenText());
+    textFrage.setText(frage.gibFragenText());
+    aktualisiereFragenNummer();
     String[] antwortenTexte = frage.gibAntworten();
 
     for (int antwortNummer : Frage.ANTWORT_NUMMERN) {
@@ -103,6 +143,8 @@ public class AnsichtSpiel extends Ansicht {
       antwortKacheln[frage.gibGegebeneAntwort()].setzeFalsch();
       antwortKacheln[frage.gibRichtigeAntwort()].setzeRichtig();
     }
+    aktualisiereGewinnSumme();
+    aktualisiereFragenNummer();
     tasteNächsteFrage.setVisible(true);
   }
 
