@@ -16,17 +16,17 @@ public class AnsichtSpiel extends Ansicht {
    */
   private static final long serialVersionUID = 1L;
 
-  Spiel spiel;
+  private Spiel spiel;
 
-  JLabel textFrage;
+  private JLabel textFrage;
 
-  JLabel textThemenGebiet;
-  JLabel textGewinnSumme;
-  JLabel textFrageNummer;
+  private JLabel textThemenGebiet;
+  private JLabel textGewinnSumme;
+  private JLabel textFrageNummer;
 
-  AntwortKachel[] antwortKacheln;
+  private AntwortKachel[] antwortKacheln;
 
-  Taste tasteNächsteFrage;
+  private Taste tasteNächsteFrage;
 
   public AnsichtSpiel() {
     setLayout(null);
@@ -149,9 +149,17 @@ public class AnsichtSpiel extends Ansicht {
   }
 
   private void zeigeNächsteFrage() {
-    Frage frage = spiel.gibNächsteFrage();
-    frage.mischeAntworten();
-    zeigeFrage(frage);
+    if (spiel.istVerloren()) {
+      AnsichtenVerwalter.zeige("ergebnis");
+    } else {
+      Frage frage = spiel.gibNächsteFrage();
+      frage.mischeAntworten();
+      zeigeFrage(frage);
+    }
+  }
+
+  public Spiel gibAktuellesSpiel() {
+    return spiel;
   }
 
 }

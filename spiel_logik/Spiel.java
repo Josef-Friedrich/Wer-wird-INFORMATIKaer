@@ -61,6 +61,11 @@ public class Spiel {
   private boolean verloren = false;
 
   /**
+   * Man kann ein Spiel vorzeitig beenden und die bisherige Gewinnsumme mitnehmen.
+   */
+  private boolean beendet = false;
+
+  /**
    * Die Anzahl der ins Spiel geladenen Fragen. Die Summe der beantworteten Fragen
    * und der unbeantworteten Fragen sollten diese Zahl ergeben.
    */
@@ -197,6 +202,8 @@ public class Spiel {
     beantworteteFragen.fügeHintenEin(aktuelleFrage);
     boolean richtig = aktuelleFrage.beantworteFrage(antwort);
     verloren = !richtig;
+    if (verloren)
+      beendet = true;
     return richtig;
   }
 
@@ -265,6 +272,24 @@ public class Spiel {
    */
   public boolean istVerloren() {
     return verloren;
+  }
+
+  /**
+   * Zeige an, ob das Spiel beendet wurde. Wenn das Spiel verloren wurde, ist das
+   * Spiel immer beendet. Man kann ein Spiel vorzeitig beenden und die Gewinnsumme
+   * mitnehmen.
+   *
+   * @return Wahr, wenn das Spiel beendet wurde.
+   */
+  public boolean istBeendet() {
+    return beendet;
+  }
+
+  /**
+   * Beende ein Spiel.
+   */
+  public void beende() {
+    beendet = true;
   }
 
   /**

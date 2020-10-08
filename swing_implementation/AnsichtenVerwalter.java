@@ -42,10 +42,13 @@ public class AnsichtenVerwalter {
     initialisiereAnsicht("spiel", new AnsichtSpiel());
     initialisiereAnsicht("über", new AnsichtÜberProjekt());
     initialisiereAnsicht("hilfe", new AnsichtHilfe());
+    initialisiereAnsicht("ergebnis", new AnsichtErgebnis());
   }
 
   public static void zeige(String ansichtenName) {
     ansichtenWechsler.show(hauptAnsicht, ansichtenName);
+    Ansicht ansicht = gib(ansichtenName);
+    ansicht.zeige();
   }
 
   public static Ansicht gib(String ansichtenName) {

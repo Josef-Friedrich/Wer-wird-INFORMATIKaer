@@ -41,6 +41,7 @@ public class MenuLeiste extends JMenuBar {
     erzeugeNavigationsEintrag("Startseite", "start");
     erzeugeNavigationsEintrag("Themengebiete", "themen");
     erzeugeNavigationsEintrag("Aktuelles Spiel", "spiel");
+    erzeugeNavigationsEintrag("Ergebnis", "ergebnis");
     erzeugeNavigationsEintrag("Hilfe", "hilfe");
     erzeugeNavigationsEintrag("Über das Spiel", "über");
 

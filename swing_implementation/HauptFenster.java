@@ -61,6 +61,10 @@ public class HauptFenster extends SpielRahmen {
             AnsichtenVerwalter.zeige("spiel");
             break;
 
+          case KeyEvent.VK_E:
+            AnsichtenVerwalter.zeige("ergebnis");
+            break;
+
           default:
             break;
         }
