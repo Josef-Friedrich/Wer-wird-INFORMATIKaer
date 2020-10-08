@@ -4,7 +4,6 @@ import javax.swing.JLabel;
 
 public class AnsichtStartSeite extends Ansicht {
 
-
   /**
    * Eine {@link serialVersionUID} wird als Versionsnummer bei der Serialisation
    * automatisch jeder Klasse hinzugefügt, die das Interface {@link Serializable}
