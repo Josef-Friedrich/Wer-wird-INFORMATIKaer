@@ -3,8 +3,80 @@
     <fach>Informatik</fach>
     <thema>6. Jahrgangsstufe</thema>
     <autor>Team Nürnberg</autor>
-    <anzahlFragen>30</anzahlFragen>
+    <anzahlFragen>34</anzahlFragen>
     <fragen>
+        <frage>
+            <fragenText>Welche Bilder speichert man eher als Vektorgraphik?</fragenText>
+            <richtigeAntwort>Plan für eine neue Küche</richtigeAntwort>
+            <falscheAntwort1>eingescannte Seite aus einem Buch</falscheAntwort1>
+            <falscheAntwort2>Illustration aus Tusche für ein Buch</falscheAntwort2>
+            <falscheAntwort3>Passbild</falscheAntwort3>
+            <schwierigkeit>3</schwierigkeit>
+        </frage>
+        <frage>
+            <fragenText>Methoden werden angewendet auf</fragenText>
+            <richtigeAntwort>ein Objekt einer Klasse</richtigeAntwort>
+            <falscheAntwort1>eine Klasse</falscheAntwort1>
+            <falscheAntwort2>auf bestimmte Objekte auf einer Klasse</falscheAntwort2>
+            <falscheAntwort3>auf Objekte und Klassen</falscheAntwort3>
+            <schwierigkeit>4</schwierigkeit>
+        </frage>
+        <frage>
+            <fragenText>Um mit der Punktnotation eine Methode auf dem Objekt viereck1 aufzurufen, schreibt man</fragenText>
+            <richtigeAntwort>viereck1.verschiebe(Parameter)</richtigeAntwort>
+            <falscheAntwort1>verschiebe.viereck1(parameter)</falscheAntwort1>
+            <falscheAntwort2>viereck1(parameter).verschiebe</falscheAntwort2>
+            <falscheAntwort3>viereck1.parameter.verschiebe()</falscheAntwort3>
+            <schwierigkeit>5</schwierigkeit>
+        </frage>
+        <frage>
+            <fragenText>Das Dreieck soll zuerst in x-Richtung 5 cm und in y-Richtung 2 cm verschoben werden mit der Methode verschieben(x,y). Was wird funktionieren?</fragenText>
+            <richtigeAntwort>dreieck1.verschieben(5,2)</richtigeAntwort>
+            <falscheAntwort1>dreieck1.verschieben(5)verschieben(2)</falscheAntwort1>
+            <falscheAntwort2>dreieck1.verschieben(2,5)</falscheAntwort2>
+            <falscheAntwort3>dreieck1.verschieben(5,2) dreieck1.verschieben(5,2)</falscheAntwort3>
+            <schwierigkeit>5</schwierigkeit>
+        </frage>
+        <frage>
+            <fragenText>Welches dieser Objekte muss gestrichen werden, damit sich die restlichen Objekte einer Klasse zuordnen lassen?</fragenText>
+            <richtigeAntwort>bayern</richtigeAntwort>
+            <falscheAntwort1>norwegen</falscheAntwort1>
+            <falscheAntwort2>belgien</falscheAntwort2>
+            <falscheAntwort3>italien</falscheAntwort3>
+            <schwierigkeit>3</schwierigkeit>
+        </frage>
+        <frage>
+            <fragenText>Alle Objekte einer Klasse haben:</fragenText>
+            <richtigeAntwort>dieselben Attribute</richtigeAntwort>
+            <falscheAntwort1>dieselben Werte</falscheAntwort1>
+            <falscheAntwort2>denselben Namen</falscheAntwort2>
+            <falscheAntwort3>den gleichen Inhalt</falscheAntwort3>
+            <schwierigkeit>4</schwierigkeit>
+        </frage>
+        <frage>
+            <fragenText>Eine Klasse beschreibt:</fragenText>
+            <richtigeAntwort>gleichartige Objekte</richtigeAntwort>
+            <falscheAntwort1>die Ansammlung von 30 Schülern</falscheAntwort1>
+            <falscheAntwort2>eine Automarke</falscheAntwort2>
+            <falscheAntwort3>die Qualität von Aussagen</falscheAntwort3>
+            <schwierigkeit>2</schwierigkeit>
+        </frage>
+        <frage>
+            <fragenText>Was stimmt nicht? Auf der Objektkarte stehen:</fragenText>
+            <richtigeAntwort>Methoden</richtigeAntwort>
+            <falscheAntwort1>Objektname in klein</falscheAntwort1>
+            <falscheAntwort2>Attributwerte in Zahlen</falscheAntwort2>
+            <falscheAntwort3>Klassenname in Groß</falscheAntwort3>
+            <schwierigkeit>4</schwierigkeit>
+        </frage>
+        <frage>
+            <fragenText>Die Verbindung von Knoten in einem Graphen nennt man ...</fragenText>
+            <richtigeAntwort>Kante</richtigeAntwort>
+            <falscheAntwort1>Seil</falscheAntwort1>
+            <falscheAntwort2>Glied</falscheAntwort2>
+            <falscheAntwort3>Line</falscheAntwort3>
+            <schwierigkeit>1</schwierigkeit>
+        </frage>
         <frage>
             <fragenText>Welche Definition trifft in Informatik für den Begriff Klasse zu?</fragenText>
             <richtigeAntwort>ein Bauplan für Objekte gleicher Art</richtigeAntwort>
@@ -79,10 +151,10 @@
         </frage>
         <frage>
             <fragenText>Wie viele Attribute hat ein Objekt der Klasse PIXEL?</fragenText>
-            <richtigeAntwort>1</richtigeAntwort>
-            <falscheAntwort1>3</falscheAntwort1>
-            <falscheAntwort2>5</falscheAntwort2>
-            <falscheAntwort3>7</falscheAntwort3>
+            <richtigeAntwort>4</richtigeAntwort>
+            <falscheAntwort1>9</falscheAntwort1>
+            <falscheAntwort2>15</falscheAntwort2>
+            <falscheAntwort3>37</falscheAntwort3>
             <schwierigkeit>4</schwierigkeit>
         </frage>
         <frage>
@@ -204,14 +276,6 @@
             <falscheAntwort2>Operation, die ein Prädikat ausführen kann.</falscheAntwort2>
             <falscheAntwort3>Operation, die ein Konsonant ausführen kann.</falscheAntwort3>
             <schwierigkeit>2</schwierigkeit>
-        </frage>
-        <frage>
-            <fragenText>Was bedeutet die elementare Informationseinheit "Bit"?</fragenText>
-            <richtigeAntwort>binary digit</richtigeAntwort>
-            <falscheAntwort1>binary dictionary</falscheAntwort1>
-            <falscheAntwort2>biscuit day</falscheAntwort2>
-            <falscheAntwort3>bicycle day</falscheAntwort3>
-            <schwierigkeit>3</schwierigkeit>
         </frage>
         <frage>
             <fragenText>Was kommt in Objektdiagrammen NICHT vor?</fragenText>
