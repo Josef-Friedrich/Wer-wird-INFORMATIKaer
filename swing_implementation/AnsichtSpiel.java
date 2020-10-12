@@ -1,6 +1,9 @@
 package swing_implementation;
 
 import javax.swing.JLabel;
+import javax.swing.Timer;
+
+import java.awt.event.ActionEvent;
 
 import spiel_logik.Frage;
 import spiel_logik.Spiel;
@@ -27,6 +30,18 @@ public class AnsichtSpiel extends Ansicht {
   private AntwortKachel[] antwortKacheln;
 
   private Taste tasteNächsteFrage;
+
+  /**
+   * Nach drei Sekunden wird automatisch die nächste Frage angezeigt. Die Zeit
+   * wird in Millisekunden angegeben. Als zweiter Parameter wird eigentlich eine
+   * Instanz der Klasse {@link java.awt.event.ActionListener} verlangt. Wir
+   * verwenden hier aber eine Referenz auf die Methode
+   * {@link zeigeNächsteFrageEreignis}, weil sich das kompakter darstellen lässt.
+   * Diese Methode ruft wiederum die Methode {@link zeigeNächsteFrage} auf.
+   *
+   * https://stackoverflow.com/a/39584264/10193818
+   */
+  private Timer zeitmesser = new Timer(3000, this::zeigeNächsteFrageEreignis);
 
   public AnsichtSpiel() {
     setLayout(null);
@@ -156,10 +171,31 @@ public class AnsichtSpiel extends Ansicht {
     aktualisiereGewinnSumme();
     aktualisiereFragenNummer();
     tasteNächsteFrage.setVisible(true);
+    zeigeNächsteFrageVerzögert();
   }
 
   /**
-   * Zeige die nächste Frage. Ist das Spiel verlorer, zeige die Ergebnis-Ansicht.
+   * Zeige die nächste Frage nicht sofort, sondern in drei Sekunden. Der/Die
+   * Spieler/in hat somit Zeit das Ergebnis zu betrachten, was einen positiven
+   * Lerneffekt haben könnte.
+   */
+  private void zeigeNächsteFrageVerzögert() {
+    zeitmesser.stop();
+    zeitmesser.start();
+  }
+
+  /**
+   * Diese Methode wird der Stoppuhr übergeben. Sie wird 3 Sekunden, nachdem die
+   * Frage beantwortete wurde, ausgeführt.
+   *
+   * @param ereignis
+   */
+  private void zeigeNächsteFrageEreignis(ActionEvent ereignis) {
+    zeigeNächsteFrage();
+  }
+
+  /**
+   * Zeige die nächste Frage. Ist das Spiel verloren, zeige die Ergebnis-Ansicht.
    *
    * Die Methode ist öffentlich, da eine Tastenkürzel darauf gesetzt ist.
    */
