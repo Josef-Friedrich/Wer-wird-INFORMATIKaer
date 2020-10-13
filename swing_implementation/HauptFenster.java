@@ -95,6 +95,7 @@ public class HauptFenster extends SpielRahmen {
         }
       }
     });
+    new MusikSpieler();
 
     setVisible(true);
   }
