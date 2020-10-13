@@ -146,6 +146,7 @@ public class AnsichtSpiel extends Ansicht {
       antwortKacheln[antwortNummer].setzeAntwort(antwortenTexte[antwortNummer]);
     }
     tasteNächsteFrage.setVisible(false);
+    SpielSteuerung.musikSpieler.starteEndlos("fragen");
   }
 
   /**
@@ -164,9 +165,11 @@ public class AnsichtSpiel extends Ansicht {
     Frage frage = spiel.gibAktuelleFrage();
     if (frage.istRichtigBeantwortet()) {
       antwortKacheln[frage.gibRichtigeAntwort()].setzeRichtig();
+      SpielSteuerung.musikSpieler.starte("richtig");
     } else {
       antwortKacheln[frage.gibGegebeneAntwort()].setzeFalsch();
       antwortKacheln[frage.gibRichtigeAntwort()].setzeRichtig();
+      SpielSteuerung.musikSpieler.starte("falsch");
     }
     aktualisiereGewinnSumme();
     aktualisiereFragenNummer();

@@ -14,7 +14,6 @@ public class AnsichtStartSeite extends Ansicht {
   private static final long serialVersionUID = 1L;
 
   public AnsichtStartSeite() {
-
     setLayout(null);
 
     JLabel bildLogo = new JLabel(Aussehen.macheBild("logo_klein.png"));
@@ -46,6 +45,10 @@ public class AnsichtStartSeite extends Ansicht {
     });
     kachel.setLocation(x, y);
     add(kachel);
+  }
+
+  public void zeige() {
+    SpielSteuerung.musikSpieler.starteEndlos("haupt");
   }
 
 }

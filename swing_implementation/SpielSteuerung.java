@@ -28,4 +28,6 @@ public class SpielSteuerung {
   public static Spiel gib() {
     return spiel;
   }
+
+  public static MusikSpieler musikSpieler = new MusikSpieler();
 }
