@@ -227,6 +227,7 @@
             <themenGebiet pfad="test/03_fragen.xml" titel="3 Test-Fragen"/>
             <themenGebiet pfad="test/10_fragen.xml" titel="10 Test-Fragen"/>
             <themenGebiet pfad="test/15_fragen.xml" titel="15 Test-Fragen"/>
+            <themenGebiet pfad="test/lange_antworten.xml" titel="Lange Antworten"/>
         </gebiete>
     </themenBereich>
 </themenKatalog>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<themenGebiet>
+    <fach>Test</fach>
+    <thema>Lange Antworten</thema>
+    <autor>Team Nürnberg</autor>
+    <anzahlFragen>3</anzahlFragen>
+    <fragen>
+        <frage>
+            <fragenText>Frage 1</fragenText>
+            <richtigeAntwort>richige Antwort</richtigeAntwort>
+            <falscheAntwort1>Das ist eine richtig lange und noch dazu falsche Antwort mit der Nummer 1. Und die Antwort hört gar nicht auf.</falscheAntwort1>
+            <falscheAntwort2>falsche Antwort 2</falscheAntwort2>
+            <falscheAntwort3>Mittellange falsche Antwort 3. Ist auch recht lang.</falscheAntwort3>
+            <schwierigkeit>1</schwierigkeit>
+        </frage>
+        <frage>
+            <fragenText>Frage 2</fragenText>
+            <richtigeAntwort>Das ist eine richtig lange Antwort. Die Antwort ist richtig. Und die Antwort hört gar nicht auf.</richtigeAntwort>
+            <falscheAntwort1>Mittellange falsche Antwort 1. Ist auch recht lang.</falscheAntwort1>
+            <falscheAntwort2>falsche Antwort 2</falscheAntwort2>
+            <falscheAntwort3>falsche Antwort 3</falscheAntwort3>
+            <schwierigkeit>1</schwierigkeit>
+        </frage>
+        <frage>
+            <fragenText>Frage 3</fragenText>
+            <richtigeAntwort>richige Antwort</richtigeAntwort>
+            <falscheAntwort1>Mittellange falsche Antwort 1. Ist auch recht lang.</falscheAntwort1>
+            <falscheAntwort2>falsche Antwort 2</falscheAntwort2>
+            <falscheAntwort3>Das ist eine richtig lange und noch dazu falsche Antwort mit der Nummer 3. Und die Antwort hört gar nicht auf.</falscheAntwort3>
+            <schwierigkeit>1</schwierigkeit>
+        </frage>
+    </fragen>
+</themenGebiet>

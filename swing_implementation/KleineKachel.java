@@ -21,7 +21,7 @@ public class KleineKachel extends Taste {
   public KleineKachel() {
     super(gibBild("blau"), gibBild("orange"), gibBild("rot"));
     text = Aussehen.macheText();
-    text.setBounds(100, 40, 500, 50);
+    text.setBounds(70, 40, 500, 50);
     add(text);
   }
 
