@@ -27,7 +27,7 @@ public class ThemenGebietTest {
   @Test
   public void methodeGibFragenAnzahl() throws Exception {
     ThemenGebiet gebiet = new ThemenGebiet("/FRAGEN/informatik/6_jahrgangsstufe.xml");
-    assertEquals(30, gebiet.gibAnzahlFragen());
+    assertEquals(38, gebiet.gibAnzahlFragen());
   }
 
 }

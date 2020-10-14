@@ -1,23 +1,48 @@
 package spiel_logik;
 
+/**
+ * Diese abstrakte Klasse wird von der Klasse {@link DatenKnoten} und der Klasse
+ * {@link ListenAbschluss} geerbt.
+ */
 public abstract class ListenElement {
 
+  /**
+   * Das nächste Listenelement.
+   */
   protected ListenElement nächstes;
-  protected DatenKnoten datenKnoten;
 
+  /**
+   * Gib das nächste Listenelement.
+   */
   public ListenElement gibNächstes() {
-      return nächstes;
+    return nächstes;
   }
 
-  public DatenKnoten gibDatenKnoten() {
-      return datenKnoten;
-  }
-
-  public abstract DatenKnoten fügeHintenEin(Frage frage);
-
+  /**
+   * Gib die Frage.
+   */
   public abstract Frage gibFrage();
 
+  /**
+   * Füge eine Frage ans Ende der Liste.
+   *
+   * @return Die Instanz des Datenknoten.
+   */
+  public abstract DatenKnoten fügeHintenEin(Frage frage);
+
+  /**
+   * Setze das nächste Listenelement.
+   *
+   * @param nächstes Ein Listenelement.
+   */
   public abstract void setzeNächstes(ListenElement nächstes);
 
+  /**
+   * Gib die Anzahl an Datenknoten.
+   *
+   * Die Anzahl wird rekursiv berechnet.
+   *
+   * @return Die Anzahl an Datenknoten.
+   */
   public abstract int gibAnzahlDatenKnoten();
 }
