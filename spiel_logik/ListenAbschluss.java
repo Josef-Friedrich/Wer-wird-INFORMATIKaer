@@ -19,7 +19,6 @@ public class ListenAbschluss extends ListenElement {
     return null;
   }
 
-
   /**
    * Füge eine Frage ans Ende der Liste.
    *
@@ -29,10 +28,19 @@ public class ListenAbschluss extends ListenElement {
     return new DatenKnoten(this, frage);
   }
 
+  /**
+   * Eine Methode ohne Funktion. Der Listenabschluss hat kein nächstes
+   * Datenelement. Er ist das letzte Element in der Liste. Die Methode muss jedoch
+   * implementiert werden, da die Klasse {@link ListenElement} sie als abstrakt
+   * deklariert hat.
+   */
   public void setzeNächstes(ListenElement nächstes) {
-    return;
   }
 
+  /**
+   * Gibt 0 zurück, den wenn eine Instanz dieser Klasse das erste Element in der
+   * Liste ist, dann ist diese Liste leer.
+   */
   public int gibAnzahlDatenKnoten() {
     return 0;
   }
