@@ -78,13 +78,14 @@ public class AnsichtSpiel extends Ansicht {
   }
 
   /**
+   * Starte ein neues Spiel.
+   *
    * @param dateiPfad Ein Pfad zu einer Themengebiets-XML-Datei. Relativer Pfad
    *                  zum Projektverzeichnis, beispielsweise
    *                  <code>"/FRAGEN/informatik/6_jahrgangsstufe.xml"</code>.
    */
   public void starteNeuesSpiel(String dateiPfad) {
-    SpielSteuerung.lade(dateiPfad);
-    spiel = SpielSteuerung.gib();
+    spiel = SpielSteuerung.starteNeuesSpiel(dateiPfad);
     textThemenGebiet.setText(String.format("%s / %s", spiel.gibThemenBereich(), spiel.gibThemenGebiet()));
     aktualisiereFragenNummer();
     aktualisiereGewinnSumme();
