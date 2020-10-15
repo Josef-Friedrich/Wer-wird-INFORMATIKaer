@@ -46,17 +46,19 @@ public class MehrzeiligerText {
    */
   private ArrayList<String> teileText(String text, int textWeite) {
     ArrayList<String> textZeilen = new ArrayList<String>();
-    // Wir teilen den Text in Wörter. Leerzeichen können mehrer Sonderzeichen, wie
-    // z. B. Zeilenumbruch oder Tabulatar sein.
+    // Wir teilen den Text in Wörter. Wir behandeln nicht nur
+    // Leerzeichen sondern auch andere Zeichen wie z. B. Zeilenumbruch
+    // oder Tabulatar sein.
     String[] wörter = text.split("[ \t\n\r]+");
     String zeile = "";
 
     for (int i = 0; i < wörter.length; i++) {
-      if (zeile.length() > textWeite) {
+      String nächstesWort = wörter[i];
+      if (zeile.length() + nächstesWort.length() > textWeite) {
         textZeilen.add(zeile);
         zeile = "";
       }
-      zeile = zeile + wörter[i] + " ";
+      zeile = zeile + nächstesWort + " ";
     }
     // Die restlichen Wörter hinzufügen.
     textZeilen.add(zeile);
