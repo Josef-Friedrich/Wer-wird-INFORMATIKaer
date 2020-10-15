@@ -41,10 +41,13 @@ public class AnsichtSpiel extends Ansicht {
    *
    * https://stackoverflow.com/a/39584264/10193818
    */
-  private Timer zeitmesser = new Timer(3000, this::zeigeNächsteFrageEreignis);
+  private Timer zeitmesser;
 
   public AnsichtSpiel() {
     setLayout(null);
+
+    zeitmesser = new Timer(3000, this::zeigeNächsteFrageEreignis);
+    zeitmesser.setRepeats(false);
 
     textFrage = erzeugeFragenText();
 
