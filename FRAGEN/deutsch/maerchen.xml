@@ -566,7 +566,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Wer ist k e i n Bremer Stadtmusikant?</fragenText>
+            <fragenText>Wer ist kein Bremer Stadtmusikant?</fragenText>
             <richtigeAntwort>Maus</richtigeAntwort>
             <falscheAntwort1>Hund</falscheAntwort1>
             <falscheAntwort2>Katze</falscheAntwort2>
@@ -1356,7 +1356,7 @@
             <schwierigkeitMax>11</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches dieser Grimm´schen Märchen beginnt n i c h t mit „Es war einmal...“?</fragenText>
+            <fragenText>Welches dieser Grimm´schen Märchen beginnt nicht mit „Es war einmal...“?</fragenText>
             <richtigeAntwort>Hans im Glück</richtigeAntwort>
             <falscheAntwort1>Die Sterntaler</falscheAntwort1>
             <falscheAntwort2>Rumpelstilzchen</falscheAntwort2>
@@ -1416,7 +1416,7 @@
             <schwierigkeitMax>11</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welche dieser märchenhaften Töchter wird am Schluss n i c h t von einem Königssohn geheiratet?</fragenText>
+            <fragenText>Welche dieser märchenhaften Töchter wird am Schluss nicht von einem Königssohn geheiratet?</fragenText>
             <richtigeAntwort>Rotkäppchen</richtigeAntwort>
             <falscheAntwort1>Aschenputtel</falscheAntwort1>
             <falscheAntwort2>Dornröschen</falscheAntwort2>

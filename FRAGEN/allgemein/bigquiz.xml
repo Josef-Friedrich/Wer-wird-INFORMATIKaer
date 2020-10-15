@@ -6,7 +6,7 @@
     <anzahlFragen>300</anzahlFragen>
     <fragen>
         <frage>
-            <fragenText>Was wird mit der Webtechnik n i c h t hergestellt?</fragenText>
+            <fragenText>Was wird mit der Webtechnik nicht hergestellt?</fragenText>
             <richtigeAntwort>Drift</richtigeAntwort>
             <falscheAntwort1>Gabardine</falscheAntwort1>
             <falscheAntwort2>Taft</falscheAntwort2>
@@ -116,7 +116,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Begriff kann n i c h t mit einer Werkzeugmaschine zum Drehen in Verbindung gebracht werden?</fragenText>
+            <fragenText>Welcher Begriff kann nicht mit einer Werkzeugmaschine zum Drehen in Verbindung gebracht werden?</fragenText>
             <richtigeAntwort>Drehgestell</richtigeAntwort>
             <falscheAntwort1>Drehbank</falscheAntwort1>
             <falscheAntwort2>Drehautomat</falscheAntwort2>
@@ -276,7 +276,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Was ist k e i n e Abkürzung für ein Gesetz oder eine Verordnung im Straßenverkehr?</fragenText>
+            <fragenText>Was ist keine Abkürzung für ein Gesetz oder eine Verordnung im Straßenverkehr?</fragenText>
             <richtigeAntwort>StVW</richtigeAntwort>
             <falscheAntwort1>StVO</falscheAntwort1>
             <falscheAntwort2>StVG</falscheAntwort2>
@@ -306,7 +306,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Widerstand kommt beim Wechselstrom n i c h t vor?</fragenText>
+            <fragenText>Welcher Widerstand kommt beim Wechselstrom nicht vor?</fragenText>
             <richtigeAntwort>Rollwiderstand</richtigeAntwort>
             <falscheAntwort1>Blindwiderstand</falscheAntwort1>
             <falscheAntwort2>Scheinwiderstand</falscheAntwort2>
@@ -386,7 +386,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Autotunnel liegt n i c h t in der Schweiz?</fragenText>
+            <fragenText>Welcher Autotunnel liegt nicht in der Schweiz?</fragenText>
             <richtigeAntwort>Katschbergtunnel</richtigeAntwort>
             <falscheAntwort1>St.-Bernhard-Tunnel</falscheAntwort1>
             <falscheAntwort2>Lötschbergtunnel</falscheAntwort2>
@@ -506,7 +506,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welche der aufgeführten Städte liegt n i c h t am Rhein?</fragenText>
+            <fragenText>Welche der aufgeführten Städte liegt nicht am Rhein?</fragenText>
             <richtigeAntwort>Freiburg</richtigeAntwort>
             <falscheAntwort1>Bonn</falscheAntwort1>
             <falscheAntwort2>Basel</falscheAntwort2>
@@ -636,7 +636,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welche der aufgeführten Sachen gehört n i c h t zu den so genannten künstlichen Welthilfssprachen?</fragenText>
+            <fragenText>Welche der aufgeführten Sachen gehört nicht zu den so genannten künstlichen Welthilfssprachen?</fragenText>
             <richtigeAntwort>Gudscharati</richtigeAntwort>
             <falscheAntwort1>Novial</falscheAntwort1>
             <falscheAntwort2>Esperanto</falscheAntwort2>
@@ -916,7 +916,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welche Grundzutat gehört n i c h t in die Gewürzmischung Curry?</fragenText>
+            <fragenText>Welche Grundzutat gehört nicht in die Gewürzmischung Curry?</fragenText>
             <richtigeAntwort>Paprika</richtigeAntwort>
             <falscheAntwort1>Koriander</falscheAntwort1>
             <falscheAntwort2>Zimt</falscheAntwort2>
@@ -996,7 +996,7 @@
             <schwierigkeitMax>11</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Was hat mit dem Straßenverkehr n i c h t s zu tun?</fragenText>
+            <fragenText>Was hat mit dem Straßenverkehr nicht s zu tun?</fragenText>
             <richtigeAntwort>Verkehrswert</richtigeAntwort>
             <falscheAntwort1>Verkehrsnetz</falscheAntwort1>
             <falscheAntwort2>Verkehrssicherheit</falscheAntwort2>
@@ -1026,7 +1026,7 @@
             <schwierigkeitMax>11</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Was ist k e i n e tropische Frucht?</fragenText>
+            <fragenText>Was ist keine tropische Frucht?</fragenText>
             <richtigeAntwort>Quitte</richtigeAntwort>
             <falscheAntwort1>Litschi</falscheAntwort1>
             <falscheAntwort2>Mangostane</falscheAntwort2>
@@ -1056,7 +1056,7 @@
             <schwierigkeitMax>11</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welche Stadt passt n i c h t zu den anderen?</fragenText>
+            <fragenText>Welche Stadt passt nicht zu den anderen?</fragenText>
             <richtigeAntwort>Badajoz</richtigeAntwort>
             <falscheAntwort1>Coimbra</falscheAntwort1>
             <falscheAntwort2>Braga</falscheAntwort2>
@@ -1236,7 +1236,7 @@
             <schwierigkeitMax>11</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Bei welchem Handwerk spielt der Begriff „backen“ k e i n e Rolle?</fragenText>
+            <fragenText>Bei welchem Handwerk spielt der Begriff „backen“ keine Rolle?</fragenText>
             <richtigeAntwort>beim Zuckerbäcker</richtigeAntwort>
             <falscheAntwort1>beim Töpfer</falscheAntwort1>
             <falscheAntwort2>beim Bäcker</falscheAntwort2>
@@ -1286,7 +1286,7 @@
             <schwierigkeitMax>11</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welche Abgabenart wird n i c h t den generellen Abgaben zugeordnet?</fragenText>
+            <fragenText>Welche Abgabenart wird nicht den generellen Abgaben zugeordnet?</fragenText>
             <richtigeAntwort>Beiträge</richtigeAntwort>
             <falscheAntwort1>Steuern</falscheAntwort1>
             <falscheAntwort2>Abschöpfungen</falscheAntwort2>
@@ -1566,7 +1566,7 @@
             <schwierigkeitMax>11</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Was ist k e i n e Naturwissenschaft?</fragenText>
+            <fragenText>Was ist keine Naturwissenschaft?</fragenText>
             <richtigeAntwort>Philosophie</richtigeAntwort>
             <falscheAntwort1>Physik</falscheAntwort1>
             <falscheAntwort2>Biologie</falscheAntwort2>
@@ -1956,7 +1956,7 @@
             <schwierigkeitMax>11</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches ist k e i n Grundrecht nach dem Grundgesetz der BRD?</fragenText>
+            <fragenText>Welches ist kein Grundrecht nach dem Grundgesetz der BRD?</fragenText>
             <richtigeAntwort>das Recht auf Arbeit</richtigeAntwort>
             <falscheAntwort1>Entfaltung der Persönlichkeit</falscheAntwort1>
             <falscheAntwort2>Achtung der Menschenwürde</falscheAntwort2>
@@ -2116,7 +2116,7 @@
             <schwierigkeitMax>6</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Was ist k e i n e Sättigungsbeilage?</fragenText>
+            <fragenText>Was ist keine Sättigungsbeilage?</fragenText>
             <richtigeAntwort>Steak</richtigeAntwort>
             <falscheAntwort1>Reis</falscheAntwort1>
             <falscheAntwort2>Pommes frites</falscheAntwort2>
@@ -2426,7 +2426,7 @@
             <schwierigkeitMax>6</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Element ist k e i n Leichtmetall?</fragenText>
+            <fragenText>Welches Element ist kein Leichtmetall?</fragenText>
             <richtigeAntwort>Blei</richtigeAntwort>
             <falscheAntwort1>Aluminium</falscheAntwort1>
             <falscheAntwort2>Titan</falscheAntwort2>
@@ -2466,7 +2466,7 @@
             <schwierigkeitMax>6</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Begriff stammt n i c h t aus der Computertechnik?</fragenText>
+            <fragenText>Welcher Begriff stammt nicht aus der Computertechnik?</fragenText>
             <richtigeAntwort>DIN</richtigeAntwort>
             <falscheAntwort1>RAM</falscheAntwort1>
             <falscheAntwort2>DOS</falscheAntwort2>
@@ -2496,7 +2496,7 @@
             <schwierigkeitMax>6</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welche Zahlenart gibt es n i c h t?</fragenText>
+            <fragenText>Welche Zahlenart gibt es nicht?</fragenText>
             <richtigeAntwort>gestückelte Zahlen</richtigeAntwort>
             <falscheAntwort1>negative Zahlen</falscheAntwort1>
             <falscheAntwort2>gebrochene Zahlen</falscheAntwort2>
@@ -2506,7 +2506,7 @@
             <schwierigkeitMax>6</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Begriff gehört n i c h t zur Division?</fragenText>
+            <fragenText>Welcher Begriff gehört nicht zur Division?</fragenText>
             <richtigeAntwort>Potenz</richtigeAntwort>
             <falscheAntwort1>Divisor</falscheAntwort1>
             <falscheAntwort2>Quotient</falscheAntwort2>
@@ -2516,7 +2516,7 @@
             <schwierigkeitMax>6</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches der folgenden im Wasser lebenden Tiere ist k e i n Fisch?</fragenText>
+            <fragenText>Welches der folgenden im Wasser lebenden Tiere ist kein Fisch?</fragenText>
             <richtigeAntwort>der Delfin</richtigeAntwort>
             <falscheAntwort1>der Hai</falscheAntwort1>
             <falscheAntwort2>der Aal</falscheAntwort2>
@@ -2586,7 +2586,7 @@
             <schwierigkeitMax>6</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches der folgenden Zeichen gehört n i c h t zur Mathematik?</fragenText>
+            <fragenText>Welches der folgenden Zeichen gehört nicht zur Mathematik?</fragenText>
             <richtigeAntwort>Straßenverkehrszeichen</richtigeAntwort>
             <falscheAntwort1>Gleichheitszeichen</falscheAntwort1>
             <falscheAntwort2>Divisionszeichen</falscheAntwort2>
@@ -2726,7 +2726,7 @@
             <schwierigkeitMax>6</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welche Temperaturskala wird n i c h t in Grad angegeben?</fragenText>
+            <fragenText>Welche Temperaturskala wird nicht in Grad angegeben?</fragenText>
             <richtigeAntwort>Kalvin</richtigeAntwort>
             <falscheAntwort1>Fahrenheit</falscheAntwort1>
             <falscheAntwort2>Celsius</falscheAntwort2>
@@ -2786,7 +2786,7 @@
             <schwierigkeitMax>6</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Film entstand n i c h t unter der Regie von Stanley Rubrik?</fragenText>
+            <fragenText>Welcher Film entstand nicht unter der Regie von Stanley Rubrik?</fragenText>
             <richtigeAntwort>A.I.</richtigeAntwort>
             <falscheAntwort1>Einer flog übers Kuckucksnest</falscheAntwort1>
             <falscheAntwort2>Uhrwerk Orange</falscheAntwort2>
@@ -2796,7 +2796,7 @@
             <schwierigkeitMax>6</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches der folgenden Theaterstücke stammt n i c h t von Eugène Ionesco, dem Vertreter des absurden Theaters?</fragenText>
+            <fragenText>Welches der folgenden Theaterstücke stammt nicht von Eugène Ionesco, dem Vertreter des absurden Theaters?</fragenText>
             <richtigeAntwort>Warten auf Godot</richtigeAntwort>
             <falscheAntwort1>Der König stirbt</falscheAntwort1>
             <falscheAntwort2>Die Nashörner</falscheAntwort2>
@@ -2846,7 +2846,7 @@
             <schwierigkeitMax>6</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Was ist in der Physik k e i n e einfache Maschine?</fragenText>
+            <fragenText>Was ist in der Physik keine einfache Maschine?</fragenText>
             <richtigeAntwort>Otto - Motor</richtigeAntwort>
             <falscheAntwort1>Seilzug</falscheAntwort1>
             <falscheAntwort2>Hebel</falscheAntwort2>
@@ -2866,7 +2866,7 @@
             <schwierigkeitMax>6</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Was braucht ein Maler und ein Tapezierer n i c h t?</fragenText>
+            <fragenText>Was braucht ein Maler und ein Tapezierer nicht?</fragenText>
             <richtigeAntwort>die Forke</richtigeAntwort>
             <falscheAntwort1>den Pinsel</falscheAntwort1>
             <falscheAntwort2>den Kleister</falscheAntwort2>
@@ -2896,7 +2896,7 @@
             <schwierigkeitMax>6</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Gebiet gehört n i c h t zur Physik?</fragenText>
+            <fragenText>Welches Gebiet gehört nicht zur Physik?</fragenText>
             <richtigeAntwort>Organik</richtigeAntwort>
             <falscheAntwort1>Mechanik</falscheAntwort1>
             <falscheAntwort2>Optik</falscheAntwort2>
@@ -2916,7 +2916,7 @@
             <schwierigkeitMax>6</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches berühmte Musical wurde n i c h t von Sir Andrew Lloyd Webber komponiert?</fragenText>
+            <fragenText>Welches berühmte Musical wurde nicht von Sir Andrew Lloyd Webber komponiert?</fragenText>
             <richtigeAntwort>My fair Lady</richtigeAntwort>
             <falscheAntwort1>Cats</falscheAntwort1>
             <falscheAntwort2>Starlight Express</falscheAntwort2>
@@ -2966,7 +2966,7 @@
             <schwierigkeitMax>6</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welche ist k e i n e Bezeichnung für eine Rebsorte?</fragenText>
+            <fragenText>Welche ist keine Bezeichnung für eine Rebsorte?</fragenText>
             <richtigeAntwort>Müller - Lüdenscheid</richtigeAntwort>
             <falscheAntwort1>Müller-Thurgau</falscheAntwort1>
             <falscheAntwort2>Riesling</falscheAntwort2>

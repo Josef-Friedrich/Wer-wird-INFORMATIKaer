@@ -226,7 +226,7 @@
             <schwierigkeitMax>12</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welche Buchstabengruppe stimmt n i c h t?</fragenText>
+            <fragenText>Welche Buchstabengruppe stimmt nicht?</fragenText>
             <richtigeAntwort>H J K</richtigeAntwort>
             <falscheAntwort1>F G H</falscheAntwort1>
             <falscheAntwort2>L M N</falscheAntwort2>
@@ -236,7 +236,7 @@
             <schwierigkeitMax>12</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welche Buchstabengruppe stimmt n i c h t?</fragenText>
+            <fragenText>Welche Buchstabengruppe stimmt nicht?</fragenText>
             <richtigeAntwort>O P R</richtigeAntwort>
             <falscheAntwort1>I J K</falscheAntwort1>
             <falscheAntwort2>T U V</falscheAntwort2>
@@ -246,7 +246,7 @@
             <schwierigkeitMax>12</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welche Buchstabengruppe stimmt n i c h t?</fragenText>
+            <fragenText>Welche Buchstabengruppe stimmt nicht?</fragenText>
             <richtigeAntwort>I K L</richtigeAntwort>
             <falscheAntwort1>U V W</falscheAntwort1>
             <falscheAntwort2>B C D</falscheAntwort2>
@@ -256,7 +256,7 @@
             <schwierigkeitMax>12</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welche Buchstabengruppe stimmt n i c h t?</fragenText>
+            <fragenText>Welche Buchstabengruppe stimmt nicht?</fragenText>
             <richtigeAntwort>U W X</richtigeAntwort>
             <falscheAntwort1>M N O</falscheAntwort1>
             <falscheAntwort2>F G H</falscheAntwort2>
@@ -266,7 +266,7 @@
             <schwierigkeitMax>12</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welche Buchstabengruppe stimmt n i c h t?</fragenText>
+            <fragenText>Welche Buchstabengruppe stimmt nicht?</fragenText>
             <richtigeAntwort>J K M</richtigeAntwort>
             <falscheAntwort1>R S T</falscheAntwort1>
             <falscheAntwort2>G H I</falscheAntwort2>
@@ -276,7 +276,7 @@
             <schwierigkeitMax>12</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welche Buchstabengruppe stimmt n i c h t?</fragenText>
+            <fragenText>Welche Buchstabengruppe stimmt nicht?</fragenText>
             <richtigeAntwort>K L N</richtigeAntwort>
             <falscheAntwort1>R S T</falscheAntwort1>
             <falscheAntwort2>B C D</falscheAntwort2>
@@ -286,7 +286,7 @@
             <schwierigkeitMax>12</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Buchstabe passt n i c h t zu den anderen?</fragenText>
+            <fragenText>Welcher Buchstabe passt nicht zu den anderen?</fragenText>
             <richtigeAntwort>K</richtigeAntwort>
             <falscheAntwort1>Ö</falscheAntwort1>
             <falscheAntwort2>Ä</falscheAntwort2>
@@ -536,7 +536,7 @@
             <schwierigkeitMax>7</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Buchstabe kommt v o r dem Z?</fragenText>
+            <fragenText>Welcher Buchstabe kommt vor dem Z?</fragenText>
             <richtigeAntwort>Y</richtigeAntwort>
             <falscheAntwort1>C</falscheAntwort1>
             <falscheAntwort2>X</falscheAntwort2>
@@ -546,7 +546,7 @@
             <schwierigkeitMax>10</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Buchstabe kommt v o r dem Y?</fragenText>
+            <fragenText>Welcher Buchstabe kommt vor dem Y?</fragenText>
             <richtigeAntwort>X</richtigeAntwort>
             <falscheAntwort1>Z</falscheAntwort1>
             <falscheAntwort2>C</falscheAntwort2>
@@ -556,7 +556,7 @@
             <schwierigkeitMax>10</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Buchstabe kommt v o r dem X?</fragenText>
+            <fragenText>Welcher Buchstabe kommt vor dem X?</fragenText>
             <richtigeAntwort>W</richtigeAntwort>
             <falscheAntwort1>V</falscheAntwort1>
             <falscheAntwort2>Y</falscheAntwort2>
@@ -566,7 +566,7 @@
             <schwierigkeitMax>10</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Buchstabe kommt v o r dem W?</fragenText>
+            <fragenText>Welcher Buchstabe kommt vor dem W?</fragenText>
             <richtigeAntwort>V</richtigeAntwort>
             <falscheAntwort1>Y</falscheAntwort1>
             <falscheAntwort2>X</falscheAntwort2>
@@ -576,7 +576,7 @@
             <schwierigkeitMax>10</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Buchstabe kommt v o r dem V?</fragenText>
+            <fragenText>Welcher Buchstabe kommt vor dem V?</fragenText>
             <richtigeAntwort>U</richtigeAntwort>
             <falscheAntwort1>X</falscheAntwort1>
             <falscheAntwort2>W</falscheAntwort2>
@@ -586,7 +586,7 @@
             <schwierigkeitMax>10</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Buchstabe kommt v o r dem U?</fragenText>
+            <fragenText>Welcher Buchstabe kommt vor dem U?</fragenText>
             <richtigeAntwort>T</richtigeAntwort>
             <falscheAntwort1>R</falscheAntwort1>
             <falscheAntwort2>V</falscheAntwort2>
@@ -596,7 +596,7 @@
             <schwierigkeitMax>10</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Buchstabe kommt v o r dem T?</fragenText>
+            <fragenText>Welcher Buchstabe kommt vor dem T?</fragenText>
             <richtigeAntwort>S</richtigeAntwort>
             <falscheAntwort1>U</falscheAntwort1>
             <falscheAntwort2>R</falscheAntwort2>
@@ -606,7 +606,7 @@
             <schwierigkeitMax>10</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Buchstabe kommt v o r dem S?</fragenText>
+            <fragenText>Welcher Buchstabe kommt vor dem S?</fragenText>
             <richtigeAntwort>R</richtigeAntwort>
             <falscheAntwort1>T</falscheAntwort1>
             <falscheAntwort2>Q</falscheAntwort2>
@@ -616,7 +616,7 @@
             <schwierigkeitMax>10</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Buchstabe kommt v o r dem R?</fragenText>
+            <fragenText>Welcher Buchstabe kommt vor dem R?</fragenText>
             <richtigeAntwort>Q</richtigeAntwort>
             <falscheAntwort1>T</falscheAntwort1>
             <falscheAntwort2>S</falscheAntwort2>
@@ -626,7 +626,7 @@
             <schwierigkeitMax>10</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Buchstabe kommt v o r dem Q?</fragenText>
+            <fragenText>Welcher Buchstabe kommt vor dem Q?</fragenText>
             <richtigeAntwort>P</richtigeAntwort>
             <falscheAntwort1>S</falscheAntwort1>
             <falscheAntwort2>R</falscheAntwort2>
@@ -636,7 +636,7 @@
             <schwierigkeitMax>10</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Buchstabe kommt v o r dem P?</fragenText>
+            <fragenText>Welcher Buchstabe kommt vor dem P?</fragenText>
             <richtigeAntwort>O</richtigeAntwort>
             <falscheAntwort1>U</falscheAntwort1>
             <falscheAntwort2>Q</falscheAntwort2>
@@ -646,7 +646,7 @@
             <schwierigkeitMax>10</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Buchstabe kommt v o r dem O?</fragenText>
+            <fragenText>Welcher Buchstabe kommt vor dem O?</fragenText>
             <richtigeAntwort>N</richtigeAntwort>
             <falscheAntwort1>Q</falscheAntwort1>
             <falscheAntwort2>P</falscheAntwort2>
@@ -656,7 +656,7 @@
             <schwierigkeitMax>8</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Buchstabe kommt v o r dem N?</fragenText>
+            <fragenText>Welcher Buchstabe kommt vor dem N?</fragenText>
             <richtigeAntwort>M</richtigeAntwort>
             <falscheAntwort1>P</falscheAntwort1>
             <falscheAntwort2>O</falscheAntwort2>
@@ -666,7 +666,7 @@
             <schwierigkeitMax>9</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Buchstabe kommt v o r dem M?</fragenText>
+            <fragenText>Welcher Buchstabe kommt vor dem M?</fragenText>
             <richtigeAntwort>L</richtigeAntwort>
             <falscheAntwort1>K</falscheAntwort1>
             <falscheAntwort2>N</falscheAntwort2>
@@ -676,7 +676,7 @@
             <schwierigkeitMax>9</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Buchstabe kommt v o r dem L?</fragenText>
+            <fragenText>Welcher Buchstabe kommt vor dem L?</fragenText>
             <richtigeAntwort>K</richtigeAntwort>
             <falscheAntwort1>N</falscheAntwort1>
             <falscheAntwort2>M</falscheAntwort2>
@@ -686,7 +686,7 @@
             <schwierigkeitMax>9</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Buchstabe kommt v o r dem K?</fragenText>
+            <fragenText>Welcher Buchstabe kommt vor dem K?</fragenText>
             <richtigeAntwort>J</richtigeAntwort>
             <falscheAntwort1>M</falscheAntwort1>
             <falscheAntwort2>L</falscheAntwort2>
@@ -696,7 +696,7 @@
             <schwierigkeitMax>9</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Buchstabe kommt v o r dem J?</fragenText>
+            <fragenText>Welcher Buchstabe kommt vor dem J?</fragenText>
             <richtigeAntwort>I</richtigeAntwort>
             <falscheAntwort1>K</falscheAntwort1>
             <falscheAntwort2>H</falscheAntwort2>
@@ -706,7 +706,7 @@
             <schwierigkeitMax>9</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Buchstabe kommt v o r dem I?</fragenText>
+            <fragenText>Welcher Buchstabe kommt vor dem I?</fragenText>
             <richtigeAntwort>H</richtigeAntwort>
             <falscheAntwort1>G</falscheAntwort1>
             <falscheAntwort2>J</falscheAntwort2>
@@ -716,7 +716,7 @@
             <schwierigkeitMax>8</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Buchstabe kommt v o r dem H?</fragenText>
+            <fragenText>Welcher Buchstabe kommt vor dem H?</fragenText>
             <richtigeAntwort>G</richtigeAntwort>
             <falscheAntwort1>Z</falscheAntwort1>
             <falscheAntwort2>I</falscheAntwort2>
@@ -726,7 +726,7 @@
             <schwierigkeitMax>8</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Buchstabe kommt v o r dem G?</fragenText>
+            <fragenText>Welcher Buchstabe kommt vor dem G?</fragenText>
             <richtigeAntwort>F</richtigeAntwort>
             <falscheAntwort1>T</falscheAntwort1>
             <falscheAntwort2>H</falscheAntwort2>
@@ -736,7 +736,7 @@
             <schwierigkeitMax>8</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Buchstabe kommt v o r dem F?</fragenText>
+            <fragenText>Welcher Buchstabe kommt vor dem F?</fragenText>
             <richtigeAntwort>E</richtigeAntwort>
             <falscheAntwort1>H</falscheAntwort1>
             <falscheAntwort2>G</falscheAntwort2>
@@ -746,7 +746,7 @@
             <schwierigkeitMax>8</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Buchstabe kommt v o r dem E?</fragenText>
+            <fragenText>Welcher Buchstabe kommt vor dem E?</fragenText>
             <richtigeAntwort>D</richtigeAntwort>
             <falscheAntwort1>C</falscheAntwort1>
             <falscheAntwort2>F</falscheAntwort2>
@@ -756,7 +756,7 @@
             <schwierigkeitMax>8</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Buchstabe kommt v o r dem D?</fragenText>
+            <fragenText>Welcher Buchstabe kommt vor dem D?</fragenText>
             <richtigeAntwort>C</richtigeAntwort>
             <falscheAntwort1>A</falscheAntwort1>
             <falscheAntwort2>E</falscheAntwort2>
@@ -766,7 +766,7 @@
             <schwierigkeitMax>7</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Buchstabe kommt v o r dem C?</fragenText>
+            <fragenText>Welcher Buchstabe kommt vor dem C?</fragenText>
             <richtigeAntwort>B</richtigeAntwort>
             <falscheAntwort1>A</falscheAntwort1>
             <falscheAntwort2>D</falscheAntwort2>
@@ -776,7 +776,7 @@
             <schwierigkeitMax>8</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Buchstabe kommt v o r dem B?</fragenText>
+            <fragenText>Welcher Buchstabe kommt vor dem B?</fragenText>
             <richtigeAntwort>A</richtigeAntwort>
             <falscheAntwort1>D</falscheAntwort1>
             <falscheAntwort2>C</falscheAntwort2>
@@ -1106,7 +1106,7 @@
             <schwierigkeitMax>10</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Von welchem Buchstaben gibt es k e i n e n großen Buchstaben?</fragenText>
+            <fragenText>Von welchem Buchstaben gibt es keine n großen Buchstaben?</fragenText>
             <richtigeAntwort>ß</richtigeAntwort>
             <falscheAntwort1>z</falscheAntwort1>
             <falscheAntwort2>s</falscheAntwort2>

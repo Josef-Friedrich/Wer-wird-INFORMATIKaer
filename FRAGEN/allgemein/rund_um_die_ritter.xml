@@ -196,7 +196,7 @@
             <schwierigkeitMax>8</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Wie hieß ein Schwert (eine Spezialität der fränkischen Waffenkunst) , das k e i n e gebogene Klinge hatte?</fragenText>
+            <fragenText>Wie hieß ein Schwert (eine Spezialität der fränkischen Waffenkunst) , das keine gebogene Klinge hatte?</fragenText>
             <richtigeAntwort>gerades Schwert</richtigeAntwort>
             <falscheAntwort1>Langschwert</falscheAntwort1>
             <falscheAntwort2>Schlagschwert</falscheAntwort2>
@@ -426,7 +426,7 @@
             <schwierigkeitMax>12</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welche Ritter lebten n i c h t im Mittelalter?</fragenText>
+            <fragenText>Welche Ritter lebten nicht im Mittelalter?</fragenText>
             <richtigeAntwort>Yedi - Ritter</richtigeAntwort>
             <falscheAntwort1>Raubritter</falscheAntwort1>
             <falscheAntwort2>Kreuzritter</falscheAntwort2>
@@ -1386,7 +1386,7 @@
             <schwierigkeitMax>12</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Außer dem Schwert gab es später bei den Rittern noch drei weitere Schlagwaffen. Was war k e i n e Schlagwaffe?</fragenText>
+            <fragenText>Außer dem Schwert gab es später bei den Rittern noch drei weitere Schlagwaffen. Was war keine Schlagwaffe?</fragenText>
             <richtigeAntwort>Streitbolzen</richtigeAntwort>
             <falscheAntwort1>Streithammer</falscheAntwort1>
             <falscheAntwort2>Streitkolben</falscheAntwort2>
@@ -1546,7 +1546,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Zur Zeit der Kreuzzüge wurden drei große, geistliche Ritterorden gegründet. Welchen Orden gab es n i c h t?</fragenText>
+            <fragenText>Zur Zeit der Kreuzzüge wurden drei große, geistliche Ritterorden gegründet. Welchen Orden gab es nicht?</fragenText>
             <richtigeAntwort>Jesus - Orden</richtigeAntwort>
             <falscheAntwort1>Templer - Orden</falscheAntwort1>
             <falscheAntwort2>Johanniter - Orden</falscheAntwort2>
@@ -1756,7 +1756,7 @@
             <schwierigkeitMax>12</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Ein Vasall schuldete seinem Lehnsherren außer dem Kriegsdienst noch weitere Ehrendienste. Was gehörte n i c h t dazu?</fragenText>
+            <fragenText>Ein Vasall schuldete seinem Lehnsherren außer dem Kriegsdienst noch weitere Ehrendienste. Was gehörte nicht dazu?</fragenText>
             <richtigeAntwort>die jährliche Geburtstagsfeier ausrichten</richtigeAntwort>
             <falscheAntwort1>die Begleitung des Lehnsherren bei festlichen Anlässen</falscheAntwort1>
             <falscheAntwort2>das Halten des Steigbügels</falscheAntwort2>
@@ -1786,7 +1786,7 @@
             <schwierigkeitMax>12</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>In der mittelalterlichen Gesellschaft unterschied man drei Stände. Welchen Stand gab es n i c h t?</fragenText>
+            <fragenText>In der mittelalterlichen Gesellschaft unterschied man drei Stände. Welchen Stand gab es nicht?</fragenText>
             <richtigeAntwort>Seefahrer</richtigeAntwort>
             <falscheAntwort1>Geistliche</falscheAntwort1>
             <falscheAntwort2>Adel mit den Rittern</falscheAntwort2>
@@ -1826,7 +1826,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Es gab drei Arten von Kampfspielen der Ritter. Welches gehört n i c h t dazu?</fragenText>
+            <fragenText>Es gab drei Arten von Kampfspielen der Ritter. Welches gehört nicht dazu?</fragenText>
             <richtigeAntwort>Boheme</richtigeAntwort>
             <falscheAntwort1>Tjost</falscheAntwort1>
             <falscheAntwort2>Buhurt</falscheAntwort2>

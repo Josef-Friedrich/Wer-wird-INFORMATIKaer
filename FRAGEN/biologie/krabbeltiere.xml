@@ -116,7 +116,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welche Spinne gibt es n i c h t?</fragenText>
+            <fragenText>Welche Spinne gibt es nicht?</fragenText>
             <richtigeAntwort>Giraffenspinne</richtigeAntwort>
             <falscheAntwort1>Krabbenspinne</falscheAntwort1>
             <falscheAntwort2>Wolfsspinne</falscheAntwort2>
@@ -646,7 +646,7 @@
             <schwierigkeitMax>12</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Was ist k e i n Segment (Teil) eines Insektes?</fragenText>
+            <fragenText>Was ist kein Segment (Teil) eines Insektes?</fragenText>
             <richtigeAntwort>Hals</richtigeAntwort>
             <falscheAntwort1>Brust</falscheAntwort1>
             <falscheAntwort2>Kopf</falscheAntwort2>

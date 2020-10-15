@@ -16,7 +16,7 @@
             <schwierigkeitMax>6</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Bei welcher Sportart benutzt man k e i n e n Schläger?</fragenText>
+            <fragenText>Bei welcher Sportart benutzt man keine n Schläger?</fragenText>
             <richtigeAntwort>Basketball</richtigeAntwort>
             <falscheAntwort1>Badminton</falscheAntwort1>
             <falscheAntwort2>Tennis</falscheAntwort2>
@@ -546,7 +546,7 @@
             <schwierigkeitMax>12</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Wie nennt man die Sportler, die mit ihrem Sport k e i n Geld verdienen?</fragenText>
+            <fragenText>Wie nennt man die Sportler, die mit ihrem Sport kein Geld verdienen?</fragenText>
             <richtigeAntwort>Amateure</richtigeAntwort>
             <falscheAntwort1>Animateure</falscheAntwort1>
             <falscheAntwort2>Profis</falscheAntwort2>
@@ -666,7 +666,7 @@
             <schwierigkeitMax>9</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welche Farbe gehört n i c h t zu den olympischen Ringen?</fragenText>
+            <fragenText>Welche Farbe gehört nicht zu den olympischen Ringen?</fragenText>
             <richtigeAntwort>grau</richtigeAntwort>
             <falscheAntwort1>blau</falscheAntwort1>
             <falscheAntwort2>schwarz</falscheAntwort2>
@@ -676,7 +676,7 @@
             <schwierigkeitMax>12</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welche Farbe gehört n i c h t zu den olympischen Ringen?</fragenText>
+            <fragenText>Welche Farbe gehört nicht zu den olympischen Ringen?</fragenText>
             <richtigeAntwort>weiß</richtigeAntwort>
             <falscheAntwort1>blau</falscheAntwort1>
             <falscheAntwort2>schwarz</falscheAntwort2>
@@ -686,7 +686,7 @@
             <schwierigkeitMax>12</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welche Farbe gehört n i c h t zu den olympischen Ringen?</fragenText>
+            <fragenText>Welche Farbe gehört nicht zu den olympischen Ringen?</fragenText>
             <richtigeAntwort>braun</richtigeAntwort>
             <falscheAntwort1>grün</falscheAntwort1>
             <falscheAntwort2>rot</falscheAntwort2>
@@ -796,7 +796,7 @@
             <schwierigkeitMax>13</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Was ist k e i n Turngerät?</fragenText>
+            <fragenText>Was ist kein Turngerät?</fragenText>
             <richtigeAntwort>Mauer</richtigeAntwort>
             <falscheAntwort1>Barren</falscheAntwort1>
             <falscheAntwort2>Reck</falscheAntwort2>
@@ -966,7 +966,7 @@
             <schwierigkeitMax>11</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Bei welcher Sportart ist der Ball n i c h t rund?</fragenText>
+            <fragenText>Bei welcher Sportart ist der Ball nicht rund?</fragenText>
             <richtigeAntwort>Badminton</richtigeAntwort>
             <falscheAntwort1>Tischtennis</falscheAntwort1>
             <falscheAntwort2>Tennis</falscheAntwort2>

@@ -36,7 +36,7 @@
             <schwierigkeitMax>6</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Was ist k e i n e Blutgruppe?</fragenText>
+            <fragenText>Was ist keine Blutgruppe?</fragenText>
             <richtigeAntwort>C</richtigeAntwort>
             <falscheAntwort1>B</falscheAntwort1>
             <falscheAntwort2>A</falscheAntwort2>
@@ -2166,7 +2166,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welche Haut gehört n i c h t zum Auge?</fragenText>
+            <fragenText>Welche Haut gehört nicht zum Auge?</fragenText>
             <richtigeAntwort>Fadenhaut</richtigeAntwort>
             <falscheAntwort1>Lederhaut</falscheAntwort1>
             <falscheAntwort2>Hornhaut</falscheAntwort2>

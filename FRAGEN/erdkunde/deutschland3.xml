@@ -166,7 +166,7 @@
             <schwierigkeitMax>11</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welche Stadt ist k e i n e Hansestadt?</fragenText>
+            <fragenText>Welche Stadt ist keine Hansestadt?</fragenText>
             <richtigeAntwort>Bochum</richtigeAntwort>
             <falscheAntwort1>Bremen</falscheAntwort1>
             <falscheAntwort2>Rostock</falscheAntwort2>
@@ -176,7 +176,7 @@
             <schwierigkeitMax>13</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welche Insel gehört n i c h t zu Deutschland?</fragenText>
+            <fragenText>Welche Insel gehört nicht zu Deutschland?</fragenText>
             <richtigeAntwort>Ameland</richtigeAntwort>
             <falscheAntwort1>Wangerooge</falscheAntwort1>
             <falscheAntwort2>Amrum</falscheAntwort2>
@@ -186,7 +186,7 @@
             <schwierigkeitMax>12</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welche Insel gehört n i c h t zu Deutschland?</fragenText>
+            <fragenText>Welche Insel gehört nicht zu Deutschland?</fragenText>
             <richtigeAntwort>Texel</richtigeAntwort>
             <falscheAntwort1>Sylt</falscheAntwort1>
             <falscheAntwort2>Juist</falscheAntwort2>
@@ -1006,7 +1006,7 @@
             <schwierigkeitMax>13</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Fluss ist k e i n Nebenfluss der Donau?</fragenText>
+            <fragenText>Welcher Fluss ist kein Nebenfluss der Donau?</fragenText>
             <richtigeAntwort>Mosel</richtigeAntwort>
             <falscheAntwort1>Isar</falscheAntwort1>
             <falscheAntwort2>Wörnitz</falscheAntwort2>

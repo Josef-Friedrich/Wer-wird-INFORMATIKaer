@@ -16,7 +16,7 @@
             <schwierigkeitMax>7</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welche Boje gibt es n i c h t?</fragenText>
+            <fragenText>Welche Boje gibt es nicht?</fragenText>
             <richtigeAntwort>Schreiboje</richtigeAntwort>
             <falscheAntwort1>Heulboje</falscheAntwort1>
             <falscheAntwort2>Leuchtboje</falscheAntwort2>
@@ -616,7 +616,7 @@
             <schwierigkeitMax>15</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Tier lebt n i c h t im Watt?</fragenText>
+            <fragenText>Welches Tier lebt nicht im Watt?</fragenText>
             <richtigeAntwort>Steinbock</richtigeAntwort>
             <falscheAntwort1>Schnecke</falscheAntwort1>
             <falscheAntwort2>Krebs</falscheAntwort2>
@@ -986,7 +986,7 @@
             <schwierigkeitMax>10</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Was jagen Seehunde n i c h t?</fragenText>
+            <fragenText>Was jagen Seehunde nicht?</fragenText>
             <richtigeAntwort>Möwen</richtigeAntwort>
             <falscheAntwort1>Fische</falscheAntwort1>
             <falscheAntwort2>Krebse</falscheAntwort2>
@@ -1036,7 +1036,7 @@
             <schwierigkeitMax>11</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Was ist k e i n e ostfriesische Insel?</fragenText>
+            <fragenText>Was ist keine ostfriesische Insel?</fragenText>
             <richtigeAntwort>Amrum</richtigeAntwort>
             <falscheAntwort1>Borkum</falscheAntwort1>
             <falscheAntwort2>Juist</falscheAntwort2>
@@ -1046,7 +1046,7 @@
             <schwierigkeitMax>10</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Was ist k e i n e ostfriesische Insel?</fragenText>
+            <fragenText>Was ist keine ostfriesische Insel?</fragenText>
             <richtigeAntwort>Kurzeoog</richtigeAntwort>
             <falscheAntwort1>Wangerooge</falscheAntwort1>
             <falscheAntwort2>Spiekeroog</falscheAntwort2>
@@ -1056,7 +1056,7 @@
             <schwierigkeitMax>10</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Was ist k e i n e ostfriesische Insel?</fragenText>
+            <fragenText>Was ist keine ostfriesische Insel?</fragenText>
             <richtigeAntwort>Amrum</richtigeAntwort>
             <falscheAntwort1>Baltrum</falscheAntwort1>
             <falscheAntwort2>Borkum</falscheAntwort2>
@@ -1066,7 +1066,7 @@
             <schwierigkeitMax>10</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Was ist k e i n e nordfriesische Insel?</fragenText>
+            <fragenText>Was ist keine nordfriesische Insel?</fragenText>
             <richtigeAntwort>Juist</richtigeAntwort>
             <falscheAntwort1>Sylt</falscheAntwort1>
             <falscheAntwort2>Amrum</falscheAntwort2>
@@ -1076,7 +1076,7 @@
             <schwierigkeitMax>10</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Was ist k e i n e nordfriesische Insel?</fragenText>
+            <fragenText>Was ist keine nordfriesische Insel?</fragenText>
             <richtigeAntwort>Helgoland</richtigeAntwort>
             <falscheAntwort1>Pellworm</falscheAntwort1>
             <falscheAntwort2>Amrum</falscheAntwort2>
@@ -1096,7 +1096,7 @@
             <schwierigkeitMax>9</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Fluss fließt n i c h t in die Nordsee?</fragenText>
+            <fragenText>Welcher Fluss fließt nicht in die Nordsee?</fragenText>
             <richtigeAntwort>Ruhr</richtigeAntwort>
             <falscheAntwort1>Ems</falscheAntwort1>
             <falscheAntwort2>Elbe</falscheAntwort2>
@@ -1146,7 +1146,7 @@
             <schwierigkeitMax>10</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welche Stadt liegt n i c h t an der Nordsee?</fragenText>
+            <fragenText>Welche Stadt liegt nicht an der Nordsee?</fragenText>
             <richtigeAntwort>Friedrichshafen</richtigeAntwort>
             <falscheAntwort1>Cuxhaven</falscheAntwort1>
             <falscheAntwort2>Wilhelmshaven</falscheAntwort2>
@@ -1226,7 +1226,7 @@
             <schwierigkeitMax>10</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Bundesland hat e i n e n Nordseestrand?</fragenText>
+            <fragenText>Welches Bundesland hat einen Nordseestrand?</fragenText>
             <richtigeAntwort>Schleswig - Holstein</richtigeAntwort>
             <falscheAntwort1>Rheinland - Pfalz</falscheAntwort1>
             <falscheAntwort2>Baden - Württemberg</falscheAntwort2>
@@ -1236,7 +1236,7 @@
             <schwierigkeitMax>7</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Bundesland hat e i n e n Nordseestrand?</fragenText>
+            <fragenText>Welches Bundesland hat einen Nordseestrand?</fragenText>
             <richtigeAntwort>Niedersachsen</richtigeAntwort>
             <falscheAntwort1>Sachsen</falscheAntwort1>
             <falscheAntwort2>Sachsen - Anhalt</falscheAntwort2>
@@ -1366,7 +1366,7 @@
             <schwierigkeitMax>8</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Zu welchem Land hat die Insel Wangerooge in der Vergangenheit n i c h t gehört?</fragenText>
+            <fragenText>Zu welchem Land hat die Insel Wangerooge in der Vergangenheit nicht gehört?</fragenText>
             <richtigeAntwort>Spanien</richtigeAntwort>
             <falscheAntwort1>Niederlande</falscheAntwort1>
             <falscheAntwort2>Frankreich</falscheAntwort2>
@@ -2186,7 +2186,7 @@
             <schwierigkeitMax>12</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Für welchen Fisch ist das Wattenmeer n i c h t die Kinderstube?</fragenText>
+            <fragenText>Für welchen Fisch ist das Wattenmeer nicht die Kinderstube?</fragenText>
             <richtigeAntwort>Karpfen</richtigeAntwort>
             <falscheAntwort1>Scholle</falscheAntwort1>
             <falscheAntwort2>Hering</falscheAntwort2>
@@ -2206,7 +2206,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welchen Meeressäuger gibt es n i c h t im deutschen Wattenmeer?</fragenText>
+            <fragenText>Welchen Meeressäuger gibt es nicht im deutschen Wattenmeer?</fragenText>
             <richtigeAntwort>Schwertwal</richtigeAntwort>
             <falscheAntwort1>Kegelrobbe</falscheAntwort1>
             <falscheAntwort2>Seehund</falscheAntwort2>
@@ -2236,7 +2236,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Wo haben die Seehunde k e i n e Tasthaare?</fragenText>
+            <fragenText>Wo haben die Seehunde keine Tasthaare?</fragenText>
             <richtigeAntwort>Ohren</richtigeAntwort>
             <falscheAntwort1>Mund</falscheAntwort1>
             <falscheAntwort2>Nase</falscheAntwort2>
@@ -2756,7 +2756,7 @@
             <schwierigkeitMax>13</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welche Fische werden n i c h t an der Doggerbank gefangen?</fragenText>
+            <fragenText>Welche Fische werden nicht an der Doggerbank gefangen?</fragenText>
             <richtigeAntwort>Aal</richtigeAntwort>
             <falscheAntwort1>Kabeljau</falscheAntwort1>
             <falscheAntwort2>Scholle</falscheAntwort2>
@@ -2826,7 +2826,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welche Insel gehört n i c h t zu den westfriesischen Inseln?</fragenText>
+            <fragenText>Welche Insel gehört nicht zu den westfriesischen Inseln?</fragenText>
             <richtigeAntwort>Juist</richtigeAntwort>
             <falscheAntwort1>Texel</falscheAntwort1>
             <falscheAntwort2>Ameland</falscheAntwort2>

@@ -626,7 +626,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Was ist k e i n Gangmaß beim Galopp?</fragenText>
+            <fragenText>Was ist kein Gangmaß beim Galopp?</fragenText>
             <richtigeAntwort>ruhiger Galopp</richtigeAntwort>
             <falscheAntwort1>Mittelgalopp</falscheAntwort1>
             <falscheAntwort2>Arbeitsgalopp</falscheAntwort2>
@@ -1136,7 +1136,7 @@
             <schwierigkeitMax>13</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welche Pferderasse gibt es n i c h t?</fragenText>
+            <fragenText>Welche Pferderasse gibt es nicht?</fragenText>
             <richtigeAntwort>Dortmunder</richtigeAntwort>
             <falscheAntwort1>Oldenburger</falscheAntwort1>
             <falscheAntwort2>Hannoveraner</falscheAntwort2>

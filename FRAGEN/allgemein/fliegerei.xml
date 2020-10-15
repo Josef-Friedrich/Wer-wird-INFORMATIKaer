@@ -236,7 +236,7 @@
             <schwierigkeitMax>9</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Flugzeug ist k e i n Düsenjäger?</fragenText>
+            <fragenText>Welches Flugzeug ist kein Düsenjäger?</fragenText>
             <richtigeAntwort>Airbus A 300</richtigeAntwort>
             <falscheAntwort1>Grumman F - 14 B Tomcat</falscheAntwort1>
             <falscheAntwort2>Eurofighter 2000</falscheAntwort2>
@@ -246,7 +246,7 @@
             <schwierigkeitMax>6</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Flugzeug ist k e i n Düsenjäger?</fragenText>
+            <fragenText>Welches Flugzeug ist kein Düsenjäger?</fragenText>
             <richtigeAntwort>Boeing 747 - 400 Combi</richtigeAntwort>
             <falscheAntwort1>British Aerospace HAWK</falscheAntwort1>
             <falscheAntwort2>Dassault Mirage 2000</falscheAntwort2>
@@ -256,7 +256,7 @@
             <schwierigkeitMax>6</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Flugzeug ist k e i n Düsenjäger?</fragenText>
+            <fragenText>Welches Flugzeug ist kein Düsenjäger?</fragenText>
             <richtigeAntwort>Iljuschin IL - 62</richtigeAntwort>
             <falscheAntwort1>Mirage F - 1</falscheAntwort1>
             <falscheAntwort2>Sukhoi SU - 35</falscheAntwort2>
@@ -266,7 +266,7 @@
             <schwierigkeitMax>9</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Flugzeug ist k e i n Düsenjäger?</fragenText>
+            <fragenText>Welches Flugzeug ist kein Düsenjäger?</fragenText>
             <richtigeAntwort>Boeing 767</richtigeAntwort>
             <falscheAntwort1>SAAB Draken 35 OE</falscheAntwort1>
             <falscheAntwort2>Boeing F - 15 Eagle</falscheAntwort2>
@@ -276,7 +276,7 @@
             <schwierigkeitMax>6</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Flugzeug ist k e i n Düsenjäger?</fragenText>
+            <fragenText>Welches Flugzeug ist kein Düsenjäger?</fragenText>
             <richtigeAntwort>Concorde</richtigeAntwort>
             <falscheAntwort1>SAAB Jas 39 Gripen</falscheAntwort1>
             <falscheAntwort2>Boeing F/A - 18 E Super Hornet</falscheAntwort2>
@@ -286,7 +286,7 @@
             <schwierigkeitMax>6</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Flugzeug ist k e i n Düsenjäger?</fragenText>
+            <fragenText>Welches Flugzeug ist kein Düsenjäger?</fragenText>
             <richtigeAntwort>Airbus A 310 - 200</richtigeAntwort>
             <falscheAntwort1>Lockheed Martin F - 16 A Fighting Falcon</falscheAntwort1>
             <falscheAntwort2>Boeing F/A - 18 Hornet</falscheAntwort2>
@@ -456,7 +456,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Was ist k e i n Passagierflugzeug?</fragenText>
+            <fragenText>Was ist kein Passagierflugzeug?</fragenText>
             <richtigeAntwort>Boeing F/A - 18 Hornet</richtigeAntwort>
             <falscheAntwort1>Airbus A 310 - 200</falscheAntwort1>
             <falscheAntwort2>Boeing 747 - 400</falscheAntwort2>
@@ -866,7 +866,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Flugzeug ist k e i n Passagierflugzeug?</fragenText>
+            <fragenText>Welches Flugzeug ist kein Passagierflugzeug?</fragenText>
             <richtigeAntwort>MiG 29</richtigeAntwort>
             <falscheAntwort1>Tupolev Tu 204</falscheAntwort1>
             <falscheAntwort2>Boeing 777 - 300</falscheAntwort2>
@@ -876,7 +876,7 @@
             <schwierigkeitMax>9</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Flugzeug ist k e i n Passagierflugzeug?</fragenText>
+            <fragenText>Welches Flugzeug ist kein Passagierflugzeug?</fragenText>
             <richtigeAntwort>Tornado</richtigeAntwort>
             <falscheAntwort1>Boeing 767</falscheAntwort1>
             <falscheAntwort2>Concorde</falscheAntwort2>
@@ -886,7 +886,7 @@
             <schwierigkeitMax>9</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Flugzeug ist k e i n Passagierflugzeug?</fragenText>
+            <fragenText>Welches Flugzeug ist kein Passagierflugzeug?</fragenText>
             <richtigeAntwort>McDonnell F - 4 Phantom II</richtigeAntwort>
             <falscheAntwort1>Iljuschin Il - 52</falscheAntwort1>
             <falscheAntwort2>Boeing 747 - 400 Combi</falscheAntwort2>
@@ -2906,7 +2906,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Lebewesen erhob sich am 19. September 1783 n i c h t mit einem Heißluftballon in die Lüfte?</fragenText>
+            <fragenText>Welches Lebewesen erhob sich am 19. September 1783 nicht mit einem Heißluftballon in die Lüfte?</fragenText>
             <richtigeAntwort>Hund</richtigeAntwort>
             <falscheAntwort1>Hahn</falscheAntwort1>
             <falscheAntwort2>Schaf</falscheAntwort2>
@@ -3076,7 +3076,7 @@
             <schwierigkeitMax>7</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Was gehört n i c h t zu den Sicherheitseinrichtungen, die für jeden Passagier während eines Fluges zur Verfügung stehen müssen?</fragenText>
+            <fragenText>Was gehört nicht zu den Sicherheitseinrichtungen, die für jeden Passagier während eines Fluges zur Verfügung stehen müssen?</fragenText>
             <richtigeAntwort>Heftpflaster</richtigeAntwort>
             <falscheAntwort1>Schwimmweste</falscheAntwort1>
             <falscheAntwort2>Sauerstoffmaske</falscheAntwort2>
@@ -3356,7 +3356,7 @@
             <schwierigkeitMax>6</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Was gehörte n i c h t zu den drei wichtigsten Ausrüstungsgegenständen, die ein britischer Pilot im Zweiten Weltkrieg mit sich führte?</fragenText>
+            <fragenText>Was gehörte nicht zu den drei wichtigsten Ausrüstungsgegenständen, die ein britischer Pilot im Zweiten Weltkrieg mit sich führte?</fragenText>
             <richtigeAntwort>Fernglas</richtigeAntwort>
             <falscheAntwort1>einen Fallschirm</falscheAntwort1>
             <falscheAntwort2>eine Sauerstoffmaske für Flüge in großen Höhen</falscheAntwort2>
@@ -3906,7 +3906,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Was kann man mit dem Radar n i c h t messen?</fragenText>
+            <fragenText>Was kann man mit dem Radar nicht messen?</fragenText>
             <richtigeAntwort>den Treibstoffverbrauch</richtigeAntwort>
             <falscheAntwort1>den Ort</falscheAntwort1>
             <falscheAntwort2>die Geschwindigkeit</falscheAntwort2>
@@ -4876,7 +4876,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Flugzeug ist k e i n Passagierflugzeug?</fragenText>
+            <fragenText>Welches Flugzeug ist kein Passagierflugzeug?</fragenText>
             <richtigeAntwort>MiG 29</richtigeAntwort>
             <falscheAntwort1>Tupolev Tu 204</falscheAntwort1>
             <falscheAntwort2>Boeing 777 - 300</falscheAntwort2>

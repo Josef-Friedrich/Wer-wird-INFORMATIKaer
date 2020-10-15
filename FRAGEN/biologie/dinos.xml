@@ -86,7 +86,7 @@
             <schwierigkeitMax>7</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Was ist k e i n Dinosaurier?</fragenText>
+            <fragenText>Was ist kein Dinosaurier?</fragenText>
             <richtigeAntwort>Grizzly</richtigeAntwort>
             <falscheAntwort1>Maiasaura</falscheAntwort1>
             <falscheAntwort2>Baryonyx</falscheAntwort2>
@@ -96,7 +96,7 @@
             <schwierigkeitMax>6</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Was ist k e i n Dinosaurier?</fragenText>
+            <fragenText>Was ist kein Dinosaurier?</fragenText>
             <richtigeAntwort>Kaiman</richtigeAntwort>
             <falscheAntwort1>Iguanodon</falscheAntwort1>
             <falscheAntwort2>Diplodocus</falscheAntwort2>
@@ -116,7 +116,7 @@
             <schwierigkeitMax>12</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Dinosaurier konnte n i c h t fliegen?</fragenText>
+            <fragenText>Welcher Dinosaurier konnte nicht fliegen?</fragenText>
             <richtigeAntwort>Baryonyx</richtigeAntwort>
             <falscheAntwort1>Anurognathus</falscheAntwort1>
             <falscheAntwort2>Rhamphorhynchus</falscheAntwort2>

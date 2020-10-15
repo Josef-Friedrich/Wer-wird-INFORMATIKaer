@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <themenGebiet>
     <fach>Deutsch</fach>
-    <thema>Welches Wort passt n i c h t dazu?</thema>
+    <thema>Welches Wort passt nicht dazu?</thema>
     <autor>Manfred Hartisch</autor>
     <anzahlFragen>98</anzahlFragen>
     <fragen>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>blau</richtigeAntwort>
             <falscheAntwort1>eins</falscheAntwort1>
             <falscheAntwort2>zwei</falscheAntwort2>
@@ -16,7 +16,7 @@
             <schwierigkeitMax>2</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>grün</richtigeAntwort>
             <falscheAntwort1>vier</falscheAntwort1>
             <falscheAntwort2>fünf</falscheAntwort2>
@@ -26,7 +26,7 @@
             <schwierigkeitMax>2</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>schwarz</richtigeAntwort>
             <falscheAntwort1>elf</falscheAntwort1>
             <falscheAntwort2>neun</falscheAntwort2>
@@ -36,7 +36,7 @@
             <schwierigkeitMax>2</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>drei</richtigeAntwort>
             <falscheAntwort1>blau</falscheAntwort1>
             <falscheAntwort2>grün</falscheAntwort2>
@@ -46,7 +46,7 @@
             <schwierigkeitMax>2</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>sieben</richtigeAntwort>
             <falscheAntwort1>weiß</falscheAntwort1>
             <falscheAntwort2>schwarz</falscheAntwort2>
@@ -56,7 +56,7 @@
             <schwierigkeitMax>2</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>rosa</richtigeAntwort>
             <falscheAntwort1>zehn</falscheAntwort1>
             <falscheAntwort2>vierzehn</falscheAntwort2>
@@ -66,7 +66,7 @@
             <schwierigkeitMax>2</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>zwanzig</richtigeAntwort>
             <falscheAntwort1>lila</falscheAntwort1>
             <falscheAntwort2>braun</falscheAntwort2>
@@ -76,7 +76,7 @@
             <schwierigkeitMax>2</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Tisch</richtigeAntwort>
             <falscheAntwort1>Tiger</falscheAntwort1>
             <falscheAntwort2>Löwe</falscheAntwort2>
@@ -86,7 +86,7 @@
             <schwierigkeitMax>3</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Mond</richtigeAntwort>
             <falscheAntwort1>Schlange</falscheAntwort1>
             <falscheAntwort2>Rabe</falscheAntwort2>
@@ -96,7 +96,7 @@
             <schwierigkeitMax>3</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Stein</richtigeAntwort>
             <falscheAntwort1>Hamster</falscheAntwort1>
             <falscheAntwort2>Eule</falscheAntwort2>
@@ -106,7 +106,7 @@
             <schwierigkeitMax>3</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Sattel</richtigeAntwort>
             <falscheAntwort1>Kuckuck</falscheAntwort1>
             <falscheAntwort2>Ameise</falscheAntwort2>
@@ -116,7 +116,7 @@
             <schwierigkeitMax>3</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Turm</richtigeAntwort>
             <falscheAntwort1>Maus</falscheAntwort1>
             <falscheAntwort2>Adler</falscheAntwort2>
@@ -126,7 +126,7 @@
             <schwierigkeitMax>3</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Buch</richtigeAntwort>
             <falscheAntwort1>Elefant</falscheAntwort1>
             <falscheAntwort2>Maulwurf</falscheAntwort2>
@@ -136,7 +136,7 @@
             <schwierigkeitMax>3</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Zirkus</richtigeAntwort>
             <falscheAntwort1>Zebra</falscheAntwort1>
             <falscheAntwort2>Stier</falscheAntwort2>
@@ -146,7 +146,7 @@
             <schwierigkeitMax>3</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Auto</richtigeAntwort>
             <falscheAntwort1>Bank</falscheAntwort1>
             <falscheAntwort2>Stuhl</falscheAntwort2>
@@ -156,7 +156,7 @@
             <schwierigkeitMax>4</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Flugzeug</richtigeAntwort>
             <falscheAntwort1>Bett</falscheAntwort1>
             <falscheAntwort2>Sofa</falscheAntwort2>
@@ -166,7 +166,7 @@
             <schwierigkeitMax>4</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Garage</richtigeAntwort>
             <falscheAntwort1>Fahrrad</falscheAntwort1>
             <falscheAntwort2>Roller</falscheAntwort2>
@@ -176,7 +176,7 @@
             <schwierigkeitMax>4</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Kiste</richtigeAntwort>
             <falscheAntwort1>Brot</falscheAntwort1>
             <falscheAntwort2>Nudeln</falscheAntwort2>
@@ -186,7 +186,7 @@
             <schwierigkeitMax>4</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Schule</richtigeAntwort>
             <falscheAntwort1>Hose</falscheAntwort1>
             <falscheAntwort2>Hemd</falscheAntwort2>
@@ -196,7 +196,7 @@
             <schwierigkeitMax>4</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Pony</richtigeAntwort>
             <falscheAntwort1>Mantel</falscheAntwort1>
             <falscheAntwort2>Schal</falscheAntwort2>
@@ -206,7 +206,7 @@
             <schwierigkeitMax>4</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Herbst</richtigeAntwort>
             <falscheAntwort1>Mittwoch</falscheAntwort1>
             <falscheAntwort2>Donnerstag</falscheAntwort2>
@@ -216,7 +216,7 @@
             <schwierigkeitMax>4</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Sonntag</richtigeAntwort>
             <falscheAntwort1>Herbst</falscheAntwort1>
             <falscheAntwort2>Frühling</falscheAntwort2>
@@ -226,7 +226,7 @@
             <schwierigkeitMax>5</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Schirm</richtigeAntwort>
             <falscheAntwort1>Regen</falscheAntwort1>
             <falscheAntwort2>Schnee</falscheAntwort2>
@@ -236,7 +236,7 @@
             <schwierigkeitMax>5</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Adler</richtigeAntwort>
             <falscheAntwort1>Meise</falscheAntwort1>
             <falscheAntwort2>Fink</falscheAntwort2>
@@ -246,7 +246,7 @@
             <schwierigkeitMax>5</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Fabian</richtigeAntwort>
             <falscheAntwort1>Susi</falscheAntwort1>
             <falscheAntwort2>Anna</falscheAntwort2>
@@ -256,7 +256,7 @@
             <schwierigkeitMax>5</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Felicitas</richtigeAntwort>
             <falscheAntwort1>Felix</falscheAntwort1>
             <falscheAntwort2>Fabian</falscheAntwort2>
@@ -266,7 +266,7 @@
             <schwierigkeitMax>5</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Wolf</richtigeAntwort>
             <falscheAntwort1>Tiger</falscheAntwort1>
             <falscheAntwort2>Löwe</falscheAntwort2>
@@ -276,7 +276,7 @@
             <schwierigkeitMax>5</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Kojote</richtigeAntwort>
             <falscheAntwort1>Luchs</falscheAntwort1>
             <falscheAntwort2>Leopard</falscheAntwort2>
@@ -286,7 +286,7 @@
             <schwierigkeitMax>5</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>müde</richtigeAntwort>
             <falscheAntwort1>schlafen</falscheAntwort1>
             <falscheAntwort2>gähnen</falscheAntwort2>
@@ -296,7 +296,7 @@
             <schwierigkeitMax>6</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Clown</richtigeAntwort>
             <falscheAntwort1>freuen</falscheAntwort1>
             <falscheAntwort2>lachen</falscheAntwort2>
@@ -306,7 +306,7 @@
             <schwierigkeitMax>6</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>sehr</richtigeAntwort>
             <falscheAntwort1>salzig</falscheAntwort1>
             <falscheAntwort2>sauer</falscheAntwort2>
@@ -316,7 +316,7 @@
             <schwierigkeitMax>6</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>lieben</richtigeAntwort>
             <falscheAntwort1>langsam</falscheAntwort1>
             <falscheAntwort2>lahm</falscheAntwort2>
@@ -326,7 +326,7 @@
             <schwierigkeitMax>6</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>schimpfen</richtigeAntwort>
             <falscheAntwort1>frech</falscheAntwort1>
             <falscheAntwort2>brav</falscheAntwort2>
@@ -336,7 +336,7 @@
             <schwierigkeitMax>6</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>enttäuscht</richtigeAntwort>
             <falscheAntwort1>rennen</falscheAntwort1>
             <falscheAntwort2>verlieren</falscheAntwort2>
@@ -346,7 +346,7 @@
             <schwierigkeitMax>6</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>zaubern</richtigeAntwort>
             <falscheAntwort1>mutig</falscheAntwort1>
             <falscheAntwort2>schlau</falscheAntwort2>
@@ -356,7 +356,7 @@
             <schwierigkeitMax>6</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>in</richtigeAntwort>
             <falscheAntwort1>er</falscheAntwort1>
             <falscheAntwort2>du</falscheAntwort2>
@@ -366,7 +366,7 @@
             <schwierigkeitMax>7</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>aus</richtigeAntwort>
             <falscheAntwort1>wir</falscheAntwort1>
             <falscheAntwort2>es</falscheAntwort2>
@@ -376,7 +376,7 @@
             <schwierigkeitMax>7</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>probieren</richtigeAntwort>
             <falscheAntwort1>multiplizieren</falscheAntwort1>
             <falscheAntwort2>dividieren</falscheAntwort2>
@@ -386,7 +386,7 @@
             <schwierigkeitMax>7</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Bachstelze</richtigeAntwort>
             <falscheAntwort1>Forelle</falscheAntwort1>
             <falscheAntwort2>Karpfen</falscheAntwort2>
@@ -396,7 +396,7 @@
             <schwierigkeitMax>7</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Gans</richtigeAntwort>
             <falscheAntwort1>Grille</falscheAntwort1>
             <falscheAntwort2>Ameise</falscheAntwort2>
@@ -406,7 +406,7 @@
             <schwierigkeitMax>7</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Lenkrad</richtigeAntwort>
             <falscheAntwort1>Klingel</falscheAntwort1>
             <falscheAntwort2>Luftpumpe</falscheAntwort2>
@@ -416,7 +416,7 @@
             <schwierigkeitMax>7</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Kiosk</richtigeAntwort>
             <falscheAntwort1>Buch</falscheAntwort1>
             <falscheAntwort2>Heft</falscheAntwort2>
@@ -426,7 +426,7 @@
             <schwierigkeitMax>7</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Zentimeter</richtigeAntwort>
             <falscheAntwort1>Gramm</falscheAntwort1>
             <falscheAntwort2>Kilogramm</falscheAntwort2>
@@ -436,7 +436,7 @@
             <schwierigkeitMax>8</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Was passt n i c h t dazu?</fragenText>
+            <fragenText>Was passt nicht dazu?</fragenText>
             <richtigeAntwort>kg</richtigeAntwort>
             <falscheAntwort1>km</falscheAntwort1>
             <falscheAntwort2>cm</falscheAntwort2>
@@ -446,7 +446,7 @@
             <schwierigkeitMax>8</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Auge</richtigeAntwort>
             <falscheAntwort1>Zahn</falscheAntwort1>
             <falscheAntwort2>Zunge</falscheAntwort2>
@@ -456,7 +456,7 @@
             <schwierigkeitMax>8</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Hand</richtigeAntwort>
             <falscheAntwort1>Leber</falscheAntwort1>
             <falscheAntwort2>Milz</falscheAntwort2>
@@ -466,7 +466,7 @@
             <schwierigkeitMax>8</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Rakete</richtigeAntwort>
             <falscheAntwort1>Rennwagen</falscheAntwort1>
             <falscheAntwort2>Omnibus</falscheAntwort2>
@@ -476,7 +476,7 @@
             <schwierigkeitMax>8</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Mai</richtigeAntwort>
             <falscheAntwort1>Advent</falscheAntwort1>
             <falscheAntwort2>Dezember</falscheAntwort2>
@@ -486,7 +486,7 @@
             <schwierigkeitMax>8</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>egal</richtigeAntwort>
             <falscheAntwort1>minus</falscheAntwort1>
             <falscheAntwort2>mal</falscheAntwort2>
@@ -496,7 +496,7 @@
             <schwierigkeitMax>8</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Bodensee</richtigeAntwort>
             <falscheAntwort1>Ostsee</falscheAntwort1>
             <falscheAntwort2>Nordsee</falscheAntwort2>
@@ -506,7 +506,7 @@
             <schwierigkeitMax>9</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Albert</richtigeAntwort>
             <falscheAntwort1>Hermine</falscheAntwort1>
             <falscheAntwort2>Ron</falscheAntwort2>
@@ -516,7 +516,7 @@
             <schwierigkeitMax>9</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Old Silverhand</richtigeAntwort>
             <falscheAntwort1>Old Shatterhand</falscheAntwort1>
             <falscheAntwort2>Old Surehand</falscheAntwort2>
@@ -526,7 +526,7 @@
             <schwierigkeitMax>9</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Mond</richtigeAntwort>
             <falscheAntwort1>Mars</falscheAntwort1>
             <falscheAntwort2>Merkur</falscheAntwort2>
@@ -536,7 +536,7 @@
             <schwierigkeitMax>9</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Orion</richtigeAntwort>
             <falscheAntwort1>Jupiter</falscheAntwort1>
             <falscheAntwort2>Saturn</falscheAntwort2>
@@ -546,7 +546,7 @@
             <schwierigkeitMax>9</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Garfield</richtigeAntwort>
             <falscheAntwort1>Pluto</falscheAntwort1>
             <falscheAntwort2>Snoopy</falscheAntwort2>
@@ -556,7 +556,7 @@
             <schwierigkeitMax>9</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Lärche</richtigeAntwort>
             <falscheAntwort1>Tanne</falscheAntwort1>
             <falscheAntwort2>Fichte</falscheAntwort2>
@@ -566,7 +566,7 @@
             <schwierigkeitMax>9</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Max Frisch</richtigeAntwort>
             <falscheAntwort1>Joanne K. Rowling</falscheAntwort1>
             <falscheAntwort2>Michael Ende</falscheAntwort2>
@@ -576,7 +576,7 @@
             <schwierigkeitMax>10</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Indien</richtigeAntwort>
             <falscheAntwort1>Amerika</falscheAntwort1>
             <falscheAntwort2>Afrika</falscheAntwort2>
@@ -586,7 +586,7 @@
             <schwierigkeitMax>10</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Spanien</richtigeAntwort>
             <falscheAntwort1>Australien</falscheAntwort1>
             <falscheAntwort2>Asien</falscheAntwort2>
@@ -596,7 +596,7 @@
             <schwierigkeitMax>10</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Lüneburger Heide</richtigeAntwort>
             <falscheAntwort1>Hessen</falscheAntwort1>
             <falscheAntwort2>Saarland</falscheAntwort2>
@@ -606,7 +606,7 @@
             <schwierigkeitMax>10</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Berlin</richtigeAntwort>
             <falscheAntwort1>Bayern</falscheAntwort1>
             <falscheAntwort2>Baden - Württemberg</falscheAntwort2>
@@ -616,7 +616,7 @@
             <schwierigkeitMax>10</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>ATC</richtigeAntwort>
             <falscheAntwort1>ARD</falscheAntwort1>
             <falscheAntwort2>ZDF</falscheAntwort2>
@@ -626,7 +626,7 @@
             <schwierigkeitMax>10</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Trommel</richtigeAntwort>
             <falscheAntwort1>Trompete</falscheAntwort1>
             <falscheAntwort2>Oboe</falscheAntwort2>
@@ -636,7 +636,7 @@
             <schwierigkeitMax>10</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Cello</richtigeAntwort>
             <falscheAntwort1>Saxophon</falscheAntwort1>
             <falscheAntwort2>Querflöte</falscheAntwort2>
@@ -646,7 +646,7 @@
             <schwierigkeitMax>11</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Kiwi</richtigeAntwort>
             <falscheAntwort1>Pflaume</falscheAntwort1>
             <falscheAntwort2>Kirsche</falscheAntwort2>
@@ -656,7 +656,7 @@
             <schwierigkeitMax>11</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Teddybär</richtigeAntwort>
             <falscheAntwort1>Puppe</falscheAntwort1>
             <falscheAntwort2>Raupe</falscheAntwort2>
@@ -666,7 +666,7 @@
             <schwierigkeitMax>11</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Ratte</richtigeAntwort>
             <falscheAntwort1>Scanner</falscheAntwort1>
             <falscheAntwort2>Modem</falscheAntwort2>
@@ -676,7 +676,7 @@
             <schwierigkeitMax>11</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Mexiko</richtigeAntwort>
             <falscheAntwort1>Nil</falscheAntwort1>
             <falscheAntwort2>Ägypten</falscheAntwort2>
@@ -686,7 +686,7 @@
             <schwierigkeitMax>11</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Stiefmütterchen</richtigeAntwort>
             <falscheAntwort1>Rapunzel</falscheAntwort1>
             <falscheAntwort2>Rumpelstilzchen</falscheAntwort2>
@@ -696,7 +696,7 @@
             <schwierigkeitMax>11</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Spanien</richtigeAntwort>
             <falscheAntwort1>Norwegen</falscheAntwort1>
             <falscheAntwort2>Finnland</falscheAntwort2>
@@ -706,7 +706,7 @@
             <schwierigkeitMax>11</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Reis</richtigeAntwort>
             <falscheAntwort1>Weizen</falscheAntwort1>
             <falscheAntwort2>Hafer</falscheAntwort2>
@@ -716,7 +716,7 @@
             <schwierigkeitMax>12</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Zahnrad</richtigeAntwort>
             <falscheAntwort1>Globus</falscheAntwort1>
             <falscheAntwort2>Kugel</falscheAntwort2>
@@ -726,7 +726,7 @@
             <schwierigkeitMax>12</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Toyota</richtigeAntwort>
             <falscheAntwort1>Honda</falscheAntwort1>
             <falscheAntwort2>Suzuki</falscheAntwort2>
@@ -736,7 +736,7 @@
             <schwierigkeitMax>12</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Machtjanix</richtigeAntwort>
             <falscheAntwort1>Asterix</falscheAntwort1>
             <falscheAntwort2>Obelix</falscheAntwort2>
@@ -746,7 +746,7 @@
             <schwierigkeitMax>12</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Nigeria</richtigeAntwort>
             <falscheAntwort1>Chile</falscheAntwort1>
             <falscheAntwort2>Peru</falscheAntwort2>
@@ -756,7 +756,7 @@
             <schwierigkeitMax>12</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Fiat</richtigeAntwort>
             <falscheAntwort1>VW</falscheAntwort1>
             <falscheAntwort2>Audi</falscheAntwort2>
@@ -766,7 +766,7 @@
             <schwierigkeitMax>12</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Saab</richtigeAntwort>
             <falscheAntwort1>Mercedes</falscheAntwort1>
             <falscheAntwort2>Porsche</falscheAntwort2>
@@ -776,7 +776,7 @@
             <schwierigkeitMax>12</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>München</richtigeAntwort>
             <falscheAntwort1>Berlin</falscheAntwort1>
             <falscheAntwort2>Paris</falscheAntwort2>
@@ -786,7 +786,7 @@
             <schwierigkeitMax>13</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>SL</richtigeAntwort>
             <falscheAntwort1>MD</falscheAntwort1>
             <falscheAntwort2>IV</falscheAntwort2>
@@ -796,7 +796,7 @@
             <schwierigkeitMax>13</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Aachen</richtigeAntwort>
             <falscheAntwort1>Athen</falscheAntwort1>
             <falscheAntwort2>Amsterdam</falscheAntwort2>
@@ -806,7 +806,7 @@
             <schwierigkeitMax>13</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Nepal</richtigeAntwort>
             <falscheAntwort1>Ungarn</falscheAntwort1>
             <falscheAntwort2>Schweiz</falscheAntwort2>
@@ -826,7 +826,7 @@
             <schwierigkeitMax>13</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Lindgren</richtigeAntwort>
             <falscheAntwort1>Grimm</falscheAntwort1>
             <falscheAntwort2>Andersen</falscheAntwort2>
@@ -836,7 +836,7 @@
             <schwierigkeitMax>13</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>schließen</richtigeAntwort>
             <falscheAntwort1>baggern</falscheAntwort1>
             <falscheAntwort2>schmettern</falscheAntwort2>
@@ -846,7 +846,7 @@
             <schwierigkeitMax>13</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Lehm</richtigeAntwort>
             <falscheAntwort1>Lava</falscheAntwort1>
             <falscheAntwort2>Magma</falscheAntwort2>
@@ -856,7 +856,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Sirup</richtigeAntwort>
             <falscheAntwort1>Honig</falscheAntwort1>
             <falscheAntwort2>Amme</falscheAntwort2>
@@ -866,7 +866,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Talar</richtigeAntwort>
             <falscheAntwort1>Kahle Asten</falscheAntwort1>
             <falscheAntwort2>Brocken</falscheAntwort2>
@@ -876,7 +876,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Vegeta</richtigeAntwort>
             <falscheAntwort1>Pikachu</falscheAntwort1>
             <falscheAntwort2>Glumanda</falscheAntwort2>
@@ -886,7 +886,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Piccolo</richtigeAntwort>
             <falscheAntwort1>Relaxo</falscheAntwort1>
             <falscheAntwort2>Traumato</falscheAntwort2>
@@ -896,7 +896,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Bäcker</richtigeAntwort>
             <falscheAntwort1>Bauer</falscheAntwort1>
             <falscheAntwort2>Turm</falscheAntwort2>
@@ -906,7 +906,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Pond</richtigeAntwort>
             <falscheAntwort1>Volt</falscheAntwort1>
             <falscheAntwort2>Ampere</falscheAntwort2>
@@ -916,7 +916,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Dragonir</richtigeAntwort>
             <falscheAntwort1>Vegeta</falscheAntwort1>
             <falscheAntwort2>Piccolo</falscheAntwort2>
@@ -926,7 +926,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Tauboss</richtigeAntwort>
             <falscheAntwort1>Freezer</falscheAntwort1>
             <falscheAntwort2>Son - Gohan</falscheAntwort2>
@@ -936,7 +936,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Presley</richtigeAntwort>
             <falscheAntwort1>Kennedy</falscheAntwort1>
             <falscheAntwort2>Bush</falscheAntwort2>
@@ -946,7 +946,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Pavian</richtigeAntwort>
             <falscheAntwort1>Gorilla</falscheAntwort1>
             <falscheAntwort2>Schimpanse</falscheAntwort2>
@@ -956,7 +956,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>V</richtigeAntwort>
             <falscheAntwort1>A</falscheAntwort1>
             <falscheAntwort2>U</falscheAntwort2>
@@ -966,7 +966,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Uruguay</richtigeAntwort>
             <falscheAntwort1>Sambia</falscheAntwort1>
             <falscheAntwort2>Zaire</falscheAntwort2>
@@ -976,7 +976,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Wort passt n i c h t dazu?</fragenText>
+            <fragenText>Welches Wort passt nicht dazu?</fragenText>
             <richtigeAntwort>Bibor</richtigeAntwort>
             <falscheAntwort1>Smettbo</falscheAntwort1>
             <falscheAntwort2>Raupy</falscheAntwort2>

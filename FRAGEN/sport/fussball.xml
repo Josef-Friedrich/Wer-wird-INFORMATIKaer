@@ -1256,7 +1256,7 @@
             <schwierigkeitMax>9</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Wann gilt die Abseitsregel n i c h t?</fragenText>
+            <fragenText>Wann gilt die Abseitsregel nicht?</fragenText>
             <richtigeAntwort>beim Einwurf</richtigeAntwort>
             <falscheAntwort1>beim Steilpass</falscheAntwort1>
             <falscheAntwort2>beim Doppelpass</falscheAntwort2>
@@ -1476,7 +1476,7 @@
             <schwierigkeitMax>15</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>In welchem der vier Jahre wurde die Deutsche Fußball - Nationalmannschaft n i c h t Weltmeister?</fragenText>
+            <fragenText>In welchem der vier Jahre wurde die Deutsche Fußball - Nationalmannschaft nicht Weltmeister?</fragenText>
             <richtigeAntwort>1966</richtigeAntwort>
             <falscheAntwort1>1954</falscheAntwort1>
             <falscheAntwort2>1974</falscheAntwort2>

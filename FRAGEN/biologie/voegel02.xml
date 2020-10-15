@@ -256,7 +256,7 @@
             <schwierigkeitMax>11</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Vogel wird n i c h t als Stubenvogel gehalten?</fragenText>
+            <fragenText>Welcher Vogel wird nicht als Stubenvogel gehalten?</fragenText>
             <richtigeAntwort>Albatros</richtigeAntwort>
             <falscheAntwort1>Fink</falscheAntwort1>
             <falscheAntwort2>Zeisig</falscheAntwort2>
@@ -446,7 +446,7 @@
             <schwierigkeitMax>13</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welchen Vogel gibt es n i c h t?</fragenText>
+            <fragenText>Welchen Vogel gibt es nicht?</fragenText>
             <richtigeAntwort>Weißkehlchen</richtigeAntwort>
             <falscheAntwort1>Schwarzkehlchen</falscheAntwort1>
             <falscheAntwort2>Rotkehlchen</falscheAntwort2>
@@ -686,7 +686,7 @@
             <schwierigkeitMax>12</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Vogel gehört n i c h t zu den Greifvögeln?</fragenText>
+            <fragenText>Welcher Vogel gehört nicht zu den Greifvögeln?</fragenText>
             <richtigeAntwort>Mehlschwalbe</richtigeAntwort>
             <falscheAntwort1>Falke</falscheAntwort1>
             <falscheAntwort2>Adler</falscheAntwort2>
@@ -696,7 +696,7 @@
             <schwierigkeitMax>6</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Vogel gehört n i c h t zu den Sperlingsvögeln?</fragenText>
+            <fragenText>Welcher Vogel gehört nicht zu den Sperlingsvögeln?</fragenText>
             <richtigeAntwort>Kolibri</richtigeAntwort>
             <falscheAntwort1>Nachtigall</falscheAntwort1>
             <falscheAntwort2>Drossel</falscheAntwort2>
@@ -706,7 +706,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Vogel gehört n i c h t zu den Sperlingsvögeln?</fragenText>
+            <fragenText>Welcher Vogel gehört nicht zu den Sperlingsvögeln?</fragenText>
             <richtigeAntwort>Wellensittich</richtigeAntwort>
             <falscheAntwort1>Rotkehlchen</falscheAntwort1>
             <falscheAntwort2>Amsel</falscheAntwort2>
@@ -716,7 +716,7 @@
             <schwierigkeitMax>9</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Vogel gehört n i c h t zu den Sperlingsvögeln?</fragenText>
+            <fragenText>Welcher Vogel gehört nicht zu den Sperlingsvögeln?</fragenText>
             <richtigeAntwort>Falke</richtigeAntwort>
             <falscheAntwort1>Fink</falscheAntwort1>
             <falscheAntwort2>Lerche</falscheAntwort2>
@@ -2286,7 +2286,7 @@
             <schwierigkeitMax>6</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Auf welchem Kontinent gibt es k e i n e Spechte?</fragenText>
+            <fragenText>Auf welchem Kontinent gibt es keine Spechte?</fragenText>
             <richtigeAntwort>Australien</richtigeAntwort>
             <falscheAntwort1>Europa</falscheAntwort1>
             <falscheAntwort2>Afrika</falscheAntwort2>
@@ -2316,7 +2316,7 @@
             <schwierigkeitMax>12</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welchen Schwan gibt es n i c h t?</fragenText>
+            <fragenText>Welchen Schwan gibt es nicht?</fragenText>
             <richtigeAntwort>Riesenschwan</richtigeAntwort>
             <falscheAntwort1>Höckerschwan</falscheAntwort1>
             <falscheAntwort2>Zwergschwan</falscheAntwort2>
@@ -2396,7 +2396,7 @@
             <schwierigkeitMax>12</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welchen Sperling gibt es n i c h t?</fragenText>
+            <fragenText>Welchen Sperling gibt es nicht?</fragenText>
             <richtigeAntwort>Mondsperling</richtigeAntwort>
             <falscheAntwort1>Weidensperling</falscheAntwort1>
             <falscheAntwort2>Haussperling</falscheAntwort2>
@@ -2806,7 +2806,7 @@
             <schwierigkeitMax>13</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Auf welchem Kontinent gibt es k e i n e Finken?</fragenText>
+            <fragenText>Auf welchem Kontinent gibt es keine Finken?</fragenText>
             <richtigeAntwort>Australien</richtigeAntwort>
             <falscheAntwort1>Afrika</falscheAntwort1>
             <falscheAntwort2>Europa</falscheAntwort2>
@@ -2866,7 +2866,7 @@
             <schwierigkeitMax>10</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welche Meise gibt es n i c h t?</fragenText>
+            <fragenText>Welche Meise gibt es nicht?</fragenText>
             <richtigeAntwort>Schalmeise</richtigeAntwort>
             <falscheAntwort1>Blaumeise</falscheAntwort1>
             <falscheAntwort2>Haubenmeise</falscheAntwort2>
@@ -3116,7 +3116,7 @@
             <schwierigkeitMax>6</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Auf welchem Kontinent gibt es k e i n e Geier?</fragenText>
+            <fragenText>Auf welchem Kontinent gibt es keine Geier?</fragenText>
             <richtigeAntwort>Australien</richtigeAntwort>
             <falscheAntwort1>Afrika</falscheAntwort1>
             <falscheAntwort2>Asien</falscheAntwort2>

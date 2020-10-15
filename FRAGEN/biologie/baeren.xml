@@ -1046,7 +1046,7 @@
             <schwierigkeitMax>7</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Tier ist k e i n Bär?</fragenText>
+            <fragenText>Welches Tier ist kein Bär?</fragenText>
             <richtigeAntwort>Koala</richtigeAntwort>
             <falscheAntwort1>Grizzly</falscheAntwort1>
             <falscheAntwort2>Große Panda</falscheAntwort2>

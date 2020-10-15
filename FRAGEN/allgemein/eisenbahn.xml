@@ -416,7 +416,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welchen Beruf gab es in der Frühzeit der Eisenbahn n i c h t?</fragenText>
+            <fragenText>Welchen Beruf gab es in der Frühzeit der Eisenbahn nicht?</fragenText>
             <richtigeAntwort>Kohlepolierer</richtigeAntwort>
             <falscheAntwort1>Weichensteller</falscheAntwort1>
             <falscheAntwort2>Wärmflaschenwechsler</falscheAntwort2>
@@ -1286,7 +1286,7 @@
             <schwierigkeitMax>13</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welche der folgenden Angaben findet man n i c h t auf den Abfahrttafeln in Bahnhöfen?</fragenText>
+            <fragenText>Welche der folgenden Angaben findet man nicht auf den Abfahrttafeln in Bahnhöfen?</fragenText>
             <richtigeAntwort>den Namen des Zugbegleiters</richtigeAntwort>
             <falscheAntwort1>den Zugtyp</falscheAntwort1>
             <falscheAntwort2>die Abfahrtzeit</falscheAntwort2>

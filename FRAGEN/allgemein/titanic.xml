@@ -267,10 +267,10 @@
         </frage>
         <frage>
             <fragenText>Was stand am Heck der Titanic?</fragenText>
-            <richtigeAntwort>T I T A N I C Liverpool</richtigeAntwort>
-            <falscheAntwort1>T I T A N I C Dublin</falscheAntwort1>
-            <falscheAntwort2>T I T A N I C London</falscheAntwort2>
-            <falscheAntwort3>T I T A N I C Manchester</falscheAntwort3>
+            <richtigeAntwort>TITANIC Liverpool</richtigeAntwort>
+            <falscheAntwort1>TITANIC Dublin</falscheAntwort1>
+            <falscheAntwort2>TITANIC London</falscheAntwort2>
+            <falscheAntwort3>TITANIC Manchester</falscheAntwort3>
             <schwierigkeit>7</schwierigkeit>
             <schwierigkeitMin>13</schwierigkeitMin>
             <schwierigkeitMax>1</schwierigkeitMax>
@@ -966,7 +966,7 @@
             <schwierigkeitMax>10</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Wer antwortete n i c h t auf den Notruf?</fragenText>
+            <fragenText>Wer antwortete nicht auf den Notruf?</fragenText>
             <richtigeAntwort>die Queen Mary</richtigeAntwort>
             <falscheAntwort1>die Frankfurt</falscheAntwort1>
             <falscheAntwort2>die Olympic</falscheAntwort2>

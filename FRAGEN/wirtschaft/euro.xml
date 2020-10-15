@@ -56,7 +56,7 @@
             <schwierigkeitMax>9</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Seit wann gibt es den Euro? (als „Buchgeld“, n i c h t als Bargeld)</fragenText>
+            <fragenText>Seit wann gibt es den Euro? (als „Buchgeld“, nicht als Bargeld)</fragenText>
             <richtigeAntwort>1.1.1999</richtigeAntwort>
             <falscheAntwort1>1.1.2001</falscheAntwort1>
             <falscheAntwort2>1.1.2000</falscheAntwort2>
@@ -666,7 +666,7 @@
             <schwierigkeitMax>7</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welche Münze gibt es n i c h t?</fragenText>
+            <fragenText>Welche Münze gibt es nicht?</fragenText>
             <richtigeAntwort>5 Euro</richtigeAntwort>
             <falscheAntwort1>50 Cent</falscheAntwort1>
             <falscheAntwort2>5 Cent</falscheAntwort2>
@@ -676,7 +676,7 @@
             <schwierigkeitMax>6</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welche Münze gibt es n i c h t?</fragenText>
+            <fragenText>Welche Münze gibt es nicht?</fragenText>
             <richtigeAntwort>10 Euro</richtigeAntwort>
             <falscheAntwort1>1 Euro</falscheAntwort1>
             <falscheAntwort2>2 Euro</falscheAntwort2>

@@ -16,7 +16,7 @@
             <schwierigkeitMax>13</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Was ist k e i n e Katzengruppe?</fragenText>
+            <fragenText>Was ist keine Katzengruppe?</fragenText>
             <richtigeAntwort>Mittelkatzen</richtigeAntwort>
             <falscheAntwort1>Großkatzen</falscheAntwort1>
             <falscheAntwort2>Kleinkatzen</falscheAntwort2>
@@ -746,7 +746,7 @@
             <schwierigkeitMax>6</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Was ist k e i n Teil eines Rindermagens?</fragenText>
+            <fragenText>Was ist kein Teil eines Rindermagens?</fragenText>
             <richtigeAntwort>Beutelmagen</richtigeAntwort>
             <falscheAntwort1>Blättermagen</falscheAntwort1>
             <falscheAntwort2>Netzmagen</falscheAntwort2>

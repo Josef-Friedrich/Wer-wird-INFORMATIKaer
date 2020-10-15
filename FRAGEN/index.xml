@@ -83,10 +83,10 @@
             <themenGebiet pfad="deutsch/gramm_01.xml" titel="Grammatik"/>
             <themenGebiet pfad="deutsch/gramm_02.xml" titel="Grammatik, Stand 11.04.01"/>
             <themenGebiet pfad="deutsch/harry_potter_01.xml" titel="Harry Potter"/>
-            <themenGebiet pfad="deutsch/komma.xml" titel="Welches Wort steht v o r dem Komma?"/>
+            <themenGebiet pfad="deutsch/komma.xml" titel="Welches Wort steht vor dem Komma?"/>
             <themenGebiet pfad="deutsch/lesen_01.xml" titel="Lesen 1"/>
             <themenGebiet pfad="deutsch/lesen_2.xml" titel="Lesen 2"/>
-            <themenGebiet pfad="deutsch/lesetest.xml" titel="Finde das Wort, das n i c h t zum Satz passt !"/>
+            <themenGebiet pfad="deutsch/lesetest.xml" titel="Finde das Wort, das nicht zum Satz passt !"/>
             <themenGebiet pfad="deutsch/maerchen.xml" titel="Märchen"/>
             <themenGebiet pfad="deutsch/silben.xml" titel="Silben"/>
             <themenGebiet pfad="deutsch/sprich01.xml" titel="Sprichwörter und Redensarten"/>
@@ -97,7 +97,7 @@
             <themenGebiet pfad="deutsch/wortartn.xml" titel="W O R T A R T E N"/>
             <themenGebiet pfad="deutsch/wortfeld_gehen.xml" titel="Wortfeld „gehen“"/>
             <themenGebiet pfad="deutsch/wpabz_01.xml" titel="Was passt am besten zu ..."/>
-            <themenGebiet pfad="deutsch/wpn_01.xml" titel="Welches Wort passt n i c h t dazu?"/>
+            <themenGebiet pfad="deutsch/wpn_01.xml" titel="Welches Wort passt nicht dazu?"/>
             <themenGebiet pfad="deutsch/zeiten01.xml" titel="Finde die richtige Zeit!"/>
             <themenGebiet pfad="deutsch/zusammengesetzte_namenwoerter.xml" titel="Zusammengesetzte Namenwörter"/>
         </gebiete>

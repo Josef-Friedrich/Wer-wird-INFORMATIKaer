@@ -126,7 +126,7 @@
             <schwierigkeitMax>10</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Name gehört k e i ne m Rentier vom amerikanischen Weihnachtsmann?</fragenText>
+            <fragenText>Welcher Name gehört keine m Rentier vom amerikanischen Weihnachtsmann?</fragenText>
             <richtigeAntwort>Schnuppe</richtigeAntwort>
             <falscheAntwort1>Goldie</falscheAntwort1>
             <falscheAntwort2>Sternchen</falscheAntwort2>
@@ -136,7 +136,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Name gehört k e i ne m Rentier vom amerikanischen Weihnachtsmann?</fragenText>
+            <fragenText>Welcher Name gehört keine m Rentier vom amerikanischen Weihnachtsmann?</fragenText>
             <richtigeAntwort>Holzbein</richtigeAntwort>
             <falscheAntwort1>Wackelohr</falscheAntwort1>
             <falscheAntwort2>Süßzahn</falscheAntwort2>
@@ -146,7 +146,7 @@
             <schwierigkeitMax>1</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welcher Name gehört k e i ne m Rentier vom amerikanischen Weihnachtsmann?</fragenText>
+            <fragenText>Welcher Name gehört keine m Rentier vom amerikanischen Weihnachtsmann?</fragenText>
             <richtigeAntwort>Regen</richtigeAntwort>
             <falscheAntwort1>Donner</falscheAntwort1>
             <falscheAntwort2>Blitz</falscheAntwort2>
@@ -1376,7 +1376,7 @@
             <schwierigkeitMax>6</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Wer gehörte n i c h t zu den Heiligen Drei Königen?</fragenText>
+            <fragenText>Wer gehörte nicht zu den Heiligen Drei Königen?</fragenText>
             <richtigeAntwort>Augustus</richtigeAntwort>
             <falscheAntwort1>Balthasar</falscheAntwort1>
             <falscheAntwort2>Melchior</falscheAntwort2>
@@ -1496,7 +1496,7 @@
             <schwierigkeitMax>3</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Viele gute Zutaten werden zum Backen von Zimtsternen benötigt. Was gehört n i c h t dazu?</fragenText>
+            <fragenText>Viele gute Zutaten werden zum Backen von Zimtsternen benötigt. Was gehört nicht dazu?</fragenText>
             <richtigeAntwort>Butter</richtigeAntwort>
             <falscheAntwort1>Puderzucker</falscheAntwort1>
             <falscheAntwort2>Zimt</falscheAntwort2>
@@ -1606,7 +1606,7 @@
             <schwierigkeitMax>10</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Welches Geschenk brachten die Weisen aus dem Morgenland n i c h t mit?</fragenText>
+            <fragenText>Welches Geschenk brachten die Weisen aus dem Morgenland nicht mit?</fragenText>
             <richtigeAntwort>Salz</richtigeAntwort>
             <falscheAntwort1>Weihrauch</falscheAntwort1>
             <falscheAntwort2>Gold</falscheAntwort2>
@@ -1746,7 +1746,7 @@
             <schwierigkeitMax>4</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Was ist k e i n Weihnachtslied?</fragenText>
+            <fragenText>Was ist kein Weihnachtslied?</fragenText>
             <richtigeAntwort>Winter ade</richtigeAntwort>
             <falscheAntwort1>Ihr Kinderlein kommet</falscheAntwort1>
             <falscheAntwort2>Morgen kommt der Weihnachtsmann</falscheAntwort2>
@@ -1756,7 +1756,7 @@
             <schwierigkeitMax>3</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Was ist k e i n Weihnachtslied?</fragenText>
+            <fragenText>Was ist kein Weihnachtslied?</fragenText>
             <richtigeAntwort>Der Mond ist aufgegangen</richtigeAntwort>
             <falscheAntwort1>Stille Nacht</falscheAntwort1>
             <falscheAntwort2>O du fröhliche</falscheAntwort2>

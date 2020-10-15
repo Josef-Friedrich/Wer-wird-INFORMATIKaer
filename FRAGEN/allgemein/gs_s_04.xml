@@ -386,7 +386,7 @@
             <schwierigkeitMax>11</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Auf welchem Landeswappen befindet sich k e i n Tier?</fragenText>
+            <fragenText>Auf welchem Landeswappen befindet sich kein Tier?</fragenText>
             <richtigeAntwort>Sachsen</richtigeAntwort>
             <falscheAntwort1>Sachsen - Anhalt</falscheAntwort1>
             <falscheAntwort2>Schleswig - Holstein</falscheAntwort2>
@@ -846,7 +846,7 @@
             <schwierigkeitMax>15</schwierigkeitMax>
         </frage>
         <frage>
-            <fragenText>Was gehört n i c h t zur Hardware eines Computers?</fragenText>
+            <fragenText>Was gehört nicht zur Hardware eines Computers?</fragenText>
             <richtigeAntwort>Programm</richtigeAntwort>
             <falscheAntwort1>Diskette</falscheAntwort1>
             <falscheAntwort2>Monitor</falscheAntwort2>
