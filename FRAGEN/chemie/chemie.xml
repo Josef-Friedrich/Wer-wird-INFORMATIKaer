@@ -1437,10 +1437,10 @@
         </frage>
         <frage>
             <fragenText>Wie lautet die Regel von Markownikow?</fragenText>
-            <richtigeAntwort>„Wer hat, dem wird gegeben.“</richtigeAntwort>
-            <falscheAntwort1>„Geben ist seliger denn nehmen.“</falscheAntwort1>
-            <falscheAntwort2>„Die Gesamtzahl der Valenzelektronen beträgt 8.“</falscheAntwort2>
-            <falscheAntwort3>„Je mehr Hydroxidgruppen, desto süßer der Alkohol.“</falscheAntwort3>
+            <richtigeAntwort>Wer hat, dem wird gegeben.</richtigeAntwort>
+            <falscheAntwort1>Geben ist seliger denn nehmen.</falscheAntwort1>
+            <falscheAntwort2>Die Gesamtzahl der Valenzelektronen beträgt 8.</falscheAntwort2>
+            <falscheAntwort3>Je mehr Hydroxidgruppen, desto süßer der Alkohol.</falscheAntwort3>
             <schwierigkeit>15</schwierigkeit>
             <schwierigkeitMin>15</schwierigkeitMin>
             <schwierigkeitMax>15</schwierigkeitMax>

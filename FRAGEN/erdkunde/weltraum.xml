@@ -617,10 +617,10 @@
         </frage>
         <frage>
             <fragenText>Wie nennt man einen sterbenden Stern?</fragenText>
-            <richtigeAntwort>„Roter Riese“</richtigeAntwort>
-            <falscheAntwort1>„Gelber Riese“</falscheAntwort1>
-            <falscheAntwort2>„Weißer Riese“</falscheAntwort2>
-            <falscheAntwort3>„Schwarzer Riese“</falscheAntwort3>
+            <richtigeAntwort>Roter Riese</richtigeAntwort>
+            <falscheAntwort1>Gelber Riese</falscheAntwort1>
+            <falscheAntwort2>Weißer Riese</falscheAntwort2>
+            <falscheAntwort3>Schwarzer Riese</falscheAntwort3>
             <schwierigkeit>7</schwierigkeit>
             <schwierigkeitMin>6</schwierigkeitMin>
             <schwierigkeitMax>8</schwierigkeitMax>
@@ -657,10 +657,10 @@
         </frage>
         <frage>
             <fragenText>Wie nennt man einen auf wenige Kilometer geschrumpften Neutronenstern mit ungeheurer Schwerkraft?</fragenText>
-            <richtigeAntwort>„Schwarzes Loch“</richtigeAntwort>
-            <falscheAntwort1>„Weißer Fleck“</falscheAntwort1>
-            <falscheAntwort2>„Schwarzer Fleck“</falscheAntwort2>
-            <falscheAntwort3>„Weißes Loch“</falscheAntwort3>
+            <richtigeAntwort>Schwarzes Loch</richtigeAntwort>
+            <falscheAntwort1>Weißer Fleck</falscheAntwort1>
+            <falscheAntwort2>Schwarzer Fleck</falscheAntwort2>
+            <falscheAntwort3>Weißes Loch</falscheAntwort3>
             <schwierigkeit>10</schwierigkeit>
             <schwierigkeitMin>9</schwierigkeitMin>
             <schwierigkeitMax>12</schwierigkeitMax>
@@ -987,10 +987,10 @@
         </frage>
         <frage>
             <fragenText>Wie nennt man den Planeten Mars auch noch?</fragenText>
-            <richtigeAntwort>„Roter Planet“</richtigeAntwort>
-            <falscheAntwort1>„Weißer Planet“</falscheAntwort1>
-            <falscheAntwort2>„Blauer Planet“</falscheAntwort2>
-            <falscheAntwort3>„Gelber Planet“</falscheAntwort3>
+            <richtigeAntwort>Roter Planet</richtigeAntwort>
+            <falscheAntwort1>Weißer Planet</falscheAntwort1>
+            <falscheAntwort2>Blauer Planet</falscheAntwort2>
+            <falscheAntwort3>Gelber Planet</falscheAntwort3>
             <schwierigkeit>3</schwierigkeit>
             <schwierigkeitMin>6</schwierigkeitMin>
             <schwierigkeitMax>1</schwierigkeitMax>

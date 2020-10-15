@@ -1747,10 +1747,10 @@
         </frage>
         <frage>
             <fragenText>Wie heißt das Wahrzeichen der Insel Helgoland?</fragenText>
-            <richtigeAntwort>„Lange Anna“</richtigeAntwort>
-            <falscheAntwort1>„Kurze Berta“</falscheAntwort1>
-            <falscheAntwort2>„Dicke Frieda“</falscheAntwort2>
-            <falscheAntwort3>„Dünne Dern“</falscheAntwort3>
+            <richtigeAntwort>Lange Anna</richtigeAntwort>
+            <falscheAntwort1>Kurze Berta</falscheAntwort1>
+            <falscheAntwort2>Dicke Frieda</falscheAntwort2>
+            <falscheAntwort3>Dünne Dern</falscheAntwort3>
             <schwierigkeit>8</schwierigkeit>
             <schwierigkeitMin>7</schwierigkeitMin>
             <schwierigkeitMax>9</schwierigkeitMax>

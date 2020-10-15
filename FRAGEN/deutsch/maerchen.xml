@@ -1847,10 +1847,10 @@
         </frage>
         <frage>
             <fragenText>Wonach fragt die Stiefmutter in dem Märchen „Schneewittchen“ ihren Spiegel?</fragenText>
-            <richtigeAntwort>„Wer ist die Schönste im ganzen Land?“</richtigeAntwort>
-            <falscheAntwort1>„Wer ist die Stärkste im ganzen Land?“</falscheAntwort1>
-            <falscheAntwort2>„Wer ist die Klügste im ganzen Land?“</falscheAntwort2>
-            <falscheAntwort3>„Wer ist die Dickste im ganzen Land?“</falscheAntwort3>
+            <richtigeAntwort>Wer ist die Schönste im ganzen Land?</richtigeAntwort>
+            <falscheAntwort1>Wer ist die Stärkste im ganzen Land?</falscheAntwort1>
+            <falscheAntwort2>Wer ist die Klügste im ganzen Land?</falscheAntwort2>
+            <falscheAntwort3>Wer ist die Dickste im ganzen Land?</falscheAntwort3>
             <schwierigkeit>5</schwierigkeit>
             <schwierigkeitMin>3</schwierigkeitMin>
             <schwierigkeitMax>7</schwierigkeitMax>
@@ -1977,10 +1977,10 @@
         </frage>
         <frage>
             <fragenText>Was sagt die Ziege in dem Märchen „Tischlein deck dich“?</fragenText>
-            <richtigeAntwort>„Ich bin so satt, ich mag kein Blatt !“</richtigeAntwort>
-            <falscheAntwort1>„Spieglein, Spieglein an der Wand, wer ist die Schönste im ganzen Land?“</falscheAntwort1>
-            <falscheAntwort2>„Knusper, knusper, knäuspchen, wer knuspert an meinem Häuschen?“</falscheAntwort2>
-            <falscheAntwort3>„Ruckedigu, ruckedigu, Blut ist im Schuh !“</falscheAntwort3>
+            <richtigeAntwort>Ich bin so satt, ich mag kein Blatt !</richtigeAntwort>
+            <falscheAntwort1>Spieglein, Spieglein an der Wand, wer ist die Schönste im ganzen Land?</falscheAntwort1>
+            <falscheAntwort2>Knusper, knusper, knäuspchen, wer knuspert an meinem Häuschen?</falscheAntwort2>
+            <falscheAntwort3>Ruckedigu, ruckedigu, Blut ist im Schuh !</falscheAntwort3>
             <schwierigkeit>4</schwierigkeit>
             <schwierigkeitMin>3</schwierigkeitMin>
             <schwierigkeitMax>6</schwierigkeitMax>
@@ -2057,10 +2057,10 @@
         </frage>
         <frage>
             <fragenText>Was sagt die Ziege in dem Märchen „Tischlein deck dich“?</fragenText>
-            <richtigeAntwort>„Ich bin so satt, ich mag kein Blatt !“</richtigeAntwort>
-            <falscheAntwort1>„Spieglein, Spieglein an der Wand, wer ist die Schönste im ganzen Land?“</falscheAntwort1>
-            <falscheAntwort2>„Knusper, knusper, knäuspchen, wer knuspert an meinem Häuschen?“</falscheAntwort2>
-            <falscheAntwort3>„Ruckedigu, ruckedigu, Blut ist im Schuh !“</falscheAntwort3>
+            <richtigeAntwort>Ich bin so satt, ich mag kein Blatt !</richtigeAntwort>
+            <falscheAntwort1>Spieglein, Spieglein an der Wand, wer ist die Schönste im ganzen Land?</falscheAntwort1>
+            <falscheAntwort2>Knusper, knusper, knäuspchen, wer knuspert an meinem Häuschen?</falscheAntwort2>
+            <falscheAntwort3>Ruckedigu, ruckedigu, Blut ist im Schuh !</falscheAntwort3>
             <schwierigkeit>4</schwierigkeit>
             <schwierigkeitMin>3</schwierigkeitMin>
             <schwierigkeitMax>6</schwierigkeitMax>

@@ -817,10 +817,10 @@
         </frage>
         <frage>
             <fragenText>Was bedeutet die Geruchsmarke eines Wolfes?</fragenText>
-            <richtigeAntwort>„Verschwinde von hier, das ist mein Territorium !“</richtigeAntwort>
-            <falscheAntwort1>„Komm her, ich warte auf dich !“</falscheAntwort1>
-            <falscheAntwort2>„Riech nur, dann weißt du, wie stark ich bin !“</falscheAntwort2>
-            <falscheAntwort3>„Folge mir, ich gehe schon voran !“</falscheAntwort3>
+            <richtigeAntwort>Verschwinde von hier, das ist mein Territorium !</richtigeAntwort>
+            <falscheAntwort1>Komm her, ich warte auf dich !</falscheAntwort1>
+            <falscheAntwort2>Riech nur, dann weißt du, wie stark ich bin !</falscheAntwort2>
+            <falscheAntwort3>Folge mir, ich gehe schon voran !</falscheAntwort3>
             <schwierigkeit>7</schwierigkeit>
             <schwierigkeitMin>6</schwierigkeitMin>
             <schwierigkeitMax>9</schwierigkeitMax>

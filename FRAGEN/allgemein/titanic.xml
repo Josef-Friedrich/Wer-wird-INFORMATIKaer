@@ -1087,10 +1087,10 @@
         </frage>
         <frage>
             <fragenText>Welche Kommandos gab der erste Offizier nach der Entdeckung des Eisbergs?</fragenText>
-            <richtigeAntwort>„Stopp ! Volle Kraft zurück ! Hart steuerbord !“</richtigeAntwort>
-            <falscheAntwort1>„Halbe Kraft voraus !“</falscheAntwort1>
-            <falscheAntwort2>„Stopp ! Volle Kraft zurück ! Hart backbord !“</falscheAntwort2>
-            <falscheAntwort3>„Maschinen stopp ! Halbe Kraft zurück ! 30 Grad steuerbord !“</falscheAntwort3>
+            <richtigeAntwort>Stopp ! Volle Kraft zurück ! Hart steuerbord !</richtigeAntwort>
+            <falscheAntwort1>Halbe Kraft voraus !</falscheAntwort1>
+            <falscheAntwort2>Stopp ! Volle Kraft zurück ! Hart backbord !</falscheAntwort2>
+            <falscheAntwort3>Maschinen stopp ! Halbe Kraft zurück ! 30 Grad steuerbord !</falscheAntwort3>
             <schwierigkeit>11</schwierigkeit>
             <schwierigkeitMin>9</schwierigkeitMin>
             <schwierigkeitMax>13</schwierigkeitMax>

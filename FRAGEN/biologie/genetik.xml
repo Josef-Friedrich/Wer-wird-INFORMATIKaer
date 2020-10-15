@@ -237,10 +237,10 @@
         </frage>
         <frage>
             <fragenText>Der Begriff G1-Phase leitet sich ab von ...</fragenText>
-            <richtigeAntwort>„gap“</richtigeAntwort>
-            <falscheAntwort1>„Genetik“</falscheAntwort1>
-            <falscheAntwort2>„Geschlechtschromosom“</falscheAntwort2>
-            <falscheAntwort3>„gametic unit“</falscheAntwort3>
+            <richtigeAntwort>gap</richtigeAntwort>
+            <falscheAntwort1>Genetik</falscheAntwort1>
+            <falscheAntwort2>Geschlechtschromosom</falscheAntwort2>
+            <falscheAntwort3>gametic unit</falscheAntwort3>
             <schwierigkeit>10</schwierigkeit>
             <schwierigkeitMin>8</schwierigkeitMin>
             <schwierigkeitMax>12</schwierigkeitMax>
@@ -670,7 +670,7 @@
             <richtigeAntwort>Parentalgeneration</richtigeAntwort>
             <falscheAntwort1>Filialgeneration</falscheAntwort1>
             <falscheAntwort2>E-Generation</falscheAntwort2>
-            <falscheAntwort3>„die Alten“</falscheAntwort3>
+            <falscheAntwort3>die Alten</falscheAntwort3>
             <schwierigkeit>6</schwierigkeit>
             <schwierigkeitMin>5</schwierigkeitMin>
             <schwierigkeitMax>8</schwierigkeitMax>

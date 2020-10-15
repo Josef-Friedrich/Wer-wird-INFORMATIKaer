@@ -7,10 +7,10 @@
     <fragen>
         <frage>
             <fragenText>Wie wird die Erde auch genannt?</fragenText>
-            <richtigeAntwort>„Blauer Planet“</richtigeAntwort>
-            <falscheAntwort1>„Roter Planet“</falscheAntwort1>
-            <falscheAntwort2>„Grüner Planet“</falscheAntwort2>
-            <falscheAntwort3>„Gelber Planet“</falscheAntwort3>
+            <richtigeAntwort>Blauer Planet</richtigeAntwort>
+            <falscheAntwort1>Roter Planet</falscheAntwort1>
+            <falscheAntwort2>Grüner Planet</falscheAntwort2>
+            <falscheAntwort3>Gelber Planet</falscheAntwort3>
             <schwierigkeit>3</schwierigkeit>
             <schwierigkeitMin>1</schwierigkeitMin>
             <schwierigkeitMax>5</schwierigkeitMax>
