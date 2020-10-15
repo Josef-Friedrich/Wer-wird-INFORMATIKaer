@@ -2,7 +2,8 @@ package swing_implementation;
 
 import java.util.ArrayList;
 
-import javax.swing.JComponent;
+import javax.swing.Box;
+import javax.swing.BoxLayout;
 import javax.swing.JLabel;
 
 /**
@@ -10,7 +11,16 @@ import javax.swing.JLabel;
  * jede Zeile ein JLabel-Objekt, fügt hinzu bzw. entfernt diese von der
  * übergeordneten Komponente.
  */
-public class MehrzeiligerText {
+public class MehrzeiligerText extends Box {
+
+  /**
+   * Eine {@link serialVersionUID} wird als Versionsnummer bei der Serialisation
+   * automatisch jeder Klasse hinzugefügt, die das Interface {@link Serializable}
+   * implementiert. Fehlt dieses statische Attribut zeigt Visual Studio Code
+   * beispielsweise diese Warnmeldung an: „The serializable class ... does not
+   * declare a static final serialVersionUID field of type longJava(536871008)“
+   */
+  private static final long serialVersionUID = 1L;
 
   /**
    * Die Standardtextweite, nach der eine neue Zeile begonnen wird.
@@ -18,23 +28,12 @@ public class MehrzeiligerText {
   private int standardTextWeite = 35;
 
   /**
-   * Wenn der Antworttext länger ist, wird die Antwort in mehreren Zeilen
-   * angezeigt.
-   */
-  private ArrayList<JLabel> zeilen;
-
-  /**
-   * Übergeordnete Komponente, zu der die Zeilen hinzugefügt werden.
-   */
-  JComponent behälter;
-
-  /**
    * @param behälter Übergeordnete Komponente, zu der die Zeilen hinzugefügt
    *                 werden.
    */
-  public MehrzeiligerText(JComponent behälter) {
-    this.behälter = behälter;
-    zeilen = new ArrayList<JLabel>();
+  public MehrzeiligerText(int x, int y, int width, int height) {
+    super(BoxLayout.PAGE_AXIS);
+    setBounds(x, y, width, height);
   }
 
   /**
@@ -97,28 +96,18 @@ public class MehrzeiligerText {
    */
   private void macheZeilen(String text, int textWeite) {
     // Zuerst alte Zeilen löschen
-    entferne();
+    removeAll();
+    // Manchmal blieben alte Zeilen stehen, deshalb repaint().
+    repaint();
 
     ArrayList<String> textZeilen = teileText(text, textWeite);
 
-    // Die y-Koordinate der ersten Zeile
-    int y;
-    int zeilenAbstand = 20;
-    if (textZeilen.size() == 2) {
-      y = 25;
-      zeilenAbstand = 30;
-    } else {
-      y = 18;
-      zeilenAbstand = 20;
-    }
-
+    add(Box.createVerticalGlue());
     for (String textZeile : textZeilen) {
       JLabel zeile = Aussehen.macheText(textZeile);
-      zeilen.add(zeile);
-      zeile.setBounds(70, y, 500, 50);
-      behälter.add(zeile);
-      y = y + zeilenAbstand;
+      add(zeile);
     }
+    add(Box.createVerticalGlue());
   }
 
   /**
@@ -141,15 +130,6 @@ public class MehrzeiligerText {
    */
   public void setze(String text, int textWeite) {
     macheZeilen(text, textWeite);
-  }
-
-  /**
-   * Entferne die JLabel-Objekt vorhergehender Antworten mit mehrzeiligen Text.
-   */
-  public void entferne() {
-    for (JLabel zeile : zeilen) {
-      behälter.remove(zeile);
-    }
   }
 
 }

@@ -48,7 +48,10 @@ public class AntwortKachel extends KleineKachel {
     super();
     falschesBild = klickBild;
     richtigesBild = Aussehen.macheBild(gibBild("gruen"));
-    zeilen = new MehrzeiligerText(this);
+    zeilen = new MehrzeiligerText(80, 0, getWidth() - 80, getHeight());
+    add(zeilen);
+    // Das JLabel-Objekt für die einzeilige Anzeige deaktivieren.
+    text.setVisible(false);
   }
 
   /**
@@ -58,17 +61,7 @@ public class AntwortKachel extends KleineKachel {
    */
   public void setzeAntwort(String antwortText) {
     taueAuf();
-
-    int anzahlZeilen = zeilen.berechneZeilenAnzahl(antwortText);
-    if (anzahlZeilen > 1) {
-      // Das JLabel-Objekt für die einzeilige Anzeige deaktivieren.
-      text.setVisible(false);
-      zeilen.setze(antwortText);
-    } else {
-      zeilen.entferne();
-      text.setVisible(true);
-      text.setText(antwortText);
-    }
+    zeilen.setze(antwortText);
   }
 
   /**

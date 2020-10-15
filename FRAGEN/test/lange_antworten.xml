@@ -6,7 +6,7 @@
     <anzahlFragen>3</anzahlFragen>
     <fragen>
         <frage>
-            <fragenText>Frage 1</fragenText>
+            <fragenText>Frage 1: Etwas längere Frage. Etwas längere Frage. Etwas längere Frage.</fragenText>
             <richtigeAntwort>richige Antwort</richtigeAntwort>
             <falscheAntwort1>Das ist eine lange und noch dazu falsche Antwort mit der Nummer 1. Und die Antwort hört gar nicht auf.</falscheAntwort1>
             <falscheAntwort2>falsche Antwort 2</falscheAntwort2>
@@ -14,7 +14,7 @@
             <schwierigkeit>1</schwierigkeit>
         </frage>
         <frage>
-            <fragenText>Frage 2</fragenText>
+            <fragenText>Frage 2. Lange Frage. Lange Frage. Lange Frage. Lange Frage. Lange Frage. Lange Frage. Lange Frage. Lange Frage.</fragenText>
             <richtigeAntwort>Das ist eine lange Antwort. Die Antwort ist richtig. Und die Antwort hört gar nicht auf.</richtigeAntwort>
             <falscheAntwort1>Mittellange falsche Antwort 1. Ist auch recht lang.</falscheAntwort1>
             <falscheAntwort2>falsche Antwort 2</falscheAntwort2>
@@ -22,7 +22,7 @@
             <schwierigkeit>1</schwierigkeit>
         </frage>
         <frage>
-            <fragenText>Frage 3</fragenText>
+            <fragenText>Frage 3. Sehr lange Frage. Sehr lange Frage. Sehr lange Frage. Sehr lange Frage. Sehr lange Frage. Sehr lange Frage. Sehr lange Frage. Sehr lange Frage. Sehr lange Frage. Sehr lange Frage. </fragenText>
             <richtigeAntwort>richige Antwort</richtigeAntwort>
             <falscheAntwort1>Mittellange falsche Antwort 1. Ist auch recht lang.</falscheAntwort1>
             <falscheAntwort2>falsche Antwort 2</falscheAntwort2>

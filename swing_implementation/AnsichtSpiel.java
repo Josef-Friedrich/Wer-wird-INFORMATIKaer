@@ -21,7 +21,7 @@ public class AnsichtSpiel extends Ansicht {
 
   private Spiel spiel;
 
-  private JLabel textFrage;
+  private MehrzeiligerText textFrage;
 
   private JLabel textThemenGebiet;
   private JLabel textGewinnSumme;
@@ -110,11 +110,14 @@ public class AnsichtSpiel extends Ansicht {
     textGewinnSumme.setText(spiel.gibFormatierteGewinnSumme());
   }
 
-  private JLabel erzeugeFragenText() {
-    JLabel fragenText = Aussehen.macheText();
-    fragenText.setBounds(80, 350, Aussehen.FENSTER_BREITE - 100, 50);
-    add(fragenText);
-    return fragenText;
+  /**
+   * Erzeuge den Text der Frage.
+   * @return
+   */
+  private MehrzeiligerText erzeugeFragenText() {
+    MehrzeiligerText text = new MehrzeiligerText(80, 350, Aussehen.FENSTER_BREITE - 100, 50);
+    add(text);
+    return text;
   }
 
   private Taste erzeugeTasteNächsteFrage() {
@@ -142,7 +145,7 @@ public class AnsichtSpiel extends Ansicht {
    * @param frage Eine Instanz der aktuellen Frage.
    */
   private void zeigeFrage(Frage frage) {
-    textFrage.setText(frage.gibFragenText());
+    textFrage.setze(frage.gibFragenText(), 80);
     aktualisiereFragenNummer();
     String[] antwortenTexte = frage.gibAntworten();
 
