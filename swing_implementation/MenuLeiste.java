@@ -13,8 +13,8 @@ import fragen_verwaltung.ThemenKatalog;
  * Die Klasse {@link MenuLeiste} basiert auf der Swing-Klasse
  * {@link javax.swing.JMenuBar}. Neben einigen statischen Einträgen (z. B
  * Menüeinträge um zwischen den Ansichten zu schalten) enthält die Menüleiste
- * vor allem dynamische Einträge die aus der XML-Datei {@code index.xml}
- * erzeugen werden.
+ * vor allem dynamische Einträge, die aus der XML-Datei {@code index.xml}
+ * erzeugt werden.
  */
 public class MenuLeiste extends JMenuBar {
 
