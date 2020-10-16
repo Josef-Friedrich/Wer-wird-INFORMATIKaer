@@ -52,7 +52,7 @@ public class AnsichtErgebnis extends Ansicht {
     } else if (spiel.istVerloren()) {
       textErgebnis.setText("Du hast leider verloren");
     } else if (spiel.istBeendet()) {
-      textErgebnis.setText("Du hast bewonnen!");
+      textErgebnis.setText(String.format("Du hast %s gewonnen!", spiel.gibFormatierteGewinnSumme()));
     } else {
       textErgebnis.setText("Du befindest dich noch im Spiel");
     }

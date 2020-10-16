@@ -210,6 +210,10 @@ public class Spiel {
     verloren = !richtig;
     if (verloren)
       beendet = true;
+
+    if (gibFragenNummer() == gibAnzahlFragen()) {
+      beendet = true;
+    }
     return richtig;
   }
 

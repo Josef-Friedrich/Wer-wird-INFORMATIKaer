@@ -107,11 +107,13 @@ public class AnsichtSpiel extends Ansicht {
    * Aktualisiere die Gewinnsumme.
    */
   private void aktualisiereGewinnSumme() {
-    textGewinnSumme.setText(spiel.gibFormatierteGewinnSumme());
+    if (!spiel.istVerloren()) // nur aktualisieren, wenn nicht verloren
+      textGewinnSumme.setText(spiel.gibFormatierteGewinnSumme());
   }
 
   /**
    * Erzeuge den Text der Frage.
+   *
    * @return
    */
   private MehrzeiligerText erzeugeFragenText() {
@@ -212,17 +214,14 @@ public class AnsichtSpiel extends Ansicht {
   public void zeigeNächsteFrage() {
     if (spiel == null)
       return;
-    if (spiel.istVerloren()) {
+
+    if (spiel.istVerloren() || spiel.istBeendet()) {
       AnsichtenVerwalter.zeige("ergebnis");
     } else if (spiel.gibFragenNummer() == 0 || spiel.istAktuelleFrageBeantwortet()) {
       Frage frage = spiel.gibNächsteFrage();
       frage.mischeAntworten();
       zeigeFrage(frage);
     }
-  }
-
-  public Spiel gibAktuellesSpiel() {
-    return spiel;
   }
 
 }
