@@ -38,7 +38,7 @@
             <schwierigkeit>4</schwierigkeit>
         </frage>
         <frage>
-            <fragenText>Welcher HTML-Tag existiert nicht?</fragenText>
+            <fragenText>Welcher HTML-Tag existiert NICHT?</fragenText>
             <richtigeAntwort>&lt;underline&gt;&lt;/underline&gt;</richtigeAntwort>
             <falscheAntwort1>&lt;b&gt;&lt;/b&gt;</falscheAntwort1>
             <falscheAntwort2>&lt;strong&gt;&lt;/strong&gt;</falscheAntwort2>
@@ -92,6 +92,78 @@
             <falscheAntwort2>jpeg</falscheAntwort2>
             <falscheAntwort3>png</falscheAntwort3>
             <schwierigkeit>3</schwierigkeit>
+        </frage>
+        <frage>
+            <fragenText>Was schützt die eigenen Endgeräte NICHT vor Viren?</fragenText>
+            <richtigeAntwort>neues Endgerät</richtigeAntwort>
+            <falscheAntwort1>Firewall</falscheAntwort1>
+            <falscheAntwort2>Virenschutz</falscheAntwort2>
+            <falscheAntwort3>sicheres Passwort</falscheAntwort3>
+            <schwierigkeit>1</schwierigkeit>
+        </frage>
+        <frage>
+            <fragenText>Welches Passwort ist sicher?</fragenText>
+            <richtigeAntwort>4?gLtBmU245</richtigeAntwort>
+            <falscheAntwort1>abc123</falscheAntwort1>
+            <falscheAntwort2>qwertz</falscheAntwort2>
+            <falscheAntwort3>informatikistcool</falscheAntwort3>
+            <schwierigkeit>2</schwierigkeit>
+        </frage>
+        <frage>
+            <fragenText>Die grafische Darstellung von Programmentwürfen nennt man</fragenText>
+            <richtigeAntwort>Struktogramm</richtigeAntwort>
+            <falscheAntwort1>Objektdiagramm</falscheAntwort1>
+            <falscheAntwort2>Klassendiagramm</falscheAntwort2>
+            <falscheAntwort3>Autogramm</falscheAntwort3>
+            <schwierigkeit>1</schwierigkeit>
+        </frage>
+        <frage>
+            <fragenText>Eine Aufeinanderfolge von Methodenaufrufen nennt man</fragenText>
+            <richtigeAntwort>Sequenz</richtigeAntwort>
+            <falscheAntwort1>Methode</falscheAntwort1>
+            <falscheAntwort2>Anweisung</falscheAntwort2>
+            <falscheAntwort3>Wiederholung</falscheAntwort3>
+            <schwierigkeit>1</schwierigkeit>
+        </frage>
+        <frage>
+            <fragenText>Eine Sequenz wird so oft wiederholt, wie es die Anzahl der Wiederholungen angibt.</fragenText>
+            <richtigeAntwort>Wiederholung mit fester Anzahl</richtigeAntwort>
+            <falscheAntwort1>Wiederholung mit Bedingung</falscheAntwort1>
+            <falscheAntwort2>Sequenz</falscheAntwort2>
+            <falscheAntwort3>Anweisung</falscheAntwort3>
+            <schwierigkeit>3</schwierigkeit>
+        </frage>
+        <frage>
+            <fragenText>Wenn Ferien sind, schlafe ich aus, ansonsten stehe ich früh auf.</fragenText>
+            <richtigeAntwort>Zweiseitig bedingte Anweisung</richtigeAntwort>
+            <falscheAntwort1>Einseitig bedingte Anweisung</falscheAntwort1>
+            <falscheAntwort2>Wiederholung mit Bedingung</falscheAntwort2>
+            <falscheAntwort3>Sequenz</falscheAntwort3>
+            <schwierigkeit>5</schwierigkeit>
+        </frage>
+        <frage>
+            <fragenText>Wenn ich Hunger habe, esse ich etwas.</fragenText>
+            <richtigeAntwort>Einseitig bedingte Anweisung</richtigeAntwort>
+            <falscheAntwort1>Wiederholung mit Bedingung</falscheAntwort1>
+            <falscheAntwort2>Sequenz</falscheAntwort2>
+            <falscheAntwort3>Zweiseitig bedingte Anweisung</falscheAntwort3>
+            <schwierigkeit>4</schwierigkeit>
+        </frage>
+        <frage>
+            <fragenText>Ich beiße von meinem Schokoriegel ab, solange er da ist.</fragenText>
+            <richtigeAntwort>Wiederholung mit Bedingung</richtigeAntwort>
+            <falscheAntwort1>Wiederholung mit fester Anzahl</falscheAntwort1>
+            <falscheAntwort2>Zweiseitig bedingte Anweisung</falscheAntwort2>
+            <falscheAntwort3>Einseitig bedingte Anweisung</falscheAntwort3>
+            <schwierigkeit>4</schwierigkeit>
+        </frage>
+        <frage>
+            <fragenText>Eine endliche Abfolge von eindeutigen und ausführbaren Anweisungen zur Lösung eines allgemeinen Problems</fragenText>
+            <richtigeAntwort>Algorithmus</richtigeAntwort>
+            <falscheAntwort1>Sequenz</falscheAntwort1>
+            <falscheAntwort2>Anweisung</falscheAntwort2>
+            <falscheAntwort3>Wiederholung</falscheAntwort3>
+            <schwierigkeit>2</schwierigkeit>
         </frage>
     </fragen>
 </themenGebiet>
