@@ -62,7 +62,7 @@
             <schwierigkeit>2</schwierigkeit>
         </frage>
         <frage>
-            <fragenText>Was stimmt nicht? Auf der Objektkarte stehen:</fragenText>
+            <fragenText>Was stimmt NICHT? Auf der Objektkarte stehen:</fragenText>
             <richtigeAntwort>Methoden</richtigeAntwort>
             <falscheAntwort1>Objektname in klein</falscheAntwort1>
             <falscheAntwort2>Attributwerte in Zahlen</falscheAntwort2>
@@ -110,7 +110,7 @@
             <schwierigkeit>2</schwierigkeit>
         </frage>
         <frage>
-            <fragenText>Bei welcher Beziehung handelt es sich nicht um eine Enthält-Beziehung?</fragenText>
+            <fragenText>Bei welcher Beziehung handelt es sich NICHT um eine Enthält-Beziehung?</fragenText>
             <richtigeAntwort>Teller – Messer – Gabel</richtigeAntwort>
             <falscheAntwort1>Pixelgrafikdokument – Pixel</falscheAntwort1>
             <falscheAntwort2>Mensch – Kopf – Auge – Haar</falscheAntwort2>
@@ -151,7 +151,7 @@
         </frage>
         <frage>
             <fragenText>Wie viele Attribute hat ein Objekt der Klasse PIXEL?</fragenText>
-            <richtigeAntwort>4</richtigeAntwort>
+            <richtigeAntwort>1</richtigeAntwort>
             <falscheAntwort1>9</falscheAntwort1>
             <falscheAntwort2>15</falscheAntwort2>
             <falscheAntwort3>37</falscheAntwort3>
