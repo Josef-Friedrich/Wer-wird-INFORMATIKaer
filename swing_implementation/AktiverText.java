@@ -1,11 +1,10 @@
 package swing_implementation;
 
-import javax.swing.JLabel;
 import java.awt.event.MouseAdapter;
 
 import java.awt.event.MouseEvent;
 
-public class AktiverText extends JLabel {
+public class AktiverText extends AktivesElement {
 
   /**
    * Eine {@link serialVersionUID} wird als Versionsnummer bei der Serialisation
@@ -19,11 +18,12 @@ public class AktiverText extends JLabel {
   public AktiverText(String text) {
     setText(text);
     setFont(Aussehen.SCHRIFT_NORMAL);
-    setForeground(Aussehen.FARBE_VIOLETT);
+    setForeground(Aussehen.FARBE_ROT);
 
     addMouseListener(new MouseAdapter() {
       public void mouseClicked(MouseEvent e) {
-        setForeground(Aussehen.FARBE_ROT);
+        setForeground(Aussehen.FARBE_GRUEN);
+        führeAktionAus();
       }
 
       public void mouseEntered(MouseEvent evt) {
@@ -31,7 +31,7 @@ public class AktiverText extends JLabel {
       }
 
       public void mouseExited(MouseEvent evt) {
-        setForeground(Aussehen.FARBE_VIOLETT);
+        setForeground(Aussehen.FARBE_ROT);
       }
     });
 

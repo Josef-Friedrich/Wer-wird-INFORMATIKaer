@@ -2,6 +2,10 @@ package swing_implementation;
 
 import spiel_logik.Spiel;
 
+/**
+ * Eine Klasse mit statischen Methoden, die eine Instanz des aktuellen Spiels
+ * verwaltet.
+ */
 public class SpielSteuerung {
 
   /**
@@ -23,7 +27,24 @@ public class SpielSteuerung {
     return spiel;
   }
 
-  public static Spiel gib() {
+  /**
+   * Wiederhole ein bereits gestartetes Spiel.
+   *
+   * @return Die Instanz des wiederholten Spiels.
+   */
+  public static Spiel wiederholeSpiel() {
+    if (gibSpiel() != null) {
+      spiel = new Spiel(spiel.gibDateiPfad());
+    }
+    return spiel;
+  }
+
+  /**
+   * Gib das aktuelle Spiel.
+   *
+   * @return Eine Instanz des aktuellen Spiels
+   */
+  public static Spiel gibSpiel() {
     return spiel;
   }
 

@@ -69,7 +69,7 @@ public class AnsichtSpiel extends Ansicht {
         erzeugeAntwortKachel(x1, y2), erzeugeAntwortKachel(x2, y2) };
 
     for (int antwortNummer : Frage.ANTWORT_NUMMERN) {
-      antwortKacheln[antwortNummer].fügeLauscherHinzu(() -> beantworteFrage(antwortNummer));
+      antwortKacheln[antwortNummer].fügeAktionenLauscherHinzu(() -> beantworteFrage(antwortNummer));
       antwortKacheln[antwortNummer].setzeBuchstabe(antwortNummer);
     }
 
@@ -126,7 +126,7 @@ public class AnsichtSpiel extends Ansicht {
     add(taste);
     taste.setVisible(false);
     taste.setToolTipText("Zeige die nächste Fragen an.");
-    taste.fügeLauscherHinzu(() -> zeigeNächsteFrage());
+    taste.fügeAktionenLauscherHinzu(() -> zeigeNächsteFrage());
     return taste;
   }
 

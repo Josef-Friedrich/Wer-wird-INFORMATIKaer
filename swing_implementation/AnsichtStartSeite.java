@@ -40,7 +40,7 @@ public class AnsichtStartSeite extends Ansicht {
   private void erzeugeKleineKachel(String text, String dateiPfad, int x, int y) {
     KleineKachel kachel = new KleineKachel(text);
 
-    kachel.fügeLauscherHinzu(() -> {
+    kachel.fügeAktionenLauscherHinzu(() -> {
       AnsichtenVerwalter.ladeNeuesSpiel(dateiPfad);
     });
     kachel.setLocation(x, y);

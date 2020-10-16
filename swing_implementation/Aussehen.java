@@ -61,8 +61,6 @@ public class Aussehen {
    */
   public static final Font SCHRIFT_FETT = new Font(SCHRIFT_ART, Font.BOLD, SCHRIFT_GRÖSSE);
 
-  public static final Color FARBE = new Color(255, 255, 255);
-
   /**
    * Ein zur Farbpalette des Spiels passendes Weiß.
    */

@@ -1,18 +1,9 @@
 package swing_implementation;
 
 import javax.swing.ImageIcon;
-import javax.swing.JLabel;
 import java.awt.event.*;
 
-/**
- * Die Methode beantworte aus diesem Interface wird ausgeführt, wenn man auf die
- * Antwortkachel klickt oder das entsprechende Tastaturkürzel anklickt.
- */
-interface Aktion {
-  public void führeAus();
-}
-
-public class Taste extends JLabel {
+public class Taste extends AktivesElement {
 
   /**
    * Eine {@link serialVersionUID} wird als Versionsnummer bei der Serialisation
@@ -33,8 +24,6 @@ public class Taste extends JLabel {
    * Antwortkacheln benötigt.
    */
   private boolean eingefroren = false;
-
-  private Aktion aktion;
 
   public Taste(String hauptBildName, String schwebeBildName, String klickBildName) {
     hauptBild = Aussehen.macheBild(hauptBildName);
@@ -77,15 +66,6 @@ public class Taste extends JLabel {
   public void taueAuf() {
     eingefroren = false;
     setIcon(hauptBild);
-  }
-
-  public void führeAktionAus() {
-    if (aktion != null)
-      aktion.führeAus();
-  }
-
-  public void fügeLauscherHinzu(Aktion aktion) {
-    this.aktion = aktion;
   }
 
 }

@@ -72,6 +72,12 @@ public class Spiel {
   private int anzahlFragen = 0;
 
   /**
+   * Der Dateipfad einer XML-Datei. Wir speichern ihn, damit wir nochmal dasselbe
+   * Spiel starten können.
+   */
+  private String dateiPfad;
+
+  /**
    * Der Themenbereich des aktuellen Spiels.
    */
   private String themenBereich;
@@ -315,6 +321,7 @@ public class Spiel {
    *                  <code>"/FRAGEN/informatik/6_jahrgangsstufe.xml"</code>.
    */
   public void ladeThemenGebiet(String dateiPfad) {
+    this.dateiPfad = dateiPfad;
     ThemenGebiet gebiet = new ThemenGebiet(dateiPfad);
     setzeThemenBereich(gebiet.gibFach());
     setzeThemenGebiet(gebiet.gibThema());
@@ -352,11 +359,18 @@ public class Spiel {
   /**
    * Gib das Thema des aktuellen Themengebiets (z. B. Jahrgangsstufe („6.
    * Jahrgangsstufe“)).
-   *
-   * @param thema
    */
   public String gibThemenGebiet() {
     return themenGebiet;
+  }
+
+  /**
+   * Gib den Dateipfad der XML-Datei, der das aktuelle Spiel gestartet hat. Die
+   * getter-Methode kann dazu benutzt werden, das gleiche Spiel nochmal zu
+   * starten.
+   */
+  public String gibDateiPfad() {
+    return dateiPfad;
   }
 
 }

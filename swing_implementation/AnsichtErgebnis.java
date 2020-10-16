@@ -17,22 +17,50 @@ public class AnsichtErgebnis extends Ansicht {
 
   private JLabel textErgebnis;
 
+  private AktiverText textNeuesSpiel;
+
+  private AktiverText textSpielWiederholen;
+
   public AnsichtErgebnis() {
     setLayout(null);
-    textErgebnis = Aussehen.macheText(20, 20, 500, 50);
+    textErgebnis = Aussehen.macheText(400, 300, 500, 50);
     add(textErgebnis);
+
+    textNeuesSpiel = new AktiverText("neues Spiel");
+    textNeuesSpiel.setBounds(400, 400, 500, 50);
+    textNeuesSpiel.fügeAktionenLauscherHinzu(() -> {
+      AnsichtenVerwalter.zeige("start");
+    });
+    add(textNeuesSpiel);
+
+    textSpielWiederholen = new AktiverText("Spiel wiederholen");
+    textSpielWiederholen.setBounds(400, 500, 500, 50);
+    textSpielWiederholen.fügeAktionenLauscherHinzu(() -> {
+      Spiel spiel = SpielSteuerung.gibSpiel();
+      if (spiel != null && spiel.gibDateiPfad() != null) {
+        AnsichtenVerwalter.ladeNeuesSpiel(spiel.gibDateiPfad());
+      }
+    });
+    add(textSpielWiederholen);
   }
 
   @Override
   public void zeige() {
-    AnsichtSpiel ansichtSpiel = (AnsichtSpiel) AnsichtenVerwalter.gib("spiel");
-    Spiel spiel = ansichtSpiel.gibAktuellesSpiel();
-    if (spiel.istVerloren()) {
-      textErgebnis.setText("Du hast leider verloren!");
+    Spiel spiel = SpielSteuerung.gibSpiel();
+    if (spiel == null) {
+      textErgebnis.setText("");
+    } else if (spiel.istVerloren()) {
+      textErgebnis.setText("Du hast leider verloren");
     } else if (spiel.istBeendet()) {
       textErgebnis.setText("Du hast bewonnen!");
     } else {
       textErgebnis.setText("Du befindest dich noch im Spiel");
+    }
+
+    if (spiel != null) {
+      textSpielWiederholen.setVisible(true);
+    } else {
+      textSpielWiederholen.setVisible(false);
     }
   }
 
