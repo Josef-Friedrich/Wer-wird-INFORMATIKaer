@@ -1,6 +1,11 @@
 package swing_implementation;
 
+import java.awt.BorderLayout;
+
+import javax.swing.Box;
+import javax.swing.JComponent;
 import javax.swing.JLabel;
+import javax.swing.SwingConstants;
 
 import spiel_logik.Spiel;
 
@@ -21,27 +26,61 @@ public class AnsichtErgebnis extends Ansicht {
 
   private AktiverText textSpielWiederholen;
 
+  /**
+   * Der Konstrutor zeigt drei Texte horizontal zentiert und vertikal über die
+   * ganze Fensterhöhe verteilt.
+   */
   public AnsichtErgebnis() {
     setLayout(null);
-    textErgebnis = Aussehen.macheText(400, 300, 500, 50);
-    add(textErgebnis);
+    Box rahmen = Box.createVerticalBox();
+    rahmen.setBounds(0, 0, Aussehen.FENSTER_BREITE, Aussehen.FENSTER_HÖHE);
 
+    rahmen.add(Box.createVerticalGlue());
+
+    // Text Ergebnis
+    textErgebnis = Aussehen.macheText(400, 300, 500, 50);
+    rahmen.add(zentriereHorizontal(textErgebnis));
+
+    rahmen.add(Box.createVerticalGlue());
+
+    // Text „neues Spiel“
     textNeuesSpiel = new AktiverText("neues Spiel");
-    textNeuesSpiel.setBounds(400, 400, 500, 50);
     textNeuesSpiel.fügeAktionenLauscherHinzu(() -> {
       AnsichtenVerwalter.zeige("start");
     });
-    add(textNeuesSpiel);
+    textNeuesSpiel.setHorizontalAlignment(SwingConstants.CENTER);
+    rahmen.add(zentriereHorizontal(textNeuesSpiel));
 
+    rahmen.add(Box.createVerticalGlue());
+
+    // Text „Spiel wiederholen“
     textSpielWiederholen = new AktiverText("Spiel wiederholen");
-    textSpielWiederholen.setBounds(400, 500, 500, 50);
     textSpielWiederholen.fügeAktionenLauscherHinzu(() -> {
       Spiel spiel = SpielSteuerung.gibSpiel();
       if (spiel != null && spiel.gibDateiPfad() != null) {
         AnsichtenVerwalter.ladeNeuesSpiel(spiel.gibDateiPfad());
       }
     });
-    add(textSpielWiederholen);
+    rahmen.add(zentriereHorizontal(textSpielWiederholen));
+
+    rahmen.add(Box.createVerticalGlue());
+
+    add(rahmen, BorderLayout.SOUTH);
+  }
+
+  /**
+   * Zentiere die Komponente (z. B. Text) horizontal.
+   *
+   * @param komponente Eine Swing-Komponente.
+   *
+   * @return Ein Rahmen der die Komponente enthält und horizontal zentriert.
+   */
+  private Box zentriereHorizontal(JComponent komponente) {
+    Box rahmen = Box.createHorizontalBox();
+    rahmen.add(Box.createHorizontalGlue());
+    rahmen.add(komponente);
+    rahmen.add(Box.createHorizontalGlue());
+    return rahmen;
   }
 
   @Override
