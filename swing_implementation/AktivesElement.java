@@ -4,13 +4,21 @@ import javax.swing.JLabel;
 
 /**
  * Die Methode {@link AktivesElement.führeAus} aus diesem Interface wird
- * ausgeführt, wenn man auf die Antwortkachel klickt oder das
- * entsprechende Tastaturkürzel anklickt.
+ * ausgeführt, wenn man auf die Antwortkachel klickt oder das entsprechende
+ * Tastaturkürzel anklickt.
  */
 interface Aktion {
   public void führeAus();
 }
 
+/**
+ * Diese Klasse stellt eine eigene Aktionenverwaltung bereit (ähnlich den
+ * ActionListeners). Klassen, die diese Klasse erben, können eine Aktion
+ * registieren {@link AktivesElement.fügeAktionenLauscherHinzu}. Diese kann dann
+ * über die Methode {@link AktivesElement.führeAktionAus} ausgeführt werden. Die
+ * Klassen {@link AktiverText} und {@link Taste} mit allen Unterklassen erben
+ * diese Klasse.
+ */
 public class AktivesElement extends JLabel {
 
   /**
@@ -24,11 +32,19 @@ public class AktivesElement extends JLabel {
 
   private Aktion aktion;
 
+  /**
+   * Führe die registrierte Aktion aus. Zur Registrierung benutze
+   * {@link fügeAktionenLauscherHinzu}.
+   */
   public void führeAktionAus() {
     if (aktion != null)
       aktion.führeAus();
   }
 
+  /**
+   *
+   * @param aktion
+   */
   public void fügeAktionenLauscherHinzu(Aktion aktion) {
     this.aktion = aktion;
   }
