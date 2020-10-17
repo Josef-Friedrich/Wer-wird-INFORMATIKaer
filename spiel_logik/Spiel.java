@@ -276,7 +276,7 @@ public class Spiel {
     long gewinnSumme = gibGewinnSumme();
     String formatiert = "";
 
-    switch (Konfiguration.ZAHLEN_FORMAT) {
+    switch (Konfiguration.zahlenFormat) {
       case DEZIMAL:
         formatiert = String.format("%,d", gewinnSumme);
         break;
@@ -347,7 +347,7 @@ public class Spiel {
     ThemenGebiet gebiet = new ThemenGebiet(dateiPfad);
     setzeThemenBereich(gebiet.gibFach());
     setzeThemenGebiet(gebiet.gibThema());
-    gebiet.leseFragenInsSpiel(this);
+    gebiet.leseFragenInsSpiel(this, Konfiguration.anzahlGeladenerFragen);
   }
 
   /**

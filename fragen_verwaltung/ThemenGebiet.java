@@ -1,5 +1,10 @@
 package fragen_verwaltung;
 
+import java.util.List;
+import java.util.Random;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
@@ -84,14 +89,61 @@ public class ThemenGebiet extends XMLDatei {
   }
 
   /**
-   * Liest die Fragen einer Jahrgangsstufe in die Klasse Spiel ein.
+   * Liest alle Fragen eines Themengebiets in die Klasse Spiel ein.
    *
    * @param spiel Eine Instanz der Klasse {@link spiel_logik.Spiel}
    */
   public void leseFragenInsSpiel(Spiel spiel) {
+    leseFragenInsSpiel(spiel, 0);
+  }
+
+  /**
+   * Wähle eine bestimmte Anzahl an Fragen oder alle Frage aus der XML-Datei aus.
+   * Bringe die Fragen in eine zufällige Reihenfolge.
+   *
+   * @param knotenListe
+   * @param anzahlAuswahl
+   * @return
+   */
+  private Node[] wähleFragenAus(NodeList knotenListe, int anzahlAuswahl) {
+    Random zufall = new Random();
+    int maxAnzahlFragen = knotenListe.getLength();
+
+    if (anzahlAuswahl > maxAnzahlFragen || anzahlAuswahl <= 0)
+      anzahlAuswahl = maxAnzahlFragen;
+    // https://stackoverflow.com/a/22829036/10193818
+    // Wir bilden eine Liste mit den Indexnummer aller Fragen. Hat die
+    // Themengebiets-XML-Datei beispielsweise 10 Fragen, entsteht die Liste:
+    // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    List<Integer> indexAlleFragen = IntStream.rangeClosed(0, maxAnzahlFragen - 1).boxed().collect(Collectors.toList());
+
+    Node[] fragen = new Node[anzahlAuswahl];
+
+    // https://www.baeldung.com/java-random-list-element
+    // Aus der oben erzeugten Liste mit den Indexnummer entnehmen an einer
+    // zufälligen Stelle eine Zahl (zufälligerIndex).
+    // Mit diesem zufälligen Index entnehmen wir den XML-Konten aus der Kontenliste.
+    for (int i = 0; i < anzahlAuswahl; i++) {
+      int j = zufall.nextInt(indexAlleFragen.size());
+      int zufälligerIndex = indexAlleFragen.get(j);
+      indexAlleFragen.remove(j);
+      fragen[i] = knotenListe.item(zufälligerIndex);
+    }
+    return fragen;
+  }
+
+  /**
+   * Liest eine bestimmte Anzahl an Fragen, die zufällig ausgewählt werden, ins
+   * die Klasse Spiel ein.
+   *
+   * @param spiel  Eine Instanz der Klasse {@link spiel_logik.Spiel}
+   * @param anzahl Die Anzahl an Fragen, die ins Spiel geladen werden sollen.
+   */
+  public void leseFragenInsSpiel(Spiel spiel, int anzahl) {
     NodeList knotenListe = gibDokument().getElementsByTagName("frage");
-    for (int i = 0; i < knotenListe.getLength(); i++) {
-      Node frage = knotenListe.item(i);
+    Node[] fragen = wähleFragenAus(knotenListe, anzahl);
+    for (int i = 0; i < fragen.length; i++) {
+      Node frage = fragen[i];
 
       String fragenText = gibTextVonKind(frage, "fragenText");
       String richtigeAntwort = gibTextVonKind(frage, "richtigeAntwort");

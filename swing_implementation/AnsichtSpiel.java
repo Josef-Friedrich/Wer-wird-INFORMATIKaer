@@ -9,7 +9,6 @@ import java.awt.event.ActionEvent;
 
 import spiel_logik.Frage;
 import spiel_logik.Spiel;
-import spiel_logik.Konfiguration;
 
 /**
  * Diese Klasse enthält die Hauptansicht des Spiels, d. h. sie zeigt den
