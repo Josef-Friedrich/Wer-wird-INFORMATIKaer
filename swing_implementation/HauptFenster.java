@@ -4,6 +4,8 @@ import java.awt.BorderLayout;
 import java.awt.CardLayout;
 import java.awt.Dimension;
 import java.awt.EventQueue;
+import java.awt.KeyEventDispatcher;
+import java.awt.KeyboardFocusManager;
 
 import javax.swing.JPanel;
 
@@ -37,15 +39,20 @@ public class HauptFenster extends SpielRahmen {
     add(hauptAnsicht, BorderLayout.CENTER);
     AnsichtenVerwalter.zeige("start");
     pack();
-    // Wir brauchen diese Ansicht um Tastenkürzel zu setzten.
+    // Wir brauchen diese Ansicht, um Tastenkürzel zu setzen.
     AnsichtSpiel ansichtSpiel = AnsichtenVerwalter.gibSpiel();
     // Muss fokusierbar sein, da sonst die Tastenkürzel nicht gehen.
     setFocusable(true);
-    // Wir lauschen in dem Haupt-Fenster auf Tasten-Ereignisse, damit diese immer
-    // empfangen werden können, egal welche Ansicht gerade angezeigt wird.
-    addKeyListener(new KeyAdapter() {
+    setVisible(true);
+
+    // https://stackoverflow.com/a/5345036/10193818
+    // Wir verwenden globale Tastenkürzel, damit immer gehen auch beim Anklicken der Einstellungen.
+    KeyboardFocusManager.getCurrentKeyboardFocusManager().addKeyEventDispatcher(new KeyEventDispatcher() {
       @Override
-      public void keyPressed(KeyEvent e) {
+      public boolean dispatchKeyEvent(KeyEvent e) {
+        if (KeyEvent.KEY_PRESSED != e.getID()) {
+          return false;
+        }
         switch (e.getKeyCode()) {
 
           case KeyEvent.VK_A:
@@ -106,9 +113,9 @@ public class HauptFenster extends SpielRahmen {
           default:
             break;
         }
+        return false;
       }
     });
-    setVisible(true);
   }
 
   public static void main(String[] args) {

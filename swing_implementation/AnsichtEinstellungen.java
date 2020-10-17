@@ -26,10 +26,6 @@ public class AnsichtEinstellungen extends Ansicht {
    */
   private JTextField textFeldAnzahlFragen;
 
-  private JCheckBox kästchenKo;
-
-  private JCheckBox kästchenNachSchwierigkeit;
-
   /**
    * Eine {@link serialVersionUID} wird als Versionsnummer bei der Serialisation
    * automatisch jeder Klasse hinzugefügt, die das Interface {@link Serializable}
@@ -48,15 +44,14 @@ public class AnsichtEinstellungen extends Ansicht {
     l.gridwidth = 2;
     add(überschrift, l);
 
-    kästchenKo = erzeugeKästchen("ko");
-    macheNeueZeile(1, "Spiele im K.o.-System", kästchenKo);
+    macheNeueZeile(1, "Spiele im K.o.-System", erzeugeKästchen("ko"));
 
     textFeldAnzahlFragen = erzeugeTextFeldAnzahlFragen();
     macheNeueZeile(2, "Anzahl an Fragen", textFeldAnzahlFragen);
 
-    kästchenNachSchwierigkeit = erzeugeKästchen("nachSchwierigkeit");
-    macheNeueZeile(3, "Zeige die Fragen nach Schwierigkeit geordnet", kästchenNachSchwierigkeit);
+    macheNeueZeile(3, "Zeige die Fragen nach Schwierigkeit geordnet", erzeugeKästchen("nachSchwierigkeit"));
 
+    macheNeueZeile(4, "Spiele Musik", erzeugeKästchen("spieleMusik"));
   }
 
   /**
