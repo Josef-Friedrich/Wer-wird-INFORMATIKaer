@@ -267,12 +267,30 @@ public class Spiel {
   }
 
   /**
-   * Gib die formatiere Gewinnsumme mit Euro-Zeichen und Tausenderpunkt.
+   * Gib die formatiere Gewinnsumme mit Währungs-Zeichen und Tausenderpunkt und im
+   * konfigurierten Zahlenformat.
    *
    * @return Die formatierte Gewinnsumme.
    */
   public String gibFormatierteGewinnSumme() {
-    return String.format("%,d €", gibGewinnSumme());
+    long gewinnSumme = gibGewinnSumme();
+    String formatiert = "";
+
+    switch (Konfiguration.ZAHLEN_FORMAT) {
+      case DEZIMAL:
+        formatiert = String.format("%,d", gewinnSumme);
+        break;
+
+      case BINÄR:
+        formatiert = "0b" + Long.toBinaryString(gewinnSumme);
+        break;
+
+      case HEXALDEZIMAL:
+        formatiert = "0x" + Long.toHexString(gewinnSumme).toUpperCase();
+        break;
+    }
+
+    return String.format("%s €", formatiert);
   }
 
   /**

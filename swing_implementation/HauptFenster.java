@@ -10,6 +10,8 @@ import javax.swing.JPanel;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
+import spiel_logik.Konfiguration;
+
 public class HauptFenster extends SpielRahmen {
 
   /**

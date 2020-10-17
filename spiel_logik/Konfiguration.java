@@ -1,4 +1,4 @@
-package swing_implementation;
+package spiel_logik;
 
 enum ZahlenFormat {
   DEZIMAL, BINÄR, HEXALDEZIMAL;
@@ -11,10 +11,10 @@ enum ZahlenFormat {
 }
 
 /**
- * Die Klasse Konfiguration enthält statische Attribute, die Einstellungen
+ * Die Klasse {@link Konfiguration} enthält statische Attribute, die Einstellungen
  * speichern.
  */
-class Konfiguration {
+public class Konfiguration {
 
   public static ZahlenFormat ZAHLEN_FORMAT = ZahlenFormat.DEZIMAL;
 

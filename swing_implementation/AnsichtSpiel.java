@@ -9,6 +9,7 @@ import java.awt.event.ActionEvent;
 
 import spiel_logik.Frage;
 import spiel_logik.Spiel;
+import spiel_logik.Konfiguration;
 
 /**
  * Diese Klasse enthält die Hauptansicht des Spiels, d. h. sie zeigt den
@@ -140,24 +141,7 @@ public class AnsichtSpiel extends Ansicht {
     if (spiel.istVerloren()) // nur aktualisieren, wenn nicht verloren
       return;
 
-    long gewinnSumme = spiel.gibGewinnSumme();
-    String formatiert = "";
-
-    switch (Konfiguration.ZAHLEN_FORMAT) {
-      case DEZIMAL:
-        formatiert = Long.toString(gewinnSumme);
-        break;
-
-      case BINÄR:
-        formatiert = Long.toBinaryString(gewinnSumme);
-        break;
-
-      case HEXALDEZIMAL:
-        formatiert = Long.toHexString(gewinnSumme);
-        break;
-    }
-
-    textGewinnSumme.setText(String.format("%s €", formatiert));
+    textGewinnSumme.setText(spiel.gibFormatierteGewinnSumme());
   }
 
   /**
