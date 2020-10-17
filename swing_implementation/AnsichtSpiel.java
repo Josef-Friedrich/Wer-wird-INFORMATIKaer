@@ -1,5 +1,7 @@
 package swing_implementation;
 
+import javax.swing.Box;
+import javax.swing.JComponent;
 import javax.swing.JLabel;
 import javax.swing.Timer;
 
@@ -8,6 +10,10 @@ import java.awt.event.ActionEvent;
 import spiel_logik.Frage;
 import spiel_logik.Spiel;
 
+/**
+ * Diese Klasse enthält die Hauptansicht des Spiels, d. h. sie zeigt den
+ * Fragentext und die vier Antowrtten.
+ */
 public class AnsichtSpiel extends Ansicht {
 
   /**
@@ -19,16 +25,40 @@ public class AnsichtSpiel extends Ansicht {
    */
   private static final long serialVersionUID = 1L;
 
+  /**
+   * Eine Instanz der Klasse {@link Spiel}.
+   */
   private Spiel spiel;
 
-  private MehrzeiligerText textFrage;
-
+  /**
+   * Der Text der das ausgewählte Themengebiet bzw. den Themenbereich anzeigt.
+   */
   private JLabel textThemenGebiet;
+
+  /**
+   * Der Text der aktuellen Gewinnsumme.
+   */
   private JLabel textGewinnSumme;
+
+  /**
+   * Der Text, der die aktuelle Fragenummer bzw. die Anzahl der geladenen Fragen
+   * anzeigt.
+   */
   private JLabel textFrageNummer;
 
+  /**
+   * Der Text der Frage als mehrzeiliger Text.
+   */
+  private MehrzeiligerText textFrage;
+
+  /**
+   * Ein Feld mit den vier Antwortkacheln.
+   */
   private AntwortKachel[] antwortKacheln;
 
+  /**
+   * Ein kleiner Pfeil, der zur nächsten Fragen führt, wenn man darauf klickt.
+   */
   private Taste tasteNächsteFrage;
 
   /**
@@ -51,13 +81,13 @@ public class AnsichtSpiel extends Ansicht {
 
     textFrage = erzeugeFragenText();
 
-    textThemenGebiet = Aussehen.macheText(20, 20, 500, 50);
+    textThemenGebiet = Aussehen.macheText(Aussehen.ABSTAND, Aussehen.ABSTAND, 500, Aussehen.ZEILEN_ABSTAND);
     add(textThemenGebiet);
 
-    textGewinnSumme = Aussehen.macheText(600, 20, 400, 50);
-    add(textGewinnSumme);
+    add(erzeugeTextGewinnSumme());
 
-    textFrageNummer = Aussehen.macheText(20, Aussehen.FENSTER_HÖHE - 40, 500, 30);
+    textFrageNummer = Aussehen.macheText(Aussehen.ABSTAND,
+        Aussehen.FENSTER_HÖHE - Aussehen.ZEILEN_ABSTAND - Aussehen.ABSTAND, 500, Aussehen.ZEILEN_ABSTAND);
     add(textFrageNummer);
 
     int x1 = 10;
@@ -132,11 +162,33 @@ public class AnsichtSpiel extends Ansicht {
     return taste;
   }
 
+  /**
+   * Erzeuge eine Antwortkachel.
+   *
+   * @param x Die x-Koordinate, an der die Antwortkachel plaziert werden soll.
+   * @param y Die y-Koordinate, an der die Antwortkachel plaziert werden soll.
+   *
+   * @return Die erzeugte Antwortkachel.
+   */
   private AntwortKachel erzeugeAntwortKachel(int x, int y) {
     AntwortKachel kachel = new AntwortKachel();
     kachel.setLocation(x, y);
     add(kachel);
     return kachel;
+  }
+
+  /**
+   * Der Text soll rechtsbündig erscheinen, weshalb er etwas aufwändiger zu
+   * erzeugen ist. Deshalb die Auslagerung in diese Methode.
+   */
+  private JComponent erzeugeTextGewinnSumme() {
+    Box schachtel = Box.createHorizontalBox();
+    schachtel.add(Box.createHorizontalGlue());
+    textGewinnSumme = Aussehen.macheText();
+    schachtel.add(textGewinnSumme);
+    int halbeFensterBreite = Aussehen.FENSTER_BREITE / 2;
+    schachtel.setBounds(halbeFensterBreite, Aussehen.ABSTAND, halbeFensterBreite - Aussehen.ABSTAND, Aussehen.ZEILEN_ABSTAND);
+    return schachtel;
   }
 
   /**

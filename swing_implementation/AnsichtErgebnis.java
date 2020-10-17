@@ -38,7 +38,7 @@ public class AnsichtErgebnis extends Ansicht {
     rahmen.add(Box.createVerticalGlue());
 
     // Text Ergebnis
-    textErgebnis = Aussehen.macheText(400, 300, 500, 50);
+    textErgebnis = Aussehen.macheText(400, 300, 500, Aussehen.ZEILEN_ABSTAND);
     rahmen.add(zentriereHorizontal(textErgebnis));
 
     rahmen.add(Box.createVerticalGlue());

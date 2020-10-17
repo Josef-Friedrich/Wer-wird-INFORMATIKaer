@@ -4,6 +4,7 @@ import java.awt.Font;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
+import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
@@ -30,6 +31,17 @@ public class Aussehen {
    * Graphics Array (XGA)) mit einer Auflösung von 1024 × 768 verwendet.
    */
   public static final int FENSTER_HÖHE = 768;
+
+  /**
+   * Abstand (z. B. zum Fensterrand).
+   */
+  public static final int ABSTAND = 20;
+
+  /**
+   * Der Zeilenabstand bei mehrzeiligen Texten oder die Höhe eines JLabel-Elements
+   * bei einzeiligen Texten.
+   */
+  public static final int ZEILEN_ABSTAND = 40;
 
   /**
    * Die Breite der Antworttaste in Pixel.
@@ -148,14 +160,42 @@ public class Aussehen {
   }
 
   /**
-   * Erzeuge einen leeren Text, der im Spielfeld an den angegeben Bereich plaziert werden kann.
+   * Erzeuge einen normalen Text mit Rahmen.
+   *
+   * @param text    Der Text, der gesetzt werden soll.
+   * @param mitRand Ob um den Text ein Rand gezeigt werden soll.
+   *
+   * @return Ein neues JLabel-Objekt.
+   */
+  public static JLabel macheText(String text, boolean mitRand) {
+    JLabel textElement = macheText(text);
+    if (mitRand)
+      textElement.setBorder(BorderFactory.createLineBorder(Aussehen.FARBE_WEISS));
+    return textElement;
+  }
+
+  /**
+   * Erzeuge einen leeren Text, der im Spielfeld an den angegeben Bereich plaziert
+   * werden kann.
    *
    * @return Ein neues JLabel-Objekt.
    */
   public static JLabel macheText(int x, int y, int breite, int höhe) {
-    JLabel text = macheText("");
-    text.setBounds(x, y, breite, höhe);
-    return text;
+    JLabel textElement = macheText("");
+    textElement.setBounds(x, y, breite, höhe);
+    return textElement;
+  }
+
+  /**
+   * Erzeuge einen leeren Text, der im Spielfeld an den angegeben Bereich plaziert
+   * werden kann. Außerdem kann ein Rand hinzugefügt werden.
+   *
+   * @return Ein neues JLabel-Objekt.
+   */
+  public static JLabel macheText(int x, int y, int breite, int höhe, boolean mitRand) {
+    JLabel textElement = macheText("", mitRand);
+    textElement.setBounds(x, y, breite, höhe);
+    return textElement;
   }
 
   /**
