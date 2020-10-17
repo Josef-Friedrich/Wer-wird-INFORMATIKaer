@@ -9,6 +9,8 @@ import javax.sound.sampled.Clip;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 
+import spiel_logik.Konfiguration;
+
 class MusikAusschnitt {
 
   private Clip musikStueck;
@@ -22,15 +24,21 @@ class MusikAusschnitt {
     }
   }
 
+  private void starte(boolean endlos) {
+    if (Konfiguration.spieleMusik) {
+      musikStueck.setMicrosecondPosition(0);
+      musikStueck.start();
+      if (endlos)
+        musikStueck.loop(Clip.LOOP_CONTINUOUSLY);
+    }
+  }
+
   public void starte() {
-    musikStueck.setMicrosecondPosition(0);
-    musikStueck.start();
+    starte(false);
   }
 
   public void starteEndlos() {
-    musikStueck.setMicrosecondPosition(0);
-    musikStueck.start();
-    musikStueck.loop(Clip.LOOP_CONTINUOUSLY);
+    starte(true);
   }
 
   public void stoppe() {

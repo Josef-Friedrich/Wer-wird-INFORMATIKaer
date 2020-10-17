@@ -187,6 +187,8 @@ public class FragenListe {
    *         ersten Position.
    */
   public Frage entnimmFrage(int schwierigkeit) {
+    if (!Konfiguration.nachSchwierigkeit)
+      return entnimmErsteFrage();
     Frage frage = null;
     ListenElement vorhergehenderDatenKnoten = null;
     ListenElement datenKnoten = kopf;

@@ -28,7 +28,7 @@ public class AnsichtEinstellungen extends Ansicht {
 
   private JCheckBox kästchenKo;
 
-  private JCheckBox kästchenFragenSchwierigkeit;
+  private JCheckBox kästchenNachSchwierigkeit;
 
   /**
    * Eine {@link serialVersionUID} wird als Versionsnummer bei der Serialisation
@@ -48,32 +48,49 @@ public class AnsichtEinstellungen extends Ansicht {
     l.gridwidth = 2;
     add(überschrift, l);
 
-    kästchenKo = erzeugeKästchen();
+    kästchenKo = erzeugeKästchen("ko");
     macheNeueZeile(1, "Spiele im K.o.-System", kästchenKo);
-    kästchenKo.addItemListener(new ItemListener() {
-      @Override
-      public void itemStateChanged(ItemEvent e) {
-        if (e.getStateChange() == ItemEvent.SELECTED) {
-          System.out.println("ausgewählt");
-        } else {
-          System.out.println("nicht ausgewählt");
-        }
-      }
-    });
 
     textFeldAnzahlFragen = erzeugeTextFeldAnzahlFragen();
     macheNeueZeile(2, "Anzahl an Fragen", textFeldAnzahlFragen);
 
-    textFeldAnzahlFragen = erzeugeTextFeldAnzahlFragen();
-    macheNeueZeile(3, "Zeige die Fragen nach Schwierigkeit geordnet", erzeugeKästchen());
+    kästchenNachSchwierigkeit = erzeugeKästchen("nachSchwierigkeit");
+    macheNeueZeile(3, "Zeige die Fragen nach Schwierigkeit geordnet", kästchenNachSchwierigkeit);
+
+  }
+
+  /**
+   * Ein ItemListener für die Kontrollkästchen (Checkbox), der direkt auf einen
+   * boolschen Konfigurationswert zugreift und den beim anklicken abspeichert.
+   *
+   * @param konfigurationsName
+   *
+   * @return Eine Instanz eines ItemListeners.
+   */
+  public ItemListener erzeugeKästchenLauscher(String konfigurationsName) {
+    return new ItemListener() {
+      @Override
+      public void itemStateChanged(ItemEvent e) {
+        if (e.getStateChange() == ItemEvent.SELECTED) {
+          System.out.println("ausgewählt " + konfigurationsName);
+          Konfiguration.setze(konfigurationsName, true);
+        } else {
+          System.out.println("nicht ausgewählt " + konfigurationsName);
+          Konfiguration.setze(konfigurationsName, false);
+        }
+        System.out.println(Konfiguration.gib(konfigurationsName));
+      }
+    };
   }
 
   /**
    * Erzeuge eine Kontrollkästchen (Checkbox).
    */
-  public JCheckBox erzeugeKästchen() {
+  public JCheckBox erzeugeKästchen(String konfigurationsName) {
     JCheckBox kästchen = new JCheckBox();
     kästchen.setOpaque(false);
+    kästchen.setSelected((boolean) Konfiguration.gib(konfigurationsName));
+    kästchen.addItemListener(erzeugeKästchenLauscher(konfigurationsName));
     return kästchen;
   }
 

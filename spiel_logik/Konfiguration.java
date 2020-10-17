@@ -1,5 +1,7 @@
 package spiel_logik;
 
+import java.lang.reflect.Field;
+
 enum ZahlenFormat {
   DEZIMAL, BINÄR, HEXALDEZIMAL;
 
@@ -34,7 +36,7 @@ public class Konfiguration {
    * Zeige die Fragen nach Schwierigkeit geordnet, d. h. zuerst die leichten
    * Fragen (Schwierigkeit = 1) und dann die schwereren (bis Schwierigkeit 5).
    */
-  public static boolean zeigeFragenNachSchwierigkeit = false;
+  public static boolean nachSchwierigkeit = false;
 
   /**
    * Das Zahlenformat, in dem z. B. die Gewinnsumme angezeigt wird. Möglich ist
@@ -57,4 +59,37 @@ public class Konfiguration {
    * Einstellung, ob Musik abgespielt werden soll oder nicht.
    */
   public static boolean spieleMusik = true;
+
+  /**
+   * Gib einen Konfigurationswert.
+   *
+   * @param name Der Name des Konfigurationswerts. Er sollte dem Attribute
+   *             entsprechen.
+   */
+  public static Object gib(String name) {
+    Object wert = null;
+    try {
+      Field feld = Konfiguration.class.getDeclaredField(name);
+      wert = feld.get(null);
+    } catch (NoSuchFieldException | SecurityException | IllegalAccessException e) {
+      e.printStackTrace();
+    }
+    return wert;
+  }
+
+  /**
+   * Setze einen Konfigurationswert.
+   *
+   * @param name Der Name des Konfigurationswerts. Er sollte dem Attribute
+   *             entsprechen.
+   * @param wert Ein Wert, des Type zum Attribut passen muss.
+   */
+  public static void setze(String name, Object wert) {
+    try {
+      Field feld = Konfiguration.class.getDeclaredField(name);
+      feld.set(null, wert);
+    } catch (NoSuchFieldException | SecurityException | IllegalAccessException e) {
+      e.printStackTrace();
+    }
+  }
 }
