@@ -17,11 +17,24 @@ enum ZahlenFormat {
 public class Konfiguration {
 
   /**
+   * Spiele nach dem K.o.-System (knockout), d. h. bei einer falschen Frage ist
+   * das Spiel verloren. Ist dieses Attribut auf falsch gesetzt, können alle
+   * geladenen Fragen durchgespielt werden.
+   */
+  public static boolean ko = true;
+
+  /**
    * Die Anzahl der Fragen, die ins Spiel geladen werden. Ist die Zahl höher, als
    * die XML-Datei Fragen beinhaltet, werden alle Fragen geladen. Die Zahl 0 lädt
    * auch alle Fragen.
    */
   public static int anzahlGeladenerFragen = 15;
+
+  /**
+   * Zeige die Fragen nach Schwierigkeit geordnet, d. h. zuerst die leichten
+   * Fragen (Schwierigkeit = 1) und dann die schwereren (bis Schwierigkeit 5).
+   */
+  public static boolean zeigeFragenNachSchwierigkeit = false;
 
   /**
    * Das Zahlenformat, in dem z. B. die Gewinnsumme angezeigt wird. Möglich ist
@@ -41,15 +54,7 @@ public class Konfiguration {
   }
 
   /**
-   * Zeige die Fragen nach Schwierigkeit geordnet, d. h. zuerst die leichten
-   * Fragen (Schwierigkeit = 1) und dann die schwereren (bis Schwierigkeit 5).
+   * Einstellung, ob Musik abgespielt werden soll oder nicht.
    */
-  public static boolean zeigeFragenNachSchwierigkeit = false;
-
-  /**
-   * Spiele nach dem K.o.-System (knockout), d. h. bei einer falschen Frage ist
-   * das Spiel verloren. Ist dieses Attribut auf falsch gesetzt, können alle geladenen Fragen
-   * durchgespielt werden.
-   */
-  public static boolean ko = true;
+  public static boolean spieleMusik = true;
 }

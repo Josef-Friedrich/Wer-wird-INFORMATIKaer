@@ -1,5 +1,7 @@
 package swing_implementation;
 
+import javax.swing.JCheckBox;
+import javax.swing.JComponent;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.event.DocumentEvent;
@@ -8,6 +10,11 @@ import javax.swing.event.DocumentListener;
 import spiel_logik.Konfiguration;
 
 import java.awt.GridBagLayout;
+import java.awt.GridBagConstraints;
+import java.awt.Insets;
+
+import java.awt.event.ItemListener;
+import java.awt.event.ItemEvent;
 
 /**
  * Diese Klasse zeigt die Einstellungen.
@@ -18,6 +25,10 @@ public class AnsichtEinstellungen extends Ansicht {
    * Textfeld für die Einstellung „Anzahl an geladenen Fragen“.
    */
   private JTextField textFeldAnzahlFragen;
+
+  private JCheckBox kästchenKo;
+
+  private JCheckBox kästchenFragenSchwierigkeit;
 
   /**
    * Eine {@link serialVersionUID} wird als Versionsnummer bei der Serialisation
@@ -30,10 +41,70 @@ public class AnsichtEinstellungen extends Ansicht {
 
   public AnsichtEinstellungen() {
     setLayout(new GridBagLayout());
+
     JLabel überschrift = Aussehen.macheÜberschrift("Einstellungen");
-    add(überschrift);
+    GridBagConstraints l = erzeugeLayoutEinstellungen();
+    l.gridy = 0;
+    l.gridwidth = 2;
+    add(überschrift, l);
+
+    kästchenKo = erzeugeKästchen();
+    macheNeueZeile(1, "Spiele im K.o.-System", kästchenKo);
+    kästchenKo.addItemListener(new ItemListener() {
+      @Override
+      public void itemStateChanged(ItemEvent e) {
+        if (e.getStateChange() == ItemEvent.SELECTED) {
+          System.out.println("ausgewählt");
+        } else {
+          System.out.println("nicht ausgewählt");
+        }
+      }
+    });
 
     textFeldAnzahlFragen = erzeugeTextFeldAnzahlFragen();
+    macheNeueZeile(2, "Anzahl an Fragen", textFeldAnzahlFragen);
+
+    textFeldAnzahlFragen = erzeugeTextFeldAnzahlFragen();
+    macheNeueZeile(3, "Zeige die Fragen nach Schwierigkeit geordnet", erzeugeKästchen());
+  }
+
+  /**
+   * Erzeuge eine Kontrollkästchen (Checkbox).
+   */
+  public JCheckBox erzeugeKästchen() {
+    JCheckBox kästchen = new JCheckBox();
+    kästchen.setOpaque(false);
+    return kästchen;
+  }
+
+  /**
+   * Erzeuge Einstellungen mit einigen Anpassungen für das GridBagLayout.
+   *
+   * @return Eine Instanz der Einstellungsklasse.
+   */
+  private GridBagConstraints erzeugeLayoutEinstellungen() {
+    GridBagConstraints einstellungen = new GridBagConstraints();
+    einstellungen.insets = new Insets(Aussehen.ABSTAND, Aussehen.ABSTAND, Aussehen.ABSTAND, Aussehen.ABSTAND);
+    return einstellungen;
+  }
+
+  /**
+   * Mache eine Zeile im GridBagLayout
+   *
+   * @param y         Die Zeilennummer in Gitter.
+   * @param textLinks Der Text der in der linken Spalte erscheinen soll.
+   * @param rechts    Die Komponente, die in der rechten Spalte erscheinen soll.
+   */
+  private void macheNeueZeile(int y, String textLinks, JComponent rechts) {
+    GridBagConstraints einstellungen = erzeugeLayoutEinstellungen();
+    // links
+    einstellungen.gridx = 0;
+    einstellungen.gridy = y;
+    add(Aussehen.macheText(textLinks), einstellungen);
+    // rechts
+    einstellungen.gridx = 1;
+    einstellungen.gridy = y;
+    add(rechts, einstellungen);
   }
 
   /**
@@ -67,7 +138,6 @@ public class AnsichtEinstellungen extends Ansicht {
       }
 
     });
-    add(textFeld);
     return textFeld;
   }
 
