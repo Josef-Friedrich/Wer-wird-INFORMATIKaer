@@ -137,8 +137,27 @@ public class AnsichtSpiel extends Ansicht {
    * Aktualisiere die Gewinnsumme.
    */
   private void aktualisiereGewinnSumme() {
-    if (!spiel.istVerloren()) // nur aktualisieren, wenn nicht verloren
-      textGewinnSumme.setText(spiel.gibFormatierteGewinnSumme());
+    if (spiel.istVerloren()) // nur aktualisieren, wenn nicht verloren
+      return;
+
+    long gewinnSumme = spiel.gibGewinnSumme();
+    String formatiert = "";
+
+    switch (Konfiguration.ZAHLEN_FORMAT) {
+      case DEZIMAL:
+        formatiert = Long.toString(gewinnSumme);
+        break;
+
+      case BINÄR:
+        formatiert = Long.toBinaryString(gewinnSumme);
+        break;
+
+      case HEXALDEZIMAL:
+        formatiert = Long.toHexString(gewinnSumme);
+        break;
+    }
+
+    textGewinnSumme.setText(String.format("%s €", formatiert));
   }
 
   /**
@@ -187,7 +206,8 @@ public class AnsichtSpiel extends Ansicht {
     textGewinnSumme = Aussehen.macheText();
     schachtel.add(textGewinnSumme);
     int halbeFensterBreite = Aussehen.FENSTER_BREITE / 2;
-    schachtel.setBounds(halbeFensterBreite, Aussehen.ABSTAND, halbeFensterBreite - Aussehen.ABSTAND, Aussehen.ZEILEN_ABSTAND);
+    schachtel.setBounds(halbeFensterBreite, Aussehen.ABSTAND, halbeFensterBreite - Aussehen.ABSTAND,
+        Aussehen.ZEILEN_ABSTAND);
     return schachtel;
   }
 

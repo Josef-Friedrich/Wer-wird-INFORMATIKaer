@@ -90,6 +90,10 @@ public class HauptFenster extends SpielRahmen {
             ansichtSpiel.zeigeNächsteFrage();
             break;
 
+          case KeyEvent.VK_Z:
+            Konfiguration.setzeNächstesZahlenformat();
+            break;
+
           default:
             break;
         }
