@@ -43,6 +43,7 @@ public class AnsichtenVerwalter {
     initialisiereAnsicht("über", new AnsichtÜberProjekt());
     initialisiereAnsicht("hilfe", new AnsichtHilfe());
     initialisiereAnsicht("ergebnis", new AnsichtErgebnis());
+    initialisiereAnsicht("einstellungen", new AnsichtEinstellungen());
   }
 
   public static void zeige(String ansichtenName) {

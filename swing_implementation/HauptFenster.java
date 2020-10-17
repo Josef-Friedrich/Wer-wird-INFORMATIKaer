@@ -47,29 +47,6 @@ public class HauptFenster extends SpielRahmen {
       @Override
       public void keyPressed(KeyEvent e) {
         switch (e.getKeyCode()) {
-          case KeyEvent.VK_N:
-            AnsichtenVerwalter.zeige("start");
-            break;
-
-          case KeyEvent.VK_H:
-            AnsichtenVerwalter.zeige("hilfe");
-            break;
-
-          case KeyEvent.VK_T:
-            AnsichtenVerwalter.zeige("themen");
-            break;
-
-          case KeyEvent.VK_U:
-            AnsichtenVerwalter.zeige("über");
-            break;
-
-          case KeyEvent.VK_S:
-            AnsichtenVerwalter.zeige("spiel");
-            break;
-
-          case KeyEvent.VK_E:
-            AnsichtenVerwalter.zeige("ergebnis");
-            break;
 
           case KeyEvent.VK_A:
             ansichtSpiel.beantworteFrage(0);
@@ -87,13 +64,43 @@ public class HauptFenster extends SpielRahmen {
             ansichtSpiel.beantworteFrage(3);
             break;
 
-          case KeyEvent.VK_SPACE:
-          case KeyEvent.VK_ENTER:
-            ansichtSpiel.zeigeNächsteFrage();
+          case KeyEvent.VK_E:
+            AnsichtenVerwalter.zeige("ergebnis");
+            break;
+
+          case KeyEvent.VK_H:
+            AnsichtenVerwalter.zeige("hilfe");
+            break;
+
+          // K: für Konfiguration
+          case KeyEvent.VK_K:
+            AnsichtenVerwalter.zeige("einstellungen");
+            break;
+
+          // N: für neues Spiel
+          case KeyEvent.VK_N:
+            AnsichtenVerwalter.zeige("start");
+            break;
+
+          case KeyEvent.VK_S:
+            AnsichtenVerwalter.zeige("spiel");
+            break;
+
+          case KeyEvent.VK_T:
+            AnsichtenVerwalter.zeige("themen");
+            break;
+
+          case KeyEvent.VK_U:
+            AnsichtenVerwalter.zeige("über");
             break;
 
           case KeyEvent.VK_Z:
             Konfiguration.setzeNächstesZahlenformat();
+            break;
+
+          case KeyEvent.VK_SPACE:
+          case KeyEvent.VK_ENTER:
+            ansichtSpiel.zeigeNächsteFrage();
             break;
 
           default:

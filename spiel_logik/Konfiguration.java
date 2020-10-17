@@ -39,4 +39,17 @@ public class Konfiguration {
   public static ZahlenFormat setzeNächstesZahlenformat() {
     return zahlenFormat = zahlenFormat.nächstes();
   }
+
+  /**
+   * Zeige die Fragen nach Schwierigkeit geordnet, d. h. zuerst die leichten
+   * Fragen (Schwierigkeit = 1) und dann die schwereren (bis Schwierigkeit 5).
+   */
+  public static boolean zeigeFragenNachSchwierigkeit = false;
+
+  /**
+   * Spiele nach dem K.o.-System (knockout), d. h. bei einer falschen Frage ist
+   * das Spiel verloren. Ist dieses Attribut auf falsch gesetzt, können alle geladenen Fragen
+   * durchgespielt werden.
+   */
+  public static boolean ko = true;
 }
