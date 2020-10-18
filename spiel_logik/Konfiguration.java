@@ -61,6 +61,17 @@ public class Konfiguration {
   public static boolean spieleMusik = true;
 
   /**
+   * Ob zur nächsten Frage automatisch weiter geschaltete werden soll.
+   */
+  public static boolean automatischWeiter = true;
+
+  /**
+   * Wie lange gewartet werden soll, bis automatisch zur nächsten Frage
+   * umgeschaltet wird (in Sekunden).
+   */
+  public static float automatischWeiterDauer = 3f;
+
+  /**
    * Gib einen Konfigurationswert.
    *
    * @param name Der Name des Konfigurationswerts. Er sollte dem Attribute

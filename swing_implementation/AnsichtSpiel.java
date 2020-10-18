@@ -8,6 +8,7 @@ import javax.swing.Timer;
 import java.awt.event.ActionEvent;
 
 import spiel_logik.Frage;
+import spiel_logik.Konfiguration;
 import spiel_logik.Spiel;
 
 /**
@@ -76,7 +77,7 @@ public class AnsichtSpiel extends Ansicht {
   public AnsichtSpiel() {
     setLayout(null);
 
-    zeitmesser = new Timer(3000, this::zeigeNächsteFrageEreignis);
+    zeitmesser = new Timer((int) Konfiguration.automatischWeiterDauer * 1000, this::zeigeNächsteFrageEreignis);
     zeitmesser.setRepeats(false);
 
     textFrage = erzeugeFragenText();
@@ -247,8 +248,10 @@ public class AnsichtSpiel extends Ansicht {
    * Lerneffekt haben könnte.
    */
   private void zeigeNächsteFrageVerzögert() {
-    zeitmesser.stop();
-    zeitmesser.start();
+    if (Konfiguration.automatischWeiter) {
+      zeitmesser.stop();
+      zeitmesser.start();
+    }
   }
 
   /**

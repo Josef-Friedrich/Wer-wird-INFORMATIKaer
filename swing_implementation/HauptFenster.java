@@ -8,6 +8,8 @@ import java.awt.KeyEventDispatcher;
 import java.awt.KeyboardFocusManager;
 
 import javax.swing.JPanel;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
 
 import java.awt.event.KeyEvent;
 
@@ -45,7 +47,8 @@ public class HauptFenster extends SpielRahmen {
     setVisible(true);
 
     // https://stackoverflow.com/a/5345036/10193818
-    // Wir verwenden globale Tastenkürzel, damit immer gehen auch beim Anklicken der Einstellungen.
+    // Wir verwenden globale Tastenkürzel, damit immer gehen auch beim Anklicken der
+    // Einstellungen.
     KeyboardFocusManager.getCurrentKeyboardFocusManager().addKeyEventDispatcher(new KeyEventDispatcher() {
       @Override
       public boolean dispatchKeyEvent(KeyEvent e) {
@@ -119,6 +122,15 @@ public class HauptFenster extends SpielRahmen {
 
   public static void main(String[] args) {
     EventQueue.invokeLater(() -> {
+      try {
+        // Damit das Aussehen sich etwas mehr an das Betriebssystem anpasst.
+        // https://stackoverflow.com/a/9669069/10193818
+        // Auf Linux: com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+        UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+      } catch (ClassNotFoundException | InstantiationException | IllegalAccessException
+          | UnsupportedLookAndFeelException e) {
+        e.printStackTrace();
+      }
       HauptFenster fenster = new HauptFenster();
       fenster.setVisible(true);
     });

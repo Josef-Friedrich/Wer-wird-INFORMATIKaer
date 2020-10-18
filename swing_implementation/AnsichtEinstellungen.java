@@ -1,11 +1,12 @@
 package swing_implementation;
 
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
 import javax.swing.JCheckBox;
+import javax.swing.JComboBox;
 import javax.swing.JComponent;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
-import javax.swing.event.DocumentEvent;
-import javax.swing.event.DocumentListener;
 
 import spiel_logik.Konfiguration;
 
@@ -52,6 +53,15 @@ public class AnsichtEinstellungen extends Ansicht {
     macheNeueZeile(3, "Zeige die Fragen nach Schwierigkeit geordnet", erzeugeKästchen("nachSchwierigkeit"));
 
     macheNeueZeile(4, "Spiele Musik", erzeugeKästchen("spieleMusik"));
+
+    String comboBoxListe[] = { "dezimal", "binär", "hexadezimal" };
+
+    macheNeueZeile(5, "Zahlenformat", new JComboBox(comboBoxListe));
+
+    macheNeueZeile(6, "automatisch weiter schalten", erzeugeKästchen("automatischWeiter"));
+
+    macheNeueZeile(7, "Schaltdauer", new JComboBox(comboBoxListe));
+
   }
 
   /**
@@ -67,13 +77,10 @@ public class AnsichtEinstellungen extends Ansicht {
       @Override
       public void itemStateChanged(ItemEvent e) {
         if (e.getStateChange() == ItemEvent.SELECTED) {
-          System.out.println("ausgewählt " + konfigurationsName);
           Konfiguration.setze(konfigurationsName, true);
         } else {
-          System.out.println("nicht ausgewählt " + konfigurationsName);
           Konfiguration.setze(konfigurationsName, false);
         }
-        System.out.println(Konfiguration.gib(konfigurationsName));
       }
     };
   }
@@ -112,10 +119,12 @@ public class AnsichtEinstellungen extends Ansicht {
     // links
     einstellungen.gridx = 0;
     einstellungen.gridy = y;
+    einstellungen.anchor = GridBagConstraints.WEST;
     add(Aussehen.macheText(textLinks), einstellungen);
     // rechts
     einstellungen.gridx = 1;
     einstellungen.gridy = y;
+    einstellungen.anchor = GridBagConstraints.WEST;
     add(rechts, einstellungen);
   }
 
