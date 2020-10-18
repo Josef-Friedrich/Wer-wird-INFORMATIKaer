@@ -72,6 +72,11 @@ public class Spiel {
   private int anzahlFragen = 0;
 
   /**
+   * Die Anzahl der richtig beantworteten Fragen.
+   */
+  private int anzahlRichtigerFragen = 0;
+
+  /**
    * Der Dateipfad einer XML-Datei. Wir speichern ihn, damit wir nochmal dasselbe
    * Spiel starten können.
    */
@@ -207,7 +212,10 @@ public class Spiel {
   public boolean beantworteFrage(int antwortNummer) {
     beantworteteFragen.fügeHintenEin(aktuelleFrage);
     boolean richtig = aktuelleFrage.beantworteFrage(antwortNummer);
-    verloren = !richtig;
+    if (richtig)
+      anzahlRichtigerFragen++;
+    if (Konfiguration.ko)
+      verloren = !richtig;
     if (verloren)
       beendet = true;
 
@@ -252,16 +260,16 @@ public class Spiel {
    * @return Die aktuelle Gewinnsumme.
    */
   public long gibGewinnSumme() {
-    if (frageNummer == 0) {
+    if (anzahlRichtigerFragen == 0) {
       return 0;
-    } else if (frageNummer <= 15) {
-      return gewinnSummen[frageNummer - 1];
+    } else if (anzahlRichtigerFragen <= 15) {
+      return gewinnSummen[anzahlRichtigerFragen - 1];
     } else {
       // Ist eine Million erreicht (bei der 15 Frage) verdoppeln wir
       // bei jeder neuen Frage:
       // 16. Frage 2.000.000
       // 17. Frage 4.000.000
-      int potenz = frageNummer - 15;
+      int potenz = anzahlRichtigerFragen - 15;
       return Math.round(1000000 * Math.pow(2, potenz));
     }
   }
