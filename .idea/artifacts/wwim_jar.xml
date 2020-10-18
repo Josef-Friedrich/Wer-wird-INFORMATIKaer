@@ -1,9 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="wwim:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/wwim_jar</output-path>
-    <root id="archive" name="wwim_cli.jar">
-      <element id="module-output" name="wer-wird-informatik-millionaer_spielwiese" />
-      <element id="extracted-dir" path="/usr/local/share/java/jars/JGameGrid-3.00.jar" path-in-jar="/" />
-    </root>
-  </artifact>
-</component>

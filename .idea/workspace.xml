@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9890ff69-871e-47b1-9469-e730d2407cec" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/wwim_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wer-wird-informatik-millionaer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wer-wird-informatik-millionaer.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1j2YwW8dkqpWlNjYC8q6uMN669v" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="/usr/share/bluej/hamcrest-core-1.3.jar" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager">
+    <configuration name="SpielManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SpielManager" />
+      <module name="wer-wird-informatik-millionaer" />
+      <option name="WORKING_DIRECTORY" value="$FileDir$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="SpielManager" />
+      <option name="WORKING_DIRECTORY" value="$FileDir$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SpielManager" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9890ff69-871e-47b1-9469-e730d2407cec" name="Default Changelist" comment="" />
+      <created>1603003895918</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603003895918</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="5218" y="717" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603004120782">
+      <screen x="3840" y="0" width="3840" height="2160" />
+    </state>
+    <state x="5218" y="717" key="#com.intellij.execution.impl.EditConfigurationsDialog/3840.0.3840.2160/0.41.3840.2160@3840.0.3840.2160" timestamp="1603004120782" />
+    <state x="5543" y="767" width="424" height="591" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1603004092180">
+      <screen x="3840" y="0" width="3840" height="2160" />
+    </state>
+    <state x="5543" y="767" width="424" height="591" key="#com.intellij.ide.macro.MacrosDialog/3840.0.3840.2160/0.41.3840.2160@3840.0.3840.2160" timestamp="1603004092180" />
+    <state x="5492" y="851" width="525" height="423" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1603004108628">
+      <screen x="3840" y="0" width="3840" height="2160" />
+    </state>
+    <state x="5492" y="851" width="525" height="423" key="#com.intellij.ide.util.TreeClassChooserDialog/3840.0.3840.2160/0.41.3840.2160@3840.0.3840.2160" timestamp="1603004108628" />
+    <state x="5382" y="806" width="735" height="527" key="FileChooserDialogImpl" timestamp="1603004268839">
+      <screen x="3840" y="0" width="3840" height="2160" />
+    </state>
+    <state x="5382" y="806" width="735" height="527" key="FileChooserDialogImpl/3840.0.3840.2160/0.41.3840.2160@3840.0.3840.2160" timestamp="1603004268839" />
+    <state x="5243" y="637" width="1024" height="852" key="SettingsEditor" timestamp="1603004279870">
+      <screen x="3840" y="0" width="3840" height="2160" />
+    </state>
+    <state x="5243" y="637" width="1024" height="852" key="SettingsEditor/3840.0.3840.2160/0.41.3840.2160@3840.0.3840.2160" timestamp="1603004279870" />
+  </component>
+</project>
