@@ -9,6 +9,7 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 
 import spiel_logik.Konfiguration;
+import spiel_logik.ZahlenFormat;
 
 import java.awt.GridBagLayout;
 import java.awt.GridBagConstraints;
@@ -22,10 +23,6 @@ import java.awt.event.ItemEvent;
  */
 public class AnsichtEinstellungen extends Ansicht {
 
-  /**
-   * Textfeld für die Einstellung „Anzahl an geladenen Fragen“.
-   */
-  private JTextField textFeldAnzahlFragen;
 
   /**
    * Eine {@link serialVersionUID} wird als Versionsnummer bei der Serialisation
@@ -46,22 +43,32 @@ public class AnsichtEinstellungen extends Ansicht {
     add(überschrift, l);
 
     macheNeueZeile(1, "Spiele im K.o.-System", erzeugeKästchen("ko"));
-
-    textFeldAnzahlFragen = erzeugeTextFeldAnzahlFragen();
-    macheNeueZeile(2, "Anzahl an Fragen", textFeldAnzahlFragen);
-
+    macheNeueZeile(2, "Anzahl an Fragen", erzeugeTextFeldGanzeZahlen("anzahlGeladenerFragen"));
     macheNeueZeile(3, "Zeige die Fragen nach Schwierigkeit geordnet", erzeugeKästchen("nachSchwierigkeit"));
-
     macheNeueZeile(4, "Spiele Musik", erzeugeKästchen("spieleMusik"));
-
-    String comboBoxListe[] = { "dezimal", "binär", "hexadezimal" };
-
-    macheNeueZeile(5, "Zahlenformat", new JComboBox(comboBoxListe));
-
+    macheNeueZeile(5, "Zahlenformat", erzeugeAuswahlListe());
     macheNeueZeile(6, "automatisch weiter schalten", erzeugeKästchen("automatischWeiter"));
+    macheNeueZeile(7, "Schaltdauer", erzeugeTextFeldGanzeZahlen("automatischWeiterDauer"));
+  }
 
-    macheNeueZeile(7, "Schaltdauer", new JComboBox(comboBoxListe));
+  /**
+   * Erzeuge die Auswahlliste für das Zahlenformat.
+   *
+   * @return Eine Instanz einer JComboBox.
+   */
+  public JComboBox<String> erzeugeAuswahlListe() {
+    String comboBoxListe[] = { "dezimal", "binär", "hexadezimal" };
+    JComboBox<String> liste = new JComboBox<String>(comboBoxListe);
+    liste.setSelectedIndex(Konfiguration.zahlenFormat.ordinal());
 
+    liste.addItemListener(new ItemListener() {
+      public void itemStateChanged(ItemEvent event) {
+        if (event.getStateChange() == ItemEvent.SELECTED) {
+          Konfiguration.zahlenFormat = ZahlenFormat.values()[liste.getSelectedIndex()];
+       }
+      }
+    });
+    return liste;
   }
 
   /**
@@ -133,28 +140,28 @@ public class AnsichtEinstellungen extends Ansicht {
    *
    * @return Das erzeugte Textfeld
    */
-  private JTextField erzeugeTextFeldAnzahlFragen() {
-    JTextField textFeld = new JTextField(Integer.toString(Konfiguration.anzahlGeladenerFragen), 3);
+  private JTextField erzeugeTextFeldGanzeZahlen(String konfigurationsName) {
+    JTextField textFeld = new JTextField(Integer.toString((int) Konfiguration.gib(konfigurationsName)), 6);
 
     textFeld.setFont(Aussehen.SCHRIFT_NORMAL);
     textFeld.setForeground(Aussehen.FARBE_BLAU);
     textFeld.getDocument().addDocumentListener(new DocumentListener() {
       public void changedUpdate(DocumentEvent e) {
-        setzeAnzahlFragen();
+        setzeZahl();
       }
 
       public void removeUpdate(DocumentEvent e) {
-        setzeAnzahlFragen();
+        setzeZahl();
       }
 
       public void insertUpdate(DocumentEvent e) {
-        setzeAnzahlFragen();
+        setzeZahl();
       }
 
-      private void setzeAnzahlFragen() {
+      private void setzeZahl() {
         String zahl = textFeld.getText();
         if (istZahl(zahl)) {
-          Konfiguration.anzahlGeladenerFragen = Integer.parseInt(zahl);
+          Konfiguration.setze(konfigurationsName, Integer.parseInt(zahl));
         }
       }
 

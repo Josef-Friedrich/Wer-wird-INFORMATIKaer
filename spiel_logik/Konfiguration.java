@@ -2,16 +2,6 @@ package spiel_logik;
 
 import java.lang.reflect.Field;
 
-enum ZahlenFormat {
-  DEZIMAL, BINÄR, HEXALDEZIMAL;
-
-  private static ZahlenFormat[] werte = values();
-
-  public ZahlenFormat nächstes() {
-    return werte[(this.ordinal() + 1) % werte.length];
-  }
-}
-
 /**
  * Die Klasse {@link Konfiguration} enthält statische Attribute, die
  * Einstellungen speichern.
@@ -67,9 +57,9 @@ public class Konfiguration {
 
   /**
    * Wie lange gewartet werden soll, bis automatisch zur nächsten Frage
-   * umgeschaltet wird (in Sekunden).
+   * umgeschaltet wird (in Millisekunden).
    */
-  public static float automatischWeiterDauer = 3f;
+  public static int automatischWeiterDauer = 3000;
 
   /**
    * Gib einen Konfigurationswert.

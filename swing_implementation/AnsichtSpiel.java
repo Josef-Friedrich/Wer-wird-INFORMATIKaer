@@ -77,7 +77,7 @@ public class AnsichtSpiel extends Ansicht {
   public AnsichtSpiel() {
     setLayout(null);
 
-    zeitmesser = new Timer((int) Konfiguration.automatischWeiterDauer * 1000, this::zeigeNächsteFrageEreignis);
+    zeitmesser = new Timer(Konfiguration.automatischWeiterDauer, this::zeigeNächsteFrageEreignis);
     zeitmesser.setRepeats(false);
 
     textFrage = erzeugeFragenText();
@@ -280,6 +280,11 @@ public class AnsichtSpiel extends Ansicht {
       frage.mischeAntworten();
       zeigeFrage(frage);
     }
+  }
+
+  public void zeige() {
+    zeitmesser.setInitialDelay(Konfiguration.automatischWeiterDauer);
+    zeitmesser.setDelay(Konfiguration.automatischWeiterDauer);
   }
 
 }
