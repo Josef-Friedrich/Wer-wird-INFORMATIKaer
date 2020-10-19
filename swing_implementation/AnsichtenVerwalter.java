@@ -25,6 +25,10 @@ public class AnsichtenVerwalter {
   /**
    * Initialisiere eine Ansicht. Verhindere, dass eine Ansicht mehrmals
    * initialisiert wird.
+   *
+   * @param ansichtenName Ein Name für die Ansicht, unter dem die Ansicht
+   *                      aufgerufen werden soll.
+   * @param ansicht       Eine Instanz der Ansicht.
    */
   public static void initialisiereAnsicht(String ansichtenName, Ansicht ansicht) {
     if (ansichten.get(ansichtenName) != null)

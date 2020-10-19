@@ -28,12 +28,17 @@ public class MehrzeiligerText extends Box {
   private int standardTextWeite = 35;
 
   /**
-   * @param behälter Übergeordnete Komponente, zu der die Zeilen hinzugefügt
-   *                 werden.
+   * Mit diesem Konstruktor kann die Position und die Größe des mehrzeiligen Texts
+   * angegeben werden.
+   *
+   * @param x      Die X-Koordinate der nordwestlichen Ecke in Pixel.
+   * @param y      Die Y-Koordinate der nordwestlichen Ecke in Pixel.
+   * @param breite Die Breite in Pixel.
+   * @param höhe   Die Höhe in Pixel.
    */
-  public MehrzeiligerText(int x, int y, int width, int height) {
+  public MehrzeiligerText(int x, int y, int breite, int höhe) {
     super(BoxLayout.PAGE_AXIS);
-    setBounds(x, y, width, height);
+    setBounds(x, y, breite, höhe);
   }
 
   /**
@@ -65,11 +70,14 @@ public class MehrzeiligerText extends Box {
   }
 
   /**
-   * Berechne die Zahl an ein Zeilen in der ein Text aufgeteilt wird.
+   * Berechne die Anzahl an Zeilen, in die ein Text aufgeteilt werden soll. Dabei
+   * kann die Textweite angegeben werden.
    *
    * @param text      Der Text, der geteilt werden soll.
    * @param textWeite Anzahl der Zeichen, die in eine Textzeile maximal passen
    *                  dürfen.
+   *
+   * @return Die Anzahl an Zeilen.
    */
   public int berechneZeilenAnzahl(String text, int textWeite) {
     ArrayList<String> textZeilen = teileText(text, textWeite);
@@ -77,9 +85,11 @@ public class MehrzeiligerText extends Box {
   }
 
   /**
-   * Berechne die Zahl an ein Zeilen in der ein Text aufgeteilt wird.
+   * Berechne die Anzahl an Zeilen, in die ein Text aufgeteilt werden soll.
    *
    * @param text Der Text, der geteilt werden soll.
+   *
+   * @return Die Anzahl an Zeilen.
    */
   public int berechneZeilenAnzahl(String text) {
     return berechneZeilenAnzahl(text, standardTextWeite);

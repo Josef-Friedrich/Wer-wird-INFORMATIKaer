@@ -5,7 +5,7 @@ package kommandozeilen_implementation;
  *
  * Dient dazu um Fehler abzufangen. Es gibt in der Swing-Implementation des
  * Spiels auch eine korrespondierende Klasse, die
- * {@link swing_implementation.SwingerStarter} heißt.
+ * {@link swing_implementation.SwingStarter} heißt.
  *
  */
 public class KommandozeilenStarter {

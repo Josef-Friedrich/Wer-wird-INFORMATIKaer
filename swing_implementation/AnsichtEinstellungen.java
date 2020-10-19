@@ -23,7 +23,6 @@ import java.awt.event.ItemEvent;
  */
 public class AnsichtEinstellungen extends Ansicht {
 
-
   /**
    * Eine {@link serialVersionUID} wird als Versionsnummer bei der Serialisation
    * automatisch jeder Klasse hinzugefügt, die das Interface {@link Serializable}
@@ -65,7 +64,7 @@ public class AnsichtEinstellungen extends Ansicht {
       public void itemStateChanged(ItemEvent event) {
         if (event.getStateChange() == ItemEvent.SELECTED) {
           Konfiguration.zahlenFormat = ZahlenFormat.values()[liste.getSelectedIndex()];
-       }
+        }
       }
     });
     return liste;
@@ -75,7 +74,8 @@ public class AnsichtEinstellungen extends Ansicht {
    * Ein ItemListener für die Kontrollkästchen (Checkbox), der direkt auf einen
    * boolschen Konfigurationswert zugreift und den beim anklicken abspeichert.
    *
-   * @param konfigurationsName
+   * @param konfigurationsName Der {@code konfigurationsName} muss einem Attribute
+   *                           in der Klasse {@link spiel_logik.Konfiguration} entsprechen.
    *
    * @return Eine Instanz eines ItemListeners.
    */
@@ -94,6 +94,11 @@ public class AnsichtEinstellungen extends Ansicht {
 
   /**
    * Erzeuge eine Kontrollkästchen (Checkbox).
+   *
+   * @param konfigurationsName Der {@code konfigurationsName} muss einem Attribute
+   *                           in der Klasse {@link spiel_logik.Konfiguration} entsprechen.
+   *
+   * @return Eine Instanz der Swing-Klasse JCheckBox.
    */
   public JCheckBox erzeugeKästchen(String konfigurationsName) {
     JCheckBox kästchen = new JCheckBox();

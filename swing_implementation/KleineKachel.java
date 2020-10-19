@@ -81,7 +81,7 @@ public class KleineKachel extends Taste {
    *
    * @param farbe Die Farbe der Bild-Kachel.
    *
-   * @returns Der Name der Bilddatei.
+   * @return Der Name der Bilddatei.
    */
   protected static String gibBild(String farbe) {
     return String.format("kachel-klein_%s.png", farbe);

@@ -178,6 +178,11 @@ public class Aussehen {
    * Erzeuge einen leeren Text, der im Spielfeld an den angegeben Bereich plaziert
    * werden kann.
    *
+   * @param x       Die X-Koordinate der nordwestlichen Ecke in Pixel.
+   * @param y       Die Y-Koordinate der nordwestlichen Ecke in Pixel.
+   * @param breite  Die Breite in Pixel.
+   * @param höhe    Die Höhe in Pixel.
+   *
    * @return Ein neues JLabel-Objekt.
    */
   public static JLabel macheText(int x, int y, int breite, int höhe) {
@@ -189,6 +194,12 @@ public class Aussehen {
   /**
    * Erzeuge einen leeren Text, der im Spielfeld an den angegeben Bereich plaziert
    * werden kann. Außerdem kann ein Rand hinzugefügt werden.
+   *
+   * @param x       Die X-Koordinate der nordwestlichen Ecke in Pixel.
+   * @param y       Die Y-Koordinate der nordwestlichen Ecke in Pixel.
+   * @param breite  Die Breite in Pixel.
+   * @param höhe    Die Höhe in Pixel.
+   * @param mitRand Ob ein Rand angezeigt werden soll.
    *
    * @return Ein neues JLabel-Objekt.
    */

@@ -14,8 +14,8 @@ interface Aktion {
 /**
  * Diese Klasse stellt eine eigene Aktionenverwaltung bereit (ähnlich den
  * ActionListeners). Klassen, die diese Klasse erben, können eine Aktion
- * registieren {@link AktivesElement.fügeAktionenLauscherHinzu}. Diese kann dann
- * über die Methode {@link AktivesElement.führeAktionAus} ausgeführt werden. Die
+ * registieren {@link fügeAktionenLauscherHinzu}. Diese kann dann
+ * über die Methode {@link führeAktionAus} ausgeführt werden. Die
  * Klassen {@link AktiverText} und {@link Taste} mit allen Unterklassen erben
  * diese Klasse.
  */
@@ -42,8 +42,10 @@ public class AktivesElement extends JLabel {
   }
 
   /**
+   * Füge einen Lauschen hinzu, die nach Aktionen ausschaut hält (eigener
+   * ActionListener).
    *
-   * @param aktion
+   * @param aktion Eine Instanz des Interfaces {@link Aktion}
    */
   public void fügeAktionenLauscherHinzu(Aktion aktion) {
     this.aktion = aktion;
