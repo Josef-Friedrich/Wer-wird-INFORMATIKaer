@@ -3,6 +3,13 @@ package swing_implementation;
 import javax.swing.ImageIcon;
 import java.awt.event.*;
 
+/**
+ * Die Klasse {@link Taste} ist zu vergleichen mit der JButton-Komponente aus dem
+ * Swing-Framework.
+ *
+ * Eine Taste hat drei verschiedene Hintergrundbilder, die je nach Zustand
+ * ändern.
+ */
 public class Taste extends AktivesElement {
 
   /**
@@ -61,7 +68,8 @@ public class Taste extends AktivesElement {
   }
 
   /**
-   * Taue die Taste auf, d. h. die Hintergrundbilder wechseln wieder und die Aktion kann ausgeführt werden.
+   * Taue die Taste auf, d. h. die Hintergrundbilder wechseln wieder und die
+   * Aktion kann ausgeführt werden.
    */
   public void taueAuf() {
     eingefroren = false;

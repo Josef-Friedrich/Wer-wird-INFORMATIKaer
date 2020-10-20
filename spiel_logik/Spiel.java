@@ -371,6 +371,8 @@ public class Spiel {
   /**
    * Gib den Namen des aktuellen Themenbereichs (z. B. Unterrichtsfach
    * „Informatik“)
+   *
+   * @return Der Namen des aktuellen Themenbereichs.
    */
   public String gibThemenBereich() {
     return themenBereich;
@@ -380,7 +382,7 @@ public class Spiel {
    * Setze das Thema des aktuellen Themengebiets (z. B. Jahrgangsstufe („6.
    * Jahrgangsstufe“)).
    *
-   * @param thema
+   * @param thema Das Thema des aktuellen Themengebiets.
    */
   public void setzeThemenGebiet(String thema) {
     themenGebiet = thema;
@@ -389,6 +391,8 @@ public class Spiel {
   /**
    * Gib das Thema des aktuellen Themengebiets (z. B. Jahrgangsstufe („6.
    * Jahrgangsstufe“)).
+   *
+   * @return Das Thema des aktuellen Themengebiets.
    */
   public String gibThemenGebiet() {
     return themenGebiet;
@@ -398,6 +402,8 @@ public class Spiel {
    * Gib den Dateipfad der XML-Datei, der das aktuelle Spiel gestartet hat. Die
    * getter-Methode kann dazu benutzt werden, das gleiche Spiel nochmal zu
    * starten.
+   *
+   * @return Der Dateipfad der XML-Datei, der das aktuelle Spiel gestartet hat.
    */
   public String gibDateiPfad() {
     return dateiPfad;

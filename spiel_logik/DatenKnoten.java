@@ -35,7 +35,7 @@ public class DatenKnoten extends ListenElement {
   /**
    * Setze die Frage.
    *
-   * @param frage
+   * @param frage Eine Frage.
    */
   public void setzeFrage(Frage frage) {
     this.frage = frage;

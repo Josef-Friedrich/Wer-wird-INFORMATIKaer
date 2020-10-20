@@ -11,6 +11,10 @@ import javax.sound.sampled.UnsupportedAudioFileException;
 
 import spiel_logik.Konfiguration;
 
+/**
+ * Die Klasse {@code MusikAusschnitt} verwaltet eine WAVE-Datei und kann diese
+ * abspielen, endlos abspielen oder stoppen.
+ */
 class MusikAusschnitt {
 
   private Clip musikStueck;
@@ -47,6 +51,10 @@ class MusikAusschnitt {
 
 }
 
+/**
+ * Die Klasse {@link MusikSpieler} verwaltete alle im Spiel benötigten
+ * Musikausschnitte.
+ */
 public class MusikSpieler {
 
   private HashMap<String, MusikAusschnitt> ausschnitte;

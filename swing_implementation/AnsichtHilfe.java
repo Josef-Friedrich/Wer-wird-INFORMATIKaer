@@ -48,6 +48,9 @@ class Tabelle {
   }
 }
 
+/**
+ * Diese Ansicht listete die vorhandenen Tastenkürzel auf.
+ */
 public class AnsichtHilfe extends Ansicht {
 
   /**

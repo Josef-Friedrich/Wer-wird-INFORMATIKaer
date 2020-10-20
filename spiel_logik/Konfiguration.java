@@ -66,6 +66,8 @@ public class Konfiguration {
    *
    * @param name Der Name des Konfigurationswerts. Er sollte dem Attribute
    *             entsprechen.
+   *
+   * @return Der unter dem Konfigurationsattribute gespeicherte Wert.
    */
   public static Object gib(String name) {
     Object wert = null;

@@ -13,6 +13,8 @@ public abstract class ListenElement {
 
   /**
    * Gib das nächste Listenelement.
+   *
+   * @return Das nächste Listenelement.
    */
   public ListenElement gibNächstes() {
     return nächstes;
@@ -20,11 +22,15 @@ public abstract class ListenElement {
 
   /**
    * Gib die Frage.
+   *
+   * @return Die Frage des Listenelements.
    */
   public abstract Frage gibFrage();
 
   /**
    * Füge eine Frage ans Ende der Liste.
+   *
+   * @param frage Eine Frage.
    *
    * @return Die Instanz des Datenknoten.
    */

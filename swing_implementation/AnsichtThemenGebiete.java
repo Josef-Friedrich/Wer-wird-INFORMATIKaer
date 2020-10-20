@@ -2,6 +2,9 @@ package swing_implementation;
 
 import javax.swing.JLabel;
 
+/**
+ * Eine die alle Themenbereiche und Themengebiete auflistet.
+ */
 public class AnsichtThemenGebiete extends Ansicht {
 
   /**

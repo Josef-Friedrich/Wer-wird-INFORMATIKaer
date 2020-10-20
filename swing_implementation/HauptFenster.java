@@ -15,6 +15,10 @@ import java.awt.event.KeyEvent;
 
 import spiel_logik.Konfiguration;
 
+/**
+ * Die Klasse {@link HauptFenster} setzt die Fensterabmessungen, initialisiert
+ * alle Ansichten, registriert alle Tastenkürzel.
+ */
 public class HauptFenster extends SpielRahmen {
 
   /**

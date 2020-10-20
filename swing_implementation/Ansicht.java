@@ -2,6 +2,12 @@ package swing_implementation;
 
 import javax.swing.JPanel;
 
+/**
+ * Jede Ansicht muss diese Klasse ergeben.
+ *
+ * Die Klasse {@link Ansicht} stelle die Methode {@link zeige} bereit, die von
+ * jeder Ansicht überschrieben werden kann.
+ */
 public class Ansicht extends JPanel {
 
   /**

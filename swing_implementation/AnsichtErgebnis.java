@@ -9,6 +9,9 @@ import javax.swing.SwingConstants;
 
 import spiel_logik.Spiel;
 
+/**
+ * Diese Ansicht zeigt das Ergebnis nach dem Spielende.
+ */
 public class AnsichtErgebnis extends Ansicht {
 
   /**

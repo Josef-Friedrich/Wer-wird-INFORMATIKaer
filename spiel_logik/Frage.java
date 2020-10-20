@@ -188,12 +188,12 @@ public class Frage {
   }
 
   /**
-   * Wandelt einen Antwortbuchstaben (a, b, c, d) bzw. (A, B, C, D) in einen
+   * Wandele einen Antwortbuchstaben (a, b, c, d) bzw. (A, B, C, D) in einen
    * Anwortindexzahl (0, 1, 2, 3) um.
    *
    * @param buchstabe a A: 0, b B: 1, c C: 2; d D: 3
    *
-   * @return
+   * @return Einen Anwortindexzahl (0, 1, 2, 3).
    */
   public static int konvertiereAntwortBuchstabe(String buchstabe) {
     buchstabe = buchstabe.toLowerCase();
