@@ -34,7 +34,7 @@ public class ThemenKatalogTest {
   @Test
   public void methodeGibAnzahlGebiete() {
     ThemenKatalog katalog = new ThemenKatalog();
-    assertEquals(149, katalog.gibAnzahlGebiete());
+    assertEquals(150, katalog.gibAnzahlGebiete());
   }
 
   @Test

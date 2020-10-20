@@ -73,19 +73,19 @@ public class SpielTest {
   @Test
   public void methodeGibGewinnSumme() throws NoSuchFieldException, IllegalAccessException {
     assertEquals(spiel.gibGewinnSumme(), 0, 0);
-    Field frageNummer = Spiel.class.getDeclaredField("frageNummer");
-    frageNummer.setAccessible(true);
+    Field anzahl = Spiel.class.getDeclaredField("anzahlRichtigerFragen");
+    anzahl.setAccessible(true);
 
-    frageNummer.set(spiel, 1);
+    anzahl.set(spiel, 1);
     assertEquals(spiel.gibGewinnSumme(), 50, 0);
 
-    frageNummer.set(spiel, 2);
+    anzahl.set(spiel, 2);
     assertEquals(spiel.gibGewinnSumme(), 100, 0);
 
-    frageNummer.set(spiel, 15);
+    anzahl.set(spiel, 15);
     assertEquals(spiel.gibGewinnSumme(), 1000000, 0);
 
-    frageNummer.set(spiel, 16);
+    anzahl.set(spiel, 16);
     assertEquals(spiel.gibGewinnSumme(), 2000000, 0);
   }
 

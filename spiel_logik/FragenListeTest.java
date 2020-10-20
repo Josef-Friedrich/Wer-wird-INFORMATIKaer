@@ -132,6 +132,7 @@ public class FragenListeTest {
 
   @Test
   public void methodeEntnimmFrageZuerstSchwierige() {
+    Konfiguration.nachSchwierigkeit = true;
     FragenListe l = gibBefüllteListe();
     Frage frage;
     frage = l.entnimmFrage(3);
