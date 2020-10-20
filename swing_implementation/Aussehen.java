@@ -5,7 +5,9 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 import javax.swing.BorderFactory;
+import javax.swing.Box;
 import javax.swing.ImageIcon;
+import javax.swing.JComponent;
 import javax.swing.JLabel;
 
 import java.awt.Color;
@@ -224,6 +226,19 @@ public class Aussehen {
   }
 
   /**
+   * Erzeuge eine Überschrift und plaziere diese zentriert.
+   *
+   * @param text Ein Text, der in eine JLabel eingebettet werden soll.
+   *
+   * @return Ein neues JLabel-Objekt.
+   */
+  public static JComponent macheZentrierteÜberschrift(String text) {
+    JComponent rahmen = zentiereHorizontal(macheÜberschrift(text));
+    rahmen.setBounds(0, 0, FENSTER_BREITE, 50);
+    return rahmen;
+  }
+
+  /**
    * Mache ein Bild der Klasse {@link javax.swing.ImageIcon}.
    *
    * Die kleine Hilfsfunktion übernimmt die Fehlerbehandlung sowie das Laden der
@@ -241,6 +256,47 @@ public class Aussehen {
       e.printStackTrace();
     }
     return bild;
+  }
+
+  /**
+   * Zentiere eine Komponente sowohl horizontal wie auch vertikal.
+   *
+   * @param komponente Eine Swing-Komponente.
+   *
+   * @return Eine Swing-Komponente.
+   */
+  public static JComponent zentiere(JComponent komponente) {
+    return zentiereVertikal(zentiereHorizontal(komponente));
+  }
+
+  /**
+   * Zentiere eine Komponente vertikal.
+   *
+   * @param komponente Eine Swing-Komponente.
+   *
+   * @return Eine Swing-Komponente.
+   */
+  public static JComponent zentiereVertikal(JComponent komponente) {
+    Box rahmen = Box.createVerticalBox();
+    rahmen.add(Box.createVerticalGlue());
+    rahmen.add(komponente);
+    rahmen.add(Box.createVerticalGlue());
+    return rahmen;
+  }
+
+  /**
+   * Zentiere eine Komponente horizontal.
+   *
+   * @param komponente Eine Swing-Komponente.
+   *
+   * @return Eine Swing-Komponente.
+   */
+  public static JComponent zentiereHorizontal(JComponent komponente) {
+    Box rahmen = Box.createHorizontalBox();
+    rahmen.add(Box.createHorizontalGlue());
+    rahmen.add(komponente);
+    rahmen.add(Box.createHorizontalGlue());
+    return rahmen;
   }
 
 }

@@ -1,10 +1,11 @@
 package swing_implementation;
 
+import javax.swing.JComponent;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 /**
- * Einfach zweispaltige Tabelle
+ * Eine einfache zweispaltige Tabelle.
  */
 class Tabelle {
   int x;
@@ -17,6 +18,18 @@ class Tabelle {
 
   JPanel panel;
 
+  /**
+   * Standard-Konstruktor für die Tabelle.
+   *
+   * @param panel          Das übergeordnete JPanel in dem die Tabelle erscheinen
+   *                       soll.
+   * @param x              Die X-Koordinate der nordwestlichen Ecke der Tabelle.
+   * @param y              Die Y-Koordinate der nordwestlichenn Ecke der Tabelle.
+   * @param zeilenAbstand  Wie viel Abstand in Pixel zwischen den Zeilen gelassen
+   *                       werden soll.
+   * @param spaltenBreite1 Wie breit die 1. Spalte ist (in Pixel).
+   * @param spaltenBreite2 Wie breit die 2. Spalte ist (in Pixel).
+   */
   public Tabelle(JPanel panel, int x, int y, int zeilenAbstand, int spaltenBreite1, int spaltenBreite2) {
     this.panel = panel;
     this.zeilenAbstand = zeilenAbstand;
@@ -64,14 +77,25 @@ public class AnsichtHilfe extends Ansicht {
 
   public AnsichtHilfe() {
     setLayout(null);
-    JLabel überschrift = Aussehen.macheÜberschrift("Hilfe");
+    JComponent überschrift = Aussehen.macheZentrierteÜberschrift("Hilfe");
     add(überschrift);
 
-    Tabelle tabelle = new Tabelle(this, 100, 100, 50, 100, 800);
+    Tabelle tabelle = new Tabelle(this, 200, 80, 40, 200, 800);
+    tabelle.erzeugeZeile("n", "neues Spiel / Startseite");
+    tabelle.erzeugeZeile("t", "Themenauswahl");
+    tabelle.erzeugeZeile("s", "Aktuelles Spiel");
+    tabelle.erzeugeZeile("e", "Ergebnis");
+    tabelle.erzeugeZeile("k", "Einstellungen");
+    tabelle.erzeugeZeile("h", "Hilfe");
+    tabelle.erzeugeZeile("u", "Über das Spiel");
+
     tabelle.erzeugeZeile("a", "Wähle Antwort A aus");
     tabelle.erzeugeZeile("b", "Wähle Antwort B aus");
     tabelle.erzeugeZeile("c", "Wähle Antwort C aus");
     tabelle.erzeugeZeile("d", "Wähle Antwort D aus");
+    tabelle.erzeugeZeile("Leertaste", "nächste Frage");
+    tabelle.erzeugeZeile("Return", "nächste Frage");
+    tabelle.erzeugeZeile("z", "Zahlenformat ändern");
   }
 
 }

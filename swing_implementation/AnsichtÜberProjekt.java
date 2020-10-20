@@ -1,7 +1,5 @@
 package swing_implementation;
 
-import javax.swing.JLabel;
-
 /**
  * Eine Ansicht, in der Hintergrundinformationen über das Spiel gezeigt werden.
  */
@@ -18,8 +16,7 @@ public class AnsichtÜberProjekt extends Ansicht {
 
   public AnsichtÜberProjekt() {
     setLayout(null);
-    JLabel überschrift = Aussehen.macheÜberschrift("Über das Projekt");
-    add(überschrift);
+    add(Aussehen.macheZentrierteÜberschrift("Über das Projekt"));
   }
 
 }

@@ -1,6 +1,5 @@
 package swing_implementation;
 
-import javax.swing.Box;
 import javax.swing.JComponent;
 import javax.swing.JLabel;
 
@@ -23,7 +22,7 @@ public class KleineKachel extends Taste {
   public KleineKachel() {
     super(gibBild("blau"), gibBild("orange"), gibBild("rot"));
     text = Aussehen.macheText();
-    JComponent rahmen = zentiere(text);
+    JComponent rahmen = Aussehen.zentiere(text);
     rahmen.setBounds(0, 0, getWidth(), getHeight());
     add(rahmen);
   }
@@ -31,47 +30,6 @@ public class KleineKachel extends Taste {
   public KleineKachel(String tastenText) {
     this();
     text.setText(tastenText);
-  }
-
-  /**
-   * Zentiere eine Komponente sowohl horizontal wie auch vertikal.
-   *
-   * @param komponente Eine Swing-Komponente.
-   *
-   * @return Eine Swing-Komponente.
-   */
-  private JComponent zentiere(JComponent komponente) {
-    return zentiereVertikal(zentiereHorizontal(komponente));
-  }
-
-  /**
-   * Zentiere eine Komponente vertikal.
-   *
-   * @param komponente Eine Swing-Komponente.
-   *
-   * @return Eine Swing-Komponente.
-   */
-  private JComponent zentiereVertikal(JComponent komponente) {
-    Box rahmen = Box.createVerticalBox();
-    rahmen.add(Box.createVerticalGlue());
-    rahmen.add(komponente);
-    rahmen.add(Box.createVerticalGlue());
-    return rahmen;
-  }
-
-  /**
-   * Zentiere eine Komponente horizontal.
-   *
-   * @param komponente Eine Swing-Komponente.
-   *
-   * @return Eine Swing-Komponente.
-   */
-  private JComponent zentiereHorizontal(JComponent komponente) {
-    Box rahmen = Box.createHorizontalBox();
-    rahmen.add(Box.createHorizontalGlue());
-    rahmen.add(komponente);
-    rahmen.add(Box.createHorizontalGlue());
-    return rahmen;
   }
 
   /**

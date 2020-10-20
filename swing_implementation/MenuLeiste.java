@@ -21,9 +21,12 @@ public class MenuLeiste extends JMenuBar {
   /**
    * Das Menü „Themenbereiche“.
    */
-  JMenu bereiche;
+  private JMenu bereiche;
 
-  JMenu navigation;
+  /**
+   * Das Menü „Navigation“.
+   */
+  private JMenu navigation;
 
   /**
    * Eine {@link serialVersionUID} wird als Versionsnummer bei der Serialisation
@@ -38,12 +41,13 @@ public class MenuLeiste extends JMenuBar {
     // Navigation
     navigation = new JMenu("Navigation");
     add(navigation);
-    erzeugeNavigationsEintrag("Startseite", "start");
-    erzeugeNavigationsEintrag("Themengebiete", "themen");
-    erzeugeNavigationsEintrag("Aktuelles Spiel", "spiel");
-    erzeugeNavigationsEintrag("Ergebnis", "ergebnis");
-    erzeugeNavigationsEintrag("Hilfe", "hilfe");
-    erzeugeNavigationsEintrag("Über das Spiel", "über");
+    erzeugeNavigationsEintrag("Neues Spiel / Startseite (n)", "start");
+    erzeugeNavigationsEintrag("Themenauswahl (t)", "themen");
+    erzeugeNavigationsEintrag("Aktuelles Spiel (s)", "spiel");
+    erzeugeNavigationsEintrag("Ergebnis (e)", "ergebnis");
+    erzeugeNavigationsEintrag("Einstellungen (k)", "einstellungen");
+    erzeugeNavigationsEintrag("Hilfe (k)", "hilfe");
+    erzeugeNavigationsEintrag("Über das Spiel (u)", "über");
 
     bereiche = new JMenu("Themenbereiche");
     erzeugeBereichsEinträge();

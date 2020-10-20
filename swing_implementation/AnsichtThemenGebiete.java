@@ -1,7 +1,5 @@
 package swing_implementation;
 
-import javax.swing.JLabel;
-
 /**
  * Eine die alle Themenbereiche und Themengebiete auflistet.
  */
@@ -18,9 +16,7 @@ public class AnsichtThemenGebiete extends Ansicht {
 
   public AnsichtThemenGebiete() {
     setLayout(null);
-    JLabel überschrift = Aussehen.macheÜberschrift("Themengebiete");
-    überschrift.setBounds(100, 100, 300, 50);
-    add(überschrift);
+    add(Aussehen.macheZentrierteÜberschrift("Themengebiete"));
   }
 
 }
