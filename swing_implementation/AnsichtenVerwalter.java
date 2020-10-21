@@ -42,9 +42,7 @@ public class AnsichtenVerwalter {
    */
   public static void initialisiereAnsichten() {
     initialisiereAnsicht("start", new AnsichtStartSeite());
-    initialisiereAnsicht("themen", new AnsichtThemenGebiete());
     initialisiereAnsicht("spiel", new AnsichtSpiel());
-    initialisiereAnsicht("über", new AnsichtÜberProjekt());
     initialisiereAnsicht("hilfe", new AnsichtHilfe());
     initialisiereAnsicht("ergebnis", new AnsichtErgebnis());
     initialisiereAnsicht("einstellungen", new AnsichtEinstellungen());

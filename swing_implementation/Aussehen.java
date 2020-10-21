@@ -234,7 +234,7 @@ public class Aussehen {
    */
   public static JComponent macheZentrierteÜberschrift(String text) {
     JComponent rahmen = zentiereHorizontal(macheÜberschrift(text));
-    rahmen.setBounds(0, 0, FENSTER_BREITE, 50);
+    rahmen.setBounds(0, ABSTAND, FENSTER_BREITE, 50);
     return rahmen;
   }
 

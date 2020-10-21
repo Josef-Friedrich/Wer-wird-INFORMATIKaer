@@ -80,14 +80,12 @@ public class AnsichtHilfe extends Ansicht {
     JComponent überschrift = Aussehen.macheZentrierteÜberschrift("Hilfe");
     add(überschrift);
 
-    Tabelle tabelle = new Tabelle(this, 200, 80, 40, 200, 800);
+    Tabelle tabelle = new Tabelle(this, 300, 180, 40, 200, 800);
     tabelle.erzeugeZeile("n", "neues Spiel / Startseite");
-    tabelle.erzeugeZeile("t", "Themenauswahl");
     tabelle.erzeugeZeile("s", "Aktuelles Spiel");
     tabelle.erzeugeZeile("e", "Ergebnis");
     tabelle.erzeugeZeile("k", "Einstellungen");
     tabelle.erzeugeZeile("h", "Hilfe");
-    tabelle.erzeugeZeile("u", "Über das Spiel");
 
     tabelle.erzeugeZeile("a", "Wähle Antwort A aus");
     tabelle.erzeugeZeile("b", "Wähle Antwort B aus");

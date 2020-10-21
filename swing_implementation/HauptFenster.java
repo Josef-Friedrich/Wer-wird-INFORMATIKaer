@@ -99,14 +99,6 @@ public class HauptFenster extends SpielRahmen {
             AnsichtenVerwalter.zeige("spiel");
             break;
 
-          case KeyEvent.VK_T:
-            AnsichtenVerwalter.zeige("themen");
-            break;
-
-          case KeyEvent.VK_U:
-            AnsichtenVerwalter.zeige("über");
-            break;
-
           case KeyEvent.VK_Z:
             Konfiguration.setzeNächstesZahlenformat();
             break;
