@@ -1,7 +1,5 @@
 package swing_implementation;
 
-import javax.swing.JLabel;
-
 /**
  * Die Ansicht, die zuerste gezeigt wird, wenn das Spiel gestartet wird.
  */
@@ -18,11 +16,7 @@ public class AnsichtStartSeite extends Ansicht {
 
   public AnsichtStartSeite() {
     setLayout(null);
-
-    JLabel bildLogo = new JLabel(Aussehen.macheBild("logo_klein.png"));
-    int logoBreite = 400;
-    bildLogo.setBounds(Aussehen.zentriereX(logoBreite), 50, logoBreite, logoBreite);
-    add(bildLogo);
+    add(Aussehen.gibLogo());
 
     int kachelBreite = 500;
     int xKachel = Aussehen.zentriereX(kachelBreite);

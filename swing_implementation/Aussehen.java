@@ -161,6 +161,16 @@ public class Aussehen {
     return macheText("");
   }
 
+  public static JLabel gibLogo() {
+    return gibLogo("klein", 400);
+  }
+
+  public static JLabel gibLogo(String größe, int breite) {
+    JLabel logo = new JLabel(macheBild(String.format("logo_%s.png", größe)));
+    logo.setBounds(zentriereX(breite), 50, breite, breite);
+    return logo;
+  }
+
   /**
    * Erzeuge einen normalen Text mit Rahmen.
    *

@@ -77,10 +77,10 @@ public class AnsichtSpiel extends Ansicht {
   public AnsichtSpiel() {
     setLayout(null);
 
+    add(Aussehen.gibLogo("sehr-klein", 286));
+
     zeitmesser = new Timer(Konfiguration.automatischWeiterDauer, this::zeigeNächsteFrageEreignis);
     zeitmesser.setRepeats(false);
-
-    textFrage = erzeugeFragenText();
 
     textThemenGebiet = Aussehen.macheText(Aussehen.ABSTAND, Aussehen.ABSTAND, 500, Aussehen.ZEILEN_ABSTAND);
     add(textThemenGebiet);
@@ -93,8 +93,8 @@ public class AnsichtSpiel extends Ansicht {
 
     int x1 = 10;
     int x2 = 520;
-    int y1 = 450;
-    int y2 = 550;
+    int y1 = 500;
+    int y2 = 600;
 
     antwortKacheln = new AntwortKachel[] { erzeugeAntwortKachel(x1, y1), erzeugeAntwortKachel(x2, y1),
         erzeugeAntwortKachel(x1, y2), erzeugeAntwortKachel(x2, y2) };
@@ -104,9 +104,7 @@ public class AnsichtSpiel extends Ansicht {
       antwortKacheln[antwortNummer].setzeBuchstabe(antwortNummer);
     }
 
-    JLabel bildGrosseKachel = new JLabel(Aussehen.macheBild("kachel-gross.png"));
-    bildGrosseKachel.setBounds(5, 280, 1010, 183);
-    add(bildGrosseKachel);
+    textFrage = erzeugeFragenText();
 
     tasteNächsteFrage = erzeugeTasteNächsteFrage();
   }
@@ -150,14 +148,17 @@ public class AnsichtSpiel extends Ansicht {
    * @return
    */
   private MehrzeiligerText erzeugeFragenText() {
-    MehrzeiligerText text = new MehrzeiligerText(80, 350, Aussehen.FENSTER_BREITE - 100, 50);
+    MehrzeiligerText text = new MehrzeiligerText(90, 400, Aussehen.FENSTER_BREITE - 100, 50);
     add(text);
+    JLabel bildGrosseKachel = new JLabel(Aussehen.macheBild("kachel-gross.png"));
+    bildGrosseKachel.setBounds(5, 330, 1010, 183);
+    add(bildGrosseKachel);
     return text;
   }
 
   private Taste erzeugeTasteNächsteFrage() {
     Taste taste = new Taste("pfeil-blau.png", "pfeil-gelb.png", "pfeil-rot.png");
-    taste.setLocation(800, 700);
+    taste.setLocation(800, 715);
     add(taste);
     taste.setVisible(false);
     taste.setToolTipText("Zeige die nächste Fragen an.");

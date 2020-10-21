@@ -59,7 +59,7 @@ public class Konfiguration {
    * Wie lange gewartet werden soll, bis automatisch zur nächsten Frage
    * umgeschaltet wird (in Millisekunden).
    */
-  public static int automatischWeiterDauer = 3000;
+  public static int automatischWeiterDauer = 1500;
 
   /**
    * Gib einen Konfigurationswert.

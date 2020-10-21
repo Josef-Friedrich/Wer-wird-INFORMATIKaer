@@ -72,7 +72,7 @@ public class AntwortKachel extends KleineKachel {
   public void setzeBuchstabe(int antwortNummer) {
     String b = Frage.konvertiereAntwortNummer(antwortNummer);
     buchstabe = Aussehen.macheText(b);
-    buchstabe.setBounds(45, 40, 50, 50);
+    buchstabe.setBounds(50, 37, 50, 50);
     String hilfeText = String.format(
         "Drücke diese Taste, wennn du glaubst die Antwort %s ist richtig. Tastenkürzel: %s", b, b.toLowerCase());
     String hilfe = String.format("<html><p width=\"300\">%s</p></html>", hilfeText);
