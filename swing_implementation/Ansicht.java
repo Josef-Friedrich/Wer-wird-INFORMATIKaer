@@ -3,9 +3,9 @@ package swing_implementation;
 import javax.swing.JPanel;
 
 /**
- * Jede Ansicht muss diese Klasse ergeben.
+ * Jede Ansicht muss diese Klasse erben.
  *
- * Die Klasse {@link Ansicht} stelle die Methode {@link zeige} bereit, die von
+ * Die Klasse {@link Ansicht} stellt die Methode {@link zeige} bereit, die von
  * jeder Ansicht überschrieben werden kann.
  */
 public class Ansicht extends JPanel {
@@ -19,13 +19,16 @@ public class Ansicht extends JPanel {
    */
   private static final long serialVersionUID = 1L;
 
+  /**
+   * Standard-Konstruktor, der die Hintergrundfarbe setzt.
+   */
   public Ansicht() {
     setBackground(Aussehen.FARBE_HINTERGRUND);
   }
 
   /**
-   * Diese Methode soll von den Unterklassen überschrieben werden, wenn vor der
-   * Darstellen der Ansicht Code ausgeführt werden soll.
+   * Diese Methode soll von den Unterklassen überschrieben werden, wenn
+   * Code vor dem Zeigen der Ansicht ausgeführt werden soll.
    */
   public void zeige() {
   }
