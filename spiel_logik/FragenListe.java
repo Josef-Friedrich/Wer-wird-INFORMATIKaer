@@ -145,8 +145,7 @@ public class FragenListe {
   /**
    * Diese Methode berechnete die Anzahl der Datenknoten und damit die Anzahl der
    * Frage rekursiv. Im Gegensatz zur Methode {@link gibAnzahlFragen} wird in
-   * dieser Methode keine Zähler verwendet, der hochgezählt werden muss. Diese
-   * Methode funktioniert also sicherer.
+   * dieser Methode keine Zähler verwendet, der hochgezählt werden muss.
    *
    * @return Die Anzahl der Datenknoten.
    */
