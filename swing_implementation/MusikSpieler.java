@@ -13,12 +13,17 @@ import spiel_logik.Konfiguration;
 
 /**
  * Die Klasse {@code MusikAusschnitt} verwaltet eine WAVE-Datei und kann diese
- * abspielen, endlos abspielen oder stoppen.
+ * einmal abspielen, endlos abspielen oder stoppen.
  */
 class MusikAusschnitt {
 
   private Clip musikStueck;
 
+  /**
+   * Der Konstruktor lädt die WAVE-Datei und fägt dabei einige Ausnahmen ab.
+   *
+   * @param dateiName Der Dateiname der WAVE-Datei im Verzeichnis „MUSIK“.
+   */
   public MusikAusschnitt(String dateiName) {
     try {
       musikStueck = AudioSystem.getClip();
@@ -28,6 +33,12 @@ class MusikAusschnitt {
     }
   }
 
+  /**
+   * Starte den Musikausschnitt entweder einaml oder in einer Endlosschleife.
+   *
+   * @param endlos Wenn wahr, dann spiele den Musikausschnitt in einer
+   *               Endlosschleife.
+   */
   private void starte(boolean endlos) {
     if (Konfiguration.spieleMusik) {
       musikStueck.setMicrosecondPosition(0);
@@ -37,14 +48,23 @@ class MusikAusschnitt {
     }
   }
 
+  /**
+   * Starte den Musikausschnitt und spiele ihn nur einmal.
+   */
   public void starte() {
     starte(false);
   }
 
+  /**
+   * Starte den Musikausschnitt und spiele ihn in einer Endlosschleife.
+   */
   public void starteEndlos() {
     starte(true);
   }
 
+  /**
+   * Stoppe den Musikausschnitt.
+   */
   public void stoppe() {
     musikStueck.stop();
   }
@@ -69,10 +89,23 @@ public class MusikSpieler {
     initalisiereAusschnitt("richtig", "richtig.wav");
   }
 
+  /**
+   * Initialisiere den Musikausschnitt.
+   *
+   * @param kürzel    Ein Kürzel für einen Musikausschnitt.
+   * @param dateiName Der Dateiname der WAVE-Datei im Verzeichnis „MUSIK“.
+   */
   private void initalisiereAusschnitt(String kürzel, String dateiName) {
     ausschnitte.put(kürzel, new MusikAusschnitt(dateiName));
   }
 
+  /**
+   * Starte den mit einem Kürzel angegebenen Musikausschnitt, spiele den
+   * Musikausschnitt nur einmal und stoppe zuerst den Musikausschnitt, der gerade
+   * abgespielt wird.
+   *
+   * @param kürzel Das Kürzel für den Musikausschnitt.
+   */
   public void starte(String kürzel) {
     if (aktuelles != null)
       ausschnitte.get(aktuelles).stoppe();
@@ -80,6 +113,13 @@ public class MusikSpieler {
     ausschnitte.get(kürzel).starte();
   }
 
+  /**
+   * Starte den mit einem Kürzel angegebenen Musikausschnitt, spiele den
+   * Musikausschnitt in einer Endlosschleife und stoppe zuerst den
+   * Musikausschnitt, der gerade abgespielt wird.
+   *
+   * @param kürzel Das Kürzel für den Musikausschnitt.
+   */
   public void starteEndlos(String kürzel) {
     if (aktuelles != null)
       ausschnitte.get(aktuelles).stoppe();
@@ -87,6 +127,11 @@ public class MusikSpieler {
     ausschnitte.get(kürzel).starteEndlos();
   }
 
+  /**
+   * Initialisiere den Musikausschnitt.
+   *
+   * @param kürzel Das Kürzel für den Musikausschnitt.
+   */
   public void stoppe(String kürzel) {
     ausschnitte.get(kürzel).stoppe();
     aktuelles = null;
