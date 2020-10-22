@@ -34,7 +34,7 @@ class MusikAusschnitt {
   }
 
   /**
-   * Starte den Musikausschnitt entweder einaml oder in einer Endlosschleife.
+   * Starte den Musikausschnitt entweder einmal oder in einer Endlosschleife.
    *
    * @param endlos Wenn wahr, dann spiele den Musikausschnitt in einer
    *               Endlosschleife.
@@ -128,7 +128,7 @@ public class MusikSpieler {
   }
 
   /**
-   * Initialisiere den Musikausschnitt.
+   * Stoppe den Musikausschnitt.
    *
    * @param kürzel Das Kürzel für den Musikausschnitt.
    */
