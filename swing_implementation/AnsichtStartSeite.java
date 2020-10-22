@@ -1,7 +1,7 @@
 package swing_implementation;
 
 /**
- * Die Ansicht, die zuerste gezeigt wird, wenn das Spiel gestartet wird.
+ * Die Ansicht, die zuerst gezeigt wird, wenn das Spiel gestartet wird.
  */
 public class AnsichtStartSeite extends Ansicht {
 
@@ -14,6 +14,9 @@ public class AnsichtStartSeite extends Ansicht {
    */
   private static final long serialVersionUID = 1L;
 
+  /**
+   * Der Konstruktor initialisiert die grafischen Elemente der Ansicht.
+   */
   public AnsichtStartSeite() {
     setLayout(null);
     add(Aussehen.gibLogo());
@@ -25,14 +28,14 @@ public class AnsichtStartSeite extends Ansicht {
   }
 
   /**
+   * Erzeuge eine kleine Kachel.
    *
    * @param text      Der Text der Taste erscheinen soll.
-   * @param gridx
    * @param dateiPfad Ein Pfad zu einer Themengebiets-XML-Datei. Relativer Pfad
    *                  zum Projektverzeichnis, beispielsweise
    *                  <code>"/FRAGEN/informatik/6_jahrgangsstufe.xml"</code>.
-   *
-   * @return
+   * @param x         Die X-Koordinate der nordwestlichen Ecke der kleinen Kachel.
+   * @param y         Die y-Koordinate der nordwestlichen Ecke der kleinen Kachel.
    */
   private void erzeugeKleineKachel(String text, String dateiPfad, int x, int y) {
     KleineKachel kachel = new KleineKachel(text);
@@ -44,6 +47,9 @@ public class AnsichtStartSeite extends Ansicht {
     add(kachel);
   }
 
+  /**
+   * Spiele die Hauptmelodie, wenn die Ansicht „Startseite“ gezeigt wird.
+   */
   public void zeige() {
     SpielSteuerung.musikSpieler.starteEndlos("haupt");
   }
