@@ -88,7 +88,7 @@ public class Frage {
       int j = zufall.nextInt(i + 1);
 
       // Falls eine der der vertauschten Antworten die richtige
-      // Antwort ist, müssen wird die Index-Nummer des Attributs
+      // Antwort ist, müssen wir die Index-Nummer des Attributs
       // positionRichtigeAntwort anpassen.
       // Die richtige Antwort kann an der j- oder an der i-ten Position
       // stehen.
@@ -97,7 +97,7 @@ public class Frage {
       } else if (i == richtigeAntwort) {
         richtigeAntwort = j;
       }
-      // Vertausche die Antworten
+      // Vertausche die Antworten:
       // Wir brauchen dazu eine temporäre Variable.
       String tmp = antworten[i];
       antworten[i] = antworten[j];
