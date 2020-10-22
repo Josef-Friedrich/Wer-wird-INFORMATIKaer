@@ -63,7 +63,7 @@ public class AnsichtSpiel extends Ansicht {
   private Taste tasteNächsteFrage;
 
   /**
-   * Nach drei Sekunden wird automatisch die nächste Frage angezeigt. Die Zeit
+   * Nach 1.5 Sekunden wird automatisch die nächste Frage angezeigt. Die Zeit
    * wird in Millisekunden angegeben. Als zweiter Parameter wird eigentlich eine
    * Instanz der Klasse {@link java.awt.event.ActionListener} verlangt. Wir
    * verwenden hier aber eine Referenz auf die Methode
@@ -75,12 +75,12 @@ public class AnsichtSpiel extends Ansicht {
   private Timer zeitmesser;
 
   public AnsichtSpiel() {
+    zeitmesser = new Timer(Konfiguration.automatischWeiterDauer, this::zeigeNächsteFrageEreignis);
+    zeitmesser.setRepeats(false);
+
     setLayout(null);
 
     add(Aussehen.gibLogo("sehr-klein", 286));
-
-    zeitmesser = new Timer(Konfiguration.automatischWeiterDauer, this::zeigeNächsteFrageEreignis);
-    zeitmesser.setRepeats(false);
 
     textThemenGebiet = Aussehen.macheText(Aussehen.ABSTAND, Aussehen.ABSTAND, 500, Aussehen.ZEILEN_ABSTAND);
     add(textThemenGebiet);
@@ -244,7 +244,7 @@ public class AnsichtSpiel extends Ansicht {
   }
 
   /**
-   * Zeige die nächste Frage nicht sofort, sondern in drei Sekunden. Der/Die
+   * Zeige die nächste Frage nicht sofort, sondern in 1.5 Sekunden. Der/Die
    * Spieler/in hat somit Zeit das Ergebnis zu betrachten, was einen positiven
    * Lerneffekt haben könnte.
    */
@@ -259,7 +259,7 @@ public class AnsichtSpiel extends Ansicht {
    * Diese Methode wird der Stoppuhr übergeben. Sie wird 3 Sekunden, nachdem die
    * Frage beantwortete wurde, ausgeführt.
    *
-   * @param ereignis
+   * @param ereignis Eine Instanz der Klasse {@link ActionEvent}.
    */
   private void zeigeNächsteFrageEreignis(ActionEvent ereignis) {
     zeigeNächsteFrage();
