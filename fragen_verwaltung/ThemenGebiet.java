@@ -101,9 +101,10 @@ public class ThemenGebiet extends XMLDatei {
    * Wähle eine bestimmte Anzahl an Fragen oder alle Frage aus der XML-Datei aus.
    * Bringe die Fragen in eine zufällige Reihenfolge.
    *
-   * @param knotenListe
-   * @param anzahlAuswahl
-   * @return
+   * @param knotenListe   Die Knotenliste die alle {@code <frage>}-Tags enthält.
+   * @param anzahlAuswahl Die Anzahl an Fragen, die ausgewählt werden soll.
+   *
+   * @return Ein Feld mit {@code <frage>}-Knoten.
    */
   private Node[] wähleFragenAus(NodeList knotenListe, int anzahlAuswahl) {
     Random zufall = new Random();
@@ -111,16 +112,17 @@ public class ThemenGebiet extends XMLDatei {
 
     if (anzahlAuswahl > maxAnzahlFragen || anzahlAuswahl <= 0)
       anzahlAuswahl = maxAnzahlFragen;
+
     // https://stackoverflow.com/a/22829036/10193818
     // Wir bilden eine Liste mit den Indexnummer aller Fragen. Hat die
-    // Themengebiets-XML-Datei beispielsweise 10 Fragen, entsteht die Liste:
+    // Themengebiets-XML-Datei beispielsweise 10 Fragen, so entsteht die Liste:
     // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
     List<Integer> indexAlleFragen = IntStream.rangeClosed(0, maxAnzahlFragen - 1).boxed().collect(Collectors.toList());
 
     Node[] fragen = new Node[anzahlAuswahl];
 
     // https://www.baeldung.com/java-random-list-element
-    // Aus der oben erzeugten Liste mit den Indexnummer entnehmen an einer
+    // Aus der oben erzeugten Liste mit den Indexnummer entnehmen wir an einer
     // zufälligen Stelle eine Zahl (zufälligerIndex).
     // Mit diesem zufälligen Index entnehmen wir den XML-Konten aus der Kontenliste.
     for (int i = 0; i < anzahlAuswahl; i++) {
